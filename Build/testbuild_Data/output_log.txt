@@ -1,0 +1,73 @@
+Initialize engine version: 4.5.1f3 (73cd57f80e3e)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [aticfx32.dll 8.17.10.1280]
+    Renderer: AMD Radeon HD 7800 Series
+    Vendor:   ATI
+    VRAM:     2030 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 RAWZ=0 NULL=1 RESZ=1 SlowINTZ=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.095 seconds
+desktop: 1920x1080 60Hz; virtual: 5760x1080 at -1920,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\System.dll (this message is harmless)
+Profiler is only supported with Pro License
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/Runtime/Profiler/ProfilerConnection.cpp Line: 218)
+
+Called: OnJoinedLobby
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+InitialConnect:OnJoinedLobby() (at C:\Users\Justin\Projects\mobas\Assets\src\Network\InitialConnect.cs:15)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at C:\Users\Justin\Projects\mobas\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1769)
+NetworkingPeer:OnOperationResponse(OperationResponse) (at C:\Users\Justin\Projects\mobas\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1157)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at C:\Users\Justin\Projects\mobas\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:76)
+ 
+(Filename: C Line: 0)
+
+UnloadTime: 0.602522 ms
+System memory in use before: 10.0 MB.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 9.8 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 152.
+Total: 1.848127 ms (FindLiveObjects: 0.007329 ms CreateObjectMapping: 0.015392 ms MarkObjects: 0.282203 ms  DeleteObjects: 0.022967 ms)
+
+UnloadTime: 0.294908 ms
+System memory in use before: 27.5 MB.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 25.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 179.
+Total: 2.242234 ms (FindLiveObjects: 0.012949 ms CreateObjectMapping: 0.011727 ms MarkObjects: 0.222830 ms  DeleteObjects: 0.633064 ms)
+
+Player joined room
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerHandler:OnJoinedRoom() (at C:\Users\Justin\Projects\mobas\Assets\src\Game\PlayerHandler.cs:19)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at C:\Users\Justin\Projects\mobas\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1769)
+NetworkingPeer:OnEvent(EventData) (at C:\Users\Justin\Projects\mobas\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1612)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at C:\Users\Justin\Projects\mobas\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:76)
+ 
+(Filename: C Line: 0)
+
