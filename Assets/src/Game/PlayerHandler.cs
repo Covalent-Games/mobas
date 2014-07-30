@@ -22,8 +22,7 @@ public class PlayerHandler : MonoBehaviour {
 	}
 	void setRoomOptions(){
 
-		byte max = 10;
-		newRoomDetails = new RoomOptions ();
+				newRoomDetails = new RoomOptions ();
 	}
 	
 	void JoinRoom(){
@@ -46,7 +45,6 @@ public class PlayerHandler : MonoBehaviour {
 
 		PhotonView pv = player.GetComponent<PhotonView>();
 		Transform cameraPivot = player.transform.Find("CameraPivot");
-		Transform cameraT = cameraPivot.transform.Find("Main Camera");
 
 		if (pv.isMine){
 			player.GetComponent<AvatarMovement>().enabled = true;
@@ -55,6 +53,7 @@ public class PlayerHandler : MonoBehaviour {
 			camera.transform.parent = cameraPivot;
 			Vector3 pos = new Vector3(1.0f, 1.0f, -3.5f);
 			camera.transform.position = cameraPivot.transform.position + pos;
+			player.gameObject.tag = "Player";
 		}
 	}
 }
