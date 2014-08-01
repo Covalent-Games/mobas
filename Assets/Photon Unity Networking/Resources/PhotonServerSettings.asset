@@ -22,4 +22,5 @@ MonoBehaviour:
   - OnAwakeRPC
   - DestroyRpc
   - SpawnPlayer
+  - DealDamage
   DisableAutoOpenWizard: 0

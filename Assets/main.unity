@@ -96,7 +96,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 315772740}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 60, y: 1.5, z: 60}
+  m_LocalPosition: {x: 66.543457, y: 2.89223528, z: 57.9136353}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -186,7 +186,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 10a73ad0f2f16e442b2a84f19dd0c381, type: 2}
       propertyPath: crosshairSize
-      value: 4.67999983
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 10a73ad0f2f16e442b2a84f19dd0c381, type: 2}
@@ -449,7 +449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crosshair: {fileID: 2800000, guid: 7bae1b5db88c69944b3974a688a9e22b, type: 3}
-  crosshairSize: 4.67999983
+  crosshairSize: 15
 --- !u!4 &1342164181
 Transform:
   m_ObjectHideFlags: 0

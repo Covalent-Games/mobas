@@ -18,7 +18,7 @@ public class EscapeMenu: MonoBehaviour {
 		menuBoxRect = new Rect(
 				Screen.width/2 - menuWidth/2,
 		        Screen.height/2 - menueHeight/2,
-		        menuWidth, menueHeight);								 
+		        menuWidth, menueHeight);
 	}
 
 	private void ResumeGame(){
