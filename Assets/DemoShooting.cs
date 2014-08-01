@@ -28,6 +28,7 @@ public class DemoShooting : MonoBehaviour {
 		this.shotDelay = this.rateOfFire;
 		//TODO: Health regen doens't work properly without health sync across clients
 		InvokeRepeating("RegenHealth", 1, 1.0f);
+		InvokeRepeating("SpawnPowerUp", 5, 15.0f);
 	}
 
 	private void RegenHealth(){
@@ -38,6 +39,12 @@ public class DemoShooting : MonoBehaviour {
 				this.health = this.maxHealth;
 			}
 		}
+	}
+	
+	private void SpawnPowerUp(){
+		
+		GameObject newPowerup = GameObject.CreatePrimitive(PrimitiveType.Cube);
+		newPowerup.AddComponent<Powerup>();
 	}
 	
 	private void DeathCheck(){
