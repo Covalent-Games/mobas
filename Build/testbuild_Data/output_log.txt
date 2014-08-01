@@ -1,47 +1,51 @@
 Initialize engine version: 4.5.2f1 (9abb1b59b47c)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 9.0c [aticfx64.dll 8.17.10.1280]
-    Renderer: AMD Radeon HD 7800 Series
+    Version:  Direct3D 9.0c [aticfx32.dll 8.17.10.1247]
+    Renderer: AMD Radeon HD 6700 Series
     Vendor:   ATI
-    VRAM:     2030 MB (via DXGI)
+    VRAM:     1013 MB (via DXGI)
     Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 RAWZ=0 NULL=1 RESZ=1 SlowINTZ=1
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
-Loading C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\Photon3Unity3D.dll (this message is harmless)
-Loading C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.071 seconds
-desktop: 1920x1080 60Hz; virtual: 5760x1080 at -1920,0
+Platform assembly: C:\Users\Daleveloper\Documents\mobas\Build\testbuild_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Daleveloper\Documents\mobas\Build\testbuild_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Daleveloper\Documents\mobas\Build\testbuild_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Daleveloper\Documents\mobas\Build\testbuild_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Daleveloper\Documents\mobas\Build\testbuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Daleveloper\Documents\mobas\Build\testbuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Daleveloper\Documents\mobas\Build\testbuild_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Daleveloper\Documents\mobas\Build\testbuild_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Daleveloper\Documents\mobas\Build\testbuild_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\Daleveloper\Documents\mobas\Build\testbuild_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.078 seconds
+desktop: 1920x1080 60Hz; virtual: 3200x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-Platform assembly: C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Justin\Projects\mobas\Build\testbuild_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 0.216722 ms
+Platform assembly: C:\Users\Daleveloper\Documents\mobas\Build\testbuild_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Daleveloper\Documents\mobas\Build\testbuild_Data\Managed\System.dll (this message is harmless)
+Connected to lobby
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 0.288476 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 127.
-Total: 1.305468 ms (FindLiveObjects: 0.004886 ms CreateObjectMapping: 0.017103 ms MarkObjects: 0.159793 ms  DeleteObjects: 0.006841 ms)
+Total: 1.432975 ms (FindLiveObjects: 0.015107 ms CreateObjectMapping: 0.010832 ms MarkObjects: 0.175879 ms  DeleteObjects: 0.007411 ms)
 
-UnloadTime: 0.288556 ms
+UnloadTime: 0.244007 ms
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 161.
-Total: 1.663904 ms (FindLiveObjects: 0.006596 ms CreateObjectMapping: 0.010017 ms MarkObjects: 0.143423 ms  DeleteObjects: 0.368209 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 994.
+Total: 1.473738 ms (FindLiveObjects: 0.037912 ms CreateObjectMapping: 0.014822 ms MarkObjects: 0.208945 ms  DeleteObjects: 0.009976 ms)
 
 Player joined room
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-UnloadTime: 1.117332 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+UnloadTime: 2.680949 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 156.
-Total: 3.775670 ms (FindLiveObjects: 0.005863 ms CreateObjectMapping: 0.011483 ms MarkObjects: 0.147332 ms  DeleteObjects: 2.073161 ms)
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 159.
+Total: 1.408175 ms (FindLiveObjects: 0.006556 ms CreateObjectMapping: 0.013112 ms MarkObjects: 0.182720 ms  DeleteObjects: 0.032496 ms)
 
