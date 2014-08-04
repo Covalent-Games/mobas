@@ -23,4 +23,6 @@ MonoBehaviour:
   - DestroyRpc
   - SpawnPlayer
   - DealDamage
+  - SpawnPowerUp
+  - DestroyPowerUp
   DisableAutoOpenWizard: 0

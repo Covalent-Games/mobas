@@ -39,6 +39,7 @@ public class PlayerHandler : MonoBehaviour {
 	void SpawnPlayer(){
 
 		spawnPoint = GameObject.Find("SpawnPoint").transform.position;
+		print(spawnPoint);
 		player = (GameObject)PhotonNetwork.Instantiate (
 			"Player",
 			spawnPoint, 
@@ -62,8 +63,9 @@ public class PlayerHandler : MonoBehaviour {
 			camera.transform.parent = cameraPivot;
 			// Set the player's camera as the Main Camera
 			camera.tag = "MainCamera";
-			Vector3 pos = new Vector3(1.0f, 1.0f, -3.5f);
+			Vector3 pos = new Vector3(1.0f, 1.2f, -3.0f);
 			camera.transform.position = cameraPivot.transform.position + pos;
+			camera.transform.rotation = cameraPivot.transform.rotation;
 			player.gameObject.tag = "Player";
 		}
 	}

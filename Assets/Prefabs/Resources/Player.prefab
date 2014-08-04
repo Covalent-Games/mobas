@@ -206,9 +206,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   photonView: {fileID: 11400004}
   maxHealth: 500
+  health: 0
   healthRegen: 1
   rateOfFire: 7
   damage: 10
+  powerUp: {fileID: 100000, guid: b4666618c29a3bf4eadf92e9b38fdc89, type: 2}
+  powerUpList: []
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1

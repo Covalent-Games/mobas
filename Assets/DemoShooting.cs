@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class DemoShooting : MonoBehaviour {
 
 	[SerializeField]
 	PhotonView photonView;
 	[SerializeField]
-	private int maxHealth;
-	int health;
+	public int maxHealth;
+	public int health;
 	
 	[SerializeField]
 	private int healthRegen;
@@ -16,9 +17,11 @@ public class DemoShooting : MonoBehaviour {
 	private float rateOfFire;
 	private float shotDelay;
 	[SerializeField]
-	private int damage;
+	public int damage;
 	private Vector3 lastGunAimPos;
 	private Transform camPivot;
+	[SerializeField]
+
 	
 
 	void Start () {
@@ -28,7 +31,6 @@ public class DemoShooting : MonoBehaviour {
 		this.shotDelay = this.rateOfFire;
 		//TODO: Health regen doens't work properly without health sync across clients
 		InvokeRepeating("RegenHealth", 1, 1.0f);
-		InvokeRepeating("SpawnPowerUp", 5, 15.0f);
 	}
 
 	private void RegenHealth(){
@@ -39,12 +41,6 @@ public class DemoShooting : MonoBehaviour {
 				this.health = this.maxHealth;
 			}
 		}
-	}
-	
-	private void SpawnPowerUp(){
-		
-		GameObject newPowerup = GameObject.CreatePrimitive(PrimitiveType.Cube);
-		newPowerup.AddComponent<Powerup>();
 	}
 	
 	private void DeathCheck(){
@@ -65,14 +61,6 @@ public class DemoShooting : MonoBehaviour {
 			// Someone else got shot
 			// Update health of player that took damage
 		}
-	}
-	
-	private void LerpCameraToCenter(){
-		
-		this.camPivot.localEulerAngles = Vector3.Lerp(
-				this.camPivot.localEulerAngles,
-				this.lastGunAimPos,
-				1.0f);
 	}
 	
 	private void ShootIfShooting(){
@@ -126,14 +114,12 @@ public class DemoShooting : MonoBehaviour {
 	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo messageInfo){
 		
 		if (stream.isWriting){
-			Debug.Log("You're sending shiz");
 			stream.SendNext(transform.position);
 			stream.SendNext(transform.rotation);
 			stream.SendNext(this.health);
 		} else {
 			transform.position = (Vector3)stream.ReceiveNext();
 			transform.rotation = (Quaternion)stream.ReceiveNext();
-			Debug.Log(string.Format("ID: {0}, Health: {1}", messageInfo.photonView.viewID, this.health));
 			this.health = (int)stream.ReceiveNext();
 		}
 	}
@@ -146,7 +132,7 @@ public class DemoShooting : MonoBehaviour {
 	
 	void OnGUI(){
 
-		string curHealth = string.Format("Health: {0}", this.health);
+		string curHealth = string.Format("Health: {0}/{1}", this.health, this.maxHealth);
 		GUI.Box(new Rect(Screen.width/2-50, Screen.height-50, 100, 20), curHealth);
 		GUI.Box(new Rect(Screen.width/2-this.health/2, Screen.height-30, this.health, 20), "");
 		GetTargetInfo();
