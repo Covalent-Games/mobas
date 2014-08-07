@@ -57,9 +57,6 @@ public class DemoShooting : MonoBehaviour {
 			// You just got shot
 			this.health -= damage;
 			DeathCheck();
-		} else {
-			// Someone else got shot
-			// Update health of player that took damage
 		}
 	}
 	

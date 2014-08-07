@@ -1282,6 +1282,11 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
         switch (statusCode)
         {
             case StatusCode.Connect:
+            	Debug.Log("This is firing");
+            	var parameter = new Dictionary<byte, object>();
+            	parameter.Add((byte)100, "HELLO");
+            	this.OpCustom(99, parameter, true);
+
                 if (this.State == global::PeerState.ConnectingToNameServer)
                 {
                     if (PhotonNetwork.logLevel >= PhotonLogLevel.Full)

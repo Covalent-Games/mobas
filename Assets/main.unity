@@ -13,12 +13,12 @@ SceneSettings:
 --- !u!104 &2
 RenderSettings:
   m_Fog: 1
-  m_FogColor: {r: .705882311, g: .642596304, b: .435986131, a: 1}
+  m_FogColor: {r: .858823538, g: .53725493, b: .333333343, a: 1}
   m_FogMode: 1
-  m_FogDensity: .00319999992
-  m_LinearFogStart: 100
+  m_FogDensity: 1
+  m_LinearFogStart: 50
   m_LinearFogEnd: 500
-  m_AmbientLight: {r: .198529422, g: .159508124, b: .0321150497, a: 1}
+  m_AmbientLight: {r: .79411763, g: .709823847, b: .326989591, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 9ba05f538ee36044da5cd2a4f14a8b18, type: 2}
   m_HaloStrength: .5
   m_FlareStrength: 1
@@ -235,7 +235,7 @@ Light:
   serializedVersion: 3
   m_Type: 1
   m_Color: {r: .904411793, g: .807779193, b: .578557551, a: 1}
-  m_Intensity: .560000002
+  m_Intensity: 1.03999996
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -243,11 +243,11 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
+    m_Bias: .109999999
+    m_Softness: 2.91000009
     m_SoftnessFade: 1
   m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
+  m_DrawHalo: 1
   m_ActuallyLightmapped: 0
   m_Flare: {fileID: 0}
   m_RenderMode: 0
@@ -310,7 +310,7 @@ TerrainCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: f35f106f1ff6fd64a9fd9449e9fa6bdc, type: 2}
-  m_CreateTreeColliders: 0
+  m_CreateTreeColliders: 1
 --- !u!114 &1300883756
 MonoBehaviour:
   m_ObjectHideFlags: 0

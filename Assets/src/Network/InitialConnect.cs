@@ -12,7 +12,7 @@ public class InitialConnect : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//PhotonNetwork.logLevel = PhotonLogLevel.Full;
+		PhotonNetwork.logLevel = PhotonLogLevel.Informational;
 		PhotonNetwork.ConnectToMaster(IPAddress, port, AppID, version);
 	}
 	
