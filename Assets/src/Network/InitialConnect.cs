@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using ExitGames.Client.Photon;
 
 public class InitialConnect : MonoBehaviour {
 
@@ -12,7 +14,7 @@ public class InitialConnect : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//PhotonNetwork.logLevel = PhotonLogLevel.Full;
+		PhotonNetwork.logLevel = PhotonLogLevel.Informational;
 		PhotonNetwork.ConnectToMaster(IPAddress, port, AppID, version);
 	}
 	
@@ -23,6 +25,9 @@ public class InitialConnect : MonoBehaviour {
 			* in and ready to start querying the server for info */
 			connected = true;
 			Debug.Log("Connected to lobby");
+			var parameter = new Dictionary<byte, object>();
+			parameter.Add((byte)100, "HELLO");
+			PhotonNetwork.networkingPeer.OpCustom(99, parameter, true);
 		}
-	}	
+	}
 }

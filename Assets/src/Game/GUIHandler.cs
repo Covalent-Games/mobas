@@ -21,6 +21,7 @@ public class GUIHandler : MonoBehaviour {
 		
 	void Start () {
 
+		Screen.lockCursor = true;
 		SetCrosshairVariables();
 		escapeMenu = gameObject.AddComponent<EscapeMenu>();
 		inventoryMenu = gameObject.AddComponent<Inventory>();
@@ -43,7 +44,7 @@ public class GUIHandler : MonoBehaviour {
 	
 		GameObject player = GameObject.FindGameObjectWithTag("Player");
 		if (player != null){
-			player.transform.Find("CameraPivot").GetComponent<CameraXPivot>().enabled = toggle;
+			player.GetComponentInChildren<Mouselook>().enabled = toggle;
 			player.GetComponent<AvatarMovement>().enabled = toggle;
 		}
 	}
@@ -57,12 +58,14 @@ public class GUIHandler : MonoBehaviour {
 		
 		DrawOpenMenu = null;
 		TogglePlayerControls(true);
+		Screen.lockCursor = true;
 	}
 	
 	private void CheckForKeyPress(){
 
 		if (Input.GetKeyDown (KeyCode.Escape)){
 			if (DrawOpenMenu == null){
+				Screen.lockCursor = false;
 				DrawOpenMenu = escapeMenu.DrawMenu;
 			} else {
 				CloseCurrentMenu();
