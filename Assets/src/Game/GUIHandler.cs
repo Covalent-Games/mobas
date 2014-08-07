@@ -44,7 +44,7 @@ public class GUIHandler : MonoBehaviour {
 	
 		GameObject player = GameObject.FindGameObjectWithTag("Player");
 		if (player != null){
-			player.transform.Find("CameraPivot").GetComponent<CameraXPivot>().enabled = toggle;
+			player.GetComponentInChildren<Mouselook>().enabled = toggle;
 			player.GetComponent<AvatarMovement>().enabled = toggle;
 		}
 	}
