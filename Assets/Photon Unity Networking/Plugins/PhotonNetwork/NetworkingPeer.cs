@@ -974,6 +974,7 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
             this.CustomAuthenticationValues.Secret = operationResponse[ParameterCode.Secret] as string;
         }
 
+		// This is where the client handles the response from the server after requesting an Operation, ie JoinLobby
         switch (operationResponse.OperationCode)
         {
             case OperationCode.Authenticate:
@@ -1215,6 +1216,11 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
 
                 SendMonoMessage(PhotonNetworkingMessage.OnUpdatedFriendList);
                 break;
+			
+			case OperationCode.TestTest:
+				Debug.Log(operationResponse.Parameters[100]);
+				Debug.Log(operationResponse.Parameters[101]);
+				break;
 
             default:
                 Debug.LogWarning(string.Format("OperationResponse unhandled: {0}", operationResponse.ToString()));
@@ -1282,10 +1288,6 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
         switch (statusCode)
         {
             case StatusCode.Connect:
-            	Debug.Log("This is firing");
-            	var parameter = new Dictionary<byte, object>();
-            	parameter.Add((byte)100, "HELLO");
-            	this.OpCustom(99, parameter, true);
 
                 if (this.State == global::PeerState.ConnectingToNameServer)
                 {

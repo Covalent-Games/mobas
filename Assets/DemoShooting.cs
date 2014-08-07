@@ -71,9 +71,9 @@ public class DemoShooting : MonoBehaviour {
 				if (Physics.Raycast(mouseRay, out hitInfo)){
 					CheckHitTarget(hitInfo.transform);
 				}
-				this.camPivot = transform.Find("CameraPivot");
-				this.lastGunAimPos = camPivot.localEulerAngles;
-				this.camPivot.Rotate(new Vector3(-Random.Range(0.5f, 1.0f), 0, 0));
+				Transform camera = transform.Find("MainCamera");
+				camera.RotateAround(transform.position, transform.right, -1.0f);
+				this.lastGunAimPos = camera.localEulerAngles;
 			}
 		}
 	}
