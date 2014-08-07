@@ -51,21 +51,22 @@ public class PlayerHandler : MonoBehaviour {
 	void EnableLocalControl(){
 
 		PhotonView pv = player.GetComponent<PhotonView>();
-		Transform cameraPivot = player.transform.Find("CameraPivot");
+		//Transform cameraPivot = player.transform.Find("CameraPivot");
 
 		if (pv.isMine){
 			// Enable local scripts
 			player.GetComponent<AvatarMovement>().enabled = true;
-			cameraPivot.GetComponent<CameraXPivot>().enabled = true;
+			
 			player.GetComponent<DemoShooting>().enabled = true;
 
 			Camera camera = GameObject.Find("MainCamera").camera;
-			camera.transform.parent = cameraPivot;
+			camera.GetComponent<Mouselook>().enabled = true;
+			camera.transform.parent = player.transform;
 			// Set the player's camera as the Main Camera
 			camera.tag = "MainCamera";
 			Vector3 pos = new Vector3(1.0f, 1.2f, -3.0f);
-			camera.transform.position = cameraPivot.transform.position + pos;
-			camera.transform.rotation = cameraPivot.transform.rotation;
+			camera.transform.position = player.transform.position + pos;
+			camera.transform.rotation = new Quaternion(0, 0, 0 ,0);
 			player.gameObject.tag = "Player";
 		}
 	}
