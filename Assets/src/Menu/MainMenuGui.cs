@@ -3,8 +3,7 @@ using System.Collections;
 
 public class MainMenuGui : MonoBehaviour {
 
-	[SerializeField]
-	Texture2D _mainMenuBG;
+
 	[SerializeField]
 	Texture2D _startGameButton;
 	[SerializeField]
@@ -16,7 +15,6 @@ public class MainMenuGui : MonoBehaviour {
 	}
 
 	void OnGUI(){
-		GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), _mainMenuBG);
 		
 		GUILayout.BeginArea(_buttonLayoutRect);
 		
