@@ -9,6 +9,7 @@ public class EscapeMenu: MonoBehaviour {
 	[SerializeField]
 	public int menueHeight = 300;
 	private GUIHandler handler;
+	[SerializeField]
 
 	static Rect menuBoxRect;
 
@@ -30,15 +31,12 @@ public class EscapeMenu: MonoBehaviour {
 		
 		PhotonNetwork.DestroyPlayerObjects(PhotonNetwork.player);
 		PhotonNetwork.LeaveRoom();
+		
 	}
 	
 	void OnLeftRoom(){
 		
 		Application.LoadLevel("mainMenu");
-	}
-	
-	private void QuitGame(){
-		Application.Quit();
 	}
 
 	public void DrawMenu(){
@@ -49,16 +47,22 @@ public class EscapeMenu: MonoBehaviour {
 		// Draw bounding box (this is just for looksies)
 		GUI.Box(menuBoxRect, "");
 		GUILayout.BeginArea(menuBoxRect);
-		if (GUILayout.Button("Get Back In The Fight!", GUILayout.MinHeight(50))){
+		if (GUILayout.Button("Get Back In The Fight", GUILayout.MinHeight(50))){
 			ResumeGame();
 		}
-		GUILayout.Space(7);
-		if (GUILayout.Button("Abandon Your Team.", GUILayout.MinHeight(50))){
+		if (GUILayout.Button("Settings", GUILayout.MinHeight(50))){
+			handler.DrawOpenMenu = handler.settingsMenu.DrawMenu;
+		}
+		GUILayout.Space(3);
+		if (GUILayout.Button("Abandon Your Team", GUILayout.MinHeight(50))){
 			LogOutToLobby();
 		}
-		GUILayout.Space(7);
-		if (GUILayout.Button("Back Through The Rift...", GUILayout.MinHeight(50))){
-			QuitGame();
+		if (GUILayout.Button("Log Out", GUILayout.MinHeight(50))){
+			GameObject.FindGameObjectWithTag("Network").GetComponent<NetworkManager>().DisconnectFromServer();
+		}
+		GUILayout.Space(3);
+		if (GUILayout.Button("Quit", GUILayout.MinHeight(50))){
+			Application.Quit();
 		}
 		GUILayout.EndArea();
 		
