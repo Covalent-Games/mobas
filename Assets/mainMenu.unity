@@ -154,9 +154,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 20826279}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 515955417}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!114 &20826285
@@ -170,8 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4907dbb71404ed247a0618d12b0806c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startGameButton: {fileID: 2800000, guid: 9e2d60443426c474d967a89bd2735f78, type: 3}
-  _quitButton: {fileID: 2800000, guid: d688b5edfa77f7f41b35b5681b221f02, type: 3}
+  mainMenuSkin: {fileID: 11400000, guid: 7ba55b9dbd022a7479255f424860f58b, type: 2}
 --- !u!1 &515955415
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,6 +181,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 515955417}
   - 82: {fileID: 515955416}
+  - 114: {fileID: 515955418}
   m_Layer: 0
   m_Name: MusicLoop
   m_TagString: Untagged
@@ -253,11 +254,22 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 515955415}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.49011612e-08, y: .999998093, z: -10.0000019}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 20826284}
+  m_RootOrder: 0
+--- !u!114 &515955418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 515955415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daa7f2e8cd7e1424581afa7c960a43c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &665013149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1352,7 +1364,7 @@ GameObject:
   - 114: {fileID: 1198765538}
   m_Layer: 0
   m_Name: NetworkObject
-  m_TagString: Untagged
+  m_TagString: Network
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1498,7 +1510,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: .5
+          value: .300000012
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -2449,7 +2461,7 @@ ParticleSystem:
     collisionMessages: 0
   SubModule:
     enabled: 0
-    subEmitterBirth: {fileID: 0}
+    subEmitterBirth: {fileID: 665013151}
     subEmitterBirth1: {fileID: 0}
     subEmitterCollision: {fileID: 0}
     subEmitterCollision1: {fileID: 0}

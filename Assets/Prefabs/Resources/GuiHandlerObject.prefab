@@ -40,8 +40,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8145d353d7d23445a40ebc795f14927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  guiSkin: {fileID: 0}
   crosshair: {fileID: 2800000, guid: 7bae1b5db88c69944b3974a688a9e22b, type: 3}
   crosshairSize: 15
+  escapeMenu: {fileID: 0}
+  inventoryMenu: {fileID: 0}
+  settingsMenu: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53,6 +57,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 118fa6172adb96447b52b74d88165e51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuWidth: 300
+  menueHeight: 300
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
