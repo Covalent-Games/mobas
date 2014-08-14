@@ -1217,9 +1217,8 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
                 SendMonoMessage(PhotonNetworkingMessage.OnUpdatedFriendList);
                 break;
 			
-			case OperationCode.TestTest:
-				Debug.Log(operationResponse.Parameters[100]);
-				Debug.Log(operationResponse.Parameters[101]);
+			case OperationCode.GameLogicOperation:
+				Debug.Log(operationResponse.Parameters[1]);
 				break;
 
             default:

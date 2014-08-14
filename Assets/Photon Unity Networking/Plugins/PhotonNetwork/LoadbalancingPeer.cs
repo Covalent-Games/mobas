@@ -808,7 +808,7 @@ public class OperationCode
     /// <summary>(220) Get list of regional servers from a NameServer.</summary>
     public const byte GetRegions = 220;
     
-    public const byte TestTest = 99;
+    public const byte GameLogicOperation = 77;
 }
 
 /// <summary>
