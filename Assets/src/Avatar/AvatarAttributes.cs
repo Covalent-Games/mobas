@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// This class contains functions for setting the players appearance, weapon, or other such attributes.
+/// </summary>
 public class AvatarAttributes : MonoBehaviour {
-	//This class contains functions for setting the players appearance, weapon, or other such attributes.
 
 	PhotonView photonView;
 	
