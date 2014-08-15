@@ -1,0 +1,15 @@
+﻿Installing assembly 'C:\Program Files\Photon Server\deploy\bin_Tools\dashboard\PhotonDashboard.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Program Files\Photon Server\deploy\bin_Tools\dashboard\PhotonDashboard.exe
+   i = 
+   logfile = C:\Program Files\Photon Server\deploy\bin_Tools\dashboard\PhotonDashboard.InstallLog
+Installing service PhontonDashboardService...
+Service PhontonDashboardService has been successfully installed.
+Creating EventLog source PhontonDashboardService in log Application...
+Committing assembly 'C:\Program Files\Photon Server\deploy\bin_Tools\dashboard\PhotonDashboard.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\Program Files\Photon Server\deploy\bin_Tools\dashboard\PhotonDashboard.exe
+   i = 
+   logfile = C:\Program Files\Photon Server\deploy\bin_Tools\dashboard\PhotonDashboard.InstallLog

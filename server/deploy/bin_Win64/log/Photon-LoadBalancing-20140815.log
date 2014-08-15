@@ -1,0 +1,20 @@
+2196: 00:34:41.498 - Restarting application: "Master" due to file changes
+2196: 00:34:41.498 - Application: "Master" restart request (abort existing connections)
+2196: 00:34:41.586 - Taking reference on default app domain
+2196: 00:34:41.633 - Application: "Master" started in app domain: 26
+2196: 00:34:41.922 - RequestApplicationStop: 25
+2196: 00:34:41.930 - Application: "Master" stopped in app domain: 25 (abort existing connections)
+2196: 00:34:41.930 - Application: "Master" restart complete.
+2392: 00:34:41.934 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+2388: 00:34:41.950 - Unloading Domain: ApplicationName = 'Master', DomainId='25'
+2392: 00:34:41.951 - CManagedHost::OnDomainUnload() - 25
+2196: 00:35:04.883 - Restarting application: "Master" due to file changes
+2196: 00:35:04.883 - Application: "Master" restart request (abort existing connections)
+2196: 00:35:04.965 - Taking reference on default app domain
+2196: 00:35:05.053 - Application: "Master" started in app domain: 27
+2196: 00:35:05.348 - RequestApplicationStop: 26
+2196: 00:35:05.360 - Application: "Master" stopped in app domain: 26 (abort existing connections)
+2196: 00:35:05.360 - Application: "Master" restart complete.
+2392: 00:35:05.363 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+2388: 00:35:05.379 - Unloading Domain: ApplicationName = 'Master', DomainId='26'
+2392: 00:35:05.379 - CManagedHost::OnDomainUnload() - 26
