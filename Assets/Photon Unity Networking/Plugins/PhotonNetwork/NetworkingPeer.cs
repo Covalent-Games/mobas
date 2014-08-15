@@ -1217,9 +1217,11 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
                 SendMonoMessage(PhotonNetworkingMessage.OnUpdatedFriendList);
                 break;
 			
-			case OperationCode.TestTest:
-				Debug.Log(operationResponse.Parameters[100]);
-				Debug.Log(operationResponse.Parameters[101]);
+			case OperationCode.GameLogicOperation:
+				//TODO Piggyback for custom responses
+				Debug.Log(string.Format("Received response for GameLogicOperation:{0}", operationResponse.Parameters[0]));
+				// A demonstration of how to read a response
+				Debug.Log(operationResponse.Parameters[LogicParameterCode.SectorInfoDict]);
 				break;
 
             default:

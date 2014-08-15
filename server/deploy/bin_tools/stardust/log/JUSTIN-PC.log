@@ -1,0 +1,215 @@
+2014-06-30 17:26:43,280 [1] INFO  Photon.StarDust.Client.Program - Starting 5 games with 3 players
+2014-06-30 17:26:44,292 [10] DEBUG Photon.StarDust.Client.Program - peers: 2, r-ev: 6.436073, ur-ev: 0, r-op: 11.79946, ur-op: 0, res: 2.14535, r-rtt: 32.66667, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:26:45,298 [14] DEBUG Photon.StarDust.Client.Program - peers: 3, r-ev: 29.75286, ur-ev: 0, r-op: 21.81877, ur-op: 0, res: 0.9917622, r-rtt: 32.2963, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:26:46,312 [5] DEBUG Photon.StarDust.Client.Program - peers: 3, r-ev: 55.2258, ur-ev: 0, r-op: 26.62673, ur-op: 0, res: 0, r-rtt: 29.75, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:26:46,405 [4] INFO  Photon.StarDust.Client.Program - [2532] Started game JUSTIN-PC(2532)1 with 3 clients
+2014-06-30 17:26:47,326 [15] DEBUG Photon.StarDust.Client.Program - peers: 5, r-ev: 63.10896, ur-ev: 0, r-op: 41.41524, ur-op: 0, res: 1.972154, r-rtt: 28.68852, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:26:48,340 [5] DEBUG Photon.StarDust.Client.Program - peers: 6, r-ev: 102.5637, ur-ev: 0, r-op: 51.28186, ur-op: 0, res: 0.9861898, r-rtt: 29.88235, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:26:48,412 [4] INFO  Photon.StarDust.Client.Program - [2532] Started game JUSTIN-PC(2532)2 with 3 clients
+2014-06-30 17:26:49,354 [14] DEBUG Photon.StarDust.Client.Program - peers: 7, r-ev: 110.4488, ur-ev: 0, r-op: 64.09978, ur-op: 0, res: 0.9861503, r-rtt: 30.21818, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:26:50,368 [6] DEBUG Photon.StarDust.Client.Program - peers: 8, r-ev: 127.2204, ur-ev: 0, r-op: 71.99293, ur-op: 0, res: 0.9862047, r-rtt: 31.64567, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:26:51,382 [14] DEBUG Photon.StarDust.Client.Program - peers: 9, r-ev: 149.8709, ur-ev: 0, r-op: 79.86546, ur-op: 0, res: 0.9859933, r-rtt: 31.26175, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:26:51,490 [4] INFO  Photon.StarDust.Client.Program - [2532] Started game JUSTIN-PC(2532)3 with 3 clients
+2014-06-30 17:26:52,396 [12] DEBUG Photon.StarDust.Client.Program - peers: 10, r-ev: 166.6603, ur-ev: 0, r-op: 91.71249, ur-op: 0, res: 0.9861556, r-rtt: 29.98809, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:26:53,410 [14] DEBUG Photon.StarDust.Client.Program - peers: 11, r-ev: 184.4074, ur-ev: 0, r-op: 99.59972, ur-op: 0, res: 0.9861358, r-rtt: 31.04324, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:26:54,424 [14] DEBUG Photon.StarDust.Client.Program - peers: 12, r-ev: 198.2327, ur-ev: 0, r-op: 106.5131, ur-op: 0, res: 0.9862323, r-rtt: 30.4596, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:26:54,868 [4] INFO  Photon.StarDust.Client.Program - [2532] Started game JUSTIN-PC(2532)4 with 3 clients
+2014-06-30 17:26:55,438 [6] DEBUG Photon.StarDust.Client.Program - peers: 13, r-ev: 223.8724, ur-ev: 0, r-op: 115.388, ur-op: 0, res: 0.9862221, r-rtt: 30.63717, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:26:56,453 [15] DEBUG Photon.StarDust.Client.Program - peers: 14, r-ev: 219.7242, ur-ev: 0, r-op: 119.2226, ur-op: 0, res: 0.9853114, r-rtt: 30.85973, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:26:57,466 [14] DEBUG Photon.StarDust.Client.Program - peers: 14, r-ev: 239.8571, ur-ev: 0, r-op: 127.3315, ur-op: 0, res: 0, r-rtt: 30.69959, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:26:58,416 [4] INFO  Photon.StarDust.Client.Program - [2532] Started game JUSTIN-PC(2532)5 with 3 clients
+2014-06-30 17:26:58,480 [14] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 271.1305, ur-ev: 0, r-op: 137.0441, ur-op: 0, res: 0.985929, r-rtt: 31.0625, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:26:59,494 [13] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 274.1327, ur-ev: 0, r-op: 139.0385, ur-op: 0, res: 0, r-rtt: 31.07194, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:00,508 [4] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 280.1213, ur-ev: 0, r-op: 137.1016, ur-op: 0, res: 0, r-rtt: 30.53873, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:01,523 [4] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 272.145, ur-ev: 0, r-op: 138.0445, ur-op: 0, res: 0, r-rtt: 31.23913, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:02,537 [4] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 276.1487, ur-ev: 0, r-op: 138.0744, ur-op: 0, res: 0, r-rtt: 31.08214, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:03,551 [4] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 276.1138, ur-ev: 0, r-op: 137.0707, ur-op: 0, res: 0, r-rtt: 30.61429, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:04,564 [13] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 273.4487, ur-ev: 0, r-op: 135.2436, ur-op: 0, res: 0, r-rtt: 30.90253, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:05,578 [4] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 271.1636, ur-ev: 0, r-op: 137.0608, ur-op: 0, res: 0, r-rtt: 30.66909, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:06,592 [14] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 274.1287, ur-ev: 0, r-op: 139.0365, ur-op: 0, res: 0, r-rtt: 30.86691, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:07,606 [14] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 278.1245, ur-ev: 0, r-op: 137.0898, ur-op: 0, res: 0, r-rtt: 30.36879, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:08,620 [5] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 274.1736, ur-ev: 0, r-op: 138.073, ur-op: 0, res: 0, r-rtt: 30.80576, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:09,634 [5] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 276.1422, ur-ev: 0, r-op: 137.0848, ur-op: 0, res: 0, r-rtt: 31.10714, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:10,648 [12] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 276.101, ur-ev: 0, r-op: 137.0645, ur-op: 0, res: 0, r-rtt: 31.07143, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:11,662 [10] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 274.1656, ur-ev: 0, r-op: 136.0966, ur-op: 0, res: 0, r-rtt: 31.06475, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:12,676 [12] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 270.265, ur-ev: 0, r-op: 137.1053, ur-op: 0, res: 0, r-rtt: 30.36496, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:13,690 [6] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 273.9904, ur-ev: 0, r-op: 137.9807, ur-op: 0, res: 0, r-rtt: 30.80576, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:14,704 [10] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 278.2041, ur-ev: 0, r-op: 138.1155, ur-op: 0, res: 0, r-rtt: 30.67376, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:15,718 [12] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 274.1277, ur-ev: 0, r-op: 138.0499, ur-op: 0, res: 0, r-rtt: 30.43885, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:16,732 [12] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 276.156, ur-ev: 0, r-op: 138.078, ur-op: 0, res: 0, r-rtt: 30.975, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:17,746 [13] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 276.105, ur-ev: 0, r-op: 137.0664, ur-op: 0, res: 0, r-rtt: 30.46428, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:18,761 [13] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 274.1394, ur-ev: 0, r-op: 135.0975, ur-op: 0, res: 0, r-rtt: 31.04317, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:19,776 [10] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 269.9375, ur-ev: 0, r-op: 136.9391, ur-op: 0, res: 0, r-rtt: 31.19708, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:20,789 [10] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 274.4035, ur-ev: 0, r-op: 139.1759, ur-op: 0, res: 0, r-rtt: 30.48921, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:21,803 [12] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 280.1102, ur-ev: 0, r-op: 137.0962, ur-op: 0, res: 0, r-rtt: 30.05986, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:22,817 [10] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 274.1679, ur-ev: 0, r-op: 137.084, ur-op: 0, res: 0, r-rtt: 30.8777, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:23,830 [14] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 274.4166, ur-ev: 0, r-op: 139.1825, ur-op: 0, res: 0, r-rtt: 30.56115, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:24,844 [13] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 276.1099, ur-ev: 0, r-op: 137.0688, ur-op: 0, res: 0, r-rtt: 30.45, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:25,858 [14] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 274.168, ur-ev: 0, r-op: 135.1115, ur-op: 0, res: 0, r-rtt: 30.85252, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:26,873 [12] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 269.8845, ur-ev: 0, r-op: 136.9036, ur-op: 0, res: 0, r-rtt: 31.87956, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:27,887 [14] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 274.2586, ur-ev: 0, r-op: 139.1112, ur-op: 0, res: 0, r-rtt: 31.27698, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:28,900 [14] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 278.3329, ur-ev: 0, r-op: 137.1924, ur-op: 0, res: 0, r-rtt: 31.12057, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:29,915 [14] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 273.9116, ur-ev: 0, r-op: 137.9412, ur-op: 0, res: 0, r-rtt: 31.33093, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:30,928 [10] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 276.3364, ur-ev: 0, r-op: 138.1682, ur-op: 0, res: 0, r-rtt: 31.025, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:31,942 [4] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 276.1484, ur-ev: 0, r-op: 134.1292, ur-op: 0, res: 0, r-rtt: 30.75714, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:32,957 [14] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 267.876, ur-ev: 0, r-op: 137.8774, ur-op: 0, res: 0, r-rtt: 30.80147, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:33,970 [14] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 276.4594, ur-ev: 0, r-op: 137.2423, ur-op: 0, res: 0, r-rtt: 30.67143, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:34,984 [4] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 274.0535, ur-ev: 0, r-op: 138.9984, ur-op: 0, res: 0, r-rtt: 30.60791, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:35,999 [4] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 277.886, ur-ev: 0, r-op: 136.9722, ur-op: 0, res: 0, r-rtt: 32.31915, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:37,013 [12] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 274.5366, ur-ev: 0, r-op: 138.2559, ur-op: 0, res: 0, r-rtt: 30.41727, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:38,027 [7] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 276.0958, ur-ev: 0, r-op: 138.0478, ur-op: 0, res: 0, r-rtt: 30.98214, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:39,041 [12] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 276.0951, ur-ev: 0, r-op: 134.1034, ur-op: 0, res: 0, r-rtt: 31.30714, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:40,056 [4] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 268.0207, ur-ev: 0, r-op: 137.9518, ur-op: 0, res: 0, r-rtt: 30.80882, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:41,069 [4] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 276.3566, ur-ev: 0, r-op: 137.1913, ur-op: 0, res: 0, r-rtt: 30.43929, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:42,084 [10] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 273.8806, ur-ev: 0, r-op: 138.9107, ur-op: 0, res: 0, r-rtt: 30.94245, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:43,097 [10] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 278.3818, ur-ev: 0, r-op: 137.2166, ur-op: 0, res: 0, r-rtt: 31.14184, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:44,110 [12] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 274.4349, ur-ev: 0, r-op: 138.2046, ur-op: 0, res: 0, r-rtt: 30.65468, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 33, flsh-ev 1.974356, flsh-op 0.9871783
+2014-06-30 17:27:45,124 [4] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 276.1394, ur-ev: 0, r-op: 138.0696, ur-op: 0, res: 0, r-rtt: 31.50714, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:46,138 [10] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 278.076, ur-ev: 0, r-op: 134.1076, ur-op: 0, res: 0, r-rtt: 30.66667, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:47,153 [13] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 265.9313, ur-ev: 0, r-op: 137.8903, ur-op: 0, res: 0, r-rtt: 30.62593, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 31, flsh-ev 1.969862, flsh-op 0.9849312
+2014-06-30 17:27:48,166 [10] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 278.3751, ur-ev: 0, r-op: 137.2132, ur-op: 0, res: 0, r-rtt: 30.44326, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:49,181 [7] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 271.8661, ur-ev: 0, r-op: 138.8881, ur-op: 0, res: 0, r-rtt: 30.63768, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 35, flsh-ev 1.970044, flsh-op 0.985022
+2014-06-30 17:27:50,195 [7] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 277.2397, ur-ev: 0, r-op: 137.1398, ur-op: 0, res: 0, r-rtt: 31.28114, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:51,209 [7] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 275.0903, ur-ev: 0, r-op: 138.0382, ur-op: 0, res: 0, r-rtt: 30.6595, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:52,222 [15] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 276.424, ur-ev: 0, r-op: 138.212, ur-op: 0, res: 0, r-rtt: 31.16072, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 35.5, flsh-ev 1.974458, flsh-op 0.9872289
+2014-06-30 17:27:53,236 [4] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 275.1669, ur-ev: 0, r-op: 134.1315, ur-op: 0, res: 0, r-rtt: 31.29749, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:54,251 [7] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 269.2472, ur-ev: 0, r-op: 137.0893, ur-op: 0, res: 0, r-rtt: 30.67766, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:55,265 [5] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 276.1518, ur-ev: 0, r-op: 138.0759, ur-op: 0, res: 0, r-rtt: 31.16429, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 30, flsh-ev 1.972513, flsh-op 0.9862565
+2014-06-30 17:27:56,279 [4] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 276.1015, ur-ev: 0, r-op: 138.0507, ur-op: 0, res: 0, r-rtt: 30.57143, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:57,293 [7] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 274.174, ur-ev: 0, r-op: 138.0733, ur-op: 0, res: 0, r-rtt: 30.79137, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:58,307 [4] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 276.1305, ur-ev: 0, r-op: 134.1205, ur-op: 0, res: 0, r-rtt: 31.48571, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:27:59,321 [15] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 268.1871, ur-ev: 0, r-op: 141.9814, ur-op: 0, res: 0, r-rtt: 30.74265, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:00,335 [15] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 284.0583, ur-ev: 0, r-op: 134.1386, ur-op: 0, res: 0, r-rtt: 30.88889, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:01,349 [4] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 268.2265, ur-ev: 0, r-op: 137.0716, ur-op: 0, res: 0, r-rtt: 31.07353, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:02,363 [12] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 276.1349, ur-ev: 0, r-op: 138.0674, ur-op: 0, res: 0, r-rtt: 30.32857, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:03,377 [12] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 274.0879, ur-ev: 0, r-op: 138.0299, ur-op: 0, res: 0, r-rtt: 30.71223, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:04,391 [12] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 278.1672, ur-ev: 0, r-op: 138.0972, ur-op: 0, res: 0, r-rtt: 31.01773, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:05,405 [13] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 274.1372, ur-ev: 0, r-op: 134.1103, ur-op: 0, res: 0, r-rtt: 30.93165, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:06,419 [14] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 268.2252, ur-ev: 0, r-op: 142.0016, ur-op: 0, res: 0, r-rtt: 30.62868, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:07,433 [6] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 284.0389, ur-ev: 0, r-op: 133.1432, ur-op: 0, res: 0, r-rtt: 30.58681, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:08,447 [6] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 268.2146, ur-ev: 0, r-op: 139.0377, ur-op: 0, res: 0, r-rtt: 30.84559, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:08,947 [14] ERROR Photon.StarDust.Client.Connections.ClientConnection - 56140151: Receiving failed. SocketException: ConnectionReset 
+2014-06-30 17:28:08,947 [13] ERROR Photon.StarDust.Client.Connections.ClientConnection - 58366981: Receiving failed. SocketException: ConnectionReset 
+2014-06-30 17:28:08,947 [4] ERROR Photon.StarDust.Client.Connections.ClientConnection - 54135081: Receiving failed. SocketException: ConnectionReset 
+2014-06-30 17:28:08,948 [6] ERROR Photon.StarDust.Client.Connections.ClientConnection - 17653682: Receiving failed. SocketException: ConnectionReset 
+2014-06-30 17:28:08,949 [14] INFO  Photon.StarDust.Client.ConnectionStates.Lite.Playing - DisconnectByServer
+2014-06-30 17:28:08,950 [13] INFO  Photon.StarDust.Client.ConnectionStates.Lite.Playing - DisconnectByServer
+2014-06-30 17:28:08,951 [4] INFO  Photon.StarDust.Client.ConnectionStates.Lite.Playing - DisconnectByServer
+2014-06-30 17:28:08,953 [13] WARN  Photon.StarDust.Client.ConnectionStates.ConnectionStateBase - 58366981: OnPeerStatusCallback - unexpected return code Disconnect
+2014-06-30 17:28:08,953 [13] ERROR Photon.StarDust.Client.Connections.ClientConnection - 38583594: Receiving failed. SocketException: ConnectionReset 
+2014-06-30 17:28:08,953 [4] WARN  Photon.StarDust.Client.ConnectionStates.ConnectionStateBase - 54135081: OnPeerStatusCallback - unexpected return code Disconnect
+2014-06-30 17:28:08,954 [14] WARN  Photon.StarDust.Client.ConnectionStates.ConnectionStateBase - 56140151: OnPeerStatusCallback - unexpected return code Disconnect
+2014-06-30 17:28:08,954 [14] ERROR Photon.StarDust.Client.Connections.ClientConnection - 54718731: Receiving failed. SocketException: ConnectionReset 
+2014-06-30 17:28:08,954 [14] INFO  Photon.StarDust.Client.ConnectionStates.Lite.Playing - DisconnectByServer
+2014-06-30 17:28:08,955 [14] WARN  Photon.StarDust.Client.ConnectionStates.ConnectionStateBase - 54718731: OnPeerStatusCallback - unexpected return code Disconnect
+2014-06-30 17:28:08,959 [6] INFO  Photon.StarDust.Client.ConnectionStates.Lite.Playing - DisconnectByServer
+2014-06-30 17:28:08,959 [6] WARN  Photon.StarDust.Client.ConnectionStates.ConnectionStateBase - 17653682: OnPeerStatusCallback - unexpected return code Disconnect
+2014-06-30 17:28:08,960 [6] ERROR Photon.StarDust.Client.Connections.ClientConnection - 42194754: Receiving failed. SocketException: ConnectionReset 
+2014-06-30 17:28:08,960 [13] INFO  Photon.StarDust.Client.ConnectionStates.Lite.Playing - DisconnectByServer
+2014-06-30 17:28:08,960 [6] INFO  Photon.StarDust.Client.ConnectionStates.Lite.Playing - DisconnectByServer
+2014-06-30 17:28:08,960 [13] WARN  Photon.StarDust.Client.ConnectionStates.ConnectionStateBase - 38583594: OnPeerStatusCallback - unexpected return code Disconnect
+2014-06-30 17:28:08,960 [14] ERROR Photon.StarDust.Client.Connections.ClientConnection - 49508310: Receiving failed. SocketException: ConnectionReset 
+2014-06-30 17:28:08,960 [13] ERROR Photon.StarDust.Client.Connections.ClientConnection - 51781231: Receiving failed. SocketException: ConnectionReset 
+2014-06-30 17:28:08,960 [6] WARN  Photon.StarDust.Client.ConnectionStates.ConnectionStateBase - 42194754: OnPeerStatusCallback - unexpected return code Disconnect
+2014-06-30 17:28:08,961 [14] INFO  Photon.StarDust.Client.ConnectionStates.Lite.Playing - DisconnectByServer
+2014-06-30 17:28:08,962 [14] WARN  Photon.StarDust.Client.ConnectionStates.ConnectionStateBase - 49508310: OnPeerStatusCallback - unexpected return code Disconnect
+2014-06-30 17:28:08,962 [14] ERROR Photon.StarDust.Client.Connections.ClientConnection - 108048: Receiving failed. SocketException: ConnectionReset 
+2014-06-30 17:28:08,962 [14] INFO  Photon.StarDust.Client.ConnectionStates.Lite.Playing - DisconnectByServer
+2014-06-30 17:28:08,962 [14] WARN  Photon.StarDust.Client.ConnectionStates.ConnectionStateBase - 108048: OnPeerStatusCallback - unexpected return code Disconnect
+2014-06-30 17:28:08,963 [14] ERROR Photon.StarDust.Client.Connections.ClientConnection - 6590935: Receiving failed. SocketException: ConnectionReset 
+2014-06-30 17:28:08,963 [14] INFO  Photon.StarDust.Client.ConnectionStates.Lite.Playing - DisconnectByServer
+2014-06-30 17:28:08,963 [14] WARN  Photon.StarDust.Client.ConnectionStates.ConnectionStateBase - 6590935: OnPeerStatusCallback - unexpected return code Disconnect
+2014-06-30 17:28:08,963 [14] ERROR Photon.StarDust.Client.Connections.ClientConnection - 66502754: Receiving failed. SocketException: ConnectionReset 
+2014-06-30 17:28:08,963 [14] INFO  Photon.StarDust.Client.ConnectionStates.Lite.Playing - DisconnectByServer
+2014-06-30 17:28:08,963 [14] WARN  Photon.StarDust.Client.ConnectionStates.ConnectionStateBase - 66502754: OnPeerStatusCallback - unexpected return code Disconnect
+2014-06-30 17:28:08,963 [14] ERROR Photon.StarDust.Client.Connections.ClientConnection - 30136159: Receiving failed. SocketException: ConnectionReset 
+2014-06-30 17:28:08,963 [14] INFO  Photon.StarDust.Client.ConnectionStates.Lite.Playing - DisconnectByServer
+2014-06-30 17:28:08,977 [4] ERROR Photon.StarDust.Client.Connections.ClientConnection - 63094882: Receiving failed. SocketException: ConnectionReset 
+2014-06-30 17:28:08,977 [13] INFO  Photon.StarDust.Client.ConnectionStates.Lite.Playing - DisconnectByServer
+2014-06-30 17:28:08,978 [14] WARN  Photon.StarDust.Client.ConnectionStates.ConnectionStateBase - 30136159: OnPeerStatusCallback - unexpected return code Disconnect
+2014-06-30 17:28:08,978 [14] ERROR Photon.StarDust.Client.Connections.ClientConnection - 26366415: Receiving failed. SocketException: ConnectionReset 
+2014-06-30 17:28:08,978 [14] INFO  Photon.StarDust.Client.ConnectionStates.Lite.Playing - DisconnectByServer
+2014-06-30 17:28:08,978 [14] WARN  Photon.StarDust.Client.ConnectionStates.ConnectionStateBase - 26366415: OnPeerStatusCallback - unexpected return code Disconnect
+2014-06-30 17:28:08,979 [4] INFO  Photon.StarDust.Client.ConnectionStates.Lite.Playing - DisconnectByServer
+2014-06-30 17:28:08,979 [13] WARN  Photon.StarDust.Client.ConnectionStates.ConnectionStateBase - 51781231: OnPeerStatusCallback - unexpected return code Disconnect
+2014-06-30 17:28:08,979 [4] WARN  Photon.StarDust.Client.ConnectionStates.ConnectionStateBase - 63094882: OnPeerStatusCallback - unexpected return code Disconnect
+2014-06-30 17:28:09,461 [13] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 128.2145, ur-ev: 0, r-op: 68.05232, ur-op: 0, res: 0, r-rtt: 31.33846, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:10,475 [13] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:11,490 [5] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:12,504 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:13,518 [5] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:14,532 [13] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:15,546 [13] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:16,560 [6] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:17,574 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:18,588 [6] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:19,602 [5] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:20,616 [13] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:21,630 [6] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:22,642 [14] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:23,656 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:24,670 [5] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:25,684 [5] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:26,698 [6] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:27,712 [13] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:28,727 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:29,743 [5] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:30,755 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:31,769 [13] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:32,783 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:33,797 [13] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:34,811 [5] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:35,825 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:36,839 [13] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:37,853 [5] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:38,867 [13] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:39,881 [13] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:40,895 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:41,909 [5] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:42,923 [6] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:43,937 [6] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:44,951 [5] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:45,965 [6] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:46,980 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:47,996 [6] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:49,008 [6] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:50,022 [6] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:51,035 [5] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:52,049 [13] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:53,063 [13] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:54,077 [6] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:55,091 [5] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:56,105 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:57,119 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:58,133 [6] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:28:59,147 [6] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:00,161 [5] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:01,175 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:02,188 [13] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:03,202 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:04,217 [6] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:05,231 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:06,245 [5] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:07,259 [13] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:08,273 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:09,287 [5] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:10,301 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:11,315 [6] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:12,329 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:13,343 [6] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:14,357 [13] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:15,371 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:16,385 [5] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:17,399 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:18,413 [6] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:19,427 [13] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:20,441 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:21,456 [5] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:22,469 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:23,483 [5] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:24,497 [13] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:25,511 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:26,525 [6] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:27,539 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:28,553 [6] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2014-06-30 17:29:29,567 [4] DEBUG Photon.StarDust.Client.Program - peers: 0, r-ev: 0, ur-ev: 0, r-op: 0, ur-op: 0, res: 0, r-rtt: 0, ur-rtt: 0, rtt: 0, var: 0, flsh-rtt: 0, flsh-ev 0, flsh-op 0
