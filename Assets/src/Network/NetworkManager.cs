@@ -47,9 +47,8 @@ public class NetworkManager : MonoBehaviour {
 			Debug.Log("Connected to lobby");
 			// parameters contains ALL the data you want to send the server for this operation
 			var parameters = new Dictionary<byte, object>();
-			// TestRequest helps the server identify what to do with 'var parameters'
-			parameters.Add(LogicParameterCode.TestRequest, (byte)0);
-			Debug.Log(string.Format("Sending Operation {0}", OperationCode.GameLogicOperation));
+			// LogicRequestID tells the server which method to run, and is REQUIRED for a GameLogicOperation.
+			parameters.Add(LogicOperationCode.LogicRequestID, LogicOperationCode.GetSectorInfo);
 			// Currently the only way to execute the request. 
 			PhotonNetwork.networkingPeer.OpCustom(OperationCode.GameLogicOperation, parameters, true);
 		}

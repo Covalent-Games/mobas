@@ -1218,7 +1218,10 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
                 break;
 			
 			case OperationCode.GameLogicOperation:
-				Debug.Log(operationResponse.Parameters[1]);
+				//TODO Piggyback for custom responses
+				Debug.Log(string.Format("Received response for GameLogicOperation:{0}", operationResponse.Parameters[0]));
+				// A demonstration of how to read a response
+				Debug.Log(operationResponse.Parameters[LogicParameterCode.SectorInfoDict]);
 				break;
 
             default:

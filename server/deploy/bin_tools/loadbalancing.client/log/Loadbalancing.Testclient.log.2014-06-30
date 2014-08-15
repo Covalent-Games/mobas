@@ -1,0 +1,50 @@
+2014-06-30 17:23:36,049 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Connecting to master server at 127.0.0.1:4530 ..
+2014-06-30 17:23:36,106 [3] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Successfully connected to master
+2014-06-30 17:23:36,113 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Creating game: id=JUSTIN-PC(5368)1
+2014-06-30 17:23:36,252 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Connecting to master server at 127.0.0.1:4530 ..
+2014-06-30 17:23:36,253 [3] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Successfully connected to master
+2014-06-30 17:23:36,273 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Joining random game ...
+2014-06-30 17:23:36,452 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Connecting to master server at 127.0.0.1:4530 ..
+2014-06-30 17:23:36,453 [3] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Successfully connected to master
+2014-06-30 17:23:36,453 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Joining random game ...
+2014-06-30 17:23:36,545 [4] INFO  Photon.LoadBalancing.TestClient.Program - [5368] Started game JUSTIN-PC(5368)1 with 3 clients
+2014-06-30 17:23:36,547 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Connecting to master server at 127.0.0.1:4530 ..
+2014-06-30 17:23:36,547 [3] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Successfully connected to master
+2014-06-30 17:23:36,547 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Creating game: id=JUSTIN-PC(5368)2
+2014-06-30 17:23:36,745 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Connecting to master server at 127.0.0.1:4530 ..
+2014-06-30 17:23:36,746 [3] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Successfully connected to master
+2014-06-30 17:23:36,746 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Joining random game ...
+2014-06-30 17:23:36,779 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Connecting to master server at 127.0.0.1:4530 ..
+2014-06-30 17:23:36,780 [3] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Successfully connected to master
+2014-06-30 17:23:36,780 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Joining random game ...
+2014-06-30 17:23:36,953 [4] INFO  Photon.LoadBalancing.TestClient.Program - [5368] Started game JUSTIN-PC(5368)2 with 3 clients
+2014-06-30 17:23:36,953 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Connecting to master server at 127.0.0.1:4530 ..
+2014-06-30 17:23:36,954 [3] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Successfully connected to master
+2014-06-30 17:23:36,954 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Creating game: id=JUSTIN-PC(5368)3
+2014-06-30 17:23:37,197 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Connecting to master server at 127.0.0.1:4530 ..
+2014-06-30 17:23:37,198 [3] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Successfully connected to master
+2014-06-30 17:23:37,198 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Joining random game ...
+2014-06-30 17:23:37,301 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Connecting to master server at 127.0.0.1:4530 ..
+2014-06-30 17:23:37,302 [3] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Successfully connected to master
+2014-06-30 17:23:37,302 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Joining random game ...
+2014-06-30 17:23:37,572 [4] INFO  Photon.LoadBalancing.TestClient.Program - [5368] Started game JUSTIN-PC(5368)3 with 3 clients
+2014-06-30 17:23:37,572 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Connecting to master server at 127.0.0.1:4530 ..
+2014-06-30 17:23:37,573 [3] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Successfully connected to master
+2014-06-30 17:23:37,573 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Creating game: id=JUSTIN-PC(5368)4
+2014-06-30 17:23:37,827 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Connecting to master server at 127.0.0.1:4530 ..
+2014-06-30 17:23:37,828 [3] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Successfully connected to master
+2014-06-30 17:23:37,828 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Joining random game ...
+2014-06-30 17:23:37,883 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Connecting to master server at 127.0.0.1:4530 ..
+2014-06-30 17:23:37,883 [3] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Successfully connected to master
+2014-06-30 17:23:37,883 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Joining random game ...
+2014-06-30 17:23:37,984 [4] INFO  Photon.LoadBalancing.TestClient.Program - [5368] Started game JUSTIN-PC(5368)4 with 3 clients
+2014-06-30 17:23:37,984 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Connecting to master server at 127.0.0.1:4530 ..
+2014-06-30 17:23:37,985 [3] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Successfully connected to master
+2014-06-30 17:23:37,986 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Creating game: id=JUSTIN-PC(5368)5
+2014-06-30 17:23:38,137 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Connecting to master server at 127.0.0.1:4530 ..
+2014-06-30 17:23:38,138 [3] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Successfully connected to master
+2014-06-30 17:23:38,138 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Joining random game ...
+2014-06-30 17:23:38,245 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Connecting to master server at 127.0.0.1:4530 ..
+2014-06-30 17:23:38,246 [3] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Successfully connected to master
+2014-06-30 17:23:38,246 [4] DEBUG Photon.LoadBalancing.TestClient.ConnectionStates.Master - MASTER: Joining random game ...
+2014-06-30 17:23:38,401 [4] INFO  Photon.LoadBalancing.TestClient.Program - [5368] Started game JUSTIN-PC(5368)5 with 3 clients
