@@ -29,4 +29,5 @@ MonoBehaviour:
   - SetColor
   - ChangeColorTo
   - SetNameBox
+  - SetItemLocation
   DisableAutoOpenWizard: 0

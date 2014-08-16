@@ -21,7 +21,7 @@ public class PlayerHandler : MonoBehaviour {
 		playerColor = new Vector3(
 				Random.Range(0.0f, 1.0f),
 				Random.Range(0.0f, 1.0f),
-				Random.Range(0.0f, 1.0f));
+				Random.Range(0.0f, 1.0f)); //color objects not serializable
 		SpawnPlayer();
 		EnableLocalControl();
 	}
@@ -45,11 +45,8 @@ public class PlayerHandler : MonoBehaviour {
 			spawnPoint, 
 			Quaternion.identity,
 			0);
-
 	}
 
-	
-	
 	public void SetCamera(){
 	
 		Camera camera = GameObject.Find("MainCamera").camera;
@@ -61,9 +58,6 @@ public class PlayerHandler : MonoBehaviour {
 		camera.transform.position = player.transform.position + pos;
 		camera.transform.rotation = new Quaternion(0, 0, 0 ,0);
 	}
-	
-	
-	
 
 	void EnableLocalControl(){
 
@@ -72,14 +66,13 @@ public class PlayerHandler : MonoBehaviour {
 			// Enable local scripts
 			player.GetComponent<AvatarMovement>().enabled = true;
 			player.GetComponent<DemoShooting>().enabled = true;
-			string gunToLoad = "Gun_02"; //This is bad. eventually we'll want to be able to pass which gun to load
 			
+			string locationToPlaceGun = "ReadiedItem";
+			string gunToLoad = "Gun_02"; //This is bad. eventually we'll want to pass what/where to load based on character
 
 			SetCamera();
 			photonView.RPC("SetColor", PhotonTargets.AllBuffered, playerColor);
-			photonView.RPC("SetWeapon", PhotonTargets.AllBuffered, gunToLoad);
-			
-			
+			photonView.RPC("SetItemLocation", PhotonTargets.AllBuffered, gunToLoad, locationToPlaceGun);
 
 			player.gameObject.tag = "Player";
 		}
