@@ -25,4 +25,9 @@ MonoBehaviour:
   - DealDamage
   - SpawnPowerUp
   - DestroyPowerUp
+  - SetWeapon
+  - SetColor
+  - ChangeColorTo
+  - SetNameBox
+  - SetItemLocation
   DisableAutoOpenWizard: 0
