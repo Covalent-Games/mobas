@@ -3,6 +3,8 @@
 --- !u!78 &1
 TagManager:
   tags:
+  - Gun
+  - 
   - Network
   - 
   Builtin Layer 0: Default
