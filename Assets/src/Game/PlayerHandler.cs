@@ -67,14 +67,27 @@ public class PlayerHandler : MonoBehaviour {
 			player.GetComponent<AvatarMovement>().enabled = true;
 			player.GetComponent<DemoShooting>().enabled = true;
 			
-			string locationToPlaceGun = "ReadiedItem";
-			string gunToLoad = "Gun_02"; //This is bad. eventually we'll want to pass what/where to load based on character
+			//This is bad. eventually we'll want to pass what/where to load based on character
+			string locationToPlaceGun = "BackItem";
+			string gunToLoad = "Gun_02";
 
 			SetCamera();
 			photonView.RPC("SetColor", PhotonTargets.AllBuffered, playerColor);
 			photonView.RPC("SetItemLocation", PhotonTargets.AllBuffered, gunToLoad, locationToPlaceGun);
 
 			player.gameObject.tag = "Player";
+		}
+	}
+	//THIS Update METHOD IS FOR DEBUGGING/TESTING
+	void Update(){
+		if (Input.GetKeyDown(KeyCode.V)){
+			photonView.RPC("SetItemLocation", PhotonTargets.AllBuffered, "Gun_02", "ReadiedItem");
+		}
+		if (Input.GetKeyDown(KeyCode.B)){
+			photonView.RPC("SetItemLocation", PhotonTargets.AllBuffered, "Gun_02", "BackItem");
+		}
+		if (Input.GetKeyDown(KeyCode.N)){
+			photonView.RPC("SetItemLocation", PhotonTargets.AllBuffered, "demoGun_01", "ReadiedItem");
 		}
 	}
 }
