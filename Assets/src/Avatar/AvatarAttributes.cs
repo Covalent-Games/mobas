@@ -30,9 +30,9 @@ public class AvatarAttributes : MonoBehaviour {
 	[RPC]
 	void SetItemLocation(string itemToLoad, string targetLocation){
 
-		//Get the avatar to perform the call on
+		// Get the avatar's photonview to perform the call on
 		photonView = gameObject.GetComponent<PhotonView>();
-		//Get their equipment "list" -- this will want to be stored on the server eventually
+		// Get their equipment "list" -- this will want to be stored on the server eventually
 		Dictionary<string, string> currentEquipment = photonView.GetComponent<AvatarAttributes>().equipmentList;
 		Transform newItem;
 		

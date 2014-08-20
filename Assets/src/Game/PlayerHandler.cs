@@ -78,16 +78,4 @@ public class PlayerHandler : MonoBehaviour {
 			player.gameObject.tag = "Player";
 		}
 	}
-	//THIS Update METHOD IS FOR DEBUGGING/TESTING
-	void Update(){
-		if (Input.GetKeyDown(KeyCode.V)){
-			photonView.RPC("SetItemLocation", PhotonTargets.AllBuffered, "Gun_02", "ReadiedItem");
-		}
-		if (Input.GetKeyDown(KeyCode.B)){
-			photonView.RPC("SetItemLocation", PhotonTargets.AllBuffered, "Gun_02", "BackItem");
-		}
-		if (Input.GetKeyDown(KeyCode.N)){
-			photonView.RPC("SetItemLocation", PhotonTargets.AllBuffered, "demoGun_01", "ReadiedItem");
-		}
-	}
 }
