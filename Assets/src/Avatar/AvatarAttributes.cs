@@ -41,6 +41,10 @@ public class AvatarAttributes : MonoBehaviour {
 		}
 	}
 
+	public void TakeDamage(int damage) {
+		this.health -= damage;
+	}
+
 	/// <summary>
 	/// Sets the color.
 	/// </summary>
