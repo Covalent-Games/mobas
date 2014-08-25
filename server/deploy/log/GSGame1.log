@@ -254,3 +254,270 @@
 2014-08-15 00:35:20,369 [4] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=45), serverId=dd4de142-103d-428f-a2e0-7b87c9e9b7b1
 2014-08-15 00:35:20,369 [4] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID dd4de142-103d-428f-a2e0-7b87c9e9b7b1
 2014-08-15 00:35:20,393 [4] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=dd4de142-103d-428f-a2e0-7b87c9e9b7b1
+2014-08-23 17:25:48,673 [13] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Lowest to Low with input 35
+2014-08-23 17:25:48,673 [13] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Lowest, new=Low
+2014-08-23 17:27:10,506 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - OnStopRequested: serverid=b8e1a86e-586c-40ff-af17-c8fb5fcc2660
+2014-08-23 17:27:10,511 [1] INFO  Photon.SocketServer.ApplicationBase [(null)] - Application is stopping: AppId=Game1
+2014-08-23 17:27:10,516 [6] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=2, reason=ManagedDisconnect, detail=), serverId=b8e1a86e-586c-40ff-af17-c8fb5fcc2660
+2014-08-23 17:27:10,723 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - TearDown: serverId=b8e1a86e-586c-40ff-af17-c8fb5fcc2660
+2014-08-23 17:27:10,724 [1] INFO  Photon.SocketServer.ApplicationBase [(null)] - Application stop: AppId=Game1
+2014-08-23 17:27:27,886 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Setup: serverId=164a972e-f9f9-4842-b930-15f8834f0be8
+2014-08-23 17:27:29,221 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter Business Logic Queue
+2014-08-23 17:27:29,222 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter ENet Queue
+2014-08-23 17:27:29,223 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter bytes in/sec
+2014-08-23 17:27:29,224 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter bytes out/sec
+2014-08-23 17:27:29,225 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter ENet Threads Processing
+2014-08-23 17:27:29,226 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter ENet Threads Active
+2014-08-23 17:27:29,226 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter Time Spent In Server: In (ms)
+2014-08-23 17:27:29,227 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter Time Spent In Server: Out (ms)
+2014-08-23 17:27:29,228 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter TCP: Disconnected Peers +/sec
+2014-08-23 17:27:29,232 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter TCP: Disconnected Peers (C) +/sec
+2014-08-23 17:27:29,233 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter TCP: Peers
+2014-08-23 17:27:29,234 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter UDP: Disconnected Peers +/sec
+2014-08-23 17:27:29,235 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter UDP: Disconnected Peers (C) +/sec
+2014-08-23 17:27:29,235 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter UDP: Peers
+2014-08-23 17:27:29,270 [1] WARN  Photon.LoadBalancing.LoadShedding.FeedbackControlSystem [(null)] - Could not initialize Feedback Control System from configuration: Invalid configuration file C:\Users\Justin\Projects\mobas\server\deploy\Workload.config. Using default settings... (Could not find file 'C:\Users\Justin\Projects\mobas\server\deploy\Workload.config'.)
+2014-08-23 17:27:29,298 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=164a972e-f9f9-4842-b930-15f8834f0be8
+2014-08-23 17:27:29,329 [1] INFO  Photon.SocketServer.ApplicationBase [(null)] - Application start: AppId=Game1; AppPath=C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\GameServer1, Type=Photon.LoadBalancing.GameServer.GameApplication 
+2014-08-23 17:27:29,348 [1] INFO  Photon.SocketServer.Diagnostics.CounterPublisher [(null)] - CounterPublisher started on: 255.255.255.255:40001
+2014-08-23 17:27:30,398 [11] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=2), serverId=164a972e-f9f9-4842-b930-15f8834f0be8
+2014-08-23 17:27:30,417 [6] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID 164a972e-f9f9-4842-b930-15f8834f0be8
+2014-08-23 17:27:30,460 [13] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Lowest to Low with input 36
+2014-08-23 17:27:30,471 [13] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Lowest, new=Low
+2014-08-23 17:27:30,603 [12] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=164a972e-f9f9-4842-b930-15f8834f0be8
+2014-08-23 17:27:38,526 [13] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Low to Normal with input 50
+2014-08-23 17:27:38,527 [13] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Low, new=Normal
+2014-08-23 17:27:38,893 [22] DEBUG Photon.LoadBalancing.GameServer.GameApplication [(null)] - CreatePeer for 
+2014-08-23 17:27:38,895 [22] DEBUG Photon.LoadBalancing.GameServer.GameApplication [(null)] - incoming game peer at 192.168.1.7:5056 from 192.168.1.7:61664
+2014-08-23 17:27:39,213 [12] DEBUG Photon.LoadBalancing.GameServer.GameClientPeer [(null)] - OnOperationRequest: conId=1, opCode=230
+2014-08-23 17:27:39,296 [15] DEBUG Photon.LoadBalancing.GameServer.GameClientPeer [(null)] - OnOperationRequest: conId=1, opCode=226
+2014-08-23 17:27:59,822 [21] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Normal to High with input 70
+2014-08-23 17:27:59,822 [21] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Normal, new=High
+2014-08-23 17:28:00,825 [21] DEBUG Photon.LoadBalancing.GameServer.GameClientPeer [(null)] - OnDisconnect: conId=1, reason=ClientDisconnect, detail=
+2014-08-23 17:30:59,541 [6] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from High to Normal with input 50
+2014-08-23 17:30:59,552 [6] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=High, new=Normal
+2014-08-23 17:31:18,808 [22] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Normal to Low with input 35
+2014-08-23 17:31:18,809 [22] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Normal, new=Low
+2014-08-23 17:31:41,107 [15] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Low to Lowest with input 20
+2014-08-23 17:31:41,108 [15] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Low, new=Lowest
+2014-08-24 18:05:36,953 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Setup: serverId=1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 18:05:37,216 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter Business Logic Queue
+2014-08-24 18:05:37,217 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter ENet Queue
+2014-08-24 18:05:37,218 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter bytes in/sec
+2014-08-24 18:05:37,218 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter bytes out/sec
+2014-08-24 18:05:37,219 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter ENet Threads Processing
+2014-08-24 18:05:37,219 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter ENet Threads Active
+2014-08-24 18:05:37,220 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter Time Spent In Server: In (ms)
+2014-08-24 18:05:37,220 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter Time Spent In Server: Out (ms)
+2014-08-24 18:05:37,221 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter TCP: Disconnected Peers +/sec
+2014-08-24 18:05:37,221 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter TCP: Disconnected Peers (C) +/sec
+2014-08-24 18:05:37,222 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter TCP: Peers
+2014-08-24 18:05:37,222 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter UDP: Disconnected Peers +/sec
+2014-08-24 18:05:37,223 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter UDP: Disconnected Peers (C) +/sec
+2014-08-24 18:05:37,223 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter UDP: Peers
+2014-08-24 18:05:37,237 [1] WARN  Photon.LoadBalancing.LoadShedding.FeedbackControlSystem [(null)] - Could not initialize Feedback Control System from configuration: Invalid configuration file C:\Users\Justin\Projects\mobas\server\deploy\Workload.config. Using default settings... (Could not find file 'C:\Users\Justin\Projects\mobas\server\deploy\Workload.config'.)
+2014-08-24 18:05:37,272 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 18:05:37,293 [1] INFO  Photon.SocketServer.ApplicationBase [(null)] - Application start: AppId=Game1; AppPath=C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\GameServer1, Type=Photon.LoadBalancing.GameServer.GameApplication 
+2014-08-24 18:05:37,311 [1] INFO  Photon.SocketServer.Diagnostics.CounterPublisher [(null)] - CounterPublisher started on: 255.255.255.255:40001
+2014-08-24 18:05:38,296 [12] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=2), serverId=1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 18:05:38,305 [6] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID 1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 18:05:38,447 [11] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 18:06:08,797 [13] DEBUG Photon.LoadBalancing.GameServer.GameApplication [(null)] - CreatePeer for 
+2014-08-24 18:06:08,798 [13] DEBUG Photon.LoadBalancing.GameServer.GameApplication [(null)] - incoming game peer at 192.168.1.7:5056 from 192.168.1.7:60658
+2014-08-24 18:06:08,956 [13] DEBUG Photon.LoadBalancing.GameServer.GameClientPeer [(null)] - OnOperationRequest: conId=1, opCode=230
+2014-08-24 18:06:09,024 [13] DEBUG Photon.LoadBalancing.GameServer.GameClientPeer [(null)] - OnOperationRequest: conId=1, opCode=226
+2014-08-24 18:06:09,806 [12] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Lowest to Low with input 35
+2014-08-24 18:06:09,808 [12] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Lowest, new=Low
+2014-08-24 18:07:07,611 [20] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Low to Normal with input 50
+2014-08-24 18:07:07,612 [20] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Low, new=Normal
+2014-08-24 18:44:30,550 [21] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=2, reason=ClientDisconnect, detail=), serverId=1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 18:44:38,931 [7] DEBUG Photon.LoadBalancing.GameServer.GameClientPeer [(null)] - OnDisconnect: conId=1, reason=ClientDisconnect, detail=
+2014-08-24 18:44:45,548 [21] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 18:44:45,555 [20] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=5), serverId=1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 18:44:45,556 [20] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID 1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 18:44:45,578 [7] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 18:45:22,379 [20] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Normal to Low with input 35
+2014-08-24 18:45:22,390 [20] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Normal, new=Low
+2014-08-24 18:46:06,996 [20] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Low to Lowest with input 20
+2014-08-24 18:46:06,997 [20] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Low, new=Lowest
+2014-08-24 18:48:27,941 [4] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Lowest to Low with input 35
+2014-08-24 18:48:27,942 [4] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Lowest, new=Low
+2014-08-24 18:50:04,272 [19] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Low to Lowest with input 20
+2014-08-24 18:50:04,273 [19] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Low, new=Lowest
+2014-08-24 19:25:01,502 [7] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=5, reason=ClientDisconnect, detail=), serverId=1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 19:25:16,513 [30] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 19:25:16,515 [18] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=7), serverId=1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 19:25:16,516 [18] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID 1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 19:25:16,529 [22] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 19:26:02,505 [35] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=7, reason=ClientDisconnect, detail=), serverId=1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 19:26:17,507 [4] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 19:26:17,512 [34] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=8), serverId=1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 19:26:17,514 [13] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID 1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 19:26:17,551 [15] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 19:26:31,484 [4] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Lowest to Low with input 35
+2014-08-24 19:26:31,484 [4] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Lowest, new=Low
+2014-08-24 19:27:25,131 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - OnStopRequested: serverid=1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 19:27:25,135 [1] INFO  Photon.SocketServer.ApplicationBase [(null)] - Application is stopping: AppId=Game1
+2014-08-24 19:27:25,135 [24] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=8, reason=ManagedDisconnect, detail=), serverId=1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 19:27:25,160 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - TearDown: serverId=1dccd524-cedf-49aa-b93e-f56258cb71e7
+2014-08-24 19:27:25,161 [1] INFO  Photon.SocketServer.ApplicationBase [(null)] - Application stop: AppId=Game1
+2014-08-24 19:27:40,250 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Setup: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 19:27:41,539 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter Business Logic Queue
+2014-08-24 19:27:41,540 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter ENet Queue
+2014-08-24 19:27:41,541 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter bytes in/sec
+2014-08-24 19:27:41,541 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter bytes out/sec
+2014-08-24 19:27:41,542 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter ENet Threads Processing
+2014-08-24 19:27:41,542 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter ENet Threads Active
+2014-08-24 19:27:41,543 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter Time Spent In Server: In (ms)
+2014-08-24 19:27:41,544 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter Time Spent In Server: Out (ms)
+2014-08-24 19:27:41,544 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter TCP: Disconnected Peers +/sec
+2014-08-24 19:27:41,545 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter TCP: Disconnected Peers (C) +/sec
+2014-08-24 19:27:41,546 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter TCP: Peers
+2014-08-24 19:27:41,546 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter UDP: Disconnected Peers +/sec
+2014-08-24 19:27:41,547 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter UDP: Disconnected Peers (C) +/sec
+2014-08-24 19:27:41,548 [1] WARN  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - Did not find counter UDP: Peers
+2014-08-24 19:27:41,564 [1] WARN  Photon.LoadBalancing.LoadShedding.FeedbackControlSystem [(null)] - Could not initialize Feedback Control System from configuration: Invalid configuration file C:\Users\Justin\Projects\mobas\server\deploy\Workload.config. Using default settings... (Could not find file 'C:\Users\Justin\Projects\mobas\server\deploy\Workload.config'.)
+2014-08-24 19:27:41,583 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 19:27:41,607 [1] INFO  Photon.SocketServer.ApplicationBase [(null)] - Application start: AppId=Game1; AppPath=C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\GameServer1, Type=Photon.LoadBalancing.GameServer.GameApplication 
+2014-08-24 19:27:41,627 [1] INFO  Photon.SocketServer.Diagnostics.CounterPublisher [(null)] - CounterPublisher started on: 255.255.255.255:40001
+2014-08-24 19:27:42,447 [9] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=2), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 19:27:42,453 [11] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 19:27:42,617 [13] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 19:27:43,719 [9] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Lowest to Low with input 38
+2014-08-24 19:27:43,720 [9] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Lowest, new=Low
+2014-08-24 19:28:17,925 [21] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=2, reason=ClientDisconnect, detail=), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 19:28:32,932 [15] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 19:28:32,934 [18] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=5), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 19:28:32,935 [18] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 19:28:32,947 [13] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 19:28:41,026 [11] DEBUG Photon.LoadBalancing.GameServer.GameApplication [(null)] - CreatePeer for 
+2014-08-24 19:28:41,028 [11] DEBUG Photon.LoadBalancing.GameServer.GameApplication [(null)] - incoming game peer at 192.168.1.7:5056 from 192.168.1.7:58082
+2014-08-24 19:28:41,203 [21] DEBUG Photon.LoadBalancing.GameServer.GameClientPeer [(null)] - OnOperationRequest: conId=4, opCode=230
+2014-08-24 19:28:41,267 [24] DEBUG Photon.LoadBalancing.GameServer.GameClientPeer [(null)] - OnOperationRequest: conId=4, opCode=226
+2014-08-24 19:28:55,265 [22] DEBUG Photon.LoadBalancing.GameServer.GameClientPeer [(null)] - OnDisconnect: conId=4, reason=ClientDisconnect, detail=
+2014-08-24 19:30:00,604 [9] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Low to Lowest with input 20
+2014-08-24 19:30:00,618 [9] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Low, new=Lowest
+2014-08-24 19:45:23,562 [11] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=5, reason=ClientDisconnect, detail=), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 19:45:38,560 [25] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 19:45:38,594 [12] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=6), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 19:45:38,594 [12] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 19:45:38,664 [9] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 19:45:53,728 [18] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=6, reason=ClientDisconnect, detail=), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 19:46:08,732 [9] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 19:46:08,768 [11] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=8), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 19:46:08,769 [11] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 19:46:08,843 [23] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 20:41:18,980 [13] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=8, reason=ClientDisconnect, detail=), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 20:41:33,987 [27] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 20:41:34,024 [13] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=11), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 20:41:34,024 [41] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 20:41:34,095 [36] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 20:41:49,522 [33] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=11, reason=ClientDisconnect, detail=), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 20:42:04,536 [24] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 20:42:04,560 [27] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=13), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 20:42:04,561 [27] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 20:42:04,662 [39] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 20:48:44,860 [33] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Lowest to Low with input 35
+2014-08-24 20:48:44,861 [33] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Lowest, new=Low
+2014-08-24 21:12:58,964 [39] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Low to Lowest with input 20
+2014-08-24 21:12:58,965 [39] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Low, new=Lowest
+2014-08-24 21:58:22,536 [13] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=13, reason=ClientDisconnect, detail=), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 21:58:37,544 [33] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 21:58:37,586 [10] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=14), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 21:58:37,588 [10] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 21:58:37,671 [9] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:07:16,417 [28] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=14, reason=ClientDisconnect, detail=), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:07:31,424 [12] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:07:31,458 [25] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=17), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:07:31,459 [25] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:07:31,527 [24] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:14:44,326 [13] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=17, reason=ClientDisconnect, detail=), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:14:59,337 [6] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:14:59,354 [24] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=19), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:14:59,355 [24] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:14:59,425 [24] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:21:25,055 [25] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=19, reason=ClientDisconnect, detail=), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:21:40,057 [10] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:21:40,063 [19] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=21), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:21:40,063 [19] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:21:40,089 [33] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:23:39,684 [34] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=21, reason=ClientDisconnect, detail=), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:23:54,685 [22] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:23:54,692 [22] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=22), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:23:54,693 [34] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:23:54,722 [32] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:30:24,399 [18] DEBUG Photon.LoadBalancing.GameServer.GameApplication [(null)] - CreatePeer for 
+2014-08-24 22:30:24,400 [18] DEBUG Photon.LoadBalancing.GameServer.GameApplication [(null)] - incoming game peer at 192.168.1.7:5056 from 192.168.1.7:55991
+2014-08-24 22:30:24,503 [20] DEBUG Photon.LoadBalancing.GameServer.GameClientPeer [(null)] - OnOperationRequest: conId=12, opCode=230
+2014-08-24 22:30:24,556 [12] DEBUG Photon.LoadBalancing.GameServer.GameClientPeer [(null)] - OnOperationRequest: conId=12, opCode=226
+2014-08-24 22:30:40,950 [33] DEBUG Photon.LoadBalancing.GameServer.GameClientPeer [(null)] - OnDisconnect: conId=12, reason=ClientDisconnect, detail=
+2014-08-24 22:32:23,721 [29] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=22, reason=ClientDisconnect, detail=), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:32:38,725 [25] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:32:38,756 [22] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=24), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:32:38,757 [22] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:32:38,823 [19] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:33:18,654 [9] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=24, reason=ClientDisconnect, detail=), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:33:33,667 [39] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:33:33,701 [10] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=27), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:33:33,701 [10] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:33:33,769 [39] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:33:45,076 [33] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=27, reason=ClientDisconnect, detail=), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:34:00,077 [35] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:34:00,113 [22] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=28), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:34:00,113 [22] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-24 22:34:00,194 [6] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:22:31,106 [32] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Lowest to Low with input 35
+2014-08-25 00:22:31,107 [32] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Lowest, new=Low
+2014-08-25 00:30:23,641 [40] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Low to Normal with input 50
+2014-08-25 00:30:23,642 [40] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Low, new=Normal
+2014-08-25 00:31:44,755 [40] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Normal to Low with input 35
+2014-08-25 00:31:44,756 [40] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Normal, new=Low
+2014-08-25 00:32:30,384 [22] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Low to Lowest with input 20
+2014-08-25 00:32:30,385 [22] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Low, new=Lowest
+2014-08-25 00:51:12,865 [11] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=28, reason=ClientDisconnect, detail=), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:51:27,867 [18] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:51:27,904 [22] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=31), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:51:27,904 [22] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:51:27,987 [34] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:52:04,258 [22] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=31, reason=ClientDisconnect, detail=), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:52:19,253 [20] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:52:19,288 [9] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=32), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:52:19,288 [9] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:52:19,369 [22] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:52:23,458 [23] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=32, reason=ClientDisconnect, detail=), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:52:38,456 [18] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:52:38,489 [11] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=35), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:52:38,490 [23] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:52:38,563 [30] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:52:42,815 [34] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=35, reason=ClientDisconnect, detail=), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:52:57,816 [28] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:52:57,852 [37] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=36), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:52:57,853 [37] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:52:57,932 [15] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 00:55:24,530 [35] DEBUG Photon.LoadBalancing.GameServer.GameApplication [(null)] - CreatePeer for 
+2014-08-25 00:55:24,532 [35] DEBUG Photon.LoadBalancing.GameServer.GameApplication [(null)] - incoming game peer at 192.168.1.7:5056 from 192.168.1.7:51660
+2014-08-25 00:55:24,658 [9] DEBUG Photon.LoadBalancing.GameServer.GameClientPeer [(null)] - OnOperationRequest: conId=14, opCode=230
+2014-08-25 00:55:24,726 [21] DEBUG Photon.LoadBalancing.GameServer.GameClientPeer [(null)] - OnOperationRequest: conId=14, opCode=226
+2014-08-25 00:55:53,784 [6] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Lowest to Low with input 35
+2014-08-25 00:55:53,785 [6] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Lowest, new=Low
+2014-08-25 00:56:31,308 [12] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Low to Normal with input 50
+2014-08-25 00:56:31,309 [12] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Low, new=Normal
+2014-08-25 00:56:47,065 [21] DEBUG Photon.LoadBalancing.GameServer.GameClientPeer [(null)] - OnDisconnect: conId=14, reason=ClientDisconnect, detail=
+2014-08-25 00:57:08,230 [30] DEBUG Photon.LoadBalancing.GameServer.GameApplication [(null)] - CreatePeer for 
+2014-08-25 00:57:08,232 [30] DEBUG Photon.LoadBalancing.GameServer.GameApplication [(null)] - incoming game peer at 192.168.1.7:5056 from 192.168.1.7:61554
+2014-08-25 00:57:08,381 [37] DEBUG Photon.LoadBalancing.GameServer.GameClientPeer [(null)] - OnOperationRequest: conId=16, opCode=230
+2014-08-25 00:57:08,438 [33] DEBUG Photon.LoadBalancing.GameServer.GameClientPeer [(null)] - OnOperationRequest: conId=16, opCode=226
+2014-08-25 00:59:17,800 [20] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Normal to High with input 70
+2014-08-25 00:59:17,801 [20] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Normal, new=High
+2014-08-25 01:07:35,857 [22] DEBUG Photon.LoadBalancing.GameServer.GameClientPeer [(null)] - OnDisconnect: conId=16, reason=ClientDisconnect, detail=
+2014-08-25 01:11:36,420 [37] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from High to Normal with input 50
+2014-08-25 01:11:36,421 [37] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=High, new=Normal
+2014-08-25 01:12:15,967 [22] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Normal to Low with input 35
+2014-08-25 01:12:15,968 [22] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Normal, new=Low
+2014-08-25 01:12:54,499 [12] INFO  Photon.LoadBalancing.LoadShedding.FeedbackController [(null)] - Transit CpuUsage from Low to Lowest with input 20
+2014-08-25 01:12:54,500 [12] INFO  Photon.LoadBalancing.LoadShedding.WorkloadController [(null)] - FeedbackLevel changed: old=Low, new=Lowest
+2014-08-25 02:18:15,923 [35] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master closed (id=36, reason=ClientDisconnect, detail=), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 02:18:30,921 [25] INFO  Photon.LoadBalancing.GameServer.GameApplication [(null)] - Connecting to master at 127.0.0.1:4520, serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 02:18:30,956 [33] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - connection to master at 127.0.0.1:4520 established (id=38), serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 02:18:30,956 [25] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Registering game server with address 192.168.1.7, TCP 4531, UDP 5056, WebSocket 9091, ServerID c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c
+2014-08-25 02:18:31,039 [27] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer [(null)] - Successfully registered at master server: serverId=c3ddd5b1-53d6-48f5-a43a-2122f64e0c6c

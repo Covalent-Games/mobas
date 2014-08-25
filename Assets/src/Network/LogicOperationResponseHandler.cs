@@ -20,10 +20,15 @@ public class LogicOperationResponseHandler{
 	/// <param name="response">Response from the server containing data from corresponding OperationRequest.</param>
 	public static void HandleOperationResponse(OperationResponse response){
 		
-		switch ((int)response.Parameters[LogicOperationCode.LogicRequestID]){
+		switch ((LogicOperationCode)response.OperationCode){
+			default:
+				Debug.LogWarning(string.Format("OperationResponse unhandled: {0}", response.ToString()));
+				break;
+
 			case LogicOperationCode.GetSectorInfo:
 				HandleGetSectorInfo(response);
 				break;
+				
 		}
 	}
 	
@@ -35,5 +40,6 @@ public class LogicOperationResponseHandler{
 	
 		Debug.Log(response.Parameters[LogicParameterCode.SectorInfoDict]);
 	}
+
 }
 

@@ -30,6 +30,5 @@ namespace Photon.LoadBalancing.Operations
         // CancelJoinRandomGame = 224, currently not used 
         DebugGame = 223,
         FiendFriends = 222,
-        GameLogicOperation = 77,
     }
 }

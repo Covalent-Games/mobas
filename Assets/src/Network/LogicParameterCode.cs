@@ -11,7 +11,10 @@ using System;
 ///</remarks>
 public class LogicParameterCode{
 	
-	// GetSectorInfo
+	#region GetSectorInfo
 	public const int SectorInfoDict = 1;
+	#endregion
+
+
 }
 

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class MainMenuGui : MonoBehaviour {
 
@@ -49,7 +50,7 @@ public class MainMenuGui : MonoBehaviour {
 			GUILayout.BeginArea(_buttonLayoutRect);
 			
 			if (GUILayout.Button("Enter The Rift", "button")){
-				Application.LoadLevel("main");	
+				Application.LoadLevel("main");
 			}
 			if (GUILayout.Button("Log Out", "button")){
 				GameObject.FindGameObjectWithTag("Network").GetComponent<NetworkManager>().DisconnectFromServer();

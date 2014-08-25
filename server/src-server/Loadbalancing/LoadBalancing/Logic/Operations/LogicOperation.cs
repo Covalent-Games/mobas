@@ -15,32 +15,18 @@ namespace Logic.Operations
 	using Lite.Operations;
 	using Photon.SocketServer;
 	using Photon.SocketServer.Rpc;
-
-	/// <summary>
-	/// Base logic operation.
-	/// </summary>
-	public class BaseLogicOperation : Operation
-	{
-		private const int LogicRequestID = 0;
-	
-		public BaseLogicOperation (IRpcProtocol protocol, OperationRequest request)
-			: base(protocol, request){}
-		
-		[DataMember(Code = LogicRequestID, IsOptional = false)]
-		public int LogicCode {get; set;}
-	}
 	
 	/// <summary>
 	/// Get sector info operation.
 	/// </summary>
-	public class GetSectorInfoOperation : BaseLogicOperation{
+	public class GetSectorInfoOperation : Operation{
 		
 		public GetSectorInfoOperation (IRpcProtocol protocol, OperationRequest request) : 
-		base (protocol, request){}
+			base (protocol, request){}
 		
 		[DataMember(Code = LogicParameterCode.SectorInfoDict, IsOptional = true)]
 		public string SectorInfoDict { get; set; }
-		
 	}
+
 }
 
