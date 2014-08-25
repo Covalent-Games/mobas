@@ -4,6 +4,7 @@ using System.Collections;
 public class AvatarAction : MonoBehaviour {
 
 	AvatarAttributes avatarAttributes;
+	[SerializeField]
 	PhotonView photonViewObject;
 
 	[SerializeField]
@@ -18,10 +19,7 @@ public class AvatarAction : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		avatarAttributes = GetComponent<AvatarAttributes>();
-		photonViewObject = GetComponent<PhotonView> ();
 		Debug.Log ("***************Ran Start()");
-		if (!photonViewObject)
-						Debug.Log ("*************photonView is null!");
 		this.rateOfFire /= 60.0f;
 		this.shotDelay = this.rateOfFire;
 		this.damage = 5;
@@ -69,12 +67,11 @@ public class AvatarAction : MonoBehaviour {
 	[RPC]
 	public void DealDamage(int damageDealt, int ID){
 		//if (ID == photonViewObject.photonView.owner.ID){
-
-		if (ID == photonViewObject.ownerId){
+		if (ID == photonViewObject.owner.ID){
 			// You just got shot
 
 			//avatarAttributes.health -= damageDealt;
-			if(!avatarAttributes) {
+			if(avatarAttributes == null) {
 				Debug.Log("avatarAttributes is null");
 			}
 			else {

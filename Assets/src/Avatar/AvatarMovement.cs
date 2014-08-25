@@ -54,6 +54,7 @@ public class AvatarMovement : MonoBehaviour {
 
 	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo messageInfo){
 	
+		Debug.Log ("*****************OPSV");
 		if (stream.isWriting){
 			stream.SendNext(transform.position);
 			stream.SendNext(transform.rotation);
