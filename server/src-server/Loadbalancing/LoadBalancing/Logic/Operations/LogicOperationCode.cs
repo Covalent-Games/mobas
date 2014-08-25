@@ -10,9 +10,10 @@
 using System;
 namespace Logic.Operations{
 
-	public class LogicOperationCode{
+	public enum LogicOperationCode{
 		
-		public const int GetSectorInfo = 1;
+		GetSectorInfo,
+		
 	}
 }
 

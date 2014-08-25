@@ -3,6 +3,7 @@
 # =============== #
 Temp/
 Library/
+server/deploy/log/
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
@@ -33,4 +34,4 @@ Thumbs.db
 # ========== #
 # Build Data #
 # ========== #
-Build/
+Build/*

@@ -45,12 +45,8 @@ public class NetworkManager : MonoBehaviour {
 			* If this method gets called then the player is logged
 			* in and ready to start querying the server for info */
 			Debug.Log("Connected to lobby");
-			// parameters contains ALL the data you want to send the server for this operation
-			var parameters = new Dictionary<byte, object>();
-			// LogicRequestID tells the server which method to run, and is REQUIRED for a GameLogicOperation.
-			parameters.Add(LogicOperationCode.LogicRequestID, LogicOperationCode.GetSectorInfo);
 			// Currently the only way to execute the request. 
-			PhotonNetwork.networkingPeer.OpCustom(OperationCode.GameLogicOperation, parameters, true);
+			PhotonNetwork.networkingPeer.OpCustom((byte)LogicOperationCode.GetSectorInfo, new Dictionary<byte, object>(), true);
 		}
 	}
 }
