@@ -26,25 +26,21 @@ namespace Logic.Operations{
 
 		public OperationResponse HandleOperationRequest(OperationRequest operationRequest, SendParameters parameters, MasterClientPeer peer){
 
-			BaseLogicOperation checkOp = new BaseLogicOperation(peer.Protocol, operationRequest);
-
-			switch ((int)checkOp.LogicCode){
+			switch ((LogicOperationCode)operationRequest.OperationCode){
 				default:
-					return new OperationResponse{
-						OperationCode = (byte)0,
-						ReturnCode = 1,
-						DebugMessage = "Invalid LogicOperation"};
+					return new OperationResponse(operationRequest.OperationCode){
+					ReturnCode = (short)ErrorCode.OperationInvalid,
+					DebugMessage = "Unknown operation code"};
 			
 				case (LogicOperationCode.GetSectorInfo):
 					return HandleGetSectorInfo(operationRequest, peer);
 			}
-			
 		}
 		
-		private OperationResponse InvalidOperation(){
+		private OperationResponse InvalidOperation(LogicOperationCode code){
 			
 			OperationResponse response = new OperationResponse{
-				OperationCode = (byte)0,
+				OperationCode = (byte)code,
 				ReturnCode = 1,
 				DebugMessage = "Invalid operation parameters!"};
 			return response;
@@ -54,28 +50,19 @@ namespace Logic.Operations{
 			
 			OperationResponse response;
 			// Create the specific operation object for this method
-			 GetSectorInfoOperation operation = new GetSectorInfoOperation(peer.Protocol, opRequest);
+			GetSectorInfoOperation operation = new GetSectorInfoOperation(peer.Protocol, opRequest);
 			
 			// This statement required in every operation handler method
 			if (operation.IsValid == false){
-				return InvalidOperation();
+				return InvalidOperation(LogicOperationCode.GetSectorInfo);
 			}
 			
-			if (operation.LogicCode == LogicOperationCode.GetSectorInfo){
-				// Run specific operation logic here, build a response, and return it
-				// logic logic logic
-				operation.SectorInfoDict = "Fake sector info";
-				log.Debug("Received sector info request");
-				response = new OperationResponse((byte)77, operation);
-				return response;
-			} else {
-				// received something unexpected
-				response = new OperationResponse{
-					OperationCode = (byte)0,
-					ReturnCode = 1,
-					DebugMessage = "Unexpected message"};
-				return response;
-			}
+			// Run specific operation logic here, build a response, and return it
+			// logic logic logic
+			operation.SectorInfoDict = "Fake sector info";
+			log.Debug("Received sector info request");
+			response = new OperationResponse((byte)LogicOperationCode.GetSectorInfo, operation);
+			return response;
 		}
 	}
 }

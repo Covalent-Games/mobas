@@ -143,8 +143,8 @@ namespace Photon.LoadBalancing.MasterServer
             switch ((OperationCode)operationRequest.OperationCode)
             {
                 default:
-                    response = new OperationResponse(operationRequest.OperationCode) { ReturnCode = (short)ErrorCode.OperationInvalid, DebugMessage = "Unknown operation code" };
-                    break;
+					response = this.logicOperationHandler.HandleOperationRequest(operationRequest, sendParameters, this);
+					break;
 
                 case OperationCode.Authenticate:
                     response = this.HandleAuthenticate(operationRequest);
@@ -173,11 +173,6 @@ namespace Photon.LoadBalancing.MasterServer
                 case OperationCode.FiendFriends:
                     response = this.HandleFiendFriends(operationRequest, sendParameters);
                     break;
-                case OperationCode.GameLogicOperation:
-                	//TODO This need to just pass 'this' to create operations as needed
-                	// This setup as is won't work.
-				    response = this.logicOperationHandler.HandleOperationRequest(operationRequest, sendParameters, this);
-                	break;
             }
 
             if (response != null)
@@ -277,6 +272,7 @@ namespace Photon.LoadBalancing.MasterServer
 
             if (string.IsNullOrEmpty(createGameRequest.LobbyName) && this.AppLobby != null)
             {
+            	log.Debug(string.Format("########### Enquing operation for existing applobby. Op Code = {0}",operationRequest.OperationCode));
                 this.AppLobby.EnqueueOperation(this, operationRequest, sendParameters);
                 return null;
             }
@@ -291,7 +287,7 @@ namespace Photon.LoadBalancing.MasterServer
                         DebugMessage = "Lobby does not exists"
                     };
             }
-
+			log.Debug(string.Format("########### Enquing operation for new applobby. Op Code = {0}",operationRequest.OperationCode));
             lobby.EnqueueOperation(this, operationRequest, sendParameters);
             return null;
         }

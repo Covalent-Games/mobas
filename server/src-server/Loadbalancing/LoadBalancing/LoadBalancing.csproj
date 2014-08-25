@@ -239,10 +239,10 @@
     <Compile Include="Logic\MatchHandler.cs" />
     <Compile Include="Logic\Operations\LogicOperationCode.cs" />
     <Compile Include="Logic\Operations\LogicOperationHandler.cs" />
-    <Compile Include="Logic\Operations\BaseLogicOperation.cs">
+    <Compile Include="Logic\Operations\LogicParameterCode.cs" />
+    <Compile Include="Logic\Operations\LogicOperation.cs">
       <DeployService-Deploy>True</DeployService-Deploy>
     </Compile>
-    <Compile Include="Logic\Operations\LogicParameterCode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
