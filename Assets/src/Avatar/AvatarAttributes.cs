@@ -13,6 +13,7 @@ public class AvatarAttributes : MonoBehaviour {
 
 	[SerializeField]
 	public int maxHealth;
+
 	public int health;
 
 	[SerializeField]

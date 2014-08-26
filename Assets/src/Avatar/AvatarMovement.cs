@@ -4,7 +4,10 @@ using System.Collections;
 public class AvatarMovement : MonoBehaviour {
 
 	CharacterController controller;
+	[SerializeField]
 	AvatarAttributes avatarAttributes;
+	[SerializeField]
+	PhotonView photonView;
 	[SerializeField]
 	float movementSpeed = 15.0f;
 	[SerializeField]
@@ -23,7 +26,7 @@ public class AvatarMovement : MonoBehaviour {
 	
 	void Start () {
 		controller = GetComponent<CharacterController>();
-		avatarAttributes = GetComponent<AvatarAttributes>();
+		//avatarAttributes = GetComponent<AvatarAttributes>();
 	}
 	
 	void move(){
@@ -54,7 +57,6 @@ public class AvatarMovement : MonoBehaviour {
 
 	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo messageInfo){
 	
-		Debug.Log ("*****************OPSV");
 		if (stream.isWriting){
 			stream.SendNext(transform.position);
 			stream.SendNext(transform.rotation);

@@ -5,7 +5,7 @@ public class AvatarAction : MonoBehaviour {
 
 	AvatarAttributes avatarAttributes;
 	[SerializeField]
-	PhotonView photonViewObject;
+	PhotonView photonView;
 
 	[SerializeField]
 	private float rateOfFire;
@@ -19,10 +19,8 @@ public class AvatarAction : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		avatarAttributes = GetComponent<AvatarAttributes>();
-		Debug.Log ("***************Ran Start()");
-		this.rateOfFire /= 60.0f;
+		//this.rateOfFire /= 60.0f;
 		this.shotDelay = this.rateOfFire;
-		this.damage = 5;
 	}
 
 	/// <summary>
@@ -66,11 +64,9 @@ public class AvatarAction : MonoBehaviour {
 	
 	[RPC]
 	public void DealDamage(int damageDealt, int ID){
-		//if (ID == photonViewObject.photonView.owner.ID){
-		if (ID == photonViewObject.owner.ID){
+		if (ID == photonView.owner.ID){
 			// You just got shot
 
-			//avatarAttributes.health -= damageDealt;
 			if(avatarAttributes == null) {
 				Debug.Log("avatarAttributes is null");
 			}

@@ -290,7 +290,7 @@ MonoBehaviour:
   ownerId: 0
   group: 0
   prefixBackup: -1
-  observed: {fileID: 0}
+  observed: {fileID: 11400006}
   synchronization: 1
   onSerializeTransformOption: 3
   onSerializeRigidBodyOption: 2
@@ -306,6 +306,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc27e3cac1e10d44b54a1d5f683c282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  avatarAttributes: {fileID: 11400000}
+  photonView: {fileID: 11400004}
   movementSpeed: 10
   lookSensitivity: 5
   diagonalResponsiveness: .0900000036
@@ -322,7 +324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4834742964b561a4c95e5e4c88c8e017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  photonViewObject: {fileID: 11400004}
+  photonView: {fileID: 11400004}
   rateOfFire: 5
   damage: 10
 --- !u!136 &13600000
