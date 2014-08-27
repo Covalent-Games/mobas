@@ -65,10 +65,11 @@ public class PlayerHandler : MonoBehaviour {
 		if (photonView.isMine){
 			// Enable local scripts
 			player.GetComponent<AvatarMovement>().enabled = true;
-			player.GetComponent<DemoShooting>().enabled = true;
+			player.GetComponent<AvatarAction>().enabled = true;
+			player.GetComponent<AvatarAttributes>().enabled = true;
 			
 			//This is bad. eventually we'll want to pass what/where to load based on character
-			string locationToPlaceGun = "BackItem";
+			string locationToPlaceGun = "ReadiedItem";
 			string gunToLoad = "Gun_02";
 
 			SetCamera();

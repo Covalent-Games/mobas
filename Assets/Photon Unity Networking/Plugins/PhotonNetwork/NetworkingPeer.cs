@@ -1216,15 +1216,11 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
 
                 SendMonoMessage(PhotonNetworkingMessage.OnUpdatedFriendList);
                 break;
-			
-			case OperationCode.GameLogicOperation:
-				Debug.Log(string.Format("Received response for GameLogicOperation:{0}", operationResponse.Parameters[0]));
-				LogicOperationResponseHandler.HandleOperationResponse(operationResponse);
-				break;
 
             default:
-                Debug.LogWarning(string.Format("OperationResponse unhandled: {0}", operationResponse.ToString()));
-                break;
+				Debug.Log(string.Format("Received response {0}", operationResponse.OperationCode));
+				LogicOperationResponseHandler.HandleOperationResponse(operationResponse);
+				break;
         }
 
         this.externalListener.OnOperationResponse(operationResponse);
