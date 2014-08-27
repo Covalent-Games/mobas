@@ -24,7 +24,7 @@ public class DestructableObject : MonoBehaviour {
 	#endregion
 	
 	#region Inheritable Methods
-	protected override void CheckIfDestroyed(){
+	protected /*override*/ void CheckIfDestroyed(){
 		//TODO Destroy logic in case 0 health doesn't actually mean 'dead'
 		Destroy(gameObject);
 	}

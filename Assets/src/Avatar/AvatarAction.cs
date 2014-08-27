@@ -19,7 +19,7 @@ public class AvatarAction : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		avatarAttributes = GetComponent<AvatarAttributes>();
-		//this.rateOfFire /= 60.0f;
+		this.rateOfFire /= 60.0f;
 		this.shotDelay = this.rateOfFire;
 	}
 
@@ -32,6 +32,9 @@ public class AvatarAction : MonoBehaviour {
 		PhotonView view = target.root.GetComponent<PhotonView>();
 		if (view != null){
 			view.RPC("DealDamage", PhotonTargets.All, this.damage, view.owner.ID);
+		} else if (target.tag == "Structure") {
+			//FIXME: how to call RPC through master
+			photonView.RPC ("DealDamageToStructure", PhotonTargets.All, this.damage, target.gameObject.GetInstanceID());
 		}
 	}	
 
