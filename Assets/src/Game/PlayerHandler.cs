@@ -64,11 +64,11 @@ public class PlayerHandler : MonoBehaviour {
 		photonView = player.GetComponent<PhotonView>();
 		if (photonView.isMine){
 			// Enable local scripts
-			player.GetComponent<AvatarMovement>().enabled = true;
+			//player.GetComponent<AvatarMovement>().enabled = true;
 			player.GetComponent<AvatarAction>().enabled = true;
 			player.GetComponent<AvatarAttributes>().enabled = true;
 			
-			//This is bad. eventually we'll want to pass what/where to load based on character
+			//TODO Eventually we'll want to pass what/where to load based on character
 			string locationToPlaceGun = "ReadiedItem";
 			string gunToLoad = "Gun_02";
 

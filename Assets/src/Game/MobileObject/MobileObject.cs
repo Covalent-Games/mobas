@@ -3,7 +3,8 @@ using System.Collections;
 
 public class MobileObject : DestructableObject {
 
-	CharacterController controller;
+	[SerializeField]
+	protected CharacterController controller;
 	
 	void Start () {
 	

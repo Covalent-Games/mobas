@@ -30,4 +30,6 @@ MonoBehaviour:
   - ChangeColorTo
   - SetNameBox
   - SetItemLocation
+  - DealDamageToStructure
+  - TestFunc
   DisableAutoOpenWizard: 0
