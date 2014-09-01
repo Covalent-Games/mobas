@@ -5,6 +5,7 @@ public class MobileObject : DestructableObject {
 
 	[SerializeField]
 	protected CharacterController controller;
+	public bool movementEnabled = false;
 	
 	void Start () {
 	
@@ -27,12 +28,7 @@ public class MobileObject : DestructableObject {
 	/// <param name="direction">Direction to move player. Being a Vector3 this includes velocity.</param>
 	protected void MoveObject(Vector3 direction){
 		
-		// This check might not be needed -- playing it safe for now
-		if (direction != null){
-			Vector3 newDirection = transform.TransformDirection(direction);
-			controller.Move(newDirection);
-		} else {
-			Debug.LogError("Variable: 'direction' is null. How dare it be null!");
-		}
+		Vector3 newDirection = transform.TransformDirection(direction);
+		controller.Move(newDirection);
 	}
 }

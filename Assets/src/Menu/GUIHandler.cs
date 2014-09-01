@@ -49,13 +49,15 @@ public class GUIHandler : MonoBehaviour {
 	
 		GameObject player = GameObject.FindGameObjectWithTag("Player");
 		if (player != null){
-			player.GetComponentInChildren<Mouselook>().enabled = toggle;
-			player.GetComponent<AvatarMovement>().enabled = toggle;
+			Character character = player.GetComponent<Character>();
+			character.mouseLookEnabled = toggle;
+			character.movementEnabled = toggle;
 		}
 	}
 	
 	private void DrawCrosshair(){
 
+		//TODO This shouldn't always be drawn...
 		GUI.DrawTexture(crosshairRect, crosshair);
 	}
 	

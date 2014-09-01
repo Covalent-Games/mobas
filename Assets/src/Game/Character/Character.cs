@@ -13,9 +13,8 @@ public class Character : PlayerObject {
 		base.Update();
 	}
 	
-	// Has to be top level or Photon can't see it.
 	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo messageInfo){
-	Debug.Log("Sgfjdksjf");
+		
 		if (stream.isWriting){
 			stream.SendNext(transform.position);
 			stream.SendNext(transform.rotation);

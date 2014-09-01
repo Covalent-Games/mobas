@@ -5,12 +5,10 @@ public class PlayerObject : MobileObject {
 
 	[SerializeField]
 	PhotonView photonView;
+	public float movementSpeed = 10.0f;
+	public float lookSensitivity = 5.0f;
 	[SerializeField]
-	float movementSpeed = 10.0f;
-	[SerializeField]
-	float lookSensitivity = 5.0f;
-	[SerializeField]
-	float diagonalResponsiveness = 0.09f;
+	float diagonalResponsiveness = 0.05f;
 	[SerializeField]
 	float inertia = 0.981f;
 	
@@ -18,6 +16,7 @@ public class PlayerObject : MobileObject {
 	float lookx;
 	float momentumX = 0.0f;
 	float momentumY = 0.0f;
+	public bool mouseLookEnabled = false;
 	
 	public void Start(){
 
@@ -28,7 +27,8 @@ public class PlayerObject : MobileObject {
 		float time = Time.deltaTime;
 		float moveX = momentumX;
 		float moveY = momentumY;
-		if (this.controller.isGrounded) {			
+		if (this.controller.isGrounded && movementEnabled) {
+			gravity = 0f;		
 			moveX = Input.GetAxis("Horizontal") * movementSpeed * time;
 			moveY = Input.GetAxis("Vertical") * movementSpeed * time;
 			// Diagonal movement compensation
@@ -43,11 +43,11 @@ public class PlayerObject : MobileObject {
 		momentumX = moveX * inertia;
 		momentumY = moveY * inertia;
 		
-		MoveObject(new Vector3(momentumX, 0, momentumY));
+		MoveObject(new Vector3(momentumX, gravity, momentumY));
 	}
 	
 	public void Update(){
-	
+
 		Move();
 	}
 }

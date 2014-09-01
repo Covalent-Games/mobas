@@ -27,11 +27,11 @@ GameObject:
   - 136: {fileID: 13600000}
   - 23: {fileID: 2300000}
   - 143: {fileID: 14300000}
-  - 114: {fileID: 11400006}
   - 114: {fileID: 11400004}
-  - 82: {fileID: 8200000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400008}
+  - 114: {fileID: 11400002}
+  - 82: {fileID: 8200000}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -275,6 +275,25 @@ MonoBehaviour:
   maxHealth: 500
   health: 0
   healthRegen: 1
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 002fa06e1374e1247bef6f8436b95cd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 14300000}
+  movementEnabled: 0
+  photonView: {fileID: 11400004}
+  movementSpeed: 10
+  lookSensitivity: 5
+  diagonalResponsiveness: .0900000036
+  inertia: .981000006
+  mouseLookEnabled: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -290,29 +309,11 @@ MonoBehaviour:
   ownerId: 0
   group: 0
   prefixBackup: -1
-  observed: {fileID: 11400006}
+  observed: {fileID: 11400002}
   synchronization: 1
   onSerializeTransformOption: 3
   onSerializeRigidBodyOption: 2
   instantiationId: -1
---- !u!114 &11400006
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fc27e3cac1e10d44b54a1d5f683c282, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  avatarAttributes: {fileID: 11400000}
-  photonView: {fileID: 11400004}
-  movementSpeed: 10
-  lookSensitivity: 5
-  diagonalResponsiveness: .0900000036
-  stickynessToGround: .0900000036
-  inertia: .981000006
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
