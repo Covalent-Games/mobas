@@ -3,8 +3,7 @@ using System.Collections;
 
 public class PlayerObject : MobileObject {
 
-	[SerializeField]
-	PhotonView photonView;
+
 	public float movementSpeed = 10.0f;
 	public float lookSensitivity = 5.0f;
 	[SerializeField]

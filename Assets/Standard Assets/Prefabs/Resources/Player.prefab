@@ -27,11 +27,11 @@ GameObject:
   - 136: {fileID: 13600000}
   - 23: {fileID: 2300000}
   - 143: {fileID: 14300000}
-  - 114: {fileID: 11400004}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400008}
   - 114: {fileID: 11400002}
   - 82: {fileID: 8200000}
+  - 114: {fileID: 11400004}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -325,7 +325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4834742964b561a4c95e5e4c88c8e017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  photonView: {fileID: 11400004}
+  photonView: {fileID: 0}
   rateOfFire: 5
   damage: 10
 --- !u!136 &13600000
