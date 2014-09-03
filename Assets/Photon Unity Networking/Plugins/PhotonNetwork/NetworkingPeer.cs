@@ -3172,7 +3172,7 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
         PhotonView view = this.GetPhotonView(viewID);
         if (view == null)
         {
-            Debug.LogWarning("Received OnSerialization for view ID " + viewID + ". We have no such PhotonView! Ignored this if you're leaving a room. State: " + this.State);
+            Debug.LogWarning("Received OnSerialization for view ID " + viewID + ". We have no such PhotonView! Ignore this if you're leaving a room. State: " + this.State);
             return;
         }
 
