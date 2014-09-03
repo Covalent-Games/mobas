@@ -18,7 +18,8 @@ public class PlayerObject : MobileObject {
 	public bool mouseLookEnabled = false;
 	
 	public void Start(){
-
+		
+		this.Health = 500;
 	}
 	
 	void Move(){

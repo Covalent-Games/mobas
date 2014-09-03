@@ -1,0 +1,176 @@
+3556: 18:47:02.664 - ---
+3556: 18:47:02.664 - Service: "Photon Socket Server" starting
+3556: 18:47:02.664 - Config File: C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\PhotonServer.config
+3556: 18:47:02.665 - Will produce at most: 10 crash dumps
+3556: 18:47:02.665 - Action: run as exe
+3556: 18:47:02.665 - Server Starting...
+3556: 18:47:02.665 -    Tick count: 2606792 (wraps in: 49.6801 days)
+3556: 18:47:02.665 - Tick count 64: 2606792
+3556: 18:47:02.687 - Photon Version: 3.4.4.2588
+3556: 18:47:02.687 - PID: 3376
+3556: 18:47:02.687 - Config File: C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\PhotonServer.config
+3556: 18:47:02.688 - Will NOT log unimportant exceptions
+3556: 18:47:02.690 - Not using performance counters as they are not currently installed. Run the service with /InstallCounters to install them.
+3556: 18:47:02.690 - Shutdown timeout enabled: 30000ms
+3556: 18:47:02.690 - Starting I/O thread pool with 2 threads
+3556: 18:47:02.690 - Using Standard allocator
+3556: 18:47:02.690 - Max message size: 512000
+3556: 18:47:02.690 - Starting business logic thread pool with the following settings
+3556: 18:47:02.690 - InitialThreads: 4 threads
+3556: 18:47:02.690 - MinThreads: 4 threads
+3556: 18:47:02.690 - Thread pool is fixed size
+3556: 18:47:02.691 - Starting ENet thread pool with the following settings
+3556: 18:47:02.691 - InitialThreads: 2 threads
+3556: 18:47:02.691 - MinThreads: 2 threads
+3556: 18:47:02.691 - Thread pool is fixed size
+3556: 18:47:02.691 - OnlyDispatchTimers: False
+3556: 18:47:02.691 - S2S: flow control: Max pending writes: 50
+3556: 18:47:02.691 - S2S: flow control: Max queued buffers: 200
+3556: 18:47:02.691 - S2S: flow control: Max pending writes MUX: 500
+3556: 18:47:02.691 - S2S: flow control: Max queued buffers MUX: 2000
+3556: 18:47:02.691 - S2S: MaxInboundMessageSize: 512000
+3556: 18:47:02.691 - S2S: MaxOutboundMessageSize: 512000
+3556: 18:47:02.691 - S2S: No inactivity timeout
+3556: 18:47:02.697 - WebSocket S2S: MaxInboundMessageSize: 512000
+3556: 18:47:02.697 - WebSocket S2S: MaxOutboundMessageSize: 512000
+3556: 18:47:02.697 - WebSocket S2S: No inactivity timeout
+3556: 18:47:02.697 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+3556: 18:47:02.697 - Per peer bandwidth limit
+3556: 18:47:02.697 - Transmit Rate Limit: 256 KB/Sec
+3556: 18:47:02.697 - Limit period: 200ms
+3556: 18:47:02.697 - Limit per period: 52428 bytes
+3556: 18:47:02.697 - Max queued data for transmission per peer: 512000 bytes
+3556: 18:47:02.697 - Minimum retransmit timeout: 200
+3556: 18:47:02.697 - Minimum ENet timeout: 5000ms
+3556: 18:47:02.697 - Maximum ENet timeout: 30000ms
+3556: 18:47:02.697 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+3556: 18:47:02.697 - Outbound ENet: MaxInboundMessageSize: 512000
+3556: 18:47:02.697 - Outbound ENet: MaxOutboundMessageSize: 512000
+3556: 18:47:02.699 - GetRuntime - About to load CLR - versions available:
+3556: 18:47:02.699 - v2.0.50727
+3556: 18:47:02.699 - v4.0.30319
+3556: 18:47:02.699 - Configuration requests: "v2.0.50727"
+3556: 18:47:02.699 - About to load version: "v2.0.50727"
+3556: 18:47:02.708 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+3556: 18:47:02.708 - CLRBaseDirectory set to "C:\Users\Justin\Projects\mobas\server\deploy"
+3556: 18:47:02.708 - Optimising event broadcast for 20 or more peers
+3556: 18:47:02.709 - Start: About to load CLR - versions available:
+3556: 18:47:02.709 - v2.0.50727
+3556: 18:47:02.709 - v4.0.30319
+3556: 18:47:02.709 - No preference in configuration file, will load latest.
+3556: 18:47:02.709 - About to load version: "v4.0.30319"
+3556: 18:47:02.710 - Loaded version: "v4.0.30319"
+3556: 18:47:03.084 - Photon host runtime loaded
+3556: 18:47:09.180 - License is valid.
+3556: 18:47:09.180 - Licensed for 100 concurrent connections.
+3556: 18:47:09.180 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+3556: 18:47:09.180 - ENet: Per peer bandwidth limit
+3556: 18:47:09.180 - ENet: Transmit Rate Limit: 256 KB/Sec
+3556: 18:47:09.180 - ENet: Limit period: 200ms
+3556: 18:47:09.180 - ENet: Limit per period: 52428 bytes
+3556: 18:47:09.180 - ENet: Max queued data for transmission per peer: 512000 bytes
+3556: 18:47:09.180 - ENet: Minimum retransmit timeout: 200
+3556: 18:47:09.180 - ENet: Minimum timeout: 5000ms
+3556: 18:47:09.180 - ENet: Maximum timeout: 30000ms
+3556: 18:47:09.180 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+3556: 18:47:09.180 - About to load application: Master from Photon.LoadBalancing
+3556: 18:47:09.180 - Auto restart is enabled for application, existing connections will be terminated during restart
+3556: 18:47:09.180 - Application will restart 1000ms after the last change detected
+3556: 18:47:09.180 - Application will restart if files matching the following are changed: "dll;config"
+3556: 18:47:09.180 - Application will NOT restart if files matching the following are changed: "log4net.config"
+3556: 18:47:09.343 - Taking reference on default app domain
+3556: 18:47:09.478 - Application: "Master" started in app domain: 2
+3556: 18:47:09.478 - About to load application: Game1 from Photon.LoadBalancing
+3556: 18:47:09.478 - Auto restart is enabled for application, existing connections will be terminated during restart
+3556: 18:47:09.478 - Application will restart 1000ms after the last change detected
+3556: 18:47:09.478 - Application will restart if files matching the following are changed: "dll;config"
+3556: 18:47:09.478 - Application will NOT restart if files matching the following are changed: "log4net.config"
+3556: 18:47:09.627 - Taking reference on default app domain
+3556: 18:47:09.761 - Application: "Game1" started in app domain: 3
+3556: 18:47:09.761 - About to load application: Game2 from Photon.LoadBalancing
+3556: 18:47:09.761 - Auto restart is enabled for application, existing connections will be terminated during restart
+3556: 18:47:09.761 - Application will restart 1000ms after the last change detected
+3556: 18:47:09.761 - Application will restart if files matching the following are changed: "dll;config"
+3556: 18:47:09.761 - Application will NOT restart if files matching the following are changed: "log4net.config"
+3556: 18:47:09.904 - Taking reference on default app domain
+3556: 18:47:10.062 - Application: "Game2" started in app domain: 4
+3556: 18:47:10.062 - About to load application: CounterPublisher from CounterPublisher
+3556: 18:47:10.062 - Auto restart is enabled for application, existing connections will be terminated during restart
+3556: 18:47:10.062 - Application will restart 1000ms after the last change detected
+3556: 18:47:10.062 - Application will restart if files matching the following are changed: "dll;config"
+3556: 18:47:10.062 - Application will NOT restart if files matching the following are changed: "log4net.config"
+3556: 18:47:10.256 - Taking reference on default app domain
+3556: 18:47:10.419 - Application: "CounterPublisher" started in app domain: 5
+3556: 18:47:10.419 - Adding TCP listener on :0.0.0.0: 4530 with a listen backlog of: 150
+3556: 18:47:10.419 - TCP inactivity timeout: 10000ms
+3556: 18:47:10.419 - TCP disconnect timeout: 120000ms
+3556: 18:47:10.419 - MaxInboundMessageSize: 512000
+3556: 18:47:10.419 - MaxOutboundMessageSize: 512000
+3556: 18:47:10.419 - Forcing all applications ids to: "Master"
+3556: 18:47:10.420 - Serving policy file requests from: "C:\Users\Justin\Projects\mobas\server\deploy\Policy\assets\socket-policy.xml"
+3556: 18:47:10.420 - Adding TCP listener on :0.0.0.0: 4531 with a listen backlog of: 150
+3556: 18:47:10.420 - TCP inactivity timeout: 10000ms
+3556: 18:47:10.420 - TCP disconnect timeout: 120000ms
+3556: 18:47:10.420 - MaxInboundMessageSize: 512000
+3556: 18:47:10.420 - MaxOutboundMessageSize: 512000
+3556: 18:47:10.420 - Forcing all applications ids to: "Game1"
+3556: 18:47:10.420 - Serving policy file requests from: "C:\Users\Justin\Projects\mobas\server\deploy\Policy\assets\socket-policy.xml"
+3556: 18:47:10.420 - Adding TCP listener on :0.0.0.0: 4532 with a listen backlog of: 150
+3556: 18:47:10.420 - TCP inactivity timeout: 10000ms
+3556: 18:47:10.420 - TCP disconnect timeout: 120000ms
+3556: 18:47:10.420 - MaxInboundMessageSize: 512000
+3556: 18:47:10.420 - MaxOutboundMessageSize: 512000
+3556: 18:47:10.420 - Forcing all applications ids to: "Game2"
+3556: 18:47:10.421 - Serving policy file requests from: "C:\Users\Justin\Projects\mobas\server\deploy\Policy\assets\socket-policy.xml"
+3556: 18:47:10.421 - Adding TCP listener on :0.0.0.0: 4520 with a listen backlog of: 150
+3556: 18:47:10.421 - TCP inactivity timeout: 5000ms
+3556: 18:47:10.421 - TCP disconnect timeout: 120000ms
+3556: 18:47:10.421 - MaxInboundMessageSize: 512000
+3556: 18:47:10.421 - MaxOutboundMessageSize: 512000
+3556: 18:47:10.421 - Forcing all applications ids to: "Master"
+3556: 18:47:10.421 - MaxInboundMessageSize: 512000
+3556: 18:47:10.421 - MaxOutboundMessageSize: 512000
+3556: 18:47:10.421 - UDP address specified as:0.0.0.0 adding listener to each available IPv4 address
+3556: 18:47:10.421 - Adding UDP listener on :192.168.1.7: 5055 with a listen backlog of: 500
+3556: 18:47:10.421 - Adding UDP listener on :127.0.0.1: 5055 with a listen backlog of: 500
+3556: 18:47:10.421 - Forcing all applications ids to: "Game1"
+3556: 18:47:10.421 - MaxInboundMessageSize: 512000
+3556: 18:47:10.421 - MaxOutboundMessageSize: 512000
+3556: 18:47:10.421 - UDP address specified as:0.0.0.0 adding listener to each available IPv4 address
+3556: 18:47:10.422 - Adding UDP listener on :192.168.1.7: 5056 with a listen backlog of: 500
+3556: 18:47:10.422 - Adding UDP listener on :127.0.0.1: 5056 with a listen backlog of: 500
+3556: 18:47:10.422 - Forcing all applications ids to: "Game2"
+3556: 18:47:10.422 - MaxInboundMessageSize: 512000
+3556: 18:47:10.422 - MaxOutboundMessageSize: 512000
+3556: 18:47:10.422 - UDP address specified as:0.0.0.0 adding listener to each available IPv4 address
+3556: 18:47:10.422 - Adding UDP listener on :192.168.1.7: 5057 with a listen backlog of: 500
+3556: 18:47:10.422 - Adding UDP listener on :127.0.0.1: 5057 with a listen backlog of: 500
+3556: 18:47:10.422 - Adding WebSocket TCP listener on :0.0.0.0: 9090 with a listen backlog of: 150
+3556: 18:47:10.422 - Nagle disabled
+3556: 18:47:10.422 - TCP inactivity timeout: 10000ms
+3556: 18:47:10.422 - MaxInboundMessageSize: 512000
+3556: 18:47:10.422 - MaxOutboundMessageSize: 512000
+3556: 18:47:10.422 - Forcing all applications ids to: "Master"
+3556: 18:47:10.422 - Will accept ANY sub-protocols from the client
+3556: 18:47:10.422 - No automatic WebSocket ping
+3556: 18:47:10.422 - Adding WebSocket TCP listener on :0.0.0.0: 9091 with a listen backlog of: 150
+3556: 18:47:10.422 - Nagle disabled
+3556: 18:47:10.422 - TCP inactivity timeout: 10000ms
+3556: 18:47:10.422 - MaxInboundMessageSize: 512000
+3556: 18:47:10.422 - MaxOutboundMessageSize: 512000
+3556: 18:47:10.422 - Forcing all applications ids to: "Game1"
+3556: 18:47:10.422 - Will accept ANY sub-protocols from the client
+3556: 18:47:10.422 - No automatic WebSocket ping
+3556: 18:47:10.422 - Adding WebSocket TCP listener on :0.0.0.0: 9092 with a listen backlog of: 150
+3556: 18:47:10.422 - Nagle disabled
+3556: 18:47:10.422 - TCP inactivity timeout: 10000ms
+3556: 18:47:10.422 - MaxInboundMessageSize: 512000
+3556: 18:47:10.422 - MaxOutboundMessageSize: 512000
+3556: 18:47:10.422 - Forcing all applications ids to: "Game2"
+3556: 18:47:10.422 - Will accept ANY sub-protocols from the client
+3556: 18:47:10.422 - No automatic WebSocket ping
+3556: 18:47:10.423 - Adding Policy File listener on :0.0.0.0: 843 with a listen backlog of: 150 and serving Policy File: "C:\Users\Justin\Projects\mobas\server\deploy\Policy\assets\socket-policy.xml"
+3556: 18:47:10.423 - TCP inactivity timeout: 1000ms
+3556: 18:47:10.423 - Adding Policy File listener on :0.0.0.0: 943 with a listen backlog of: 150 and serving Policy File: "C:\Users\Justin\Projects\mobas\server\deploy\Policy\assets\socket-policy-silverlight.xml"
+3556: 18:47:10.423 - TCP inactivity timeout: 1000ms
+3556: 18:47:10.493 - Service is running...

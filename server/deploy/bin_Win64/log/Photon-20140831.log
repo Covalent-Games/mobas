@@ -1,0 +1,12 @@
+2632: 21:15:14.489 - ---
+2632: 21:15:14.489 - Service: "Photon Socket Server" starting
+2632: 21:15:14.489 - Config File: C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\PhotonServer.config
+2632: 21:15:14.490 - Will produce at most: 10 crash dumps
+2632: 21:15:14.491 - Service shutting down
+2632: 21:15:14.492 - Service shut down complete
+1940: 21:33:15.692 - ---
+1940: 21:33:15.692 - Service: "Photon Socket Server" starting
+1940: 21:33:15.692 - Config File: C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\PhotonServer.config
+1940: 21:33:15.694 - Will produce at most: 10 crash dumps
+1940: 21:33:15.694 - Service shutting down
+1940: 21:33:15.698 - Service shut down complete
