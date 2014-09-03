@@ -20,15 +20,11 @@ public class DestructableObject : MonoBehaviour {
 	}
 	
 	#endregion
-	
+
 	#region Inheritable Methods
-<<<<<<< HEAD
-	protected /*override*/ void CheckIfDestroyed(){
-=======
-	protected void CheckIfDestroyed(){
->>>>>>> 11fe3489d9928e882dab3c8574413e7dea4a2d3a
-		//TODO Destroy logic in case 0 health doesn't actually mean 'dead'
-		Destroy(gameObject);
+	protected void CheckIfDestroyed() {
+		Destroy (gameObject);
 	}
 	#endregion
+
 }

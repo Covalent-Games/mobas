@@ -11,10 +11,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3758f8f58fdef43803eb9be1df0608, type: 3}
   m_Name: PhotonServerSettings
   m_EditorClassIdentifier: 
-  HostType: 0
+  HostType: 2
   ServerAddress: 192.168.1.7
   ServerPort: 5055
-  AppID: 
+  AppID: Master
   PingCloudServersOnAwake: 0
-  RpcList: []
+  RpcList:
+  - Chat
+  - InstantiateRpc
+  - OnAwakeRPC
+  - DestroyRpc
+  - DealDamage
+  - SetColor
+  - SetItemLocation
+  - DealDamageToStructure
   DisableAutoOpenWizard: 0
