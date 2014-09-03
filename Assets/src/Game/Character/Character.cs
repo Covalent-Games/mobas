@@ -21,11 +21,9 @@ public class Character : PlayerObject {
 		if (stream.isWriting){
 			stream.SendNext(transform.position);
 			stream.SendNext(transform.rotation);
-			stream.SendNext(this.Health);
 		} else {
 			transform.position = (Vector3)stream.ReceiveNext();
 			transform.rotation = (Quaternion)stream.ReceiveNext();
-			this.Health = (int)stream.ReceiveNext();
 		}
 	}
 }

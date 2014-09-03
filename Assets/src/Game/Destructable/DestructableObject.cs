@@ -8,9 +8,7 @@ public class DestructableObject : MonoBehaviour {
 	protected int health;
 
 	public int Health {
-		get{
-			return this.health;
-		}
+		get{ return this.health; }
 		set{
 			if (this.health + value > this.maxHealth){
 				this.health = this.maxHealth;

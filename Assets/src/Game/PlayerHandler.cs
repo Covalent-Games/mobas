@@ -81,7 +81,7 @@ public class PlayerHandler : MonoBehaviour {
 			
 			//TODO Eventually we'll want to pass what/where to load based on character
 			string locationToPlaceGun = "ReadiedItem";
-			string gunToLoad = "Gun_02";
+			string gunToLoad = "demoGun_01";
 
 			SetCamera();
 			photonView.RPC("SetColor", PhotonTargets.AllBuffered, playerColor);
