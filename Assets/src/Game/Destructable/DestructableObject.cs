@@ -10,12 +10,20 @@ public class DestructableObject : MonoBehaviour {
 	public int Health {
 		get{ return this.health; }
 		set{
+			if(value > this.maxHealth) {
+				this.health = this.maxHealth;
+			} else {
+				this.health = value;
+				CheckIfDestroyed();
+			}
+			/*
 			if (this.health + value > this.maxHealth){
 				this.health = this.maxHealth;
 			} else if(this.health - value <= 0){
 				this.health = 0;
 				CheckIfDestroyed();
 			}
+			*/
 		}
 	}
 	
@@ -23,7 +31,9 @@ public class DestructableObject : MonoBehaviour {
 
 	#region Inheritable Methods
 	protected void CheckIfDestroyed() {
-		Destroy (gameObject);
+		if(this.health <= 0) {
+			Destroy (gameObject);
+		}
 	}
 	#endregion
 
