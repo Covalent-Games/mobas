@@ -20,6 +20,11 @@ public class PlayerObject : MobileObject {
 	public void Start(){
 		
 		this.maxHealth = this.Health = 500;
+			
+		name = gameObject.GetInstanceID().ToString();
+		if(PhotonNetwork.isMasterClient) {
+			gameObject.AddComponent<MasterRpcList>();
+		}
 	}
 	
 	void Move(){
@@ -49,5 +54,16 @@ public class PlayerObject : MobileObject {
 	public void Update(){
 
 		Move();
+	}
+	
+	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo messageInfo){
+		
+		if (stream.isWriting){
+			stream.SendNext(transform.position);
+			stream.SendNext(transform.rotation);
+		} else {
+			transform.position = (Vector3)stream.ReceiveNext();
+			transform.rotation = (Quaternion)stream.ReceiveNext();
+		}
 	}
 }

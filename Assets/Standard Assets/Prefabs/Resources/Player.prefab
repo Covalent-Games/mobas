@@ -283,7 +283,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 002fa06e1374e1247bef6f8436b95cd7, type: 3}
+  m_Script: {fileID: 11500000, guid: a84a53afa588ddc48ab569805841a3e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 14300000}
@@ -293,7 +293,6 @@ MonoBehaviour:
   diagonalResponsiveness: .0500000007
   inertia: .981000006
   mouseLookEnabled: 0
-  photonView: {fileID: 11400004}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
