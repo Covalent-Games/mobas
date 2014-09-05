@@ -28,7 +28,6 @@ GameObject:
   - 23: {fileID: 2300000}
   - 143: {fileID: 14300000}
   - 114: {fileID: 11400004}
-  - 114: {fileID: 11400000}
   - 114: {fileID: 11400008}
   - 82: {fileID: 8200000}
   - 114: {fileID: 11400002}
@@ -261,20 +260,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 419d4eb73f2a35b48ade88f32708468e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 500
-  health: 0
-  healthRegen: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -286,6 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a84a53afa588ddc48ab569805841a3e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 500
   controller: {fileID: 14300000}
   movementEnabled: 0
   movementSpeed: 10
@@ -325,7 +311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   photonView: {fileID: 11400004}
-  rateOfFire: 5
+  rateOfFire: 15
   damage: 10
 --- !u!136 &13600000
 CapsuleCollider:
