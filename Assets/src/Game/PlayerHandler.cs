@@ -12,9 +12,12 @@ public class PlayerHandler : MonoBehaviour {
 	
 	void Start () {
 		
+		//TODO Needs to be in network
 		setRoomOptions();
 		JoinRoom();
 	}
+	
+	//TODO Needs to be in network
 	void OnJoinedRoom(){
 
 		Debug.Log("Player joined room");
@@ -25,11 +28,14 @@ public class PlayerHandler : MonoBehaviour {
 		SpawnPlayer();
 		EnableLocalControl();
 	}
+	
+	//TODO Needs to be in network
 	void setRoomOptions(){
 
 		newRoomDetails = new RoomOptions ();
 	}
 	
+	//TODO Needs to be in network
 	void JoinRoom(){
 
 		PhotonNetwork.JoinOrCreateRoom("Yeeha!",
@@ -50,10 +56,15 @@ public class PlayerHandler : MonoBehaviour {
 	public void SetCamera(){
 	
 		Camera camera = GameObject.Find("MainCamera").camera;
-		camera.GetComponent<Mouselook>().enabled = true;
-		camera.transform.parent = player.transform;
-		// Set the player's camera as the Main Camera
 		camera.tag = "MainCamera";
+		camera.transform.parent = player.transform;
+		// Turn on the MouseLook component for this client (Don't change this)
+		camera.GetComponent<Mouselook>().enabled = true;
+		// Toggle MouseLook on (Use this to toggle during gameplay)
+		//TODO Character needs to be loaded dynamically.. ish
+		player.GetComponent<PlayerObject>().mouseLookEnabled = true;
+		player.GetComponent<PlayerObject>().movementEnabled= true;
+		// Set the player's camera as the Main Camera
 		Vector3 pos = new Vector3(1.0f, 1.2f, -3.0f);
 		camera.transform.position = player.transform.position + pos;
 		camera.transform.rotation = new Quaternion(0, 0, 0 ,0);
@@ -64,13 +75,13 @@ public class PlayerHandler : MonoBehaviour {
 		photonView = player.GetComponent<PhotonView>();
 		if (photonView.isMine){
 			// Enable local scripts
-			player.GetComponent<AvatarMovement>().enabled = true;
+			//player.GetComponent<AvatarMovement>().enabled = true;
 			player.GetComponent<AvatarAction>().enabled = true;
 			player.GetComponent<AvatarAttributes>().enabled = true;
 			
-			//This is bad. eventually we'll want to pass what/where to load based on character
+			//TODO Eventually we'll want to pass what/where to load based on character
 			string locationToPlaceGun = "ReadiedItem";
-			string gunToLoad = "Gun_02";
+			string gunToLoad = "demoGun_01";
 
 			SetCamera();
 			photonView.RPC("SetColor", PhotonTargets.AllBuffered, playerColor);

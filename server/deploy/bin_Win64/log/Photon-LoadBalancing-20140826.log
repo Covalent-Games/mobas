@@ -1,0 +1,1174 @@
+6088: 00:35:12.731 - ---
+6088: 00:35:12.731 - Service: "Photon Socket Server" starting
+6088: 00:35:12.732 - Config File: C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\PhotonServer.config
+6088: 00:35:12.733 - Will produce at most: 10 crash dumps
+6088: 00:35:12.733 - Action: run as exe
+6088: 00:35:12.733 - Server Starting...
+6088: 00:35:12.733 -    Tick count: 458597231 (wraps in: 44.4024 days)
+6088: 00:35:12.733 - Tick count 64: 458597231
+6088: 00:35:12.733 - Photon Version: 3.4.4.2588
+6088: 00:35:12.733 - PID: 4372
+6088: 00:35:12.733 - Config File: C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\PhotonServer.config
+6088: 00:35:12.734 - Will NOT log unimportant exceptions
+6088: 00:35:12.736 - Not using performance counters as they are not currently installed. Run the service with /InstallCounters to install them.
+6088: 00:35:12.736 - Shutdown timeout enabled: 30000ms
+6088: 00:35:12.736 - Starting I/O thread pool with 2 threads
+6088: 00:35:12.736 - Using Standard allocator
+6088: 00:35:12.736 - Max message size: 512000
+6088: 00:35:12.736 - Starting business logic thread pool with the following settings
+6088: 00:35:12.736 - InitialThreads: 4 threads
+6088: 00:35:12.736 - MinThreads: 4 threads
+6088: 00:35:12.736 - Thread pool is fixed size
+6088: 00:35:12.737 - Starting ENet thread pool with the following settings
+6088: 00:35:12.737 - InitialThreads: 2 threads
+6088: 00:35:12.737 - MinThreads: 2 threads
+6088: 00:35:12.737 - Thread pool is fixed size
+6088: 00:35:12.737 - OnlyDispatchTimers: False
+6088: 00:35:12.737 - S2S: flow control: Max pending writes: 50
+6088: 00:35:12.737 - S2S: flow control: Max queued buffers: 200
+6088: 00:35:12.737 - S2S: flow control: Max pending writes MUX: 500
+6088: 00:35:12.737 - S2S: flow control: Max queued buffers MUX: 2000
+6088: 00:35:12.737 - S2S: MaxInboundMessageSize: 512000
+6088: 00:35:12.737 - S2S: MaxOutboundMessageSize: 512000
+6088: 00:35:12.737 - S2S: No inactivity timeout
+6088: 00:35:12.741 - WebSocket S2S: MaxInboundMessageSize: 512000
+6088: 00:35:12.741 - WebSocket S2S: MaxOutboundMessageSize: 512000
+6088: 00:35:12.741 - WebSocket S2S: No inactivity timeout
+6088: 00:35:12.741 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+6088: 00:35:12.741 - Per peer bandwidth limit
+6088: 00:35:12.741 - Transmit Rate Limit: 256 KB/Sec
+6088: 00:35:12.741 - Limit period: 200ms
+6088: 00:35:12.741 - Limit per period: 52428 bytes
+6088: 00:35:12.741 - Max queued data for transmission per peer: 512000 bytes
+6088: 00:35:12.741 - Minimum retransmit timeout: 200
+6088: 00:35:12.741 - Minimum ENet timeout: 5000ms
+6088: 00:35:12.741 - Maximum ENet timeout: 30000ms
+6088: 00:35:12.741 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+6088: 00:35:12.741 - Outbound ENet: MaxInboundMessageSize: 512000
+6088: 00:35:12.741 - Outbound ENet: MaxOutboundMessageSize: 512000
+6088: 00:35:12.743 - GetRuntime - About to load CLR - versions available:
+6088: 00:35:12.743 - v2.0.50727
+6088: 00:35:12.743 - v4.0.30319
+6088: 00:35:12.743 - Configuration requests: "v2.0.50727"
+6088: 00:35:12.743 - About to load version: "v2.0.50727"
+6088: 00:35:12.751 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+6088: 00:35:12.751 - CLRBaseDirectory set to "C:\Users\Justin\Projects\mobas\server\deploy"
+6088: 00:35:12.751 - Optimising event broadcast for 20 or more peers
+6088: 00:35:12.752 - Start: About to load CLR - versions available:
+6088: 00:35:12.752 - v2.0.50727
+6088: 00:35:12.752 - v4.0.30319
+6088: 00:35:12.752 - No preference in configuration file, will load latest.
+6088: 00:35:12.752 - About to load version: "v4.0.30319"
+6088: 00:35:12.753 - Loaded version: "v4.0.30319"
+6088: 00:35:13.197 - Photon host runtime loaded
+6088: 00:35:20.574 - License is valid.
+6088: 00:35:20.574 - Licensed for 100 concurrent connections.
+6088: 00:35:20.574 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+6088: 00:35:20.574 - ENet: Per peer bandwidth limit
+6088: 00:35:20.574 - ENet: Transmit Rate Limit: 256 KB/Sec
+6088: 00:35:20.574 - ENet: Limit period: 200ms
+6088: 00:35:20.574 - ENet: Limit per period: 52428 bytes
+6088: 00:35:20.574 - ENet: Max queued data for transmission per peer: 512000 bytes
+6088: 00:35:20.574 - ENet: Minimum retransmit timeout: 200
+6088: 00:35:20.574 - ENet: Minimum timeout: 5000ms
+6088: 00:35:20.574 - ENet: Maximum timeout: 30000ms
+6088: 00:35:20.574 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+6088: 00:35:20.574 - About to load application: Master from Photon.LoadBalancing
+6088: 00:35:20.574 - Auto restart is enabled for application, existing connections will be terminated during restart
+6088: 00:35:20.574 - Application will restart 1000ms after the last change detected
+6088: 00:35:20.574 - Application will restart if files matching the following are changed: "dll;config"
+6088: 00:35:20.574 - Application will NOT restart if files matching the following are changed: "log4net.config"
+6088: 00:35:20.782 - Taking reference on default app domain
+6088: 00:35:20.918 - Application: "Master" started in app domain: 2
+6088: 00:35:20.918 - About to load application: Game1 from Photon.LoadBalancing
+6088: 00:35:20.918 - Auto restart is enabled for application, existing connections will be terminated during restart
+6088: 00:35:20.918 - Application will restart 1000ms after the last change detected
+6088: 00:35:20.918 - Application will restart if files matching the following are changed: "dll;config"
+6088: 00:35:20.918 - Application will NOT restart if files matching the following are changed: "log4net.config"
+6088: 00:35:21.081 - Taking reference on default app domain
+6088: 00:35:21.288 - Application: "Game1" started in app domain: 3
+6088: 00:35:21.288 - About to load application: Game2 from Photon.LoadBalancing
+6088: 00:35:21.288 - Auto restart is enabled for application, existing connections will be terminated during restart
+6088: 00:35:21.288 - Application will restart 1000ms after the last change detected
+6088: 00:35:21.288 - Application will restart if files matching the following are changed: "dll;config"
+6088: 00:35:21.288 - Application will NOT restart if files matching the following are changed: "log4net.config"
+6088: 00:35:21.454 - Taking reference on default app domain
+6088: 00:35:21.592 - Application: "Game2" started in app domain: 4
+6088: 00:35:21.592 - About to load application: CounterPublisher from CounterPublisher
+6088: 00:35:21.592 - Auto restart is enabled for application, existing connections will be terminated during restart
+6088: 00:35:21.592 - Application will restart 1000ms after the last change detected
+6088: 00:35:21.592 - Application will restart if files matching the following are changed: "dll;config"
+6088: 00:35:21.592 - Application will NOT restart if files matching the following are changed: "log4net.config"
+6088: 00:35:21.786 - Taking reference on default app domain
+6088: 00:35:21.930 - Application: "CounterPublisher" started in app domain: 5
+6088: 00:35:21.930 - Adding TCP listener on :0.0.0.0: 4530 with a listen backlog of: 150
+6088: 00:35:21.930 - TCP inactivity timeout: 10000ms
+6088: 00:35:21.930 - TCP disconnect timeout: 120000ms
+6088: 00:35:21.930 - MaxInboundMessageSize: 512000
+6088: 00:35:21.930 - MaxOutboundMessageSize: 512000
+6088: 00:35:21.930 - Forcing all applications ids to: "Master"
+6088: 00:35:21.930 - Serving policy file requests from: "C:\Users\Justin\Projects\mobas\server\deploy\Policy\assets\socket-policy.xml"
+6088: 00:35:21.930 - Adding TCP listener on :0.0.0.0: 4531 with a listen backlog of: 150
+6088: 00:35:21.930 - TCP inactivity timeout: 10000ms
+6088: 00:35:21.930 - TCP disconnect timeout: 120000ms
+6088: 00:35:21.930 - MaxInboundMessageSize: 512000
+6088: 00:35:21.930 - MaxOutboundMessageSize: 512000
+6088: 00:35:21.930 - Forcing all applications ids to: "Game1"
+6088: 00:35:21.931 - Serving policy file requests from: "C:\Users\Justin\Projects\mobas\server\deploy\Policy\assets\socket-policy.xml"
+6088: 00:35:21.931 - Adding TCP listener on :0.0.0.0: 4532 with a listen backlog of: 150
+6088: 00:35:21.931 - TCP inactivity timeout: 10000ms
+6088: 00:35:21.931 - TCP disconnect timeout: 120000ms
+6088: 00:35:21.931 - MaxInboundMessageSize: 512000
+6088: 00:35:21.931 - MaxOutboundMessageSize: 512000
+6088: 00:35:21.931 - Forcing all applications ids to: "Game2"
+6088: 00:35:21.931 - Serving policy file requests from: "C:\Users\Justin\Projects\mobas\server\deploy\Policy\assets\socket-policy.xml"
+6088: 00:35:21.931 - Adding TCP listener on :0.0.0.0: 4520 with a listen backlog of: 150
+6088: 00:35:21.931 - TCP inactivity timeout: 5000ms
+6088: 00:35:21.931 - TCP disconnect timeout: 120000ms
+6088: 00:35:21.931 - MaxInboundMessageSize: 512000
+6088: 00:35:21.931 - MaxOutboundMessageSize: 512000
+6088: 00:35:21.931 - Forcing all applications ids to: "Master"
+6088: 00:35:21.931 - MaxInboundMessageSize: 512000
+6088: 00:35:21.931 - MaxOutboundMessageSize: 512000
+6088: 00:35:21.931 - UDP address specified as:0.0.0.0 adding listener to each available IPv4 address
+6088: 00:35:21.932 - Adding UDP listener on :192.168.1.7: 5055 with a listen backlog of: 500
+6088: 00:35:21.932 - Adding UDP listener on :127.0.0.1: 5055 with a listen backlog of: 500
+6088: 00:35:21.932 - Forcing all applications ids to: "Game1"
+6088: 00:35:21.932 - MaxInboundMessageSize: 512000
+6088: 00:35:21.932 - MaxOutboundMessageSize: 512000
+6088: 00:35:21.932 - UDP address specified as:0.0.0.0 adding listener to each available IPv4 address
+6088: 00:35:21.932 - Adding UDP listener on :192.168.1.7: 5056 with a listen backlog of: 500
+6088: 00:35:21.933 - Adding UDP listener on :127.0.0.1: 5056 with a listen backlog of: 500
+6088: 00:35:21.933 - Forcing all applications ids to: "Game2"
+6088: 00:35:21.933 - MaxInboundMessageSize: 512000
+6088: 00:35:21.933 - MaxOutboundMessageSize: 512000
+6088: 00:35:21.933 - UDP address specified as:0.0.0.0 adding listener to each available IPv4 address
+6088: 00:35:21.933 - Adding UDP listener on :192.168.1.7: 5057 with a listen backlog of: 500
+6088: 00:35:21.933 - Adding UDP listener on :127.0.0.1: 5057 with a listen backlog of: 500
+6088: 00:35:21.933 - Adding WebSocket TCP listener on :0.0.0.0: 9090 with a listen backlog of: 150
+6088: 00:35:21.933 - Nagle disabled
+6088: 00:35:21.933 - TCP inactivity timeout: 10000ms
+6088: 00:35:21.933 - MaxInboundMessageSize: 512000
+6088: 00:35:21.933 - MaxOutboundMessageSize: 512000
+6088: 00:35:21.933 - Forcing all applications ids to: "Master"
+6088: 00:35:21.933 - Will accept ANY sub-protocols from the client
+6088: 00:35:21.933 - No automatic WebSocket ping
+6088: 00:35:21.933 - Adding WebSocket TCP listener on :0.0.0.0: 9091 with a listen backlog of: 150
+6088: 00:35:21.933 - Nagle disabled
+6088: 00:35:21.933 - TCP inactivity timeout: 10000ms
+6088: 00:35:21.933 - MaxInboundMessageSize: 512000
+6088: 00:35:21.933 - MaxOutboundMessageSize: 512000
+6088: 00:35:21.933 - Forcing all applications ids to: "Game1"
+6088: 00:35:21.933 - Will accept ANY sub-protocols from the client
+6088: 00:35:21.933 - No automatic WebSocket ping
+6088: 00:35:21.933 - Adding WebSocket TCP listener on :0.0.0.0: 9092 with a listen backlog of: 150
+6088: 00:35:21.933 - Nagle disabled
+6088: 00:35:21.933 - TCP inactivity timeout: 10000ms
+6088: 00:35:21.933 - MaxInboundMessageSize: 512000
+6088: 00:35:21.933 - MaxOutboundMessageSize: 512000
+6088: 00:35:21.933 - Forcing all applications ids to: "Game2"
+6088: 00:35:21.933 - Will accept ANY sub-protocols from the client
+6088: 00:35:21.933 - No automatic WebSocket ping
+6088: 00:35:21.934 - Adding Policy File listener on :0.0.0.0: 843 with a listen backlog of: 150 and serving Policy File: "C:\Users\Justin\Projects\mobas\server\deploy\Policy\assets\socket-policy.xml"
+6088: 00:35:21.934 - TCP inactivity timeout: 1000ms
+6088: 00:35:21.934 - Adding Policy File listener on :0.0.0.0: 943 with a listen backlog of: 150 and serving Policy File: "C:\Users\Justin\Projects\mobas\server\deploy\Policy\assets\socket-policy-silverlight.xml"
+6088: 00:35:21.934 - TCP inactivity timeout: 1000ms
+6088: 00:35:22.018 - Service is running...
+3428: 00:35:51.515 - Restarting application: "Master" due to file changes
+3428: 00:35:51.515 - Application: "Master" restart request (abort existing connections)
+3428: 00:35:51.628 - Taking reference on default app domain
+3428: 00:35:51.717 - Application: "Master" started in app domain: 6
+3428: 00:35:52.164 - RequestApplicationStop: 2
+3428: 00:35:52.186 - Application: "Master" stopped in app domain: 2 (abort existing connections)
+3428: 00:35:52.186 - Application: "Master" restart complete.
+6624: 00:35:52.230 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+8000: 00:35:52.248 - Unloading Domain: ApplicationName = 'Master', DomainId='2'
+6624: 00:35:52.248 - CManagedHost::OnDomainUnload() - 2
+3428: 00:35:58.770 - Restarting application: "Master" due to file changes
+3428: 00:35:58.770 - Application: "Master" restart request (abort existing connections)
+3428: 00:35:58.917 - Taking reference on default app domain
+3428: 00:35:59.086 - Application: "Master" started in app domain: 7
+3428: 00:35:59.766 - RequestApplicationStop: 6
+3428: 00:35:59.790 - Application: "Master" stopped in app domain: 6 (abort existing connections)
+6624: 00:35:59.790 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+3428: 00:35:59.790 - Application: "Master" restart complete.
+8000: 00:35:59.808 - Unloading Domain: ApplicationName = 'Master', DomainId='6'
+6624: 00:35:59.808 - CManagedHost::OnDomainUnload() - 6
+3428: 00:40:04.752 - Restarting application: "Master" due to file changes
+3428: 00:40:04.752 - Application: "Master" restart request (abort existing connections)
+3428: 00:40:04.886 - Failed to restart application: CManagedHost::CreateApplicationInNewAppDomain() - Failed to create new application domain for : "Master" - Can't find Photon.LoadBalancing.dll in C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin or C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin
+3428: 00:40:19.073 - Restarting application: "Master" due to file changes
+3428: 00:40:19.073 - Application: "Master" restart request (abort existing connections)
+3428: 00:40:19.188 - Taking reference on default app domain
+3428: 00:40:19.266 - Application: "Master" started in app domain: 8
+3428: 00:40:19.648 - RequestApplicationStop: 7
+3428: 00:40:19.663 - Application: "Master" stopped in app domain: 7 (abort existing connections)
+3428: 00:40:19.663 - Application: "Master" restart complete.
+6624: 00:40:19.683 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+8000: 00:40:19.712 - Unloading Domain: ApplicationName = 'Master', DomainId='7'
+6624: 00:40:19.712 - CManagedHost::OnDomainUnload() - 7
+3428: 00:47:21.695 - Restarting application: "Master" due to file changes
+3428: 00:47:21.695 - Application: "Master" restart request (abort existing connections)
+3428: 00:47:21.810 - Taking reference on default app domain
+3428: 00:47:22.007 - Master:9 - Start() failed.
+Exception:
+System.BadImageFormatException: Could not load file or assembly 'Photon.LoadBalancing' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+File name: 'Photon.LoadBalancing'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at PhotonHostRuntime.PhotonDomainManager.PhotonPlainAppDomainBehavior.Start(String assemblyName, String typeName, String instanceName, String applicationName, IPhotonApplicationSink sink, ILogToUnmanagedLog logger, IControlListeners listenerControl)
+   at PhotonHostRuntime.PhotonDomainManager.Start(String assemblyName, String typeName, String instanceName, String applicationName, IPhotonApplicationSink sink, ILogToUnmanagedLog logger, IControlListeners listenerControl)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+3428: 00:47:22.015 - Master:9 - Stop() failed.
+Exception:
+System.Exception: Stop: unable to call the Application.TearDown() - undefined photonControl.
+   at PhotonHostRuntime.PhotonDomainManager.PhotonPlainAppDomainBehavior.Stop()
+   at PhotonHostRuntime.PhotonDomainManager.Stop()
+6624: 00:47:22.016 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+3428: 00:47:22.029 - Failed to restart application: CManagedHost::StartApplication() - Failed to start application in AppDomain: 9 - An attempt was made to load a program with an incorrect format.
+8000: 00:47:22.038 - Unloading Domain: ApplicationName = 'Master', DomainId='9'
+6624: 00:47:22.039 - CManagedHost::OnDomainUnload() - 9
+3428: 00:48:38.400 - Restarting application: "Master" due to file changes
+3428: 00:48:38.400 - Application: "Master" restart request (abort existing connections)
+3428: 00:48:38.402 - Failed to restart application: CManagedHost::CreateApplicationInNewAppDomain() - Failed to create new application domain for : "Master" - Can't find Photon.LoadBalancing.dll in C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin or C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin
+3428: 00:48:41.880 - Restarting application: "Master" due to file changes
+3428: 00:48:41.880 - Application: "Master" restart request (abort existing connections)
+3428: 00:48:42.045 - Taking reference on default app domain
+3428: 00:48:42.076 - Master:10 - Start() failed.
+Exception:
+System.BadImageFormatException: Could not load file or assembly 'Photon.LoadBalancing' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+File name: 'Photon.LoadBalancing'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at PhotonHostRuntime.PhotonDomainManager.PhotonPlainAppDomainBehavior.Start(String assemblyName, String typeName, String instanceName, String applicationName, IPhotonApplicationSink sink, ILogToUnmanagedLog logger, IControlListeners listenerControl)
+   at PhotonHostRuntime.PhotonDomainManager.Start(String assemblyName, String typeName, String instanceName, String applicationName, IPhotonApplicationSink sink, ILogToUnmanagedLog logger, IControlListeners listenerControl)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+3428: 00:48:42.078 - Master:10 - Stop() failed.
+Exception:
+System.Exception: Stop: unable to call the Application.TearDown() - undefined photonControl.
+   at PhotonHostRuntime.PhotonDomainManager.PhotonPlainAppDomainBehavior.Stop()
+   at PhotonHostRuntime.PhotonDomainManager.Stop()
+6624: 00:48:42.080 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+3428: 00:48:42.081 - Failed to restart application: CManagedHost::StartApplication() - Failed to start application in AppDomain: 10 - An attempt was made to load a program with an incorrect format.
+8000: 00:48:42.095 - Unloading Domain: ApplicationName = 'Master', DomainId='10'
+6624: 00:48:42.095 - CManagedHost::OnDomainUnload() - 10
+6088: 00:48:51.907 - Service is stopped...
+6088: 00:48:51.907 - Server shutting down...
+6088: 00:48:51.907 - Shutdown monitoring enabled, 30000ms before process abort
+6088: 00:48:51.907 - Notifying CLR applications of shutdown...
+6088: 00:48:51.907 - RequestApplicationStop: 5
+6088: 00:48:51.931 - RequestApplicationStop: 3
+6088: 00:48:51.941 - RequestApplicationStop: 4
+6088: 00:48:51.953 - RequestApplicationStop: 8
+6088: 00:48:51.961 - RequestStop: defalt app domain
+6088: 00:48:51.962 - Shutting down WebSocket Outbound Connection Manager...
+6088: 00:48:51.962 - Shutting down TCP Outbound Connection Manager...
+6088: 00:48:51.962 - Shutting down ENet Outbound Connection Manager...
+6088: 00:48:51.962 - Disconnecting all outbound peers...
+6088: 00:48:51.962 - Shutting down ENet host...
+6088: 00:48:51.962 - Disconnecting all peers...
+6088: 00:48:51.974 - CUDPSocketServer::OnSendToCompletionError() - An operation was attempted on something that is not a socket.
+
+6088: 00:48:51.975 - 1 disconnected
+6088: 00:48:51.975 - Shutting down socket servers...
+6088: 00:48:51.975 - Shutting down ENet thread pool...
+6088: 00:48:51.978 - Shutting down TCP inactivity timers...
+6088: 00:48:51.978 - ENet Host - Resetting all peers...
+6088: 00:48:51.978 - WaitingForShutdownToComplete: NativePolicy:0.0.0.0:843
+6088: 00:48:51.978 - OnShutdownCompleted: NativePolicy:0.0.0.0:843
+6088: 00:48:51.978 - WaitingForShutdownToComplete: NativePolicy:0.0.0.0:943
+6088: 00:48:51.978 - OnShutdownCompleted: NativePolicy:0.0.0.0:943
+6088: 00:48:51.978 - WaitingForShutdownToComplete: TCP:0.0.0.0:4520
+6088: 00:48:51.978 - OnShutdownCompleted: TCP:0.0.0.0:4520
+6088: 00:48:51.978 - WaitingForShutdownToComplete: TCP:0.0.0.0:4530
+6088: 00:48:51.978 - OnShutdownCompleted: TCP:0.0.0.0:4530
+6088: 00:48:51.978 - WaitingForShutdownToComplete: TCP:0.0.0.0:4531
+6088: 00:48:51.978 - OnShutdownCompleted: TCP:0.0.0.0:4531
+6088: 00:48:51.978 - WaitingForShutdownToComplete: TCP:0.0.0.0:4532
+6088: 00:48:51.978 - OnShutdownCompleted: TCP:0.0.0.0:4532
+6088: 00:48:51.978 - WaitingForShutdownToComplete: UDP:127.0.0.1:5055
+6088: 00:48:51.978 - OnShutdownCompleted: UDP:127.0.0.1:5055
+6088: 00:48:51.978 - WaitingForShutdownToComplete: UDP:127.0.0.1:5056
+6088: 00:48:51.978 - OnShutdownCompleted: UDP:127.0.0.1:5056
+6088: 00:48:51.978 - WaitingForShutdownToComplete: UDP:127.0.0.1:5057
+6088: 00:48:51.978 - OnShutdownCompleted: UDP:127.0.0.1:5057
+6088: 00:48:51.978 - WaitingForShutdownToComplete: UDP:192.168.1.7:5055
+6088: 00:48:51.978 - OnShutdownCompleted: UDP:192.168.1.7:5055
+6088: 00:48:51.978 - WaitingForShutdownToComplete: UDP:192.168.1.7:5056
+6088: 00:48:51.978 - OnShutdownCompleted: UDP:192.168.1.7:5056
+6088: 00:48:51.978 - WaitingForShutdownToComplete: UDP:192.168.1.7:5057
+6088: 00:48:51.978 - OnShutdownCompleted: UDP:192.168.1.7:5057
+6088: 00:48:51.978 - WaitingForShutdownToComplete: WebSocket:0.0.0.0:9090
+6088: 00:48:51.978 - OnShutdownCompleted: WebSocket:0.0.0.0:9090
+6088: 00:48:51.978 - WaitingForShutdownToComplete: WebSocket:0.0.0.0:9091
+6088: 00:48:51.978 - OnShutdownCompleted: WebSocket:0.0.0.0:9091
+6088: 00:48:51.978 - WaitingForShutdownToComplete: WebSocket:0.0.0.0:9092
+6088: 00:48:51.978 - OnShutdownCompleted: WebSocket:0.0.0.0:9092
+6088: 00:48:51.978 - Shutting down CLR applications...
+6624: 00:48:51.984 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+6088: 00:48:51.995 - Shutting down business logic thread pool...
+6088: 00:48:51.996 - Shutting down I/O thread pool...
+6088: 00:48:51.997 - Destroying servers
+6088: 00:48:51.997 - Destroying WebSocket Outbound Connection Manager
+6088: 00:48:51.997 - Destroying TCP Outbound Connection Manager
+6088: 00:48:51.997 - Destroying TCP inactivity timer
+6088: 00:48:51.997 - Destroying ENet timer wheel
+6088: 00:48:51.997 - Destroying ENet host
+6088: 00:48:51.997 - Destroying ENet outbound host
+6088: 00:48:51.997 - Destroying HTTP inactivity timer
+6088: 00:48:51.997 - Destroying HTTP host
+6088: 00:48:51.997 - Flushing ENET buffer allocator...
+6088: 00:48:52.000 - Flushing TCP buffer handle allocator...
+6088: 00:48:52.000 - Flushing stream socket allocator...
+6088: 00:48:52.001 - Flushing inbound datagram socket allocator...
+6088: 00:48:52.002 - Flushing outbound datagram socket allocator...
+6088: 00:48:52.002 - Destroying CLR dispatcher
+6088: 00:48:52.002 - Destroying CLR applications
+6088: 00:48:52.002 - ~CCLRApplicationCollection() - Waiting up to 10 seconds for the CLR to release all of our objects
+8000: 00:48:52.011 - Unloading Domain: ApplicationName = 'CounterPublisher', DomainId='5'
+6624: 00:48:52.023 - CManagedHost::OnDomainUnload() - 5
+6624: 00:48:52.029 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+8000: 00:48:52.048 - Unloading Domain: ApplicationName = 'Master', DomainId='8'
+6624: 00:48:52.048 - CManagedHost::OnDomainUnload() - 8
+6624: 00:48:52.072 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+8000: 00:48:52.097 - Unloading Domain: ApplicationName = 'Game1', DomainId='3'
+6624: 00:48:52.097 - CManagedHost::OnDomainUnload() - 3
+6624: 00:48:52.101 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+8000: 00:48:52.125 - Unloading Domain: ApplicationName = 'Game2', DomainId='4'
+6624: 00:48:52.125 - CManagedHost::OnDomainUnload() - 4
+6088: 00:48:52.128 - ~CCLRApplicationCollection() - Done. All objects released
+6088: 00:48:52.128 - ~CManagedHost() - Release default app domain
+6088: 00:48:52.128 - CManagedHost::OnDomainUnload() - 1
+6088: 00:48:52.128 - ~CManagedHost() - Waiting up to 10 seconds for CLR shutdown...
+6088: 00:48:52.128 - ~CManagedHost
+6088: 00:48:52.128 - Destroying ENet thread pool
+6088: 00:48:52.128 - Destroying Business logic thread pool
+6088: 00:48:52.128 - Destroying I/O thread pool
+6088: 00:48:52.128 - Destroying ENet buffer allocator
+6088: 00:48:52.128 - Destroying TCP buffer allocator
+6088: 00:48:52.128 - Destroying TCP socket allocator
+6088: 00:48:52.128 - Destroying ENet inbound socket allocator
+6088: 00:48:52.128 - Destroying ENet outbound socket allocator
+6088: 00:48:52.128 - Shutdown complete...
+6088: 00:48:52.128 - Service shutting down
+6088: 00:48:52.131 - Service shut down complete
+5272: 00:48:57.183 - ---
+5272: 00:48:57.183 - Service: "Photon Socket Server" starting
+5272: 00:48:57.183 - Config File: C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\PhotonServer.config
+5272: 00:48:57.184 - Will produce at most: 10 crash dumps
+5272: 00:48:57.185 - Action: run as exe
+5272: 00:48:57.185 - Server Starting...
+5272: 00:48:57.185 -    Tick count: 459421696 (wraps in: 44.3929 days)
+5272: 00:48:57.185 - Tick count 64: 459421696
+5272: 00:48:57.185 - Photon Version: 3.4.4.2588
+5272: 00:48:57.185 - PID: 8120
+5272: 00:48:57.185 - Config File: C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\PhotonServer.config
+5272: 00:48:57.186 - Will NOT log unimportant exceptions
+5272: 00:48:57.189 - Not using performance counters as they are not currently installed. Run the service with /InstallCounters to install them.
+5272: 00:48:57.189 - Shutdown timeout enabled: 30000ms
+5272: 00:48:57.189 - Starting I/O thread pool with 2 threads
+5272: 00:48:57.189 - Using Standard allocator
+5272: 00:48:57.190 - Max message size: 512000
+5272: 00:48:57.190 - Starting business logic thread pool with the following settings
+5272: 00:48:57.190 - InitialThreads: 4 threads
+5272: 00:48:57.190 - MinThreads: 4 threads
+5272: 00:48:57.190 - Thread pool is fixed size
+5272: 00:48:57.190 - Starting ENet thread pool with the following settings
+5272: 00:48:57.190 - InitialThreads: 2 threads
+5272: 00:48:57.190 - MinThreads: 2 threads
+5272: 00:48:57.190 - Thread pool is fixed size
+5272: 00:48:57.190 - OnlyDispatchTimers: False
+5272: 00:48:57.190 - S2S: flow control: Max pending writes: 50
+5272: 00:48:57.190 - S2S: flow control: Max queued buffers: 200
+5272: 00:48:57.190 - S2S: flow control: Max pending writes MUX: 500
+5272: 00:48:57.190 - S2S: flow control: Max queued buffers MUX: 2000
+5272: 00:48:57.190 - S2S: MaxInboundMessageSize: 512000
+5272: 00:48:57.190 - S2S: MaxOutboundMessageSize: 512000
+5272: 00:48:57.190 - S2S: No inactivity timeout
+5272: 00:48:57.196 - WebSocket S2S: MaxInboundMessageSize: 512000
+5272: 00:48:57.196 - WebSocket S2S: MaxOutboundMessageSize: 512000
+5272: 00:48:57.196 - WebSocket S2S: No inactivity timeout
+5272: 00:48:57.197 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+5272: 00:48:57.197 - Per peer bandwidth limit
+5272: 00:48:57.197 - Transmit Rate Limit: 256 KB/Sec
+5272: 00:48:57.197 - Limit period: 200ms
+5272: 00:48:57.197 - Limit per period: 52428 bytes
+5272: 00:48:57.197 - Max queued data for transmission per peer: 512000 bytes
+5272: 00:48:57.197 - Minimum retransmit timeout: 200
+5272: 00:48:57.197 - Minimum ENet timeout: 5000ms
+5272: 00:48:57.197 - Maximum ENet timeout: 30000ms
+5272: 00:48:57.197 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+5272: 00:48:57.197 - Outbound ENet: MaxInboundMessageSize: 512000
+5272: 00:48:57.197 - Outbound ENet: MaxOutboundMessageSize: 512000
+5272: 00:48:57.200 - GetRuntime - About to load CLR - versions available:
+5272: 00:48:57.200 - v2.0.50727
+5272: 00:48:57.200 - v4.0.30319
+5272: 00:48:57.200 - Configuration requests: "v2.0.50727"
+5272: 00:48:57.200 - About to load version: "v2.0.50727"
+5272: 00:48:57.210 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+5272: 00:48:57.210 - CLRBaseDirectory set to "C:\Users\Justin\Projects\mobas\server\deploy"
+5272: 00:48:57.210 - Optimising event broadcast for 20 or more peers
+5272: 00:48:57.212 - Start: About to load CLR - versions available:
+5272: 00:48:57.212 - v2.0.50727
+5272: 00:48:57.212 - v4.0.30319
+5272: 00:48:57.212 - No preference in configuration file, will load latest.
+5272: 00:48:57.212 - About to load version: "v4.0.30319"
+5272: 00:48:57.213 - Loaded version: "v4.0.30319"
+5272: 00:48:57.831 - Photon host runtime loaded
+5272: 00:49:06.100 - License is valid.
+5272: 00:49:06.100 - Licensed for 100 concurrent connections.
+5272: 00:49:06.100 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+5272: 00:49:06.100 - ENet: Per peer bandwidth limit
+5272: 00:49:06.100 - ENet: Transmit Rate Limit: 256 KB/Sec
+5272: 00:49:06.100 - ENet: Limit period: 200ms
+5272: 00:49:06.100 - ENet: Limit per period: 52428 bytes
+5272: 00:49:06.100 - ENet: Max queued data for transmission per peer: 512000 bytes
+5272: 00:49:06.100 - ENet: Minimum retransmit timeout: 200
+5272: 00:49:06.100 - ENet: Minimum timeout: 5000ms
+5272: 00:49:06.100 - ENet: Maximum timeout: 30000ms
+5272: 00:49:06.100 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+5272: 00:49:06.100 - About to load application: Master from Photon.LoadBalancing
+5272: 00:49:06.100 - Auto restart is enabled for application, existing connections will be terminated during restart
+5272: 00:49:06.100 - Application will restart 1000ms after the last change detected
+5272: 00:49:06.100 - Application will restart if files matching the following are changed: "dll;config"
+5272: 00:49:06.100 - Application will NOT restart if files matching the following are changed: "log4net.config"
+5272: 00:49:06.205 - Taking reference on default app domain
+5272: 00:49:06.220 - Master:2 - Start() failed.
+Exception:
+System.BadImageFormatException: Could not load file or assembly 'Photon.LoadBalancing' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+File name: 'Photon.LoadBalancing'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at PhotonHostRuntime.PhotonDomainManager.PhotonPlainAppDomainBehavior.Start(String assemblyName, String typeName, String instanceName, String applicationName, IPhotonApplicationSink sink, ILogToUnmanagedLog logger, IControlListeners listenerControl)
+   at PhotonHostRuntime.PhotonDomainManager.Start(String assemblyName, String typeName, String instanceName, String applicationName, IPhotonApplicationSink sink, ILogToUnmanagedLog logger, IControlListeners listenerControl)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+5272: 00:49:06.222 - Master:2 - Stop() failed.
+Exception:
+System.Exception: Stop: unable to call the Application.TearDown() - undefined photonControl.
+   at PhotonHostRuntime.PhotonDomainManager.PhotonPlainAppDomainBehavior.Stop()
+   at PhotonHostRuntime.PhotonDomainManager.Stop()
+5272: 00:49:06.222 - ERROR: Failed to start application: "Master" in app domain: 2
+3852: 00:49:06.222 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+4832: 00:49:06.236 - Unloading Domain: ApplicationName = 'Master', DomainId='2'
+3852: 00:49:06.237 - CManagedHost::OnDomainUnload() - 2
+5272: 00:49:06.250 - CService::OnException() - Exception: CManagedHost::StartApplication() - Failed to start application in AppDomain: 2 - An attempt was made to load a program with an incorrect format.
+5272: 00:49:06.250 - Server shutting down...
+5272: 00:49:06.250 - Shutdown monitoring enabled, 30000ms before process abort
+5272: 00:49:06.250 - Notifying CLR applications of shutdown...
+5272: 00:49:06.250 - RequestStop: defalt app domain
+5272: 00:49:06.295 - Shutting down WebSocket Outbound Connection Manager...
+5272: 00:49:06.295 - Shutting down TCP Outbound Connection Manager...
+5272: 00:49:06.295 - Shutting down ENet Outbound Connection Manager...
+5272: 00:49:06.295 - Disconnecting all outbound peers...
+5272: 00:49:06.295 - Shutting down ENet host...
+5272: 00:49:06.295 - Disconnecting all peers...
+5272: 00:49:06.295 - Shutting down socket servers...
+5272: 00:49:06.295 - Shutting down ENet thread pool...
+5272: 00:49:06.295 - Shutting down TCP inactivity timers...
+5272: 00:49:06.295 - Shutting down CLR applications...
+5272: 00:49:06.295 - Shutting down business logic thread pool...
+5272: 00:49:06.295 - Shutting down I/O thread pool...
+5272: 00:49:06.296 - Destroying servers
+5272: 00:49:06.296 - Destroying WebSocket Outbound Connection Manager
+5272: 00:49:06.296 - Destroying TCP Outbound Connection Manager
+5272: 00:49:06.296 - Destroying TCP inactivity timer
+5272: 00:49:06.296 - Destroying ENet timer wheel
+5272: 00:49:06.296 - Destroying ENet host
+5272: 00:49:06.296 - Destroying ENet outbound host
+5272: 00:49:06.296 - Destroying HTTP inactivity timer
+5272: 00:49:06.296 - Destroying HTTP host
+5272: 00:49:06.296 - Flushing ENET buffer allocator...
+5272: 00:49:06.296 - Flushing TCP buffer handle allocator...
+5272: 00:49:06.296 - Flushing stream socket allocator...
+5272: 00:49:06.296 - Flushing inbound datagram socket allocator...
+5272: 00:49:06.296 - Flushing outbound datagram socket allocator...
+5272: 00:49:06.296 - Destroying CLR dispatcher
+5272: 00:49:06.296 - Destroying CLR applications
+5272: 00:49:06.296 - ~CCLRApplicationCollection() - Waiting up to 10 seconds for the CLR to release all of our objects
+5272: 00:49:06.296 - ~CCLRApplicationCollection() - Done. All objects released
+5272: 00:49:06.296 - ~CManagedHost() - Release default app domain
+5272: 00:49:06.296 - CManagedHost::OnDomainUnload() - 1
+5272: 00:49:06.296 - ~CManagedHost() - Waiting up to 10 seconds for CLR shutdown...
+5272: 00:49:06.296 - ~CManagedHost
+5272: 00:49:06.296 - Destroying ENet thread pool
+5272: 00:49:06.296 - Destroying Business logic thread pool
+5272: 00:49:06.296 - Destroying I/O thread pool
+5272: 00:49:06.296 - Destroying ENet buffer allocator
+5272: 00:49:06.296 - Destroying TCP buffer allocator
+5272: 00:49:06.296 - Destroying TCP socket allocator
+5272: 00:49:06.296 - Destroying ENet inbound socket allocator
+5272: 00:49:06.296 - Destroying ENet outbound socket allocator
+5272: 00:49:06.296 - Shutdown complete...
+5272: 00:49:06.296 - Service shutting down: failed to start application. Errorcode: 108
+5272: 00:49:06.298 - Service shut down complete
+7996: 00:49:17.138 - ---
+7996: 00:49:17.138 - Service: "Photon Socket Server" starting
+7996: 00:49:17.139 - Config File: C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\PhotonServer.config
+7996: 00:49:17.140 - Will produce at most: 10 crash dumps
+7996: 00:49:17.140 - Action: run as exe
+7996: 00:49:17.141 - Server Starting...
+7996: 00:49:17.141 -    Tick count: 459441648 (wraps in: 44.3927 days)
+7996: 00:49:17.141 - Tick count 64: 459441648
+7996: 00:49:17.141 - Photon Version: 3.4.4.2588
+7996: 00:49:17.141 - PID: 5040
+7996: 00:49:17.141 - Config File: C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\PhotonServer.config
+7996: 00:49:17.142 - Will NOT log unimportant exceptions
+7996: 00:49:17.144 - Not using performance counters as they are not currently installed. Run the service with /InstallCounters to install them.
+7996: 00:49:17.144 - Shutdown timeout enabled: 30000ms
+7996: 00:49:17.144 - Starting I/O thread pool with 2 threads
+7996: 00:49:17.144 - Using Standard allocator
+7996: 00:49:17.144 - Max message size: 512000
+7996: 00:49:17.144 - Starting business logic thread pool with the following settings
+7996: 00:49:17.144 - InitialThreads: 4 threads
+7996: 00:49:17.144 - MinThreads: 4 threads
+7996: 00:49:17.144 - Thread pool is fixed size
+7996: 00:49:17.144 - Starting ENet thread pool with the following settings
+7996: 00:49:17.144 - InitialThreads: 2 threads
+7996: 00:49:17.144 - MinThreads: 2 threads
+7996: 00:49:17.144 - Thread pool is fixed size
+7996: 00:49:17.144 - OnlyDispatchTimers: False
+7996: 00:49:17.144 - S2S: flow control: Max pending writes: 50
+7996: 00:49:17.144 - S2S: flow control: Max queued buffers: 200
+7996: 00:49:17.144 - S2S: flow control: Max pending writes MUX: 500
+7996: 00:49:17.144 - S2S: flow control: Max queued buffers MUX: 2000
+7996: 00:49:17.144 - S2S: MaxInboundMessageSize: 512000
+7996: 00:49:17.144 - S2S: MaxOutboundMessageSize: 512000
+7996: 00:49:17.144 - S2S: No inactivity timeout
+7996: 00:49:17.149 - WebSocket S2S: MaxInboundMessageSize: 512000
+7996: 00:49:17.149 - WebSocket S2S: MaxOutboundMessageSize: 512000
+7996: 00:49:17.149 - WebSocket S2S: No inactivity timeout
+7996: 00:49:17.149 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+7996: 00:49:17.149 - Per peer bandwidth limit
+7996: 00:49:17.149 - Transmit Rate Limit: 256 KB/Sec
+7996: 00:49:17.149 - Limit period: 200ms
+7996: 00:49:17.149 - Limit per period: 52428 bytes
+7996: 00:49:17.149 - Max queued data for transmission per peer: 512000 bytes
+7996: 00:49:17.149 - Minimum retransmit timeout: 200
+7996: 00:49:17.149 - Minimum ENet timeout: 5000ms
+7996: 00:49:17.149 - Maximum ENet timeout: 30000ms
+7996: 00:49:17.149 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+7996: 00:49:17.149 - Outbound ENet: MaxInboundMessageSize: 512000
+7996: 00:49:17.149 - Outbound ENet: MaxOutboundMessageSize: 512000
+7996: 00:49:17.151 - GetRuntime - About to load CLR - versions available:
+7996: 00:49:17.151 - v2.0.50727
+7996: 00:49:17.151 - v4.0.30319
+7996: 00:49:17.151 - Configuration requests: "v2.0.50727"
+7996: 00:49:17.151 - About to load version: "v2.0.50727"
+7996: 00:49:17.158 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+7996: 00:49:17.158 - CLRBaseDirectory set to "C:\Users\Justin\Projects\mobas\server\deploy"
+7996: 00:49:17.158 - Optimising event broadcast for 20 or more peers
+7996: 00:49:17.159 - Start: About to load CLR - versions available:
+7996: 00:49:17.159 - v2.0.50727
+7996: 00:49:17.159 - v4.0.30319
+7996: 00:49:17.159 - No preference in configuration file, will load latest.
+7996: 00:49:17.159 - About to load version: "v4.0.30319"
+7996: 00:49:17.160 - Loaded version: "v4.0.30319"
+7996: 00:49:17.440 - Photon host runtime loaded
+7996: 00:49:24.451 - License is valid.
+7996: 00:49:24.451 - Licensed for 100 concurrent connections.
+7996: 00:49:24.451 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+7996: 00:49:24.451 - ENet: Per peer bandwidth limit
+7996: 00:49:24.451 - ENet: Transmit Rate Limit: 256 KB/Sec
+7996: 00:49:24.451 - ENet: Limit period: 200ms
+7996: 00:49:24.451 - ENet: Limit per period: 52428 bytes
+7996: 00:49:24.451 - ENet: Max queued data for transmission per peer: 512000 bytes
+7996: 00:49:24.451 - ENet: Minimum retransmit timeout: 200
+7996: 00:49:24.451 - ENet: Minimum timeout: 5000ms
+7996: 00:49:24.451 - ENet: Maximum timeout: 30000ms
+7996: 00:49:24.451 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+7996: 00:49:24.451 - About to load application: Master from Photon.LoadBalancing
+7996: 00:49:24.451 - Auto restart is enabled for application, existing connections will be terminated during restart
+7996: 00:49:24.451 - Application will restart 1000ms after the last change detected
+7996: 00:49:24.451 - Application will restart if files matching the following are changed: "dll;config"
+7996: 00:49:24.451 - Application will NOT restart if files matching the following are changed: "log4net.config"
+7996: 00:49:24.588 - Taking reference on default app domain
+7996: 00:49:24.602 - Master:2 - Start() failed.
+Exception:
+System.BadImageFormatException: Could not load file or assembly 'Photon.LoadBalancing' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+File name: 'Photon.LoadBalancing'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at PhotonHostRuntime.PhotonDomainManager.PhotonPlainAppDomainBehavior.Start(String assemblyName, String typeName, String instanceName, String applicationName, IPhotonApplicationSink sink, ILogToUnmanagedLog logger, IControlListeners listenerControl)
+   at PhotonHostRuntime.PhotonDomainManager.Start(String assemblyName, String typeName, String instanceName, String applicationName, IPhotonApplicationSink sink, ILogToUnmanagedLog logger, IControlListeners listenerControl)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+7996: 00:49:24.604 - Master:2 - Stop() failed.
+Exception:
+System.Exception: Stop: unable to call the Application.TearDown() - undefined photonControl.
+   at PhotonHostRuntime.PhotonDomainManager.PhotonPlainAppDomainBehavior.Stop()
+   at PhotonHostRuntime.PhotonDomainManager.Stop()
+7996: 00:49:24.604 - ERROR: Failed to start application: "Master" in app domain: 2
+3416: 00:49:24.604 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+7996: 00:49:24.604 - CService::OnException() - Exception: CManagedHost::StartApplication() - Failed to start application in AppDomain: 2 - An attempt was made to load a program with an incorrect format.
+7996: 00:49:24.604 - Server shutting down...
+7996: 00:49:24.604 - Shutdown monitoring enabled, 30000ms before process abort
+7996: 00:49:24.604 - Notifying CLR applications of shutdown...
+7996: 00:49:24.604 - RequestStop: defalt app domain
+7996: 00:49:24.606 - Shutting down WebSocket Outbound Connection Manager...
+7996: 00:49:24.606 - Shutting down TCP Outbound Connection Manager...
+7996: 00:49:24.606 - Shutting down ENet Outbound Connection Manager...
+7996: 00:49:24.606 - Disconnecting all outbound peers...
+7996: 00:49:24.606 - Shutting down ENet host...
+7996: 00:49:24.606 - Disconnecting all peers...
+7996: 00:49:24.606 - Shutting down socket servers...
+7996: 00:49:24.606 - Shutting down ENet thread pool...
+7996: 00:49:24.606 - Shutting down TCP inactivity timers...
+7996: 00:49:24.606 - Shutting down CLR applications...
+7996: 00:49:24.606 - Shutting down business logic thread pool...
+7996: 00:49:24.606 - Shutting down I/O thread pool...
+7996: 00:49:24.606 - Destroying servers
+7996: 00:49:24.606 - Destroying WebSocket Outbound Connection Manager
+7996: 00:49:24.606 - Destroying TCP Outbound Connection Manager
+7996: 00:49:24.606 - Destroying TCP inactivity timer
+7996: 00:49:24.606 - Destroying ENet timer wheel
+7996: 00:49:24.606 - Destroying ENet host
+7996: 00:49:24.606 - Destroying ENet outbound host
+7996: 00:49:24.606 - Destroying HTTP inactivity timer
+7996: 00:49:24.606 - Destroying HTTP host
+7996: 00:49:24.606 - Flushing ENET buffer allocator...
+7996: 00:49:24.606 - Flushing TCP buffer handle allocator...
+7996: 00:49:24.606 - Flushing stream socket allocator...
+7996: 00:49:24.606 - Flushing inbound datagram socket allocator...
+7996: 00:49:24.606 - Flushing outbound datagram socket allocator...
+7996: 00:49:24.606 - Destroying CLR dispatcher
+7996: 00:49:24.606 - Destroying CLR applications
+7996: 00:49:24.607 - ~CCLRApplicationCollection() - Waiting up to 10 seconds for the CLR to release all of our objects
+2656: 00:49:24.616 - Unloading Domain: ApplicationName = 'Master', DomainId='2'
+3416: 00:49:24.616 - CManagedHost::OnDomainUnload() - 2
+7996: 00:49:24.616 - ~CCLRApplicationCollection() - Done. All objects released
+7996: 00:49:24.616 - ~CManagedHost() - Release default app domain
+7996: 00:49:24.616 - CManagedHost::OnDomainUnload() - 1
+7996: 00:49:24.616 - ~CManagedHost() - Waiting up to 10 seconds for CLR shutdown...
+7996: 00:49:24.616 - ~CManagedHost
+7996: 00:49:24.616 - Destroying ENet thread pool
+7996: 00:49:24.616 - Destroying Business logic thread pool
+7996: 00:49:24.616 - Destroying I/O thread pool
+7996: 00:49:24.616 - Destroying ENet buffer allocator
+7996: 00:49:24.616 - Destroying TCP buffer allocator
+7996: 00:49:24.616 - Destroying TCP socket allocator
+7996: 00:49:24.616 - Destroying ENet inbound socket allocator
+7996: 00:49:24.616 - Destroying ENet outbound socket allocator
+7996: 00:49:24.616 - Shutdown complete...
+7996: 00:49:24.616 - Service shutting down: failed to start application. Errorcode: 108
+7996: 00:49:24.620 - Service shut down complete
+6308: 00:52:05.363 - ---
+6308: 00:52:05.363 - Service: "Photon Socket Server" starting
+6308: 00:52:05.363 - Config File: C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\PhotonServer.config
+6308: 00:52:05.364 - Will produce at most: 10 crash dumps
+6308: 00:52:05.365 - Action: run as exe
+6308: 00:52:05.365 - Server Starting...
+6308: 00:52:05.365 -    Tick count: 459609864 (wraps in: 44.3907 days)
+6308: 00:52:05.365 - Tick count 64: 459609864
+6308: 00:52:05.366 - Photon Version: 3.4.4.2588
+6308: 00:52:05.366 - PID: 6860
+6308: 00:52:05.366 - Config File: C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\PhotonServer.config
+6308: 00:52:05.366 - Will NOT log unimportant exceptions
+6308: 00:52:05.369 - Not using performance counters as they are not currently installed. Run the service with /InstallCounters to install them.
+6308: 00:52:05.369 - Shutdown timeout enabled: 30000ms
+6308: 00:52:05.369 - Starting I/O thread pool with 2 threads
+6308: 00:52:05.369 - Using Standard allocator
+6308: 00:52:05.369 - Max message size: 512000
+6308: 00:52:05.370 - Starting business logic thread pool with the following settings
+6308: 00:52:05.370 - InitialThreads: 4 threads
+6308: 00:52:05.370 - MinThreads: 4 threads
+6308: 00:52:05.370 - Thread pool is fixed size
+6308: 00:52:05.370 - Starting ENet thread pool with the following settings
+6308: 00:52:05.370 - InitialThreads: 2 threads
+6308: 00:52:05.370 - MinThreads: 2 threads
+6308: 00:52:05.370 - Thread pool is fixed size
+6308: 00:52:05.370 - OnlyDispatchTimers: False
+6308: 00:52:05.371 - S2S: flow control: Max pending writes: 50
+6308: 00:52:05.371 - S2S: flow control: Max queued buffers: 200
+6308: 00:52:05.371 - S2S: flow control: Max pending writes MUX: 500
+6308: 00:52:05.371 - S2S: flow control: Max queued buffers MUX: 2000
+6308: 00:52:05.371 - S2S: MaxInboundMessageSize: 512000
+6308: 00:52:05.371 - S2S: MaxOutboundMessageSize: 512000
+6308: 00:52:05.371 - S2S: No inactivity timeout
+6308: 00:52:05.376 - WebSocket S2S: MaxInboundMessageSize: 512000
+6308: 00:52:05.376 - WebSocket S2S: MaxOutboundMessageSize: 512000
+6308: 00:52:05.376 - WebSocket S2S: No inactivity timeout
+6308: 00:52:05.376 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+6308: 00:52:05.376 - Per peer bandwidth limit
+6308: 00:52:05.376 - Transmit Rate Limit: 256 KB/Sec
+6308: 00:52:05.376 - Limit period: 200ms
+6308: 00:52:05.376 - Limit per period: 52428 bytes
+6308: 00:52:05.376 - Max queued data for transmission per peer: 512000 bytes
+6308: 00:52:05.376 - Minimum retransmit timeout: 200
+6308: 00:52:05.376 - Minimum ENet timeout: 5000ms
+6308: 00:52:05.376 - Maximum ENet timeout: 30000ms
+6308: 00:52:05.376 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+6308: 00:52:05.376 - Outbound ENet: MaxInboundMessageSize: 512000
+6308: 00:52:05.376 - Outbound ENet: MaxOutboundMessageSize: 512000
+6308: 00:52:05.380 - GetRuntime - About to load CLR - versions available:
+6308: 00:52:05.380 - v2.0.50727
+6308: 00:52:05.380 - v4.0.30319
+6308: 00:52:05.380 - Configuration requests: "v2.0.50727"
+6308: 00:52:05.380 - About to load version: "v2.0.50727"
+6308: 00:52:05.390 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+6308: 00:52:05.390 - CLRBaseDirectory set to "C:\Users\Justin\Projects\mobas\server\deploy"
+6308: 00:52:05.390 - Optimising event broadcast for 20 or more peers
+6308: 00:52:05.391 - Start: About to load CLR - versions available:
+6308: 00:52:05.391 - v2.0.50727
+6308: 00:52:05.391 - v4.0.30319
+6308: 00:52:05.391 - No preference in configuration file, will load latest.
+6308: 00:52:05.391 - About to load version: "v4.0.30319"
+6308: 00:52:05.392 - Loaded version: "v4.0.30319"
+6308: 00:52:05.763 - Photon host runtime loaded
+6308: 00:52:13.724 - License is valid.
+6308: 00:52:13.724 - Licensed for 100 concurrent connections.
+6308: 00:52:13.724 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+6308: 00:52:13.724 - ENet: Per peer bandwidth limit
+6308: 00:52:13.724 - ENet: Transmit Rate Limit: 256 KB/Sec
+6308: 00:52:13.724 - ENet: Limit period: 200ms
+6308: 00:52:13.724 - ENet: Limit per period: 52428 bytes
+6308: 00:52:13.724 - ENet: Max queued data for transmission per peer: 512000 bytes
+6308: 00:52:13.724 - ENet: Minimum retransmit timeout: 200
+6308: 00:52:13.724 - ENet: Minimum timeout: 5000ms
+6308: 00:52:13.724 - ENet: Maximum timeout: 30000ms
+6308: 00:52:13.724 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+6308: 00:52:13.724 - About to load application: Master from Photon.LoadBalancing
+6308: 00:52:13.724 - Auto restart is enabled for application, existing connections will be terminated during restart
+6308: 00:52:13.724 - Application will restart 1000ms after the last change detected
+6308: 00:52:13.724 - Application will restart if files matching the following are changed: "dll;config"
+6308: 00:52:13.724 - Application will NOT restart if files matching the following are changed: "log4net.config"
+6308: 00:52:13.863 - Taking reference on default app domain
+6308: 00:52:13.886 - Master:2 - Start() failed.
+Exception:
+System.BadImageFormatException: Could not load file or assembly 'Photon.LoadBalancing' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+File name: 'Photon.LoadBalancing'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at PhotonHostRuntime.PhotonDomainManager.PhotonPlainAppDomainBehavior.Start(String assemblyName, String typeName, String instanceName, String applicationName, IPhotonApplicationSink sink, ILogToUnmanagedLog logger, IControlListeners listenerControl)
+   at PhotonHostRuntime.PhotonDomainManager.Start(String assemblyName, String typeName, String instanceName, String applicationName, IPhotonApplicationSink sink, ILogToUnmanagedLog logger, IControlListeners listenerControl)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+6308: 00:52:13.890 - Master:2 - Stop() failed.
+Exception:
+System.Exception: Stop: unable to call the Application.TearDown() - undefined photonControl.
+   at PhotonHostRuntime.PhotonDomainManager.PhotonPlainAppDomainBehavior.Stop()
+   at PhotonHostRuntime.PhotonDomainManager.Stop()
+6308: 00:52:13.890 - ERROR: Failed to start application: "Master" in app domain: 2
+6308: 00:52:13.890 - CService::OnException() - Exception: CManagedHost::StartApplication() - Failed to start application in AppDomain: 2 - An attempt was made to load a program with an incorrect format.
+6308: 00:52:13.890 - Server shutting down...
+6308: 00:52:13.890 - Shutdown monitoring enabled, 30000ms before process abort
+6308: 00:52:13.890 - Notifying CLR applications of shutdown...
+6308: 00:52:13.891 - RequestStop: defalt app domain
+6480: 00:52:13.892 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+6308: 00:52:13.894 - Shutting down WebSocket Outbound Connection Manager...
+6308: 00:52:13.894 - Shutting down TCP Outbound Connection Manager...
+6308: 00:52:13.894 - Shutting down ENet Outbound Connection Manager...
+6308: 00:52:13.894 - Disconnecting all outbound peers...
+6308: 00:52:13.894 - Shutting down ENet host...
+6308: 00:52:13.894 - Disconnecting all peers...
+6308: 00:52:13.894 - Shutting down socket servers...
+6308: 00:52:13.894 - Shutting down ENet thread pool...
+6308: 00:52:13.898 - Shutting down TCP inactivity timers...
+6308: 00:52:13.907 - Shutting down CLR applications...
+6308: 00:52:13.907 - Shutting down business logic thread pool...
+5368: 00:52:13.912 - Unloading Domain: ApplicationName = 'Master', DomainId='2'
+6480: 00:52:13.915 - CManagedHost::OnDomainUnload() - 2
+6308: 00:52:13.918 - Shutting down I/O thread pool...
+6308: 00:52:13.922 - Destroying servers
+6308: 00:52:13.922 - Destroying WebSocket Outbound Connection Manager
+6308: 00:52:13.922 - Destroying TCP Outbound Connection Manager
+6308: 00:52:13.922 - Destroying TCP inactivity timer
+6308: 00:52:13.922 - Destroying ENet timer wheel
+6308: 00:52:13.923 - Destroying ENet host
+6308: 00:52:13.923 - Destroying ENet outbound host
+6308: 00:52:13.923 - Destroying HTTP inactivity timer
+6308: 00:52:13.923 - Destroying HTTP host
+6308: 00:52:13.923 - Flushing ENET buffer allocator...
+6308: 00:52:13.923 - Flushing TCP buffer handle allocator...
+6308: 00:52:13.923 - Flushing stream socket allocator...
+6308: 00:52:13.923 - Flushing inbound datagram socket allocator...
+6308: 00:52:13.923 - Flushing outbound datagram socket allocator...
+6308: 00:52:13.923 - Destroying CLR dispatcher
+6308: 00:52:13.923 - Destroying CLR applications
+6308: 00:52:13.925 - ~CCLRApplicationCollection() - Waiting up to 10 seconds for the CLR to release all of our objects
+6308: 00:52:13.925 - ~CCLRApplicationCollection() - Done. All objects released
+6308: 00:52:13.925 - ~CManagedHost() - Release default app domain
+6308: 00:52:13.925 - CManagedHost::OnDomainUnload() - 1
+6308: 00:52:13.925 - ~CManagedHost() - Waiting up to 10 seconds for CLR shutdown...
+6308: 00:52:13.925 - ~CManagedHost
+6308: 00:52:13.925 - Destroying ENet thread pool
+6308: 00:52:13.925 - Destroying Business logic thread pool
+6308: 00:52:13.925 - Destroying I/O thread pool
+6308: 00:52:13.925 - Destroying ENet buffer allocator
+6308: 00:52:13.925 - Destroying TCP buffer allocator
+6308: 00:52:13.925 - Destroying TCP socket allocator
+6308: 00:52:13.925 - Destroying ENet inbound socket allocator
+6308: 00:52:13.925 - Destroying ENet outbound socket allocator
+6308: 00:52:13.926 - Shutdown complete...
+6308: 00:52:13.926 - Service shutting down: failed to start application. Errorcode: 108
+6308: 00:52:13.929 - Service shut down complete
+2028: 00:54:47.277 - ---
+2028: 00:54:47.277 - Service: "Photon Socket Server" starting
+2028: 00:54:47.277 - Config File: C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\PhotonServer.config
+2028: 00:54:47.278 - Will produce at most: 10 crash dumps
+2028: 00:54:47.278 - Action: run as exe
+2028: 00:54:47.278 - Server Starting...
+2028: 00:54:47.278 -    Tick count: 459771778 (wraps in: 44.3888 days)
+2028: 00:54:47.278 - Tick count 64: 459771778
+2028: 00:54:47.279 - Photon Version: 3.4.4.2588
+2028: 00:54:47.279 - PID: 1620
+2028: 00:54:47.279 - Config File: C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\PhotonServer.config
+2028: 00:54:47.279 - Will NOT log unimportant exceptions
+2028: 00:54:47.281 - Not using performance counters as they are not currently installed. Run the service with /InstallCounters to install them.
+2028: 00:54:47.281 - Shutdown timeout enabled: 30000ms
+2028: 00:54:47.281 - Starting I/O thread pool with 2 threads
+2028: 00:54:47.281 - Using Standard allocator
+2028: 00:54:47.282 - Max message size: 512000
+2028: 00:54:47.282 - Starting business logic thread pool with the following settings
+2028: 00:54:47.282 - InitialThreads: 4 threads
+2028: 00:54:47.282 - MinThreads: 4 threads
+2028: 00:54:47.282 - Thread pool is fixed size
+2028: 00:54:47.282 - Starting ENet thread pool with the following settings
+2028: 00:54:47.282 - InitialThreads: 2 threads
+2028: 00:54:47.282 - MinThreads: 2 threads
+2028: 00:54:47.282 - Thread pool is fixed size
+2028: 00:54:47.282 - OnlyDispatchTimers: False
+2028: 00:54:47.282 - S2S: flow control: Max pending writes: 50
+2028: 00:54:47.282 - S2S: flow control: Max queued buffers: 200
+2028: 00:54:47.282 - S2S: flow control: Max pending writes MUX: 500
+2028: 00:54:47.282 - S2S: flow control: Max queued buffers MUX: 2000
+2028: 00:54:47.282 - S2S: MaxInboundMessageSize: 512000
+2028: 00:54:47.282 - S2S: MaxOutboundMessageSize: 512000
+2028: 00:54:47.282 - S2S: No inactivity timeout
+2028: 00:54:47.287 - WebSocket S2S: MaxInboundMessageSize: 512000
+2028: 00:54:47.287 - WebSocket S2S: MaxOutboundMessageSize: 512000
+2028: 00:54:47.287 - WebSocket S2S: No inactivity timeout
+2028: 00:54:47.287 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+2028: 00:54:47.287 - Per peer bandwidth limit
+2028: 00:54:47.287 - Transmit Rate Limit: 256 KB/Sec
+2028: 00:54:47.287 - Limit period: 200ms
+2028: 00:54:47.287 - Limit per period: 52428 bytes
+2028: 00:54:47.287 - Max queued data for transmission per peer: 512000 bytes
+2028: 00:54:47.287 - Minimum retransmit timeout: 200
+2028: 00:54:47.287 - Minimum ENet timeout: 5000ms
+2028: 00:54:47.287 - Maximum ENet timeout: 30000ms
+2028: 00:54:47.287 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+2028: 00:54:47.287 - Outbound ENet: MaxInboundMessageSize: 512000
+2028: 00:54:47.287 - Outbound ENet: MaxOutboundMessageSize: 512000
+2028: 00:54:47.289 - GetRuntime - About to load CLR - versions available:
+2028: 00:54:47.289 - v2.0.50727
+2028: 00:54:47.289 - v4.0.30319
+2028: 00:54:47.289 - Configuration requests: "v2.0.50727"
+2028: 00:54:47.289 - About to load version: "v2.0.50727"
+2028: 00:54:47.296 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+2028: 00:54:47.296 - CLRBaseDirectory set to "C:\Users\Justin\Projects\mobas\server\deploy"
+2028: 00:54:47.296 - Optimising event broadcast for 20 or more peers
+2028: 00:54:47.297 - Start: About to load CLR - versions available:
+2028: 00:54:47.297 - v2.0.50727
+2028: 00:54:47.297 - v4.0.30319
+2028: 00:54:47.297 - No preference in configuration file, will load latest.
+2028: 00:54:47.297 - About to load version: "v4.0.30319"
+2028: 00:54:47.298 - Loaded version: "v4.0.30319"
+2028: 00:54:47.612 - Photon host runtime loaded
+2028: 00:54:54.749 - License is valid.
+2028: 00:54:54.749 - Licensed for 100 concurrent connections.
+2028: 00:54:54.749 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+2028: 00:54:54.749 - ENet: Per peer bandwidth limit
+2028: 00:54:54.749 - ENet: Transmit Rate Limit: 256 KB/Sec
+2028: 00:54:54.749 - ENet: Limit period: 200ms
+2028: 00:54:54.749 - ENet: Limit per period: 52428 bytes
+2028: 00:54:54.749 - ENet: Max queued data for transmission per peer: 512000 bytes
+2028: 00:54:54.749 - ENet: Minimum retransmit timeout: 200
+2028: 00:54:54.749 - ENet: Minimum timeout: 5000ms
+2028: 00:54:54.749 - ENet: Maximum timeout: 30000ms
+2028: 00:54:54.749 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+2028: 00:54:54.749 - About to load application: Master from Photon.LoadBalancing
+2028: 00:54:54.749 - Auto restart is enabled for application, existing connections will be terminated during restart
+2028: 00:54:54.749 - Application will restart 1000ms after the last change detected
+2028: 00:54:54.749 - Application will restart if files matching the following are changed: "dll;config"
+2028: 00:54:54.749 - Application will NOT restart if files matching the following are changed: "log4net.config"
+2028: 00:54:54.877 - Taking reference on default app domain
+2028: 00:54:54.897 - Master:2 - Start() failed.
+Exception:
+System.BadImageFormatException: Could not load file or assembly 'Photon.LoadBalancing' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+File name: 'Photon.LoadBalancing'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at PhotonHostRuntime.PhotonDomainManager.PhotonPlainAppDomainBehavior.Start(String assemblyName, String typeName, String instanceName, String applicationName, IPhotonApplicationSink sink, ILogToUnmanagedLog logger, IControlListeners listenerControl)
+   at PhotonHostRuntime.PhotonDomainManager.Start(String assemblyName, String typeName, String instanceName, String applicationName, IPhotonApplicationSink sink, ILogToUnmanagedLog logger, IControlListeners listenerControl)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2028: 00:54:54.899 - Master:2 - Stop() failed.
+Exception:
+System.Exception: Stop: unable to call the Application.TearDown() - undefined photonControl.
+   at PhotonHostRuntime.PhotonDomainManager.PhotonPlainAppDomainBehavior.Stop()
+   at PhotonHostRuntime.PhotonDomainManager.Stop()
+2028: 00:54:54.899 - ERROR: Failed to start application: "Master" in app domain: 2
+992: 00:54:54.900 - CManagedHost::OnDefaultAction() - OPR_AppDomainUnload - eUnloadAppDomain
+2028: 00:54:54.900 - CService::OnException() - Exception: CManagedHost::StartApplication() - Failed to start application in AppDomain: 2 - An attempt was made to load a program with an incorrect format.
+2028: 00:54:54.900 - Server shutting down...
+2028: 00:54:54.900 - Shutdown monitoring enabled, 30000ms before process abort
+2028: 00:54:54.900 - Notifying CLR applications of shutdown...
+2028: 00:54:54.900 - RequestStop: defalt app domain
+2028: 00:54:54.902 - Shutting down WebSocket Outbound Connection Manager...
+2028: 00:54:54.902 - Shutting down TCP Outbound Connection Manager...
+2028: 00:54:54.902 - Shutting down ENet Outbound Connection Manager...
+2028: 00:54:54.902 - Disconnecting all outbound peers...
+2028: 00:54:54.902 - Shutting down ENet host...
+2028: 00:54:54.902 - Disconnecting all peers...
+2028: 00:54:54.902 - Shutting down socket servers...
+2028: 00:54:54.902 - Shutting down ENet thread pool...
+2028: 00:54:54.902 - Shutting down TCP inactivity timers...
+2028: 00:54:54.902 - Shutting down CLR applications...
+2028: 00:54:54.903 - Shutting down business logic thread pool...
+2028: 00:54:54.903 - Shutting down I/O thread pool...
+2028: 00:54:54.903 - Destroying servers
+2028: 00:54:54.903 - Destroying WebSocket Outbound Connection Manager
+2028: 00:54:54.903 - Destroying TCP Outbound Connection Manager
+2028: 00:54:54.903 - Destroying TCP inactivity timer
+2028: 00:54:54.903 - Destroying ENet timer wheel
+2028: 00:54:54.903 - Destroying ENet host
+2028: 00:54:54.903 - Destroying ENet outbound host
+2028: 00:54:54.903 - Destroying HTTP inactivity timer
+2028: 00:54:54.903 - Destroying HTTP host
+2028: 00:54:54.903 - Flushing ENET buffer allocator...
+2028: 00:54:54.903 - Flushing TCP buffer handle allocator...
+2028: 00:54:54.903 - Flushing stream socket allocator...
+2028: 00:54:54.903 - Flushing inbound datagram socket allocator...
+2028: 00:54:54.903 - Flushing outbound datagram socket allocator...
+2028: 00:54:54.903 - Destroying CLR dispatcher
+2028: 00:54:54.903 - Destroying CLR applications
+2028: 00:54:54.903 - ~CCLRApplicationCollection() - Waiting up to 10 seconds for the CLR to release all of our objects
+6448: 00:54:54.914 - Unloading Domain: ApplicationName = 'Master', DomainId='2'
+992: 00:54:54.914 - CManagedHost::OnDomainUnload() - 2
+2028: 00:54:54.914 - ~CCLRApplicationCollection() - Done. All objects released
+2028: 00:54:54.914 - ~CManagedHost() - Release default app domain
+2028: 00:54:54.914 - CManagedHost::OnDomainUnload() - 1
+2028: 00:54:54.914 - ~CManagedHost() - Waiting up to 10 seconds for CLR shutdown...
+2028: 00:54:54.915 - ~CManagedHost
+2028: 00:54:54.915 - Destroying ENet thread pool
+2028: 00:54:54.915 - Destroying Business logic thread pool
+2028: 00:54:54.915 - Destroying I/O thread pool
+2028: 00:54:54.915 - Destroying ENet buffer allocator
+2028: 00:54:54.915 - Destroying TCP buffer allocator
+2028: 00:54:54.915 - Destroying TCP socket allocator
+2028: 00:54:54.915 - Destroying ENet inbound socket allocator
+2028: 00:54:54.915 - Destroying ENet outbound socket allocator
+2028: 00:54:54.915 - Shutdown complete...
+2028: 00:54:54.915 - Service shutting down: failed to start application. Errorcode: 108
+2028: 00:54:54.918 - Service shut down complete
+2880: 21:58:16.999 - ---
+2880: 21:58:16.999 - Service: "Photon Socket Server" starting
+2880: 21:58:17.000 - Config File: C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\PhotonServer.config
+2880: 21:58:17.001 - Will produce at most: 10 crash dumps
+2880: 21:58:17.001 - Action: run as exe
+2880: 21:58:17.002 - Server Starting...
+2880: 21:58:17.002 -    Tick count: 535581509 (wraps in: 43.5114 days)
+2880: 21:58:17.002 - Tick count 64: 535581509
+2880: 21:58:17.002 - Photon Version: 3.4.4.2588
+2880: 21:58:17.002 - PID: 1340
+2880: 21:58:17.002 - Config File: C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\PhotonServer.config
+2880: 21:58:17.002 - Will NOT log unimportant exceptions
+2880: 21:58:17.005 - Not using performance counters as they are not currently installed. Run the service with /InstallCounters to install them.
+2880: 21:58:17.005 - Shutdown timeout enabled: 30000ms
+2880: 21:58:17.005 - Starting I/O thread pool with 2 threads
+2880: 21:58:17.005 - Using Standard allocator
+2880: 21:58:17.005 - Max message size: 512000
+2880: 21:58:17.005 - Starting business logic thread pool with the following settings
+2880: 21:58:17.005 - InitialThreads: 4 threads
+2880: 21:58:17.005 - MinThreads: 4 threads
+2880: 21:58:17.005 - Thread pool is fixed size
+2880: 21:58:17.006 - Starting ENet thread pool with the following settings
+2880: 21:58:17.006 - InitialThreads: 2 threads
+2880: 21:58:17.006 - MinThreads: 2 threads
+2880: 21:58:17.006 - Thread pool is fixed size
+2880: 21:58:17.006 - OnlyDispatchTimers: False
+2880: 21:58:17.006 - S2S: flow control: Max pending writes: 50
+2880: 21:58:17.006 - S2S: flow control: Max queued buffers: 200
+2880: 21:58:17.006 - S2S: flow control: Max pending writes MUX: 500
+2880: 21:58:17.006 - S2S: flow control: Max queued buffers MUX: 2000
+2880: 21:58:17.006 - S2S: MaxInboundMessageSize: 512000
+2880: 21:58:17.006 - S2S: MaxOutboundMessageSize: 512000
+2880: 21:58:17.006 - S2S: No inactivity timeout
+2880: 21:58:17.010 - WebSocket S2S: MaxInboundMessageSize: 512000
+2880: 21:58:17.010 - WebSocket S2S: MaxOutboundMessageSize: 512000
+2880: 21:58:17.010 - WebSocket S2S: No inactivity timeout
+2880: 21:58:17.010 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+2880: 21:58:17.010 - Per peer bandwidth limit
+2880: 21:58:17.010 - Transmit Rate Limit: 256 KB/Sec
+2880: 21:58:17.010 - Limit period: 200ms
+2880: 21:58:17.010 - Limit per period: 52428 bytes
+2880: 21:58:17.010 - Max queued data for transmission per peer: 512000 bytes
+2880: 21:58:17.010 - Minimum retransmit timeout: 200
+2880: 21:58:17.010 - Minimum ENet timeout: 5000ms
+2880: 21:58:17.010 - Maximum ENet timeout: 30000ms
+2880: 21:58:17.010 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+2880: 21:58:17.010 - Outbound ENet: MaxInboundMessageSize: 512000
+2880: 21:58:17.010 - Outbound ENet: MaxOutboundMessageSize: 512000
+2880: 21:58:17.012 - GetRuntime - About to load CLR - versions available:
+2880: 21:58:17.012 - v2.0.50727
+2880: 21:58:17.012 - v4.0.30319
+2880: 21:58:17.012 - Configuration requests: "v2.0.50727"
+2880: 21:58:17.012 - About to load version: "v2.0.50727"
+2880: 21:58:17.035 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+2880: 21:58:17.035 - CLRBaseDirectory set to "C:\Users\Justin\Projects\mobas\server\deploy"
+2880: 21:58:17.035 - Optimising event broadcast for 20 or more peers
+2880: 21:58:17.036 - Start: About to load CLR - versions available:
+2880: 21:58:17.036 - v2.0.50727
+2880: 21:58:17.036 - v4.0.30319
+2880: 21:58:17.036 - No preference in configuration file, will load latest.
+2880: 21:58:17.036 - About to load version: "v4.0.30319"
+2880: 21:58:17.037 - Loaded version: "v4.0.30319"
+2880: 21:58:17.432 - Photon host runtime loaded
+2880: 21:58:23.574 - License is valid.
+2880: 21:58:23.574 - Licensed for 100 concurrent connections.
+2880: 21:58:23.574 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+2880: 21:58:23.575 - ENet: Per peer bandwidth limit
+2880: 21:58:23.575 - ENet: Transmit Rate Limit: 256 KB/Sec
+2880: 21:58:23.575 - ENet: Limit period: 200ms
+2880: 21:58:23.575 - ENet: Limit per period: 52428 bytes
+2880: 21:58:23.575 - ENet: Max queued data for transmission per peer: 512000 bytes
+2880: 21:58:23.575 - ENet: Minimum retransmit timeout: 200
+2880: 21:58:23.575 - ENet: Minimum timeout: 5000ms
+2880: 21:58:23.575 - ENet: Maximum timeout: 30000ms
+2880: 21:58:23.575 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+2880: 21:58:23.575 - About to load application: Master from Photon.LoadBalancing
+2880: 21:58:23.575 - Auto restart is enabled for application, existing connections will be terminated during restart
+2880: 21:58:23.575 - Application will restart 1000ms after the last change detected
+2880: 21:58:23.575 - Application will restart if files matching the following are changed: "dll;config"
+2880: 21:58:23.575 - Application will NOT restart if files matching the following are changed: "log4net.config"
+2880: 21:58:23.723 - Taking reference on default app domain
+2880: 21:58:23.914 - Application: "Master" started in app domain: 2
+2880: 21:58:23.915 - About to load application: Game1 from Photon.LoadBalancing
+2880: 21:58:23.915 - Auto restart is enabled for application, existing connections will be terminated during restart
+2880: 21:58:23.915 - Application will restart 1000ms after the last change detected
+2880: 21:58:23.915 - Application will restart if files matching the following are changed: "dll;config"
+2880: 21:58:23.915 - Application will NOT restart if files matching the following are changed: "log4net.config"
+2880: 21:58:24.001 - Taking reference on default app domain
+2880: 21:58:24.073 - Application: "Game1" started in app domain: 3
+2880: 21:58:24.073 - About to load application: Game2 from Photon.LoadBalancing
+2880: 21:58:24.073 - Auto restart is enabled for application, existing connections will be terminated during restart
+2880: 21:58:24.073 - Application will restart 1000ms after the last change detected
+2880: 21:58:24.073 - Application will restart if files matching the following are changed: "dll;config"
+2880: 21:58:24.073 - Application will NOT restart if files matching the following are changed: "log4net.config"
+2880: 21:58:24.163 - Taking reference on default app domain
+2880: 21:58:24.228 - Application: "Game2" started in app domain: 4
+2880: 21:58:24.228 - About to load application: CounterPublisher from CounterPublisher
+2880: 21:58:24.228 - Auto restart is enabled for application, existing connections will be terminated during restart
+2880: 21:58:24.228 - Application will restart 1000ms after the last change detected
+2880: 21:58:24.228 - Application will restart if files matching the following are changed: "dll;config"
+2880: 21:58:24.228 - Application will NOT restart if files matching the following are changed: "log4net.config"
+2880: 21:58:24.343 - Taking reference on default app domain
+2880: 21:58:24.396 - Application: "CounterPublisher" started in app domain: 5
+2880: 21:58:24.396 - Adding TCP listener on :0.0.0.0: 4530 with a listen backlog of: 150
+2880: 21:58:24.396 - TCP inactivity timeout: 10000ms
+2880: 21:58:24.396 - TCP disconnect timeout: 120000ms
+2880: 21:58:24.396 - MaxInboundMessageSize: 512000
+2880: 21:58:24.396 - MaxOutboundMessageSize: 512000
+2880: 21:58:24.396 - Forcing all applications ids to: "Master"
+2880: 21:58:24.397 - Serving policy file requests from: "C:\Users\Justin\Projects\mobas\server\deploy\Policy\assets\socket-policy.xml"
+2880: 21:58:24.397 - Adding TCP listener on :0.0.0.0: 4531 with a listen backlog of: 150
+2880: 21:58:24.397 - TCP inactivity timeout: 10000ms
+2880: 21:58:24.397 - TCP disconnect timeout: 120000ms
+2880: 21:58:24.397 - MaxInboundMessageSize: 512000
+2880: 21:58:24.397 - MaxOutboundMessageSize: 512000
+2880: 21:58:24.397 - Forcing all applications ids to: "Game1"
+2880: 21:58:24.397 - Serving policy file requests from: "C:\Users\Justin\Projects\mobas\server\deploy\Policy\assets\socket-policy.xml"
+2880: 21:58:24.397 - Adding TCP listener on :0.0.0.0: 4532 with a listen backlog of: 150
+2880: 21:58:24.397 - TCP inactivity timeout: 10000ms
+2880: 21:58:24.397 - TCP disconnect timeout: 120000ms
+2880: 21:58:24.397 - MaxInboundMessageSize: 512000
+2880: 21:58:24.397 - MaxOutboundMessageSize: 512000
+2880: 21:58:24.397 - Forcing all applications ids to: "Game2"
+2880: 21:58:24.398 - Serving policy file requests from: "C:\Users\Justin\Projects\mobas\server\deploy\Policy\assets\socket-policy.xml"
+2880: 21:58:24.398 - Adding TCP listener on :0.0.0.0: 4520 with a listen backlog of: 150
+2880: 21:58:24.398 - TCP inactivity timeout: 5000ms
+2880: 21:58:24.398 - TCP disconnect timeout: 120000ms
+2880: 21:58:24.398 - MaxInboundMessageSize: 512000
+2880: 21:58:24.398 - MaxOutboundMessageSize: 512000
+2880: 21:58:24.398 - Forcing all applications ids to: "Master"
+2880: 21:58:24.398 - MaxInboundMessageSize: 512000
+2880: 21:58:24.398 - MaxOutboundMessageSize: 512000
+2880: 21:58:24.398 - UDP address specified as:0.0.0.0 adding listener to each available IPv4 address
+2880: 21:58:24.399 - Adding UDP listener on :192.168.1.7: 5055 with a listen backlog of: 500
+2880: 21:58:24.399 - Adding UDP listener on :127.0.0.1: 5055 with a listen backlog of: 500
+2880: 21:58:24.399 - Forcing all applications ids to: "Game1"
+2880: 21:58:24.399 - MaxInboundMessageSize: 512000
+2880: 21:58:24.399 - MaxOutboundMessageSize: 512000
+2880: 21:58:24.399 - UDP address specified as:0.0.0.0 adding listener to each available IPv4 address
+2880: 21:58:24.399 - Adding UDP listener on :192.168.1.7: 5056 with a listen backlog of: 500
+2880: 21:58:24.399 - Adding UDP listener on :127.0.0.1: 5056 with a listen backlog of: 500
+2880: 21:58:24.399 - Forcing all applications ids to: "Game2"
+2880: 21:58:24.399 - MaxInboundMessageSize: 512000
+2880: 21:58:24.399 - MaxOutboundMessageSize: 512000
+2880: 21:58:24.399 - UDP address specified as:0.0.0.0 adding listener to each available IPv4 address
+2880: 21:58:24.400 - Adding UDP listener on :192.168.1.7: 5057 with a listen backlog of: 500
+2880: 21:58:24.400 - Adding UDP listener on :127.0.0.1: 5057 with a listen backlog of: 500
+2880: 21:58:24.400 - Adding WebSocket TCP listener on :0.0.0.0: 9090 with a listen backlog of: 150
+2880: 21:58:24.400 - Nagle disabled
+2880: 21:58:24.400 - TCP inactivity timeout: 10000ms
+2880: 21:58:24.400 - MaxInboundMessageSize: 512000
+2880: 21:58:24.400 - MaxOutboundMessageSize: 512000
+2880: 21:58:24.400 - Forcing all applications ids to: "Master"
+2880: 21:58:24.400 - Will accept ANY sub-protocols from the client
+2880: 21:58:24.400 - No automatic WebSocket ping
+2880: 21:58:24.400 - Adding WebSocket TCP listener on :0.0.0.0: 9091 with a listen backlog of: 150
+2880: 21:58:24.400 - Nagle disabled
+2880: 21:58:24.400 - TCP inactivity timeout: 10000ms
+2880: 21:58:24.400 - MaxInboundMessageSize: 512000
+2880: 21:58:24.400 - MaxOutboundMessageSize: 512000
+2880: 21:58:24.400 - Forcing all applications ids to: "Game1"
+2880: 21:58:24.400 - Will accept ANY sub-protocols from the client
+2880: 21:58:24.400 - No automatic WebSocket ping
+2880: 21:58:24.400 - Adding WebSocket TCP listener on :0.0.0.0: 9092 with a listen backlog of: 150
+2880: 21:58:24.400 - Nagle disabled
+2880: 21:58:24.400 - TCP inactivity timeout: 10000ms
+2880: 21:58:24.400 - MaxInboundMessageSize: 512000
+2880: 21:58:24.400 - MaxOutboundMessageSize: 512000
+2880: 21:58:24.400 - Forcing all applications ids to: "Game2"
+2880: 21:58:24.400 - Will accept ANY sub-protocols from the client
+2880: 21:58:24.400 - No automatic WebSocket ping
+2880: 21:58:24.401 - Adding Policy File listener on :0.0.0.0: 843 with a listen backlog of: 150 and serving Policy File: "C:\Users\Justin\Projects\mobas\server\deploy\Policy\assets\socket-policy.xml"
+2880: 21:58:24.401 - TCP inactivity timeout: 1000ms
+2880: 21:58:24.402 - Adding Policy File listener on :0.0.0.0: 943 with a listen backlog of: 150 and serving Policy File: "C:\Users\Justin\Projects\mobas\server\deploy\Policy\assets\socket-policy-silverlight.xml"
+2880: 21:58:24.402 - TCP inactivity timeout: 1000ms
+2880: 21:58:24.476 - Service is running...

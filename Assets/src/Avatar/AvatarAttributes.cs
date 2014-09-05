@@ -112,6 +112,11 @@ public class AvatarAttributes : MonoBehaviour {
 				string curHealth = string.Format("Health: {0}", info.health);
 				GUI.Box(new Rect(Screen.width/2-50, 30, 100, 20), curHealth);
 				GUI.Box(new Rect(Screen.width/2-info.health/2, 60, info.health, 20), "");
+			} else if(targetInfo.transform.gameObject.tag == "Structure") {
+				TowerObject tower = targetInfo.transform.gameObject.GetComponent<TowerObject>();
+				string curHealth = string.Format("Health: {0}", tower.Health);
+				GUI.Box(new Rect(Screen.width/2-50, 30, 100, 20), curHealth);
+				GUI.Box(new Rect(Screen.width/2-tower.Health/2, 60, tower.Health, 20), "");
 			}
 		}
 	}
