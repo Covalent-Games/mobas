@@ -16,6 +16,13 @@ public class TowerObject : StructureObject {
 		this.Health = 200;
 		SetRadius (10);
 		base.Start ();
+
+		/*tower = (GameObject)PhotonNetwork.Instantiate (
+			"Tower",
+			transform.position, 
+			Quaternion.identity,
+			1);	
+		*/
 	}
 
 	void shoot(int damage, GameObject target) {
@@ -63,6 +70,16 @@ public class TowerObject : StructureObject {
 		Debug.Log ("--Removed " + collider.gameObject.name);
 	}
 
+	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo messageInfo){
+		
+		if (stream.isWriting){
+			int h = Health;
+			stream.SendNext (h);
+		} else {
+			Health = (int)stream.ReceiveNext();
+		}
+	}
+	
 	void UpdateShotCounter() {
 
 		counter += Time.deltaTime;

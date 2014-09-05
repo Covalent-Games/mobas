@@ -31,12 +31,12 @@ public class AvatarAction : MonoBehaviour {
 	private void CheckHitTarget(Transform target){
 		
 		PhotonView view = target.root.GetComponent<PhotonView>();
-		if (view != null){
-			view.RPC("DealDamage", PhotonTargets.All, this.damage, view.owner.ID);
-		} else if (target.tag == "Structure") {
+		if (target.tag == "Structure") {
 			//FIXME: how to call RPC through master
-
+			
 			photonView.RPC ("DealDamageToStructure", PhotonTargets.MasterClient, this.damage, target.gameObject.GetInstanceID());
+		} else if (view != null){
+			view.RPC("DealDamage", PhotonTargets.All, this.damage, view.owner.ID);
 		}
 	}	
 
