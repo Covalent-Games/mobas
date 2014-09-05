@@ -17,6 +17,9 @@ public class TowerObject : StructureObject {
 		SetRadius (10);
 		base.Start ();
 
+		PhotonNetwork.AllocateViewID ();
+
+		PhotonNetwork.InstantiateSceneObject ("Tower", transform.position, transform.rotation, 1, null);
 		/*tower = (GameObject)PhotonNetwork.Instantiate (
 			"Tower",
 			transform.position, 
@@ -25,7 +28,11 @@ public class TowerObject : StructureObject {
 		*/
 	}
 
-	void shoot(int damage, GameObject target) {
+	public void InitializeScene() {
+
+	}
+
+	void Shoot(int damage, GameObject target) {
 
 	}
 
@@ -59,7 +66,7 @@ public class TowerObject : StructureObject {
 			Vector3 playerVector = getsShot.transform.position;
 			Debug.Log("-----Shoots?");
 			Debug.DrawLine (towerVector, playerVector, Color.red, 0.25f);
-			shoot (damage, getsShot);
+			Shoot (damage, getsShot);
 			counter = 0f;
 		}
 	}
