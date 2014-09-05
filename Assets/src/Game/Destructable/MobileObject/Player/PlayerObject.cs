@@ -22,12 +22,14 @@ public class PlayerObject : MobileObject {
 	
 	void Start(){
 		
-		this.maxHealth = this.Health = 500;
+		this.Health = this.maxHealth;
 			
 		name = gameObject.GetInstanceID().ToString();
 		if(PhotonNetwork.isMasterClient) {
 			gameObject.AddComponent("MasterRpcList");
 		}
+		
+		InvokeRepeating("RegenHealth", 1, 1.0f);
 	}
 	
 	void Move(){
@@ -59,6 +61,14 @@ public class PlayerObject : MobileObject {
 		Move();
 	}
 	
+	protected override void CheckIfDestroyed(){
+	
+		if (this.Health <= 0){
+			transform.position = GameObject.Find("SpawnPoint").transform.position;
+			this.Health = this.maxHealth;
+		}
+	}
+	
 	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo messageInfo){
 		
 		if (stream.isWriting){
@@ -83,37 +93,62 @@ public class PlayerObject : MobileObject {
 		// Get the avatar's photonview to perform the call on
 		PhotonView photonView = gameObject.GetComponent<PhotonView>();
 		// Get their equipment "list" -- this will want to be stored on the server eventually
-		Dictionary<string, string> currentEquipment = photonView.GetComponent<AvatarAttributes>().equipmentList;
 		Transform newItem;
 		
 		// If the location(value) is already occupied, remove the item(key) in it. 
 		// TODO make this able to move the item to an unoccupied slot if possible instead of destroying it
-		if (currentEquipment.ContainsValue(targetLocation)){
-			foreach (string item in currentEquipment.Keys){
-				if (currentEquipment[item] == targetLocation){
+		if (equipmentList.ContainsValue(targetLocation)){
+			foreach (string item in equipmentList.Keys){
+				if (equipmentList[item] == targetLocation){
 					Destroy(photonView.transform.FindChild(targetLocation).FindChild(
 						item+"(Clone)").gameObject);
-					currentEquipment.Remove(item);
+					equipmentList.Remove(item);
 					break;
 				}
 			}
 		}
 		// If we already have this item, reference the existing one instead of making another
-		if (currentEquipment.ContainsKey(itemToLoad)){
-			newItem = photonView.transform.FindChild(currentEquipment[itemToLoad]).FindChild(itemToLoad+"(Clone)");
+		if (equipmentList.ContainsKey(itemToLoad)){
+			newItem = photonView.transform.FindChild(equipmentList[itemToLoad]).FindChild(itemToLoad+"(Clone)");
 			// Since we're moving the item we'll remove the entry in the avatars equipment list
-			currentEquipment.Remove(itemToLoad);
+			equipmentList.Remove(itemToLoad);
 			// The weapon doesn't already exist so we create it
 		}else{
 			// Note: the instantiated item will have the string "(Clone)" attached to its name
 			newItem = (Transform)Instantiate(
 				(Transform)Resources.Load("Models/"+itemToLoad, typeof(Transform)));
 		}
-		currentEquipment.Add(itemToLoad, targetLocation);
+		equipmentList.Add(itemToLoad, targetLocation);
 		// Get the weapon slot and parent the weapon to it and set its position and rotation to match
 		Transform weaponSlot = photonView.transform.Find(targetLocation).transform;
 		newItem.transform.parent = weaponSlot;
 		newItem.transform.position = weaponSlot.position;
 		newItem.transform.rotation = weaponSlot.rotation;		
+	}
+	
+	private void GetTargetInfo(){
+		
+		Ray mouseRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+		RaycastHit targetInfo;
+		if (Physics.Raycast(mouseRay, out targetInfo)){
+			PlayerObject info = targetInfo.transform.GetComponent<PlayerObject>();
+			if (info != null){
+				string curHealth = string.Format("Health: {0}", info.Health);
+				GUI.Box(new Rect(Screen.width/2-50, 30, 100, 20), curHealth);
+				GUI.Box(new Rect(Screen.width/2-info.Health/2, 60, info.Health, 20), "");
+			} else if(targetInfo.transform.gameObject.tag == "Structure") {
+				TowerObject tower = targetInfo.transform.gameObject.GetComponent<TowerObject>();
+				string curHealth = string.Format("Health: {0}", tower.Health);
+				GUI.Box(new Rect(Screen.width/2-50, 30, 100, 20), curHealth);
+				GUI.Box(new Rect(Screen.width/2-tower.Health/2, 60, tower.Health, 20), "");
+			}
+		}
+	}
+	
+	void OnGUI(){
+		string curHealth = string.Format("Health: {0}/{1}", this.Health, this.maxHealth);
+		GUI.Box(new Rect(Screen.width/2-50, Screen.height-50, 100, 20), curHealth);
+		GUI.Box(new Rect(Screen.width/2-this.Health/2, Screen.height-30, this.Health, 20), "");
+		GetTargetInfo();
 	}
 }

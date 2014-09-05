@@ -4,7 +4,7 @@ using System.Collections;
 public class DestructableObject : MonoBehaviour {
 
 	#region Inheritable Members
-	protected int maxHealth;
+	public int maxHealth;
 	protected int health;
 	protected int healthRegen;
 
@@ -39,7 +39,7 @@ public class DestructableObject : MonoBehaviour {
 	#endregion
 
 	#region Inheritable Methods
-	protected void CheckIfDestroyed() {
+	protected virtual void CheckIfDestroyed() {
 		if(this.health <= 0) {
 			Destroy (gameObject);
 		}
