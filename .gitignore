@@ -4,6 +4,7 @@
 Temp/
 Library/
 server/deploy/log/
+server/deploy/bin_Win64/log/
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #

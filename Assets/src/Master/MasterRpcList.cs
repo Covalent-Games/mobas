@@ -15,8 +15,8 @@ public class MasterRpcList : MonoBehaviour {
 		if(tower == null) {
 			Debug.Log("****no such tower");
 		} else {
-			TowerShooting towerScript = tower.GetComponent<TowerShooting> ();
-			towerScript.TakeDamage (damage);
+			TowerObject towerScript = tower.GetComponent<TowerObject> ();
+			towerScript.Health -= damage;
 		}
 	}
 
