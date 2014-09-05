@@ -16,13 +16,13 @@ public class Mouselook : MonoBehaviour {
 	public void SetParentMember(){
 		
 		parent = transform.parent;
-		lookSensitivity = parent.GetComponent<Character>().lookSensitivity;
+		lookSensitivity = parent.GetComponent<PlayerObject>().lookSensitivity;
 	}
 
 	protected void  RotatePlayer() {
 
 		if (parent != null){
-			if (parent.GetComponent<Character>().mouseLookEnabled){
+			if (parent.GetComponent<PlayerObject>().mouseLookEnabled){
 				float mouseY = Input.GetAxis("Mouse Y") * -lookSensitivity;
 				float mouseX = Input.GetAxis("Mouse X") * lookSensitivity;
 				Transform player = transform.parent;

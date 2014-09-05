@@ -49,7 +49,7 @@ public class GUIHandler : MonoBehaviour {
 	
 		GameObject player = GameObject.FindGameObjectWithTag("Player");
 		if (player != null){
-			Character character = player.GetComponent<Character>();
+			PlayerObject character = player.GetComponent<PlayerObject>();
 			character.mouseLookEnabled = toggle;
 			character.movementEnabled = toggle;
 		}

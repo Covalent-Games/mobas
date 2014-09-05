@@ -62,8 +62,8 @@ public class PlayerHandler : MonoBehaviour {
 		camera.GetComponent<Mouselook>().enabled = true;
 		// Toggle MouseLook on (Use this to toggle during gameplay)
 		//TODO Character needs to be loaded dynamically.. ish
-		player.GetComponent<Character>().mouseLookEnabled = true;
-		player.GetComponent<Character>().movementEnabled= true;
+		player.GetComponent<PlayerObject>().mouseLookEnabled = true;
+		player.GetComponent<PlayerObject>().movementEnabled= true;
 		// Set the player's camera as the Main Camera
 		Vector3 pos = new Vector3(1.0f, 1.2f, -3.0f);
 		camera.transform.position = player.transform.position + pos;
