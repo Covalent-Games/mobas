@@ -77,7 +77,7 @@ public class PlayerHandler : MonoBehaviour {
 			// Enable local scripts
 			//player.GetComponent<AvatarMovement>().enabled = true;
 			player.GetComponent<AvatarAction>().enabled = true;
-			player.GetComponent<AvatarAttributes>().enabled = true;
+			//player.GetComponent<AvatarAttributes>().enabled = true;
 			
 			//TODO Eventually we'll want to pass what/where to load based on character
 			string locationToPlaceGun = "ReadiedItem";
