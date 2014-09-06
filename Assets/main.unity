@@ -113,6 +113,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 72db4c742e0d3b1458393273289f1262, type: 2}
+      propertyPath: subId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 72db4c742e0d3b1458393273289f1262, type: 2}
+      propertyPath: m_Name
+      value: Tower2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 72db4c742e0d3b1458393273289f1262, type: 2}
@@ -157,10 +165,11 @@ GameObject:
   - 33: {fileID: 737854401}
   - 65: {fileID: 737854400}
   - 23: {fileID: 737854399}
+  - 114: {fileID: 737854404}
   - 114: {fileID: 737854398}
   - 136: {fileID: 737854403}
   m_Layer: 0
-  m_Name: Tower
+  m_Name: Tower2
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -246,6 +255,27 @@ CapsuleCollider:
   m_Height: 5
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &737854404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 72db4c742e0d3b1458393273289f1262,
+    type: 2}
+  m_PrefabInternal: {fileID: 240438019}
+  m_GameObject: {fileID: 737854397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subId: 3
+  ownerId: 0
+  group: 0
+  prefixBackup: -1
+  observed: {fileID: 737854398}
+  synchronization: 2
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  instantiationId: 0
 --- !u!1 &829954823
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,6 +530,14 @@ Prefab:
     - target: {fileID: 400000, guid: 72db4c742e0d3b1458393273289f1262, type: 2}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 72db4c742e0d3b1458393273289f1262, type: 2}
+      propertyPath: subId
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 72db4c742e0d3b1458393273289f1262, type: 2}
+      propertyPath: m_Name
+      value: Tower1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 72db4c742e0d3b1458393273289f1262, type: 2}
@@ -892,10 +930,11 @@ GameObject:
   - 33: {fileID: 2126667319}
   - 65: {fileID: 2126667318}
   - 23: {fileID: 2126667317}
+  - 114: {fileID: 2126667322}
   - 114: {fileID: 2126667316}
   - 136: {fileID: 2126667321}
   m_Layer: 0
-  m_Name: Tower
+  m_Name: Tower1
   m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -981,3 +1020,24 @@ CapsuleCollider:
   m_Height: 5
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2126667322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 72db4c742e0d3b1458393273289f1262,
+    type: 2}
+  m_PrefabInternal: {fileID: 1137120325}
+  m_GameObject: {fileID: 2126667315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subId: 2
+  ownerId: 0
+  group: 0
+  prefixBackup: -1
+  observed: {fileID: 2126667316}
+  synchronization: 2
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  instantiationId: 0

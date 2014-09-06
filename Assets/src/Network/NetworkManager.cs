@@ -18,7 +18,7 @@ public class NetworkManager : MonoBehaviour {
 	/// </summary>
 	public void InitiateConnection () {
 
-		PhotonNetwork.logLevel = PhotonLogLevel.Full;
+		PhotonNetwork.logLevel = PhotonLogLevel.ErrorsOnly;
 		PhotonNetwork.ConnectToMaster(IPAddress, port, AppID, version);
 	}
 	

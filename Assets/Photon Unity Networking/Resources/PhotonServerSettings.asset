@@ -25,4 +25,6 @@ MonoBehaviour:
   - SetColor
   - SetItemLocation
   - DealDamageToStructure
+  - DestroySceneObject
+  - DestroyTower
   DisableAutoOpenWizard: 0

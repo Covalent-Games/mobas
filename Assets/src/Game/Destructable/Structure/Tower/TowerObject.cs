@@ -12,14 +12,16 @@ public class TowerObject : StructureObject {
 
 	// Use this for initialization
 	void Start () {
+		this.GetComponent<PhotonView> ().group = (int)groupID.towers;
 		this.maxHealth = 200;
 		this.Health = 200;
 		SetRadius (10);
 		base.Start ();
 
-		PhotonNetwork.AllocateViewID ();
-
-		PhotonNetwork.InstantiateSceneObject ("Tower", transform.position, transform.rotation, 1, null);
+		//PhotonNetwork.AllocateViewID ();
+		//PhotonNetwork.LoadLevel ();
+		//PhotonNetwork.JoinRoom ("Yeeha!");
+		//PhotonNetwork.InstantiateSceneObject ("Tower", transform.position, transform.rotation, 1, null);
 		/*tower = (GameObject)PhotonNetwork.Instantiate (
 			"Tower",
 			transform.position, 
@@ -78,11 +80,13 @@ public class TowerObject : StructureObject {
 	}
 
 	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo messageInfo){
-		
+		//Debug.Log ("###Serializing view?");
 		if (stream.isWriting){
 			int h = Health;
+			//Debug.Log("###Tower health: " + h);
 			stream.SendNext (h);
 		} else {
+			//Debug.Log("###Receiving health");
 			Health = (int)stream.ReceiveNext();
 		}
 	}
@@ -92,8 +96,41 @@ public class TowerObject : StructureObject {
 		counter += Time.deltaTime;
 	}
 
+	void MoveTower() {
+
+		if(Input.GetKey("m")) {
+			Debug.Log("-----Pressed M");
+			float temp = transform.position.x;
+			temp += 1f;
+			transform.position = new Vector3(300f, 5f, 180f);
+			//transform.position.x = temp;
+		}
+	}
+	
+	protected override void CheckIfDestroyed() {
+		if(this.health <= 0) {
+			print("----TowerObject.CheckIfDestroyed");
+			PhotonView photonView = GetComponent<PhotonView>();
+
+			photonView.RPC ("DestroySceneObject", PhotonTargets.MasterClient);
+		}
+	}
+
 	// Update is called once per frame
 	void Update () {
 		UpdateShotCounter ();
+		MoveTower ();
 	}
+
+	#region RPCs
+	[RPC]
+	void DestroyTower(PhotonMessageInfo info) {
+		print ("----DestroyTower RPC");
+		if(GetComponent<PhotonView>().viewID == info.photonView.viewID) {
+			Destroy (gameObject);
+			// Insert explosion here
+		}
+	}
+	#endregion
+
 }

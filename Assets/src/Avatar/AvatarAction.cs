@@ -34,7 +34,9 @@ public class AvatarAction : MonoBehaviour {
 		if (target.tag == "Structure") {
 			//FIXME: how to call RPC through master
 			
-			photonView.RPC ("DealDamageToStructure", PhotonTargets.MasterClient, this.damage, target.gameObject.GetInstanceID());
+			//photonView.RPC ("DealDamageToStructure", PhotonTargets.MasterClient, this.damage, target.gameObject.GetInstanceID());
+			photonView.RPC ("DealDamageToStructure", PhotonTargets.MasterClient, this.damage, target.gameObject.name);
+
 		} else if (view != null){
 			view.RPC("DealDamage", PhotonTargets.All, this.damage, view.owner.ID);
 		}

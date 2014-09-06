@@ -20,7 +20,6 @@ public class PlayerObject : MobileObject {
 	public void Start(){
 		
 		this.maxHealth = this.Health = 500;
-			
 		name = gameObject.GetInstanceID().ToString();
 		if(PhotonNetwork.isMasterClient) {
 			gameObject.AddComponent<MasterRpcList>();

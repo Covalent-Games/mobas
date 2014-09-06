@@ -11,9 +11,9 @@ GameObject:
   - 33: {fileID: 3300000}
   - 65: {fileID: 6500000}
   - 23: {fileID: 2300000}
+  - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
   - 136: {fileID: 13600000}
-  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Structure
@@ -99,7 +99,7 @@ MonoBehaviour:
   group: 0
   prefixBackup: -1
   observed: {fileID: 11400000}
-  synchronization: 3
+  synchronization: 2
   onSerializeTransformOption: 3
   onSerializeRigidBodyOption: 2
   instantiationId: 0
