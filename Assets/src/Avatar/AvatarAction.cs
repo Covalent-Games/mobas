@@ -10,6 +10,7 @@ public class AvatarAction : MonoBehaviour {
 	[SerializeField]
 	private float rateOfFire;
 	private float shotDelay;
+	private float shotTimer;
 	
 	private Vector3 lastGunAimPos;
 
@@ -20,8 +21,7 @@ public class AvatarAction : MonoBehaviour {
 	void Start () {
 
 		avatarAttributes = GetComponent<AvatarAttributes>();
-		this.rateOfFire /= 60.0f;
-		this.shotDelay = this.rateOfFire;
+		this.shotTimer = 0f;
 	}
 
 	/// <summary>
@@ -45,9 +45,9 @@ public class AvatarAction : MonoBehaviour {
 	private void ShootIfShooting(){
 		
 		if (Input.GetButton("Fire1")){
-			if (this.shotDelay == this.rateOfFire){
+			if (this.shotTimer >= this.shotDelay){
 				audio.Play();
-				this.shotDelay = 0.0f;
+				this.shotTimer = 0.0f;
 				Ray mouseRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
 				RaycastHit hitInfo;
 				if (Physics.Raycast(mouseRay, out hitInfo)){
@@ -62,11 +62,9 @@ public class AvatarAction : MonoBehaviour {
 
 	private void UpdateFireRate(){
 
-		if (this.shotDelay < this.rateOfFire){
-			this.shotDelay += Time.deltaTime;
-		} else {
-			this.shotDelay = this.rateOfFire;
-		}
+		this.shotTimer += Time.deltaTime;
+		Debug.Log(string.Format("ShotTimer: {0} | deltaTime {1}", this.shotTimer, Time.deltaTime));
+		Debug.Log(this.shotDelay);
 	}
 
 	
@@ -74,20 +72,16 @@ public class AvatarAction : MonoBehaviour {
 	public void DealDamage(int damageDealt, int ID){
 
 		if (ID == photonView.owner.ID){
-			// You just got shot
 
-			if(avatarAttributes == null) {
-				Debug.Log("avatarAttributes is null");
-			}
-			else {
-				avatarAttributes.TakeDamage(damageDealt);
-				avatarAttributes.DeathCheck();
-			}
+			GetComponent<PlayerObject>().Health -= damageDealt;
 		}
 	}
 
 	// Update is called once per frame
 	void Update () {
+		//TODO Put this somewhere safe...
+		this.shotDelay = 1f/this.rateOfFire;
+		Debug.Log(this.rateOfFire);
 		ShootIfShooting ();
 		UpdateFireRate ();
 	}
