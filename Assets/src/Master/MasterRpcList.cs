@@ -9,27 +9,33 @@ public class MasterRpcList : MonoBehaviour {
 	}
 
 	[RPC]
-	public void DealDamageToStructure(int damage, string structureName, PhotonMessageInfo info) {
-		Debug.Log ("****Shooting tower: " + structureName);
-		GameObject tower = GameObject.Find (structureName);
+	public void DealDamageToStructure(int damage, int viewID, PhotonMessageInfo info) {
+		Debug.Log ("****Shooting tower: " + viewID);
+		GameObject tower = PhotonView.Find (viewID).gameObject;
 		if(tower == null) {
 			Debug.Log("****no such tower");
 		} else {
 			TowerObject towerObject = tower.GetComponent<TowerObject> ();
 			towerObject.Health -= damage;
+			Debug.Log("****hit tower: " + tower.name);
 		}
 		
 	}
 
 	[RPC]
 	public void DestroySceneObject(PhotonMessageInfo info) {
-		string methodName = "";
+		print ("---MasterRPCList DSO");
+		string methodName;
 		switch((DestructableObject.groupID)info.photonView.group) {
 			case DestructableObject.groupID.towers: 
 				methodName = "DestroyTower";
+				print ("----methodName = " + methodName);
+				break;
+			default:
+				methodName = "";
+				print ("----methodName = " + methodName);
 				break;
 		}
-		print ("----methodName = " + methodName);
 		info.photonView.RPC (methodName, PhotonTargets.All, DestructableObject.groupID.towers);
 	}
 	/*

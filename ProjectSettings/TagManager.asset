@@ -4,8 +4,10 @@
 TagManager:
   tags:
   - Gun
-  - 
+  - TowerPlaceholder
   - Network
+  - 
+  - Structure
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

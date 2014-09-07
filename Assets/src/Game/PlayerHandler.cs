@@ -27,6 +27,9 @@ public class PlayerHandler : MonoBehaviour {
 				Random.Range(0.0f, 1.0f)); //color objects not serializable
 		SpawnPlayer();
 		EnableLocalControl();
+		if(PhotonNetwork.isMasterClient) {
+			GameObject.Find ("SceneHandlerObject").GetComponent<SceneHandler>().BuildScene();
+		}
 	}
 	
 	//TODO Needs to be in network

@@ -111,8 +111,7 @@ public class TowerObject : StructureObject {
 		if(this.health <= 0) {
 			print("----TowerObject.CheckIfDestroyed");
 			PhotonView photonView = GetComponent<PhotonView>();
-
-			photonView.RPC ("DestroySceneObject", PhotonTargets.MasterClient);
+			GetComponent<PhotonView>().RPC ("DestroySceneObject", PhotonTargets.MasterClient);
 		}
 	}
 

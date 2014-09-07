@@ -35,7 +35,7 @@ public class AvatarAction : MonoBehaviour {
 			//FIXME: how to call RPC through master
 			
 			//photonView.RPC ("DealDamageToStructure", PhotonTargets.MasterClient, this.damage, target.gameObject.GetInstanceID());
-			photonView.RPC ("DealDamageToStructure", PhotonTargets.MasterClient, this.damage, target.gameObject.name);
+			photonView.RPC ("DealDamageToStructure", PhotonTargets.MasterClient, this.damage, target.GetComponent<PhotonView>().viewID);
 
 		} else if (view != null){
 			view.RPC("DealDamage", PhotonTargets.All, this.damage, view.owner.ID);
@@ -63,8 +63,8 @@ public class AvatarAction : MonoBehaviour {
 	private void UpdateFireRate(){
 
 		this.shotTimer += Time.deltaTime;
-		Debug.Log(string.Format("ShotTimer: {0} | deltaTime {1}", this.shotTimer, Time.deltaTime));
-		Debug.Log(this.shotDelay);
+		//Debug.Log(string.Format("ShotTimer: {0} | deltaTime {1}", this.shotTimer, Time.deltaTime));
+		//Debug.Log(this.shotDelay);
 	}
 
 	
@@ -81,7 +81,7 @@ public class AvatarAction : MonoBehaviour {
 	void Update () {
 		//TODO Put this somewhere safe...
 		this.shotDelay = 1f/this.rateOfFire;
-		Debug.Log(this.rateOfFire);
+		//Debug.Log(this.rateOfFire);
 		ShootIfShooting ();
 		UpdateFireRate ();
 	}
