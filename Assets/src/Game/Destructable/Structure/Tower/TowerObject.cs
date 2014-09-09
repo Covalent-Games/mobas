@@ -63,6 +63,7 @@ public class TowerObject : StructureObject {
 		Debug.Log ("--Removed " + collider.gameObject.name);
 	}
 
+
 	void UpdateShotCounter() {
 
 		counter += Time.deltaTime;

@@ -51,6 +51,8 @@ public class PlayerHandler : MonoBehaviour {
 			spawnPoint, 
 			Quaternion.identity,
 			0);
+		SceneHandler sceneHandler = GameObject.FindObjectOfType<SceneHandler>();
+		sceneHandler.Begin ();
 	}
 
 	public void SetCamera(){

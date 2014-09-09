@@ -41,9 +41,18 @@ public class DestructableObject : MonoBehaviour, IDestructable {
 	#region Inheritable Methods
 	protected virtual void CheckIfDestroyed() {
 		if(this.health <= 0) {
-			Destroy (gameObject);
+			PhotonNetwork.Destroy (gameObject);
 		}
 	}
 	#endregion
+
+	[RPC]
+	public void DealDamage(int damageDealt, int ID){
+		
+		if (ID == GetComponent<PhotonView>().owner.ID){
+			
+			GetComponent<DestructableObject>().Health -= damageDealt;
+		}
+	}
 
 }

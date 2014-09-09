@@ -29,14 +29,7 @@ public class MobileObject : DestructableObject {
 		}
 	}
 
-	[RPC]
-	public void DealDamage(int damageDealt, int ID){
-		
-		if (ID == GetComponent<PhotonView>().owner.ID){
-			
-			GetComponent<MobileObject>().Health -= damageDealt;
-		}
-	}
+
 	
 	/// <summary>
 	/// Moves the object in a specified direction.

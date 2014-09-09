@@ -93,7 +93,7 @@ GameObject:
   - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: CharacterObject
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -276,12 +276,14 @@ MonoBehaviour:
   movementEnabled: 0
   mouseLookEnabled: 0
   primaryActionEnabled: 0
+  actionsEnabled: 0
+  globalCooldown: 1
+  globalCooldownTimer: 0
   movementSpeed: 10
   lookSensitivity: 5
   diagonalResponsiveness: .0500000007
   inertia: .981000006
   CharacterName: 
-  Actions: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -6,7 +6,7 @@ TagManager:
   - Gun
   - CreepSpawnPoint
   - Network
-  - 
+  - TowerPlaceholder
   - Structure
   - 
   Builtin Layer 0: Default

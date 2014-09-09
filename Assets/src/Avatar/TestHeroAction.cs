@@ -27,9 +27,24 @@ public class TestHeroAction : MonoBehaviour, IActions {
 	private void CheckHitTarget(Transform target){
 		
 		PhotonView view = target.root.GetComponent<PhotonView>();
+		/*
+		 * if (view.gameObject.tag == "Structure") {
+			view.RPC ("DealDamageToStructure",
+			          PhotonTargets.MasterClient,
+			          this.damage,
+			          target.gameObject.GetInstanceID());
+		} else if(view.gameObject.tag == "Player") {
+			view.RPC ("DealDamage", PhotonTargets.All, this.damage, view.owner.ID);
+		} else if(view != null) {
+
+		}
+		*/
+
+
 		if (view != null){
 			view.RPC("DealDamage", PhotonTargets.All, this.damage, view.owner.ID);
-		} else if (target.tag == "Structure") {
+		}
+		/*else if (target.tag == "Structure") {
 			//FIXME: how to call RPC through master
 
 			GetComponent<PhotonView>().RPC (
@@ -38,6 +53,7 @@ public class TestHeroAction : MonoBehaviour, IActions {
 				this.damage,
 				target.gameObject.GetInstanceID());
 		}
+		*/
 	}	
 
 	public void PrimaryAction(){
