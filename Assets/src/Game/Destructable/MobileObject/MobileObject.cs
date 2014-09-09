@@ -7,6 +7,12 @@ public class MobileObject : DestructableObject {
 	[SerializeField]
 	protected CharacterController controller;
 	public bool movementEnabled = false;
+	public bool mouseLookEnabled = false;
+	public bool primaryActionEnabled = false;
+	public bool actionsEnabled = false;
+	
+	public float globalCooldown = 1f;
+	public float globalCooldownTimer = 0f;
 	
 	void Start () {
 	
@@ -20,6 +26,15 @@ public class MobileObject : DestructableObject {
 			// This theoretically could get the appropriate controller specific to the object
 			gameObject.AddComponent<CharacterController>();
 			Debug.LogWarning(string.Format("No CharacterController assigned to {0} -- Default CharacterController added.", gameObject.name));
+		}
+	}
+
+	[RPC]
+	public void DealDamage(int damageDealt, int ID){
+		
+		if (ID == GetComponent<PhotonView>().owner.ID){
+			
+			GetComponent<MobileObject>().Health -= damageDealt;
 		}
 	}
 	

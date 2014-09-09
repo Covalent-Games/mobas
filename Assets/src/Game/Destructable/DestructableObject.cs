@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DestructableObject : MonoBehaviour {
+public class DestructableObject : MonoBehaviour, IDestructable {
 
 	#region Inheritable Members
 	public int maxHealth;

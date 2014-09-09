@@ -47,7 +47,7 @@ public class PlayerHandler : MonoBehaviour {
 		spawnPoint = GameObject.Find("SpawnPoint").transform.position;
 		print(spawnPoint);
 		player = (GameObject)PhotonNetwork.Instantiate (
-			"Player",
+			"CharacterObject",
 			spawnPoint, 
 			Quaternion.identity,
 			0);
@@ -62,8 +62,12 @@ public class PlayerHandler : MonoBehaviour {
 		camera.GetComponent<Mouselook>().enabled = true;
 		// Toggle MouseLook on (Use this to toggle during gameplay)
 		//TODO Character needs to be loaded dynamically.. ish
-		player.GetComponent<PlayerObject>().mouseLookEnabled = true;
-		player.GetComponent<PlayerObject>().movementEnabled= true;
+		PlayerObject playerObject = player.GetComponent<PlayerObject>();
+		playerObject.mouseLookEnabled = true;
+		playerObject.movementEnabled = true;
+		playerObject.primaryActionEnabled = true;
+		playerObject.actionsEnabled = true;
+		
 		// Set the player's camera as the Main Camera
 		Vector3 pos = new Vector3(1.0f, 1.2f, -3.0f);
 		camera.transform.position = player.transform.position + pos;
@@ -75,10 +79,6 @@ public class PlayerHandler : MonoBehaviour {
 		photonView = player.GetComponent<PhotonView>();
 		if (photonView.isMine){
 			// Enable local scripts
-			//player.GetComponent<AvatarMovement>().enabled = true;
-			player.GetComponent<AvatarAction>().enabled = true;
-			//player.GetComponent<AvatarAttributes>().enabled = true;
-			
 			//TODO Eventually we'll want to pass what/where to load based on character
 			string locationToPlaceGun = "ReadiedItem";
 			string gunToLoad = "demoGun_01";

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -18,12 +18,22 @@ public class PlayerObject : MobileObject {
 	float lookx;
 	float momentumX = 0.0f;
 	float momentumY = 0.0f;
-	public bool mouseLookEnabled = false;
+	
+	//TEST
+	public string CharacterName;
+	public IActions Actions;
 	
 	void Start(){
-		
+
+		//HACK
+		#region Hero Test Stuff
+		CharacterName = "TestHero";
+		Actions = (IActions)GetComponent(CharacterName + "Action");
+		#endregion
+
 		this.Health = this.maxHealth;
-			
+		
+		// This isn't still needed, is it? Let's ditch it if not.	
 		name = gameObject.GetInstanceID().ToString();
 		if(PhotonNetwork.isMasterClient) {
 			gameObject.AddComponent("MasterRpcList");
@@ -59,6 +69,7 @@ public class PlayerObject : MobileObject {
 	public void Update(){
 
 		Move();
+		Actions.Update();
 	}
 	
 	protected override void CheckIfDestroyed(){
@@ -131,17 +142,18 @@ public class PlayerObject : MobileObject {
 		Ray mouseRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
 		RaycastHit targetInfo;
 		if (Physics.Raycast(mouseRay, out targetInfo)){
-			PlayerObject info = targetInfo.transform.GetComponent<PlayerObject>();
+			//TODO PlayerObject/TowerObject/CreepObject should all inherit an interface to enforce Health etc.
+			IDestructable info = targetInfo.transform.GetComponent<DestructableObject>();
 			if (info != null){
 				string curHealth = string.Format("Health: {0}", info.Health);
 				GUI.Box(new Rect(Screen.width/2-50, 30, 100, 20), curHealth);
 				GUI.Box(new Rect(Screen.width/2-info.Health/2, 60, info.Health, 20), "");
-			} else if(targetInfo.transform.gameObject.tag == "Structure") {
+			} /*else if(targetInfo.transform.gameObject.tag == "Structure") {
 				TowerObject tower = targetInfo.transform.gameObject.GetComponent<TowerObject>();
 				string curHealth = string.Format("Health: {0}", tower.Health);
 				GUI.Box(new Rect(Screen.width/2-50, 30, 100, 20), curHealth);
 				GUI.Box(new Rect(Screen.width/2-tower.Health/2, 60, tower.Health, 20), "");
-			}
+			}*/
 		}
 	}
 	
