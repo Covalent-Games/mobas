@@ -14,6 +14,10 @@ public class MobileObject : DestructableObject {
 	public float globalCooldown = 1f;
 	public float globalCooldownTimer = 0f;
 	
+	//TEST
+	public string CharacterName;
+	public IActions Actions;
+	
 	void Start () {
 	
 		controller = GetComponent<CharacterController>();
@@ -28,8 +32,6 @@ public class MobileObject : DestructableObject {
 			Debug.LogWarning(string.Format("No CharacterController assigned to {0} -- Default CharacterController added.", gameObject.name));
 		}
 	}
-
-
 	
 	/// <summary>
 	/// Moves the object in a specified direction.

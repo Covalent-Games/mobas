@@ -45,6 +45,8 @@ public class TestHeroAction : MonoBehaviour, IActions {
 			view.RPC("DealDamage", PhotonTargets.All, this.damage, view.owner.ID);
 		}
 		/*else if (target.tag == "Structure") {
+			view.RPC("DealDamageToMobile", PhotonTargets.MasterClient, this.damage);
+		} else if (target.tag == "Structure") {
 			//FIXME: how to call RPC through master
 
 			GetComponent<PhotonView>().RPC (

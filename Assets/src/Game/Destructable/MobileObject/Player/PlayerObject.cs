@@ -19,10 +19,6 @@ public class PlayerObject : MobileObject {
 	float momentumX = 0.0f;
 	float momentumY = 0.0f;
 	
-	//TEST
-	public string CharacterName;
-	public IActions Actions;
-	
 	void Start(){
 
 		//HACK
