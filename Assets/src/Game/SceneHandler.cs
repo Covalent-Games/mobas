@@ -17,9 +17,9 @@ public class SceneHandler : MonoBehaviour {
 	
 	void SpawnTowers(){
 		
-		print ("Spawning " + towerSpawnPoints.Length + " towers");
+		//print ("Spawning " + towerSpawnPoints.Length + " towers");
 		foreach (GameObject spawnPoint in towerSpawnPoints){
-			print ("Tower location: " + spawnPoint.transform.position);
+			//print ("Tower location: " + spawnPoint.transform.position);
 			PhotonNetwork.Instantiate("Tower",
 			                          spawnPoint.transform.position,
 			                          spawnPoint.transform.rotation,

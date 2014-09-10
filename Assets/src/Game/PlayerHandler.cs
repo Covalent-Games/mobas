@@ -20,7 +20,9 @@ public class PlayerHandler : MonoBehaviour {
 	//TODO Needs to be in network
 	void OnJoinedRoom(){
 
-		Debug.Log("Player joined room");
+		if (PhotonNetwork.logLevel == PhotonLogLevel.Full){
+			Debug.Log("Player joined room");
+		}
 		playerColor = new Vector3(
 				Random.Range(0.0f, 1.0f),
 				Random.Range(0.0f, 1.0f),
@@ -45,7 +47,6 @@ public class PlayerHandler : MonoBehaviour {
 	void SpawnPlayer(){
 
 		spawnPoint = GameObject.Find("SpawnPoint").transform.position;
-		print(spawnPoint);
 		player = (GameObject)PhotonNetwork.Instantiate (
 			"CharacterObject",
 			spawnPoint, 

@@ -38,7 +38,8 @@ public class LogicOperationResponseHandler{
 	/// <param name="response">Response.</param>
 	static void HandleGetSectorInfo(OperationResponse response){
 	
-		Debug.Log(response.Parameters[LogicParameterCode.SectorInfoDict]);
+		//EXAMPLE
+		//Debug.Log(response.Parameters[LogicParameterCode.SectorInfoDict]);
 	}
 
 }

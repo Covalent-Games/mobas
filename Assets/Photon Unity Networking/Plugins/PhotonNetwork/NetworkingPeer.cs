@@ -1218,7 +1218,9 @@ internal class NetworkingPeer : LoadbalancingPeer, IPhotonPeerListener
                 break;
 
             default:
-				Debug.Log(string.Format("Received response {0}", operationResponse.OperationCode));
+            	if (PhotonNetwork.logLevel == PhotonLogLevel.Full){
+					Debug.Log(string.Format("Received response {0}", operationResponse.OperationCode));
+				}
 				LogicOperationResponseHandler.HandleOperationResponse(operationResponse);
 				break;
         }

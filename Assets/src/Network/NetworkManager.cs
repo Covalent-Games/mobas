@@ -18,7 +18,7 @@ public class NetworkManager : MonoBehaviour {
 	/// </summary>
 	public void InitiateConnection () {
 
-		PhotonNetwork.logLevel = PhotonLogLevel.Full;
+		PhotonNetwork.logLevel = PhotonLogLevel.ErrorsOnly;
 		PhotonNetwork.ConnectToMaster(IPAddress, port, AppID, version);
 	}
 	
@@ -44,7 +44,9 @@ public class NetworkManager : MonoBehaviour {
 			/* Use this statement to start the realtime map processes.
 			* If this method gets called then the player is logged
 			* in and ready to start querying the server for info */
-			Debug.Log("Connected to lobby");
+			if (PhotonNetwork.logLevel == PhotonLogLevel.Full){
+				Debug.Log("Connected to lobby");
+			}
 			// Currently the only way to execute the request. 
 			PhotonNetwork.networkingPeer.OpCustom((byte)LogicOperationCode.GetSectorInfo, new Dictionary<byte, object>(), true);
 		}
