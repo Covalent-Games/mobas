@@ -25,4 +25,5 @@ MonoBehaviour:
   - SetColor
   - SetItemLocation
   - DealDamageToStructure
+  - TakeDamage
   DisableAutoOpenWizard: 0
