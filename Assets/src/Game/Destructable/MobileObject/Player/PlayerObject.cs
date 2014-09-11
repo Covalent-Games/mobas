@@ -32,6 +32,7 @@ public class PlayerObject : MobileObject {
 		// This isn't still needed, is it? Let's ditch it if not.	
 		name = gameObject.GetInstanceID().ToString();
 		if(PhotonNetwork.isMasterClient) {
+			print("Adding MasterRPCList");
 			gameObject.AddComponent("MasterRpcList");
 		}
 		

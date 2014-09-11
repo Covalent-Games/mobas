@@ -4,6 +4,12 @@ using System.Collections;
 public class MasterRpcList : MonoBehaviour {
 
 	[RPC]
+	public void DealDamage(int damage, int targetID, PhotonMessageInfo info) {
+		print ("----DealDamage");
+		GetComponent<PhotonView> ().RPC ("TakeDamage", PhotonTargets.All, damage, targetID, info.photonView.viewID);
+	}
+
+	[RPC]
 	public void DealDamageToStructure(int damage, int targetID, PhotonMessageInfo info) {
 		Debug.Log ("****Shooting tower: " + targetID.ToString());
 		GameObject tower = GameObject.Find (targetID.ToString ());

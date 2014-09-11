@@ -12,7 +12,7 @@ public class StructureObject : DestructableObject {
 
 	public void Start() {
 
-		name = gameObject.GetInstanceID ().ToString();
+		name = gameObject.GetPhotonView().viewID.ToString();
 	}
 
 	public void Update() {

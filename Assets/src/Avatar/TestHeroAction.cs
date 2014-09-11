@@ -42,7 +42,7 @@ public class TestHeroAction : MonoBehaviour, IActions {
 
 
 		if (view != null){
-			view.RPC("DealDamage", PhotonTargets.All, this.damage, view.owner.ID);
+			gameObject.GetPhotonView().RPC("DealDamage", PhotonTargets.MasterClient, this.damage, view.viewID);
 		}
 		/*else if (target.tag == "Structure") {
 			view.RPC("DealDamageToMobile", PhotonTargets.MasterClient, this.damage);

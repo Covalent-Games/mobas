@@ -47,11 +47,18 @@ public class DestructableObject : MonoBehaviour, IDestructable {
 	#endregion
 
 	[RPC]
-	public void DealDamage(int damageDealt, int ID){
-		
-		if (ID == GetComponent<PhotonView>().owner.ID){
-			
+	public void TakeDamage(int damageDealt, int ID, int dealerID, PhotonMessageInfo master){
+		print(dealerID + " shot " + ID);
+		print ("My viewID: " + GetComponent<PhotonView> ().viewID);
+		if (ID == GetComponent<PhotonView>().viewID){
+			print(dealerID + " shot " + PhotonView.Find(ID).viewID);
 			GetComponent<DestructableObject>().Health -= damageDealt;
+		} else {
+			if(PhotonView.Find(ID) != null) {
+				PhotonView.Find(ID).gameObject.GetComponent<DestructableObject>().Health -= damageDealt;
+			} else {
+				print ("----Already destroyed");
+			}
 		}
 	}
 
