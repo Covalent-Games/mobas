@@ -29,6 +29,11 @@ public class PlayerHandler : MonoBehaviour {
 				Random.Range(0.0f, 1.0f)); //color objects not serializable
 		SpawnPlayer();
 		EnableLocalControl();
+
+		//HACK THis is STRICTLY for testing
+		if (PhotonNetwork.isMasterClient){
+			PhotonNetwork.OnEventCall += GameObject.Find("MasterObject").GetComponent<GameEventHandler>().OnEventRaised;
+		}
 	}
 	
 	//TODO Needs to be in network

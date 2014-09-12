@@ -13,6 +13,7 @@ public class NetworkManager : MonoBehaviour {
 	void Awake(){
 		DontDestroyOnLoad(this);
 	}
+	
 	/// <summary>
 	/// Initiates the connection.
 	/// </summary>

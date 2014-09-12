@@ -279,11 +279,11 @@ MonoBehaviour:
   actionsEnabled: 0
   globalCooldown: 1
   globalCooldownTimer: 0
+  CharacterName: 
   movementSpeed: 10
   lookSensitivity: 5
   diagonalResponsiveness: .0500000007
   inertia: .981000006
-  CharacterName: 
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -292,11 +292,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100010}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4834742964b561a4c95e5e4c88c8e017, type: 3}
+  m_Script: {fileID: 11500000, guid: 62f4fce7c3f906744927fb291d0a1ef0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rateOfFire: 15
-  damage: 10
+  rateOfFire: 8
+  damage: 11
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1

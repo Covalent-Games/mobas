@@ -20,43 +20,6 @@ public class TestHeroAction : MonoBehaviour, IActions {
 		this.shotTimer = 0f;
 	}
 
-	/// <summary>
-	/// Checks the hit target.
-	/// </summary>
-	/// <param name="target">Target.</param>
-	private void CheckHitTarget(Transform target){
-		
-		PhotonView view = target.root.GetComponent<PhotonView>();
-		/*
-		 * if (view.gameObject.tag == "Structure") {
-			view.RPC ("DealDamageToStructure",
-			          PhotonTargets.MasterClient,
-			          this.damage,
-			          target.gameObject.GetInstanceID());
-		} else if(view.gameObject.tag == "Player") {
-			view.RPC ("DealDamage", PhotonTargets.All, this.damage, view.owner.ID);
-		} else if(view != null) {
-
-		}
-		*/
-
-
-		if (view != null){
-			gameObject.GetPhotonView().RPC("DealDamage", PhotonTargets.MasterClient, this.damage, view.viewID);
-		}
-		/*else if (target.tag == "Structure") {
-			view.RPC("DealDamageToMobile", PhotonTargets.MasterClient, this.damage);
-		} else if (target.tag == "Structure") {
-			//FIXME: how to call RPC through master
-
-			GetComponent<PhotonView>().RPC (
-				"DealDamageToStructure",
-				PhotonTargets.MasterClient,
-				this.damage,
-				target.gameObject.GetInstanceID());
-		}
-		*/
-	}	
 
 	public void PrimaryAction(){
 		
@@ -66,7 +29,8 @@ public class TestHeroAction : MonoBehaviour, IActions {
 			Ray mouseRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
 			RaycastHit hitInfo;
 			if (Physics.Raycast(mouseRay, out hitInfo)){
-				CheckHitTarget(hitInfo.transform);
+				Debug.Log("Shooting something...");
+				PhotonNetwork.RaiseEvent((byte)GameEventCode.TestEvent, "haha", true, RaiseEventOptions.Default);
 			}
 			Transform camera = transform.Find("MainCamera");
 			camera.RotateAround(transform.position, transform.right, -1.0f);

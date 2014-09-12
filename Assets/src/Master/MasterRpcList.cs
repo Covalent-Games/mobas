@@ -18,7 +18,7 @@ public class MasterRpcList : MonoBehaviour {
 		} else {
 			TowerObject towerScript = tower.GetComponent<TowerObject> ();
 			towerScript.Health -= damage;
-		}
+		}	
 	}
 	
 	[RPC]
