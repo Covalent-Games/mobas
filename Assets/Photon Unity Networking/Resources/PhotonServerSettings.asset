@@ -27,4 +27,5 @@ MonoBehaviour:
   - DealDamage
   - DealDamageToStructure
   - DealDamageToMobile
+  - UpdateInfo
   DisableAutoOpenWizard: 0

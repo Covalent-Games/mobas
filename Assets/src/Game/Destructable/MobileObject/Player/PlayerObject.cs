@@ -149,6 +149,8 @@ public class PlayerObject : MobileObject {
 	}
 	
 	void OnGUI(){
+
+		if(PhotonNetwork.isMasterClient) {return;}
 		string curHealth = string.Format("Health: {0}/{1}", this.Health, this.maxHealth);
 		GUI.Box(new Rect(Screen.width/2-50, Screen.height-50, 100, 20), curHealth);
 		GUI.Box(new Rect(Screen.width/2-this.Health/2, Screen.height-30, this.Health, 20), "");

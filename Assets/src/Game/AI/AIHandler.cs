@@ -25,11 +25,13 @@ public class AIHandler : MonoBehaviour {
 				Vector2 randomPos = Random.insideUnitCircle * 5;
 				pos.x += randomPos.x;
 				pos.z += randomPos.y;
-				PhotonNetwork.Instantiate("TestCreep",
-										  pos,
-										  spawnPoint.transform.rotation,
-										  // This needs to be something different, likely.
-										  0);
+				GameObject creep = PhotonNetwork.Instantiate(
+					"TestCreep",
+					pos,
+					spawnPoint.transform.rotation,
+					// This needs to be something different, likely.
+					0);
+				creep.GetComponent<CreepAI>().enabled = true;
 			}
 		}
 	}

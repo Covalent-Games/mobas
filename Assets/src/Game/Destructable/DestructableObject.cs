@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class DestructableObject : MonoBehaviour, IDestructable {
 
@@ -7,6 +8,8 @@ public class DestructableObject : MonoBehaviour, IDestructable {
 	public int maxHealth;
 	protected int health;
 	protected int healthRegen;
+	public int faction;
+	protected int damage = 1;
 
 	public int Health {
 		get{ return this.health; }
@@ -18,6 +21,11 @@ public class DestructableObject : MonoBehaviour, IDestructable {
 				CheckIfDestroyed();
 			}
 		}
+	}
+
+	public int Damage {
+		get{ return this.damage;}
+		set{ this.damage = value;}
 	}
 	
 	private void RegenHealth(){
@@ -45,6 +53,15 @@ public class DestructableObject : MonoBehaviour, IDestructable {
 		}
 	}
 	#endregion
+
+	[RPC]
+	public void UpdateInfo(Dictionary<int, object> info, PhotonMessageInfo senderInfo) {
+		
+		// Trigger graphic gore in the mouth that makes babies cry
+		if(PhotonView.Get(this).viewID == senderInfo.photonView.viewID) {
+			this.Health = (int)info[GameEventParameter.Health];
+		}
+	}
 
 	[RPC]
 	public void TakeDamage(int damageDealt, int ID, int dealerID, PhotonMessageInfo master){

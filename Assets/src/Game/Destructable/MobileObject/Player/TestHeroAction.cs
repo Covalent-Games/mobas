@@ -21,6 +21,7 @@ public class TestHeroAction : MonoBehaviour, IActions {
 	void Start () {
 
 		this.shotTimer = 0f;
+		gameObject.GetComponent<PlayerObject>().Damage = damage;
 	}
 
 

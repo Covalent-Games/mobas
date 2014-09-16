@@ -78,12 +78,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 589c96e3d53613548b500c8d1d3730b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 200
+  faction: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -103,7 +104,7 @@ MonoBehaviour:
   synchronization: 0
   onSerializeTransformOption: 3
   onSerializeRigidBodyOption: 2
-  instantiationId: 0
+  instantiationId: -1
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1

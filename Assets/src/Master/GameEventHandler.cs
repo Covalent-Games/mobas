@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class GameEventHandler : MonoBehaviour {
 
@@ -24,5 +25,6 @@ public class GameEventHandler : MonoBehaviour {
 				break;
 		}
 	}
+
 
 }

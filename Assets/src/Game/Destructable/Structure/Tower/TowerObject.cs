@@ -6,7 +6,6 @@ public class TowerObject : StructureObject {
 
 	float counter = 0f;
 	float shotInterval = 2.0f;
-	int damage = 8;
 	List<GameObject> targeted = new List<GameObject>();
 
 
@@ -14,15 +13,47 @@ public class TowerObject : StructureObject {
 	void Start () {
 		this.maxHealth = 200;
 		this.Health = 200;
+		this.Damage = 40;
 		SetRadius (10);
 		base.Start ();
+		if(!PhotonNetwork.isMasterClient) {
+			this.enabled = false;
+		}
 	}
 
-	void Shoot(int damage, GameObject target) {
-		if(PhotonNetwork.isMasterClient) {
-			//Had to use target's photonview because it complained that it couldn't find DealDamage()
-			target.GetComponent<PhotonView> ().RPC ("DealDamage", PhotonTargets.MasterClient, damage, target.GetComponent<PhotonView> ().viewID);
+	void Shoot(int newHealth, PhotonView targetPhotonView) {
+		//Had to use target's photonview because it complained that it couldn't find DealDamage()
+		var info = new Dictionary<int, object>();
+		info.Add(GameEventParameter.Health, newHealth);
+		targetPhotonView.RPC ("UpdateInfo", PhotonTargets.All, info);
+		print("Master shot");
+	}
+
+	int GetDamage(GameObject target) {
+
+		//TODO: Include other variables in damage calculation
+		int newHealth = target.GetComponent<DestructableObject>().Health - Damage;
+		return newHealth;
+	}
+
+	GameObject AcquireTarget() {
+
+		GameObject getsShot = null;
+		float distance = Mathf.Infinity;
+		Vector3 position = transform.position;
+		foreach(var target in targeted) {
+			//HACK: come up with an elegant way of removing targets outside foreach loop
+			if(target != null) {
+				Vector3 separation = target.transform.position - position;
+				float currentDistance = separation.sqrMagnitude;
+				if(currentDistance < distance) {
+					getsShot = target;
+					distance = currentDistance;
+				}
+			}
 		}
+
+		return getsShot;
 	}
 
 	void OnTriggerEnter(Collider collider) {
@@ -31,32 +62,19 @@ public class TowerObject : StructureObject {
 		Debug.Log ("--Added " + collider.gameObject.name);
 	}
 
-	void OnTriggerStay(Collider collider) {
+	void ShootSomething() {
 
-		if(counter >= shotInterval) {
-			GameObject getsShot = collider.gameObject;
-			float distance = Mathf.Infinity;
-			Vector3 position = transform.position;
-			Debug.Log("----List length: " + targeted.Count);
-			foreach(var target in targeted) {
-				//HACK: come up with an elegant way of removing targets outside foreach loop
-				if(target != null) {
-					Debug.Log("++++" + target.name + ": " + target.transform.position);
-					Vector3 separation = target.transform.position - position;
-					float currentDistance = separation.sqrMagnitude;
-					if(currentDistance < distance) {
-						getsShot = target;
-						distance = currentDistance;
-					}
-				}
-			}
-			Vector3 towerVector = transform.position;
-			Vector3 playerVector = getsShot.transform.position;
-			Debug.Log("-----Shoots?");
-			Debug.DrawLine (towerVector, playerVector, Color.red, 0.25f);
-			Shoot (damage, getsShot);
-			counter = 0f;
-		}
+		GameObject target = AcquireTarget();
+		if(target == null) {
+			return;
+		}	
+		int newHealth = GetDamage(target);
+
+
+		Vector3 towerVector = transform.position;
+		Vector3 playerVector = target.transform.position;
+		Debug.DrawLine (towerVector, playerVector, Color.red, 0.25f);
+		Shoot (newHealth, PhotonView.Get(target));
 	}
 
 	void OnTriggerExit(Collider collider) {
@@ -69,6 +87,10 @@ public class TowerObject : StructureObject {
 	void UpdateShotCounter() {
 
 		counter += Time.deltaTime;
+		if(counter > this.shotInterval) {
+			ShootSomething();
+			counter = 0f;
+		}
 	}
 
 	// Update is called once per frame

@@ -32,7 +32,7 @@ public class NetworkManager : MonoBehaviour {
 	/// </summary>
 	public void InitiateConnection () {
 
-		PhotonNetwork.logLevel = PhotonLogLevel.Full;
+		PhotonNetwork.logLevel = PhotonLogLevel.ErrorsOnly;
 		PhotonNetwork.ConnectToMaster(IPAddress, port, AppID, version);
 	}
 	
@@ -99,7 +99,7 @@ public class NetworkManager : MonoBehaviour {
 	
 	void OnLevelWasLoaded(){
 	
-		if (Application.loadedLevelName == "main"){
+		if (Application.loadedLevel > 0){
 			GameObject.FindObjectOfType<SceneHandler>().Begin();
 			RegisterEvents();
 		}

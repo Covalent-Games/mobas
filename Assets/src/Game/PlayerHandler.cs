@@ -60,8 +60,8 @@ public class PlayerHandler : MonoBehaviour {
 			string gunToLoad = "demoGun_01";
 
 			SetCamera();
-			photonView.RPC("SetColor", PhotonTargets.AllBuffered, playerColor);
-			photonView.RPC("SetItemLocation", PhotonTargets.AllBuffered, gunToLoad, locationToPlaceGun);
+			//photonView.RPC("SetColor", PhotonTargets.AllBuffered, playerColor);
+			//photonView.RPC("SetItemLocation", PhotonTargets.AllBuffered, gunToLoad, locationToPlaceGun);
 
 			player.gameObject.tag = "Player";
 		}

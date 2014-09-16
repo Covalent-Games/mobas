@@ -20,10 +20,12 @@ public class SceneHandler : MonoBehaviour {
 		//print ("Spawning " + towerSpawnPoints.Length + " towers");
 		foreach (GameObject spawnPoint in towerSpawnPoints){
 			//print ("Tower location: " + spawnPoint.transform.position);
-			PhotonNetwork.Instantiate("Tower",
-			                          spawnPoint.transform.position,
-			                          spawnPoint.transform.rotation,
-			                          0);
+			GameObject tower = PhotonNetwork.Instantiate(
+				"Tower",
+				spawnPoint.transform.position,
+				spawnPoint.transform.rotation,
+				0);
+			tower.GetComponent<TowerObject>().enabled = true;
 		}
 	}
 	// Update is called once per frame

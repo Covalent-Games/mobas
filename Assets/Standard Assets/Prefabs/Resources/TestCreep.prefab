@@ -94,12 +94,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5506c2ef0e673f24fa0b75f7c3685d24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 0
+  faction: 0
   controller: {fileID: 0}
   movementEnabled: 0
   mouseLookEnabled: 0
