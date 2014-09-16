@@ -10,6 +10,7 @@ TagManager:
   - Structure
   - CreepWaypoint
   - TowerPlaceholder
+  - ServerOverviewCam
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

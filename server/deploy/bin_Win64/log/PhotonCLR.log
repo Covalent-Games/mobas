@@ -1528,3 +1528,181 @@
 2014-09-11 23:22:19,732 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/ExitGames.Logging.Log4Net.DLL
 2014-09-11 23:22:20,056 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'DefaultDomain', DomainId='1'
 2014-09-11 23:23:48,996 [13] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Lite, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=null from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/Lite.DLL
+2014-09-15 12:12:27,596 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Initialize: ApplicationName = 'DefaultDomain', DomainID = '1'
+2014-09-15 12:12:27,633 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AppDomains with unhandled exceptions are usually not unloaded and restarted.
+2014-09-15 12:12:27,636 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Getting license information:
+2014-09-15 12:12:32,045 [ 1] INFO  PhotonHostRuntime.PhotonLicensing - LICENSE: Expiration: never; floating license: yes; max connections: 100; valid IPs: any
+2014-09-15 12:12:33,624 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Master' , assemblyName = 'Photon.LoadBalancing'
+2014-09-15 12:12:33,631 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'C:\Users\Justin\Projects\mobas\server\deploy'
+2014-09-15 12:12:33,631 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin;bin_Win64;Shared;'
+2014-09-15 12:12:33,632 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin\Photon.LoadBalancing.dll.config'
+2014-09-15 12:12:33,645 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin\Cache'
+2014-09-15 12:12:33,890 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master'
+2014-09-15 12:12:33,890 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin'
+2014-09-15 12:12:33,891 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'C:\Users\Justin\Projects\mobas\server\deploy'
+2014-09-15 12:12:33,892 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\log'
+2014-09-15 12:12:33,958 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.LoadBalancing, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=null from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/Photon.LoadBalancing.DLL
+2014-09-15 12:12:33,959 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.4.22.6309
+2014-09-15 12:12:34,003 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/Photon.SocketServer.DLL
+2014-09-15 12:12:34,026 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/ExitGamesLibs.DLL
+2014-09-15 12:12:34,036 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-15 12:12:34,041 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Master', assemblyName = 'Photon.LoadBalancing', typeName = 'Photon.LoadBalancing.MasterServer.MasterApplication'
+2014-09-15 12:12:34,042 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Game1' , assemblyName = 'Photon.LoadBalancing'
+2014-09-15 12:12:34,043 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'C:\Users\Justin\Projects\mobas\server\deploy'
+2014-09-15 12:12:34,043 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\GameServer1\bin;bin_Win64;Shared;'
+2014-09-15 12:12:34,044 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\GameServer1\bin\Photon.LoadBalancing.dll.config'
+2014-09-15 12:12:34,044 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\GameServer1\bin\Cache'
+2014-09-15 12:12:34,207 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\GameServer1'
+2014-09-15 12:12:34,207 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\GameServer1\bin'
+2014-09-15 12:12:34,207 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'C:\Users\Justin\Projects\mobas\server\deploy'
+2014-09-15 12:12:34,208 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\log'
+2014-09-15 12:12:34,250 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.LoadBalancing, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=null from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/GameServer1/bin/Photon.LoadBalancing.DLL
+2014-09-15 12:12:34,251 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.4.22.6309
+2014-09-15 12:12:34,293 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/GameServer1/bin/Photon.SocketServer.DLL
+2014-09-15 12:12:34,359 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/GameServer1/bin/ExitGamesLibs.DLL
+2014-09-15 12:12:34,368 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-15 12:12:34,390 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Game1', assemblyName = 'Photon.LoadBalancing', typeName = 'Photon.LoadBalancing.GameServer.GameApplication'
+2014-09-15 12:12:34,391 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Game2' , assemblyName = 'Photon.LoadBalancing'
+2014-09-15 12:12:34,397 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'C:\Users\Justin\Projects\mobas\server\deploy'
+2014-09-15 12:12:34,397 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\GameServer2\bin;bin_Win64;Shared;'
+2014-09-15 12:12:34,397 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\GameServer2\bin\Photon.LoadBalancing.dll.config'
+2014-09-15 12:12:34,398 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\GameServer2\bin\Cache'
+2014-09-15 12:12:34,552 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\GameServer2'
+2014-09-15 12:12:34,552 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\GameServer2\bin'
+2014-09-15 12:12:34,553 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'C:\Users\Justin\Projects\mobas\server\deploy'
+2014-09-15 12:12:34,553 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\log'
+2014-09-15 12:12:34,680 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.LoadBalancing, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=null from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/GameServer2/bin/Photon.LoadBalancing.DLL
+2014-09-15 12:12:34,689 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.4.22.6309
+2014-09-15 12:12:34,909 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/GameServer2/bin/Photon.SocketServer.DLL
+2014-09-15 12:12:35,045 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/GameServer2/bin/ExitGamesLibs.DLL
+2014-09-15 12:12:35,132 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-15 12:12:35,150 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Game2', assemblyName = 'Photon.LoadBalancing', typeName = 'Photon.LoadBalancing.GameServer.GameApplication'
+2014-09-15 12:12:35,151 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'CounterPublisher' , assemblyName = 'CounterPublisher'
+2014-09-15 12:12:35,152 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'C:\Users\Justin\Projects\mobas\server\deploy'
+2014-09-15 12:12:35,153 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'C:\Users\Justin\Projects\mobas\server\deploy\CounterPublisher\bin;bin_Win64;Shared;'
+2014-09-15 12:12:35,153 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = 'C:\Users\Justin\Projects\mobas\server\deploy\CounterPublisher\bin\CounterPublisher.dll.config'
+2014-09-15 12:12:35,153 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'C:\Users\Justin\Projects\mobas\server\deploy\CounterPublisher\bin\Cache'
+2014-09-15 12:12:35,356 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'C:\Users\Justin\Projects\mobas\server\deploy\CounterPublisher'
+2014-09-15 12:12:35,356 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'C:\Users\Justin\Projects\mobas\server\deploy\CounterPublisher\bin'
+2014-09-15 12:12:35,357 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'C:\Users\Justin\Projects\mobas\server\deploy'
+2014-09-15 12:12:35,357 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\log'
+2014-09-15 12:12:35,398 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: CounterPublisher, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=null from file:///C:/Users/Justin/Projects/mobas/server/deploy/CounterPublisher/bin/CounterPublisher.DLL
+2014-09-15 12:12:35,400 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.4.22.6309
+2014-09-15 12:12:35,462 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///C:/Users/Justin/Projects/mobas/server/deploy/CounterPublisher/bin/Photon.SocketServer.DLL
+2014-09-15 12:12:35,495 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///C:/Users/Justin/Projects/mobas/server/deploy/CounterPublisher/bin/ExitGamesLibs.DLL
+2014-09-15 12:12:35,504 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-15 12:12:35,508 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'CounterPublisher', assemblyName = 'CounterPublisher', typeName = 'Photon.CounterPublisher.Application'
+2014-09-15 12:12:35,610 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'CounterPublisher', DomainId='5' -- calling Application.Setup
+2014-09-15 12:12:35,630 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///C:/Users/Justin/Projects/mobas/server/deploy/CounterPublisher/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-15 12:12:37,337 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Game1', DomainId='3' -- calling Application.Setup
+2014-09-15 12:12:37,519 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Lite, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=null from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/GameServer1/bin/Lite.DLL
+2014-09-15 12:12:37,622 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/GameServer1/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-15 12:12:38,579 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Game2', DomainId='4' -- calling Application.Setup
+2014-09-15 12:12:38,653 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Lite, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=null from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/GameServer2/bin/Lite.DLL
+2014-09-15 12:12:38,738 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/GameServer2/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-15 12:12:39,683 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Master', DomainId='2' -- calling Application.Setup
+2014-09-15 12:12:39,719 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-15 12:12:40,046 [ 1] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'DefaultDomain', DomainId='1'
+2014-09-15 12:12:52,352 [26] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Lite, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=null from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/Lite.DLL
+2014-09-15 18:02:54,375 [22] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Master' , assemblyName = 'Photon.LoadBalancing'
+2014-09-15 18:02:54,376 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'C:\Users\Justin\Projects\mobas\server\deploy'
+2014-09-15 18:02:54,376 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin;bin_Win64;Shared;'
+2014-09-15 18:02:54,377 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin\Photon.LoadBalancing.dll.config'
+2014-09-15 18:02:54,378 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin\Cache'
+2014-09-15 18:02:54,515 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master'
+2014-09-15 18:02:54,516 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin'
+2014-09-15 18:02:54,517 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'C:\Users\Justin\Projects\mobas\server\deploy'
+2014-09-15 18:02:54,518 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\log'
+2014-09-15 18:02:54,536 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.LoadBalancing, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=null from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/Photon.LoadBalancing.DLL
+2014-09-15 18:02:54,538 [22] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.4.22.6309
+2014-09-15 18:02:54,550 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/Photon.SocketServer.DLL
+2014-09-15 18:02:54,561 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/ExitGamesLibs.DLL
+2014-09-15 18:02:54,572 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-15 18:02:54,578 [22] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Master', assemblyName = 'Photon.LoadBalancing', typeName = 'Photon.LoadBalancing.MasterServer.MasterApplication'
+2014-09-15 18:02:54,581 [22] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Master', DomainId='6' -- calling Application.Setup
+2014-09-15 18:02:54,593 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-15 18:02:55,096 [22] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'Master', DomainId='2' -- calling Application.OnStopRequested()
+2014-09-15 18:02:55,115 [22] INFO  PhotonHostRuntime.PhotonDomainManager - Stop: ApplicationName = 'Master', DomainId='2' -- calling Application.TearDown()
+2014-09-15 18:03:26,917 [22] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Master' , assemblyName = 'Photon.LoadBalancing'
+2014-09-15 18:03:26,917 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'C:\Users\Justin\Projects\mobas\server\deploy'
+2014-09-15 18:03:26,918 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin;bin_Win64;Shared;'
+2014-09-15 18:03:26,918 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin\Photon.LoadBalancing.dll.config'
+2014-09-15 18:03:26,918 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin\Cache'
+2014-09-15 18:03:27,091 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master'
+2014-09-15 18:03:27,092 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin'
+2014-09-15 18:03:27,093 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'C:\Users\Justin\Projects\mobas\server\deploy'
+2014-09-15 18:03:27,093 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\log'
+2014-09-15 18:03:27,129 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.LoadBalancing, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=null from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/Photon.LoadBalancing.DLL
+2014-09-15 18:03:27,131 [22] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.4.22.6309
+2014-09-15 18:03:27,143 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/Photon.SocketServer.DLL
+2014-09-15 18:03:27,153 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/ExitGamesLibs.DLL
+2014-09-15 18:03:27,164 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-15 18:03:27,170 [22] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Master', assemblyName = 'Photon.LoadBalancing', typeName = 'Photon.LoadBalancing.MasterServer.MasterApplication'
+2014-09-15 18:03:27,174 [22] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Master', DomainId='7' -- calling Application.Setup
+2014-09-15 18:03:27,185 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-15 18:03:27,593 [22] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'Master', DomainId='6' -- calling Application.OnStopRequested()
+2014-09-15 18:03:27,615 [19] INFO  PhotonHostRuntime.PhotonDomainManager - Stop: ApplicationName = 'Master', DomainId='6' -- calling Application.TearDown()
+2014-09-15 18:03:44,530 [22] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Master' , assemblyName = 'Photon.LoadBalancing'
+2014-09-15 18:03:44,530 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'C:\Users\Justin\Projects\mobas\server\deploy'
+2014-09-15 18:03:44,531 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin;bin_Win64;Shared;'
+2014-09-15 18:03:44,531 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin\Photon.LoadBalancing.dll.config'
+2014-09-15 18:03:44,531 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin\Cache'
+2014-09-15 18:03:44,619 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master'
+2014-09-15 18:03:44,619 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin'
+2014-09-15 18:03:44,620 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'C:\Users\Justin\Projects\mobas\server\deploy'
+2014-09-15 18:03:44,620 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\log'
+2014-09-15 18:03:44,675 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.LoadBalancing, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=null from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/Photon.LoadBalancing.DLL
+2014-09-15 18:03:44,677 [22] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.4.22.6309
+2014-09-15 18:03:44,695 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/Photon.SocketServer.DLL
+2014-09-15 18:03:44,710 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/ExitGamesLibs.DLL
+2014-09-15 18:03:44,724 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-15 18:03:44,729 [22] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Master', assemblyName = 'Photon.LoadBalancing', typeName = 'Photon.LoadBalancing.MasterServer.MasterApplication'
+2014-09-15 18:03:44,732 [22] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Master', DomainId='8' -- calling Application.Setup
+2014-09-15 18:03:44,742 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-15 18:03:45,111 [22] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'Master', DomainId='7' -- calling Application.OnStopRequested()
+2014-09-15 18:03:45,125 [15] INFO  PhotonHostRuntime.PhotonDomainManager - Stop: ApplicationName = 'Master', DomainId='7' -- calling Application.TearDown()
+2014-09-15 18:04:00,922 [32] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Lite, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=null from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/Lite.DLL
+2014-09-15 18:07:23,289 [22] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Master' , assemblyName = 'Photon.LoadBalancing'
+2014-09-15 18:07:23,290 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'C:\Users\Justin\Projects\mobas\server\deploy'
+2014-09-15 18:07:23,290 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin;bin_Win64;Shared;'
+2014-09-15 18:07:23,290 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin\Photon.LoadBalancing.dll.config'
+2014-09-15 18:07:23,291 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin\Cache'
+2014-09-15 18:07:23,433 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master'
+2014-09-15 18:07:23,434 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin'
+2014-09-15 18:07:23,434 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'C:\Users\Justin\Projects\mobas\server\deploy'
+2014-09-15 18:07:23,436 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\log'
+2014-09-15 18:07:23,495 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.LoadBalancing, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=null from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/Photon.LoadBalancing.DLL
+2014-09-15 18:07:23,497 [22] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.4.22.6309
+2014-09-15 18:07:23,511 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/Photon.SocketServer.DLL
+2014-09-15 18:07:23,529 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/ExitGamesLibs.DLL
+2014-09-15 18:07:23,548 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-15 18:07:23,560 [22] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Master', assemblyName = 'Photon.LoadBalancing', typeName = 'Photon.LoadBalancing.MasterServer.MasterApplication'
+2014-09-15 18:07:23,563 [22] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Master', DomainId='9' -- calling Application.Setup
+2014-09-15 18:07:23,580 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-15 18:07:23,969 [22] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'Master', DomainId='8' -- calling Application.OnStopRequested()
+2014-09-15 18:07:23,981 [29] INFO  PhotonHostRuntime.PhotonDomainManager - Stop: ApplicationName = 'Master', DomainId='8' -- calling Application.TearDown()
+2014-09-15 18:07:26,596 [22] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Master' , assemblyName = 'Photon.LoadBalancing'
+2014-09-15 18:07:26,597 [22] ERROR PhotonHostRuntime.PhotonDomainManager - CreateDomain
+System.Exception: Can't find Photon.LoadBalancing.dll in C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin or C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin
+   at PhotonHostRuntime.PhotonDomainManager.PhotonDefaultAppDomainBehavior.CreateAppDomain(String name, String assemblyName, String baseDirectoryRaw, String applicationRootDirectoryRaw, String applicationDirectoryRaw, String sharedDirectoryRaw, String applicationSharedDirectoryRaw, Boolean enableShadowCopy, Boolean createPerInstanceShadowCopyCaches, String instanceName)
+   at PhotonHostRuntime.PhotonDomainManager.CreateAppDomain(String name, String assemblyName, String baseDirectoryRaw, String applicationRootDirectoryRaw, String applicationDirectoryRaw, String sharedDirectoryRaw, String applicationSharedDirectoryRaw, Boolean enableShadowCopy, Boolean createPerInstanceShadowCopyCaches, String instanceName)
+2014-09-15 18:07:33,571 [22] INFO  PhotonHostRuntime.PhotonDomainManager - CreateAppDomain: name = 'Master' , assemblyName = 'Photon.LoadBalancing'
+2014-09-15 18:07:33,571 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationBase = 'C:\Users\Justin\Projects\mobas\server\deploy'
+2014-09-15 18:07:33,572 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   PrivateBinPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin;bin_Win64;Shared;'
+2014-09-15 18:07:33,572 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ConfigurationFile = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin\Photon.LoadBalancing.dll.config'
+2014-09-15 18:07:33,572 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   CachePath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin\Cache'
+2014-09-15 18:07:33,660 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master'
+2014-09-15 18:07:33,660 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   BinaryPath = 'C:\Users\Justin\Projects\mobas\server\deploy\LoadBalancing\Master\bin'
+2014-09-15 18:07:33,661 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   ApplicationRootPath = 'C:\Users\Justin\Projects\mobas\server\deploy'
+2014-09-15 18:07:33,661 [22] INFO  PhotonHostRuntime.PhotonDomainManager -   UnmanagedLogPath = 'C:\Users\Justin\Projects\mobas\server\deploy\bin_Win64\log'
+2014-09-15 18:07:33,736 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.LoadBalancing, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=null from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/Photon.LoadBalancing.DLL
+2014-09-15 18:07:33,739 [22] INFO  PhotonHostRuntime.PhotonDomainManager - Photon SDK:3.4.22.6309
+2014-09-15 18:07:33,766 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Photon.SocketServer, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=48c2fa3b6988090e from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/Photon.SocketServer.DLL
+2014-09-15 18:07:33,783 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGamesLibs, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/ExitGamesLibs.DLL
+2014-09-15 18:07:33,795 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 from file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+2014-09-15 18:07:33,800 [22] INFO  PhotonHostRuntime.PhotonDomainManager - Starting: name = 'Master', assemblyName = 'Photon.LoadBalancing', typeName = 'Photon.LoadBalancing.MasterServer.MasterApplication'
+2014-09-15 18:07:33,804 [22] INFO  PhotonHostRuntime.PhotonDomainManager - PhotonRunning: ApplicationName = 'Master', DomainId='10' -- calling Application.Setup
+2014-09-15 18:07:33,816 [22] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: ExitGames.Logging.Log4Net, Version=1.0.1.0, Culture=neutral, PublicKeyToken=eac0edd9746a4aa0 from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/ExitGames.Logging.Log4Net.DLL
+2014-09-15 18:07:34,217 [22] INFO  PhotonHostRuntime.PhotonDomainManager - RequestStop: ApplicationName = 'Master', DomainId='9' -- calling Application.OnStopRequested()
+2014-09-15 18:07:34,222 [22] INFO  PhotonHostRuntime.PhotonDomainManager - Stop: ApplicationName = 'Master', DomainId='9' -- calling Application.TearDown()
+2014-09-15 18:08:23,537 [33] INFO  PhotonHostRuntime.PhotonDomainManager - AssemblyLoadEvent: Lite, Version=3.4.22.6309, Culture=neutral, PublicKeyToken=null from file:///C:/Users/Justin/Projects/mobas/server/deploy/LoadBalancing/Master/bin/Lite.DLL

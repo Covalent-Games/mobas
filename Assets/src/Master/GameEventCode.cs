@@ -3,5 +3,5 @@ using System.Collections;
 
 public enum GameEventCode{
 
-	TestEvent
+	TestEvent = 1
 }

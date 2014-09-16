@@ -15,7 +15,14 @@ public class GameEventHandler : MonoBehaviour {
 	
 	public void OnEventRaised(byte eventCode, object content, int senderID){
 	
-		Debug.Log(string.Format("OnEventRaised: {0}, {1}, {2}", eventCode, content, senderID));
+		switch ((GameEventCode)eventCode){
+			default:
+				Debug.LogError("Unkown eventCode");
+				break;
+			case GameEventCode.TestEvent:
+				Debug.Log(string.Format("OnEventRaised: {0}, {1}, {2}", eventCode, content, senderID));
+				break;
+		}
 	}
 
 }

@@ -13,6 +13,7 @@ namespace Logic.Operations{
 	public enum LogicOperationCode{
 		
 		GetSectorInfo,
+		SpawnMasterClientProcess,
 		
 	}
 }

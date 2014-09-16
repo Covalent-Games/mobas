@@ -28,7 +28,9 @@ public class LogicOperationResponseHandler{
 			case LogicOperationCode.GetSectorInfo:
 				HandleGetSectorInfo(response);
 				break;
-				
+			case LogicOperationCode.SpawnMasterClientProcess:
+				HandleSpawnMasterClientProcess(response);
+				break;				
 		}
 	}
 	
@@ -40,6 +42,16 @@ public class LogicOperationResponseHandler{
 	
 		//EXAMPLE
 		//Debug.Log(response.Parameters[LogicParameterCode.SectorInfoDict]);
+	}
+	
+	static void HandleSpawnMasterClientProcess(OperationResponse response){
+	
+		foreach (var d in response.Parameters){
+			Debug.Log(d.Key);
+			Debug.Log(d.Value);
+		}
+		
+		PhotonNetwork.JoinRoom(response.Parameters[LogicParameterCode.RoomID]);
 	}
 
 }

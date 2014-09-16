@@ -1350,6 +1350,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1198765539}
   - 114: {fileID: 1198765538}
+  - 114: {fileID: 1198765540}
   m_Layer: 0
   m_Name: NetworkObject
   m_TagString: Network
@@ -1368,6 +1369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c5fd8bebca545e45906b18593cd4f5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMaster: 1
+  developer: 0
   IPAddress: 71.95.100.217
   port: 5055
   AppID: cfdf390f-742d-4fe3-8ff5-fecff18f7607
@@ -1384,6 +1387,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &1198765540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1198765537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d06466c03d263624786afa88b52928b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statsWindowOn: 0
+  statsOn: 0
+  healthStatsVisible: 1
+  trafficStatsOn: 1
+  buttonsOn: 1
+  statsRect:
+    serializedVersion: 2
+    x: 0
+    y: 100
+    width: 200
+    height: 50
+  WindowId: 100
 --- !u!1 &1363135192
 GameObject:
   m_ObjectHideFlags: 0
