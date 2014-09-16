@@ -72,8 +72,17 @@ public class NetworkManager : MonoBehaviour {
 				}
 			} else {
 				//TODO: This will obviously need to know correct level to load at runtime.
-				Application.LoadLevel("main");
+				//HACK: Don't hardode room name
+				PhotonNetwork.CreateRoom("room0");
+				Debug.Log("Create the rooooooommmmm!");
 			}
 		}
+	}
+
+	void OnCreatedRoom() {
+
+		PhotonNetwork.JoinRoom("room0");
+		print ("Joined room");
+		Application.LoadLevel("main");
 	}
 }

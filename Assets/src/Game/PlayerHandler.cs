@@ -10,6 +10,7 @@ public class PlayerHandler : MonoBehaviour {
 	RoomOptions newRoomDetails;
 	Vector3 playerColor;
 	PhotonView photonView;
+	bool masterClientInitiated = false;
 	
 	void Start () {
 		
@@ -22,6 +23,7 @@ public class PlayerHandler : MonoBehaviour {
 	void OnJoinedRoom(){
 
 		if (GameObject.FindGameObjectWithTag("Network").GetComponent<NetworkManager>().isMaster){
+			GameObject.FindGameObjectWithTag("MainCamera").camera.enabled = false;
 			GameObject.FindGameObjectWithTag("ServerOverviewCam").camera.enabled = true;
 			return;
 		}
@@ -39,6 +41,7 @@ public class PlayerHandler : MonoBehaviour {
 		//HACK THis is STRICTLY for testing
 		if (PhotonNetwork.isMasterClient){
 			PhotonNetwork.OnEventCall += GameObject.Find("MasterObject").GetComponent<GameEventHandler>().OnEventRaised;
+			GameObject.FindObjectOfType<SceneHandler>().Begin ();
 		}
 	}
 	
@@ -52,15 +55,20 @@ public class PlayerHandler : MonoBehaviour {
 	void JoinRoom(){
 
 		//TODO: Get name of room ... not like this. This is bad.
+		Debug.Log ("Joining room...");
 		PhotonNetwork.JoinRoom("room0");
 	}
 	
 	void OnPhotonJoinRoomFailed(){
-	
-		var parameter = new Dictionary<byte, object>();
-		parameter.Add(LogicParameterCode.RoomID, "room0");
-	
-		PhotonNetwork.networkingPeer.OpCustom((byte)LogicOperationCode.SpawnMasterClientProcess, parameter, true);
+
+		if(!masterClientInitiated) {
+			var parameter = new Dictionary<byte, object>();
+			parameter.Add(LogicParameterCode.RoomID, "room0");
+			PhotonNetwork.networkingPeer.OpCustom((byte)LogicOperationCode.SpawnMasterClientProcess, parameter, true);
+			masterClientInitiated = true;
+		}
+		Debug.Log ("If at first you don't succeed...");
+		PhotonNetwork.JoinRoom("room0");
 	}
 	
 	void SpawnPlayer(){
@@ -71,8 +79,6 @@ public class PlayerHandler : MonoBehaviour {
 			spawnPoint, 
 			Quaternion.identity,
 			0);
-		SceneHandler sceneHandler = GameObject.FindObjectOfType<SceneHandler>();
-		sceneHandler.Begin ();
 	}
 
 	public void SetCamera(){

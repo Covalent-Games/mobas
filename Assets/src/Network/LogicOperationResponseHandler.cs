@@ -50,8 +50,12 @@ public class LogicOperationResponseHandler{
 			Debug.Log(d.Key);
 			Debug.Log(d.Value);
 		}
+
+		string roomName = (string)response.Parameters[LogicParameterCode.RoomID];
 		
-		PhotonNetwork.JoinRoom(response.Parameters[LogicParameterCode.RoomID]);
+		if(PhotonNetwork.logLevel == PhotonLogLevel.Full) {
+			Debug.Log (roomName);
+		}
 	}
 
 }

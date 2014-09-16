@@ -24,7 +24,8 @@ public class PlayerObject : MobileObject {
 		//HACK
 		#region Hero Test Stuff
 		CharacterName = "TestHero";
-		Actions = (IActions)GetComponent(CharacterName + "Action");
+		Actions = (IActions)gameObject.AddComponent(CharacterName + "Action");
+		Actions.RateOfFire = 8f;
 		#endregion
 
 		this.Health = this.maxHealth;

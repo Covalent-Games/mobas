@@ -5,6 +5,7 @@ public interface IActions  {
 
 	//float globalCooldown;
 	//float globalCooldownTimer;
+	float RateOfFire { get; set; }
 
 	//TODO These should be delegates for more flexibility on what each skill can do
 	void PrimaryAction();

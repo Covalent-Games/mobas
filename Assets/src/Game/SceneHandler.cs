@@ -8,7 +8,7 @@ public class SceneHandler : MonoBehaviour {
 	
 	// Use this for initialization
 	public void Begin () {
-		
+		print ("Spawn towers");
 		towerSpawnPoints = GameObject.FindGameObjectsWithTag("TowerPlaceholder");		
 		if(PhotonNetwork.isMasterClient) {
 			SpawnTowers ();

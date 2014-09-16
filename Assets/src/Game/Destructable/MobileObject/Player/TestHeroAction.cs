@@ -4,7 +4,7 @@ using System.Collections;
 public class TestHeroAction : MonoBehaviour, IActions {
 
 	[SerializeField]
-	private float rateOfFire;
+	public float rateOfFire;
 	private float shotDelay;
 	private float shotTimer;
 	
@@ -13,6 +13,9 @@ public class TestHeroAction : MonoBehaviour, IActions {
 	[SerializeField]
 	public int damage;
 		
+	public float RateOfFire{ 
+		get{return rateOfFire;}
+		set{rateOfFire = value;}}
 
 	// Use this for initialization
 	void Start () {
