@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerHandler : MonoBehaviour {
 
@@ -19,6 +20,11 @@ public class PlayerHandler : MonoBehaviour {
 	
 	//TODO Needs to be in network
 	void OnJoinedRoom(){
+
+		if (GameObject.FindGameObjectWithTag("Network").GetComponent<NetworkManager>().isMaster){
+			GameObject.FindGameObjectWithTag("ServerOverviewCam").camera.enabled = true;
+			return;
+		}
 
 		if (PhotonNetwork.logLevel == PhotonLogLevel.Full){
 			Debug.Log("Player joined room");
@@ -45,10 +51,18 @@ public class PlayerHandler : MonoBehaviour {
 	//TODO Needs to be in network
 	void JoinRoom(){
 
-		PhotonNetwork.JoinOrCreateRoom("Yeeha!",
-		                               newRoomDetails,
-		                               TypedLobby.Default);
-	}	
+		//TODO: Get name of room ... not like this. This is bad.
+		PhotonNetwork.JoinRoom("room0");
+	}
+	
+	void OnPhotonJoinRoomFailed(){
+	
+		var parameter = new Dictionary<byte, object>();
+		parameter.Add(LogicParameterCode.RoomID, "room0");
+	
+		PhotonNetwork.networkingPeer.OpCustom((byte)LogicOperationCode.SpawnMasterClientProcess, parameter, true);
+	}
+	
 	void SpawnPlayer(){
 
 		spawnPoint = GameObject.Find("SpawnPoint").transform.position;

@@ -29,8 +29,7 @@ public class TestHeroAction : MonoBehaviour, IActions {
 			Ray mouseRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
 			RaycastHit hitInfo;
 			if (Physics.Raycast(mouseRay, out hitInfo)){
-				Debug.Log("Shooting something...");
-				PhotonNetwork.RaiseEvent((byte)GameEventCode.TestEvent, "haha", true, RaiseEventOptions.Default);
+				Debug.Log("Shooting something..." + PhotonNetwork.networkingPeer.OpRaiseEvent((byte)GameEventCode.TestEvent, "content", true, RaiseEventOptions.Default));
 			}
 			Transform camera = transform.Find("MainCamera");
 			camera.RotateAround(transform.position, transform.right, -1.0f);
