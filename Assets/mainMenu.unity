@@ -1369,9 +1369,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c5fd8bebca545e45906b18593cd4f5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMaster: 0
-  developer: 1
-  IPAddress: 76.88.173.105
+  isMaster: 1
+  developer: 0
+  IPAddress: 71.95.100.217
   port: 5055
   AppID: cfdf390f-742d-4fe3-8ff5-fecff18f7607
   version: 1.0
@@ -1398,8 +1398,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d06466c03d263624786afa88b52928b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statsWindowOn: 0
-  statsOn: 0
+  statsWindowOn: 1
+  statsOn: 1
   healthStatsVisible: 1
   trafficStatsOn: 1
   buttonsOn: 1

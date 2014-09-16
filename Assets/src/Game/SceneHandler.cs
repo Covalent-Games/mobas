@@ -30,4 +30,12 @@ public class SceneHandler : MonoBehaviour {
 	void Update () {
 	
 	}
+	
+	void OnLevelWasLoaded(){
+		
+		if (GameObject.FindGameObjectWithTag("Network").GetComponent<NetworkManager>().isMaster){
+			GameObject.FindGameObjectWithTag("MainCamera").camera.enabled = false;
+			GameObject.FindGameObjectWithTag("ServerOverviewCam").camera.enabled = true;
+		}
+	}
 }

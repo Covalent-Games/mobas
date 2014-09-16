@@ -7,71 +7,19 @@ public class PlayerHandler : MonoBehaviour {
 
 	GameObject player;
 	Vector3 spawnPoint;
-	RoomOptions newRoomDetails;
-	Vector3 playerColor;
-	PhotonView photonView;
-	bool masterClientInitiated = false;
+	public Vector3 playerColor;
+
 	
-	void Start () {
-		
-		//TODO Needs to be in network
-		setRoomOptions();
-		JoinRoom();
-	}
+	void Start(){
 	
-	//TODO Needs to be in network
-	void OnJoinedRoom(){
-
-		if (GameObject.FindGameObjectWithTag("Network").GetComponent<NetworkManager>().isMaster){
-			GameObject.FindGameObjectWithTag("MainCamera").camera.enabled = false;
-			GameObject.FindGameObjectWithTag("ServerOverviewCam").camera.enabled = true;
-			return;
-		}
-
-		if (PhotonNetwork.logLevel == PhotonLogLevel.Full){
-			Debug.Log("Player joined room");
-		}
-		playerColor = new Vector3(
-				Random.Range(0.0f, 1.0f),
-				Random.Range(0.0f, 1.0f),
-				Random.Range(0.0f, 1.0f)); //color objects not serializable
-		SpawnPlayer();
-		EnableLocalControl();
-
-		//HACK THis is STRICTLY for testing
-		if (PhotonNetwork.isMasterClient){
-			PhotonNetwork.OnEventCall += GameObject.Find("MasterObject").GetComponent<GameEventHandler>().OnEventRaised;
-			GameObject.FindObjectOfType<SceneHandler>().Begin ();
+		NetworkManager networkManager = 
+		    GameObject.FindGameObjectWithTag("Network").GetComponent<NetworkManager>();
+		if (!networkManager.isMaster){
+			networkManager.TryJoinRoom();
 		}
 	}
-	
-	//TODO Needs to be in network
-	void setRoomOptions(){
 
-		newRoomDetails = new RoomOptions ();
-	}
-	
-	//TODO Needs to be in network
-	void JoinRoom(){
-
-		//TODO: Get name of room ... not like this. This is bad.
-		Debug.Log ("Joining room...");
-		PhotonNetwork.JoinRoom("room0");
-	}
-	
-	void OnPhotonJoinRoomFailed(){
-
-		if(!masterClientInitiated) {
-			var parameter = new Dictionary<byte, object>();
-			parameter.Add(LogicParameterCode.RoomID, "room0");
-			PhotonNetwork.networkingPeer.OpCustom((byte)LogicOperationCode.SpawnMasterClientProcess, parameter, true);
-			masterClientInitiated = true;
-		}
-		Debug.Log ("If at first you don't succeed...");
-		PhotonNetwork.JoinRoom("room0");
-	}
-	
-	void SpawnPlayer(){
+	public void SpawnPlayer(){
 
 		spawnPoint = GameObject.Find("SpawnPoint").transform.position;
 		player = (GameObject)PhotonNetwork.Instantiate (
@@ -102,9 +50,9 @@ public class PlayerHandler : MonoBehaviour {
 		camera.transform.rotation = new Quaternion(0, 0, 0 ,0);
 	}
 
-	void EnableLocalControl(){
+	public void EnableLocalControl(){
 
-		photonView = player.GetComponent<PhotonView>();
+		PhotonView photonView = player.GetComponent<PhotonView>();
 		if (photonView.isMine){
 			// Enable local scripts
 			//TODO Eventually we'll want to pass what/where to load based on character
