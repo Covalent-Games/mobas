@@ -34,6 +34,8 @@ public class PlayerObject : MobileObject {
 	}
 	
 	void Move(){
+		
+		//TODO: This needs to send input information to the server as well
 	
 		float time = Time.deltaTime;
 		float moveX = momentumX;
@@ -73,6 +75,7 @@ public class PlayerObject : MobileObject {
 	
 	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo messageInfo){
 		
+		//TODO: Add a hashtable with input state for authoritative movement/actions
 		if (stream.isWriting){
 			stream.SendNext(transform.position);
 			stream.SendNext(transform.rotation);
@@ -133,18 +136,12 @@ public class PlayerObject : MobileObject {
 		Ray mouseRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
 		RaycastHit targetInfo;
 		if (Physics.Raycast(mouseRay, out targetInfo)){
-			//TODO PlayerObject/TowerObject/CreepObject should all inherit an interface to enforce Health etc.
 			IDestructable info = targetInfo.transform.GetComponent<DestructableObject>();
 			if (info != null){
 				string curHealth = string.Format("Health: {0}", info.Health);
 				GUI.Box(new Rect(Screen.width/2-50, 30, 100, 20), curHealth);
 				GUI.Box(new Rect(Screen.width/2-info.Health/2, 60, info.Health, 20), "");
-			} /*else if(targetInfo.transform.gameObject.tag == "Structure") {
-				TowerObject tower = targetInfo.transform.gameObject.GetComponent<TowerObject>();
-				string curHealth = string.Format("Health: {0}", tower.Health);
-				GUI.Box(new Rect(Screen.width/2-50, 30, 100, 20), curHealth);
-				GUI.Box(new Rect(Screen.width/2-tower.Health/2, 60, tower.Health, 20), "");
-			}*/
+			}
 		}
 	}
 	

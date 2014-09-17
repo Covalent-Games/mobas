@@ -7,7 +7,7 @@ public class PlayerHandler : MonoBehaviour {
 
 	GameObject player;
 	Vector3 spawnPoint;
-	public Vector3 playerColor;
+	public float[] playerColor;
 
 	
 	void Start(){
@@ -27,6 +27,7 @@ public class PlayerHandler : MonoBehaviour {
 			spawnPoint, 
 			Quaternion.identity,
 			0);
+		GameObject.FindObjectOfType<GUIHandler>().enabled = true;
 	}
 
 	public void SetCamera(){

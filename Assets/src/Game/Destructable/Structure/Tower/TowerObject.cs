@@ -14,10 +14,12 @@ public class TowerObject : StructureObject {
 		this.maxHealth = 200;
 		this.Health = 200;
 		this.Damage = 40;
-		SetRadius (10);
-		base.Start ();
+		SetRadius(10);
+		SetName();
 		if(!PhotonNetwork.isMasterClient) {
 			this.enabled = false;
+		} else {
+			RPCSendInitial();
 		}
 	}
 
@@ -59,7 +61,7 @@ public class TowerObject : StructureObject {
 	void OnTriggerEnter(Collider collider) {
 
 		targeted.Add (collider.gameObject);
-		Debug.Log ("--Added " + collider.gameObject.name);
+		//Debug.Log ("--Added " + collider.gameObject.name);
 	}
 
 	void ShootSomething() {
@@ -80,7 +82,7 @@ public class TowerObject : StructureObject {
 	void OnTriggerExit(Collider collider) {
 
 		targeted.Remove (collider.gameObject);
-		Debug.Log ("--Removed " + collider.gameObject.name);
+		//Debug.Log ("--Removed " + collider.gameObject.name);
 	}
 
 

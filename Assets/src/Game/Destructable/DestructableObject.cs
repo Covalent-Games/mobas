@@ -28,20 +28,30 @@ public class DestructableObject : MonoBehaviour, IDestructable {
 		set{ this.damage = value;}
 	}
 	
-	private void RegenHealth(){
+	protected void RegenHealth(){
 		
-		if (this.health < this.maxHealth){
-			this.health += this.healthRegen;
-			if (this.health > this.maxHealth){
-				this.health = this.maxHealth;
+		if (this.Health < this.maxHealth){
+			this.Health += this.healthRegen;
+			if (this.Health > this.maxHealth){
+				this.Health = this.maxHealth;
 			}
 		}
 	}
 	
-	[RPC]
-	protected void SetColor(Vector3 color){
+	protected void RPCSendInitial(){
 		
-		this.transform.renderer.material.color = new Color(color.x, color.y, color.z);
+		//TODO: Decide if this goes here or somewhere else
+		var info = new Dictionary<int, object>();
+		Debug.Log(this);
+		Debug.Log(this.Health);
+		info.Add(GameEventParameter.Health, this.Health);
+		PhotonView.Get(this).RPC("UpdateInfo", PhotonTargets.AllBuffered, info);
+	}
+	
+	[RPC]
+	protected void SetColor(float[] color){
+		
+		this.transform.renderer.material.color = new Color(color[0], color[1], color[2]);
 	}
 	
 	#endregion
@@ -63,6 +73,7 @@ public class DestructableObject : MonoBehaviour, IDestructable {
 		}
 	}
 
+	//TODO: Remove -- No longer being used
 	[RPC]
 	public void TakeDamage(int damageDealt, int ID, int dealerID, PhotonMessageInfo master){
 		print(dealerID + " shot " + ID);

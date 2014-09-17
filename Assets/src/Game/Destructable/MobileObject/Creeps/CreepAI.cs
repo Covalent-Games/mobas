@@ -10,19 +10,21 @@ public class CreepAI : MobileObject {
 
 	// Use this for initialization
 	void Start () {
+
+		this.maxHealth = 100;
+		this.Health = this.maxHealth;
+
 		if (PhotonNetwork.isMasterClient){
 			SetNewDestination();
+			Debug.Log("SendingInitial");
+			RPCSendInitial();
 		}
-		maxHealth = 100;
-		Health = maxHealth;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
-		if (PhotonNetwork.isMasterClient){
-			
-		}
+		//AI logic in here -- Make sure this script is disabled by default
 	}
 	
 	/// <summary>
@@ -40,12 +42,12 @@ public class CreepAI : MobileObject {
 				GetComponent<NavMeshAgent>().SetDestination(waypoint.transform.position);
 				if (waypointNumber == waypoints.Length){
 					// There are no more waypoints, so go back to the first one once
-					// I've reached my destination
+					// AI has reached its destination.
 					waypointNumber = 1;
 				} else {
 					waypointNumber++;
 				}
-				// Remember where I came from
+				// Remember where it came from
 				previousDestination = transform.position;
 			}
 		}
@@ -83,7 +85,6 @@ public class CreepAI : MobileObject {
 	protected override void CheckIfDestroyed (){
 		
 		if (Health <= 0){
-			//HACK -- This needs to be handled by master
 			PhotonNetwork.Destroy(GetComponent<PhotonView>());
 		}
 	}

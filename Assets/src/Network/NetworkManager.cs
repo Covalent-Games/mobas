@@ -42,7 +42,6 @@ public class NetworkManager : MonoBehaviour {
 	void OnJoinedLobby(){
 		
 		if (PhotonNetwork.insideLobby){
-			print ("Joined the lobby... AAHHHH!!");
 			if (!isMaster){
 				User.currentState = User.State.ConnectedToMaster;
 				/* Use this statement to start the realtime map processes.
@@ -51,7 +50,7 @@ public class NetworkManager : MonoBehaviour {
 				if (PhotonNetwork.logLevel == PhotonLogLevel.Full){
 					Debug.Log("Connected to lobby");
 				}
-				// Currently the only way to execute the request. 
+				// Do Not Delete. Saving for reference.
 				//PhotonNetwork.networkingPeer.OpCustom((byte)LogicOperationCode.GetSectorInfo, new Dictionary<byte, object>(), true);
 				
 				// If Developer box is checked in the inspector, skip straight to the arena level.
@@ -59,8 +58,7 @@ public class NetworkManager : MonoBehaviour {
 					Application.LoadLevel("main");
 				}
 			} else {
-				//TODO: This will obviously need to know correct level to load at runtime.
-				//HACK: Don't hardode room name
+				//HACK: Don't hardcode room name
 				PhotonNetwork.CreateRoom("room0");
 				Debug.Log("Create the rooooooommmmm!");
 			}
@@ -89,10 +87,7 @@ public class NetworkManager : MonoBehaviour {
 		
 		PlayerHandler playerHander = GameObject.Find("PlayerhandlerObject").GetComponent<PlayerHandler>();
 		
-		playerHander.playerColor = new Vector3(
-			Random.Range(0.0f, 1.0f),
-			Random.Range(0.0f, 1.0f),
-			Random.Range(0.0f, 1.0f)); //color objects not serializable
+		playerHander.playerColor = new float[] {Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f),	Random.Range(0.0f, 1.0f)};
 		playerHander.SpawnPlayer();
 		playerHander.EnableLocalControl();
 	}
@@ -118,14 +113,11 @@ public class NetworkManager : MonoBehaviour {
 			PhotonNetwork.networkingPeer.OpCustom((byte)LogicOperationCode.SpawnMasterClientProcess, parameter, true);
 			masterClientInitiated = true;
 		}
-		Debug.Log ("If at first you don't succeed...");
-		//PhotonNetwork.JoinRoom("room0");
 	}
 	
 	void OnCreatedRoom() {
-		
-		//print ("Joined room called");
-		//PhotonNetwork.JoinRoom("room0");
+
+		//HACK: Hardcoded level name!
 		Application.LoadLevel("main");
 	}
 	
