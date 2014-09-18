@@ -28,4 +28,5 @@ MonoBehaviour:
   - DealDamageToStructure
   - DealDamageToMobile
   - UpdateInfo
+  - SpawnNewCreep
   DisableAutoOpenWizard: 0

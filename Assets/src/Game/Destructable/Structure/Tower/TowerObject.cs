@@ -16,11 +16,7 @@ public class TowerObject : StructureObject {
 		this.Damage = 40;
 		SetRadius(10);
 		SetName();
-		if(!PhotonNetwork.isMasterClient) {
-			this.enabled = false;
-		} else {
-			RPCSendInitial();
-		}
+		RPCSendInitial();
 	}
 
 	void Shoot(int newHealth, PhotonView targetPhotonView) {

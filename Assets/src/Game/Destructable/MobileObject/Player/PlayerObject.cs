@@ -136,7 +136,7 @@ public class PlayerObject : MobileObject {
 		Ray mouseRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
 		RaycastHit targetInfo;
 		if (Physics.Raycast(mouseRay, out targetInfo)){
-			IDestructable info = targetInfo.transform.GetComponent<DestructableObject>();
+			DestructableObject info = targetInfo.transform.GetComponent<DestructableObject>();
 			if (info != null){
 				string curHealth = string.Format("Health: {0}", info.Health);
 				GUI.Box(new Rect(Screen.width/2-50, 30, 100, 20), curHealth);

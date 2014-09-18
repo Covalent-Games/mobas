@@ -40,10 +40,7 @@ public class DestructableObject : MonoBehaviour, IDestructable {
 	
 	protected void RPCSendInitial(){
 		
-		//TODO: Decide if this goes here or somewhere else
 		var info = new Dictionary<int, object>();
-		Debug.Log(this);
-		Debug.Log(this.Health);
 		info.Add(GameEventParameter.Health, this.Health);
 		PhotonView.Get(this).RPC("UpdateInfo", PhotonTargets.AllBuffered, info);
 	}

@@ -16,7 +16,6 @@ public class CreepAI : MobileObject {
 
 		if (PhotonNetwork.isMasterClient){
 			SetNewDestination();
-			Debug.Log("SendingInitial");
 			RPCSendInitial();
 		}
 	}
