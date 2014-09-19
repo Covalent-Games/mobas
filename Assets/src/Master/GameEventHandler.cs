@@ -21,7 +21,7 @@ public class GameEventHandler : MonoBehaviour {
 				Debug.LogError("! Unkown eventCode !");
 				break;
 			case GameEventCode.PrimaryAction:
-				
+				HandlePrimaryAction(content);
 				break;
 		}
 	}
@@ -32,6 +32,17 @@ public class GameEventHandler : MonoBehaviour {
 		int senderViewID = (int)info[GameEventParameter.SenderViewID];
 		int targetViewID = (int)info[GameEventParameter.TargetViewID];
 	
-		Debug.Log(string.Format("PrimaryAction Triggered: Shooter:{0}, Target:{1}, {2}", senderViewID, targetViewID));
+		Debug.Log(string.Format("PrimaryAction Triggered: Shooter:{0}, Target:{1}", senderViewID, targetViewID));
+
+		PhotonView targetPhotonView = PhotonView.Find(targetViewID);
+		int damage = PhotonView.Find(senderViewID).GetComponent<DestructableObject>().Damage;
+		int newHealth = targetPhotonView.GetComponent<DestructableObject>().Health;
+
+		//TODO: Incorporate character attributes in damage calculation
+		newHealth -= damage;
+		Dictionary<int, object>parameters = new Dictionary<int, object>();
+		parameters.Add(GameEventParameter.Health, newHealth);
+		targetPhotonView.RPC ("UpdateInfo", PhotonTargets.All, parameters);
+		
 	}
 }

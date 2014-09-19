@@ -28,6 +28,7 @@ public class PlayerHandler : MonoBehaviour {
 			spawnPoint, 
 			Quaternion.identity,
 			0);
+		player.GetComponent<PlayerObject>().RPCSendInitial();
 		GameObject.FindObjectOfType<GUIHandler>().enabled = true;
 	}
 

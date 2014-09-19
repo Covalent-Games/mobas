@@ -45,7 +45,7 @@ public class TestHeroAction : MonoBehaviour, IActions {
 					RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
 					raiseEventOptions.Receivers = (ReceiverGroup)PhotonTargets.MasterClient;
 					
-					var parameters = new Dictionary<byte, object>();
+					var parameters = new Dictionary<int, object>();
 					parameters.Add(GameEventParameter.TargetViewID, targetView.viewID);
 					parameters.Add(GameEventParameter.SenderViewID, PhotonView.Get(this).viewID);
 					

@@ -38,7 +38,7 @@ public class DestructableObject : MonoBehaviour, IDestructable {
 		}
 	}
 	
-	protected void RPCSendInitial(){
+	public void RPCSendInitial(){
 		
 		var info = new Dictionary<int, object>();
 		info.Add(GameEventParameter.Health, this.Health);
