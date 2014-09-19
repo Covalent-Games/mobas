@@ -21,10 +21,17 @@ public class GameEventHandler : MonoBehaviour {
 				Debug.LogError("! Unkown eventCode !");
 				break;
 			case GameEventCode.PrimaryAction:
-				Debug.Log(string.Format("OnEventRaised: {0}, {1}, {2}", eventCode, content, senderID));
+				
 				break;
 		}
 	}
-
-
+	
+	void HandlePrimaryAction(object content){
+	
+		var info = (Dictionary<int, object>)content;
+		int senderViewID = (int)info[GameEventParameter.SenderViewID];
+		int targetViewID = (int)info[GameEventParameter.TargetViewID];
+	
+		Debug.Log(string.Format("PrimaryAction Triggered: Shooter:{0}, Target:{1}, {2}", senderViewID, targetViewID));
+	}
 }

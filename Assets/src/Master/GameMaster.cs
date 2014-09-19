@@ -5,16 +5,27 @@ using System.Collections.Generic;
 public class GameMaster : MonoBehaviour {
 
 
-	void Awake(){ DontDestroyOnLoad(this); }
+	void Awake(){ 
+	
+		DontDestroyOnLoad(this);
+	}
 	
 	public void OnLevelWasLoaded(){
 	
-		if (!PhotonNetwork.isMasterClient){ 
-			GameObject.FindObjectOfType<PlayerHandler>().enabled = true;
-		}
+		if (PhotonNetwork.isMasterClient){ 
+			LoadMasterScripts();
+		} else {
+			LoadClientScripts();
+		}	
+	}
 	
-		Debug.Log("Enabling handlers...");
+	void LoadMasterScripts(){
 		
 		GameObject.FindObjectOfType<SceneHandler>().enabled = true;
+	}
+	
+	void LoadClientScripts(){
+	
+		GameObject.FindObjectOfType<PlayerHandler>().enabled = true;
 	}
 }

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using ExitGames.Client.Photon.Lite; /*
 	ReceiverGroup
 */
@@ -32,13 +33,26 @@ public class TestHeroAction : MonoBehaviour, IActions {
 		
 		if (this.shotTimer >= this.shotDelay){
 			audio.Play();
+			//TODO: Sync shot timer with server/verify somehow shooting is allowed
 			this.shotTimer = 0.0f;
 			Ray mouseRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
 			RaycastHit hitInfo;
 			if (Physics.Raycast(mouseRay, out hitInfo)){
-				RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
-				raiseEventOptions.Receivers = (ReceiverGroup)PhotonTargets.MasterClient;
-				Debug.Log("Shooting something..." + PhotonNetwork.networkingPeer.OpRaiseEvent((byte)GameEventCode.PrimaryAction, null, true, raiseEventOptions));
+			
+				PhotonView targetView = PhotonView.Get(hitInfo.transform.gameObject);
+				if (targetView != null){
+				
+					RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+					raiseEventOptions.Receivers = (ReceiverGroup)PhotonTargets.MasterClient;
+					
+					var parameters = new Dictionary<byte, object>();
+					parameters.Add(GameEventParameter.TargetViewID, targetView.viewID);
+					parameters.Add(GameEventParameter.SenderViewID, PhotonView.Get(this).viewID);
+					
+					if (!PhotonNetwork.networkingPeer.OpRaiseEvent((byte)GameEventCode.PrimaryAction, parameters, true, raiseEventOptions)){
+						Debug.LogWarning("PrimaryAction event was unable to send!");
+					}
+				}
 			}
 			Transform camera = transform.Find("MainCamera");
 			camera.RotateAround(transform.position, transform.right, -1.0f);
