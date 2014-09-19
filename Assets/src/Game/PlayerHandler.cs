@@ -11,7 +11,8 @@ public class PlayerHandler : MonoBehaviour {
 
 	
 	void Start(){
-	
+		
+		print("Enabled!");
 		NetworkManager networkManager = 
 		    GameObject.FindGameObjectWithTag("Network").GetComponent<NetworkManager>();
 		if (!networkManager.isMaster){
@@ -37,14 +38,6 @@ public class PlayerHandler : MonoBehaviour {
 		camera.transform.parent = player.transform;
 		// Turn on the MouseLook component for this client (Don't change this)
 		camera.GetComponent<Mouselook>().enabled = true;
-		// Toggle MouseLook on (Use this to toggle during gameplay)
-		//TODO Character needs to be loaded dynamically.. ish
-		PlayerObject playerObject = player.GetComponent<PlayerObject>();
-		playerObject.mouseLookEnabled = true;
-		playerObject.movementEnabled = true;
-		playerObject.primaryActionEnabled = true;
-		playerObject.actionsEnabled = true;
-		
 		// Set the player's camera as the Main Camera
 		Vector3 pos = new Vector3(1.0f, 1.2f, -3.0f);
 		camera.transform.position = player.transform.position + pos;
@@ -56,15 +49,20 @@ public class PlayerHandler : MonoBehaviour {
 		PhotonView photonView = player.GetComponent<PhotonView>();
 		if (photonView.isMine){
 			// Enable local scripts
-			//TODO Eventually we'll want to pass what/where to load based on character
-			string locationToPlaceGun = "ReadiedItem";
-			string gunToLoad = "demoGun_01";
-
 			SetCamera();
-			//photonView.RPC("SetColor", PhotonTargets.AllBuffered, playerColor);
-			//photonView.RPC("SetItemLocation", PhotonTargets.AllBuffered, gunToLoad, locationToPlaceGun);
-
+			// Toggle MouseLook on (Use this to toggle during gameplay)
+			//TODO Character needs to be loaded dynamically.. ish
+			
 			player.gameObject.tag = "Player";
+			
+			PlayerObject playerObject = player.GetComponent<PlayerObject>();
+			playerObject.enabled = true;
+			playerObject.mouseLookEnabled = true;
+			playerObject.movementEnabled = true;
+			playerObject.primaryActionEnabled = true;
+			playerObject.actionsEnabled = true;
 		}
 	}
+	
+	public void Update(){}
 }

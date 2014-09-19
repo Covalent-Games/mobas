@@ -18,9 +18,9 @@ public class GameEventHandler : MonoBehaviour {
 	
 		switch ((GameEventCode)eventCode){
 			default:
-				Debug.LogError("Unkown eventCode");
+				Debug.LogError("! Unkown eventCode !");
 				break;
-			case GameEventCode.TestEvent:
+			case GameEventCode.PrimaryAction:
 				Debug.Log(string.Format("OnEventRaised: {0}, {1}, {2}", eventCode, content, senderID));
 				break;
 		}

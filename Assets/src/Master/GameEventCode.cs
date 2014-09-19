@@ -3,12 +3,14 @@ using System.Collections;
 
 public enum GameEventCode{
 
-	TestEvent = 1
+	PrimaryAction = 1
 }
 
 public class GameEventParameter{
 	
+	#region Common Parameters
 	public const int ViewID = 1;
 	public const int SenderViewID = 2;
 	public const int Health = 3;
+	#endregion
 }

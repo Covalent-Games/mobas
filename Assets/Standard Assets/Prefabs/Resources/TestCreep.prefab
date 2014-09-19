@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5506c2ef0e673f24fa0b75f7c3685d24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 0
+  maxHealth: 100
   faction: 0
   controller: {fileID: 0}
   movementEnabled: 0

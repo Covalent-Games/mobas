@@ -60,7 +60,6 @@ public class NetworkManager : MonoBehaviour {
 			} else {
 				//HACK: Don't hardcode room name
 				PhotonNetwork.CreateRoom("room0");
-				Debug.Log("Create the rooooooommmmm!");
 			}
 		}
 	}
@@ -92,13 +91,13 @@ public class NetworkManager : MonoBehaviour {
 		playerHander.EnableLocalControl();
 	}
 	
-	void OnLevelWasLoaded(){
+	/*void OnLevelWasLoaded(){
 	
 		if (Application.loadedLevel > 0){
-			GameObject.FindObjectOfType<SceneHandler>().Begin();
+			GameObject.FindObjectOfType<SceneHandler>().enabled = true;
 			RegisterEvents();
 		}
-	}
+	}*/
 	
 	void RegisterEvents (){
 		

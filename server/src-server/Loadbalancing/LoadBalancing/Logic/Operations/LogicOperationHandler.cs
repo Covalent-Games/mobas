@@ -87,6 +87,7 @@ namespace Logic.Operations{
 			log.Debug("Spawning new MasterClient process.");
 			
 			//TODO: This should be done in a new thread so it doesn't hold up the server.
+			//FIXME: This should also be spawned on the game server and NOT on master server.
 			Process process = new Process();
 			process.StartInfo.FileName = "C:\\Build\\testbuild.exe";
 			process.Start();

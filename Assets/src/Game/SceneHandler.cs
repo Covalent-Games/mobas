@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class SceneHandler : MonoBehaviour {
+public class SceneHandler : MonoBehaviour  {
 
 	private GameObject[] towerSpawnPoints;
 	private GameObject[] creepSpawnPoints;
@@ -11,6 +11,14 @@ public class SceneHandler : MonoBehaviour {
 	float spawnDelayTimer = 10f;
 	public int minionsToSpawn = 3;
 
+	
+	void Start(){
+	
+		towerSpawnPoints = GameObject.FindGameObjectsWithTag("TowerPlaceholder");
+		creepSpawnPoints = GameObject.FindGameObjectsWithTag("CreepSpawnPoint");
+		
+		SpawnTowers();
+	}
 	
 	void SpawnCreeps(){
 		
@@ -73,6 +81,8 @@ public class SceneHandler : MonoBehaviour {
 	}
 	
 	void Update(){
+		
+		if (!PhotonNetwork.isMasterClient){ return; }
 	
 		if (UpdateSpawnTimer()){
 			SpawnCreeps();

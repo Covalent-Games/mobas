@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using ExitGames.Client.Photon.Lite; /*
+	ReceiverGroup
+*/
 
 public class TestHeroAction : MonoBehaviour, IActions {
 
@@ -33,7 +36,9 @@ public class TestHeroAction : MonoBehaviour, IActions {
 			Ray mouseRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
 			RaycastHit hitInfo;
 			if (Physics.Raycast(mouseRay, out hitInfo)){
-				Debug.Log("Shooting something..." + PhotonNetwork.networkingPeer.OpRaiseEvent((byte)GameEventCode.TestEvent, "content", true, RaiseEventOptions.Default));
+				RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+				raiseEventOptions.Receivers = (ReceiverGroup)PhotonTargets.MasterClient;
+				Debug.Log("Shooting something..." + PhotonNetwork.networkingPeer.OpRaiseEvent((byte)GameEventCode.PrimaryAction, null, true, raiseEventOptions));
 			}
 			Transform camera = transform.Find("MainCamera");
 			camera.RotateAround(transform.position, transform.right, -1.0f);
