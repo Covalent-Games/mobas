@@ -27,17 +27,22 @@ public class GameEventHandler : MonoBehaviour {
 	}
 	
 	void HandlePrimaryAction(object content){
-	
+		
 		var info = (Dictionary<int, object>)content;
 		int senderViewID = (int)info[GameEventParameter.SenderViewID];
 		int targetViewID = (int)info[GameEventParameter.TargetViewID];
-	
-		Debug.Log(string.Format("PrimaryAction Triggered: Shooter:{0}, Target:{1}", senderViewID, targetViewID));
-
 		PhotonView targetPhotonView = PhotonView.Find(targetViewID);
+		
+		if (targetPhotonView == null){
+			Debug.LogWarning("DestructableObject/PhotonView not found during HandlePrimaryAction");
+			return;
+		}
+		
 		int damage = PhotonView.Find(senderViewID).GetComponent<DestructableObject>().Damage;
-		int newHealth = targetPhotonView.GetComponent<DestructableObject>().Health;
-
+		DestructableObject target = targetPhotonView.GetComponent<DestructableObject>();
+		
+		int newHealth = target.Health - damage;
+		
 		//TODO: Incorporate character attributes in damage calculation
 		newHealth -= damage;
 		Dictionary<int, object>parameters = new Dictionary<int, object>();
