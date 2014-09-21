@@ -9,6 +9,7 @@ using System;
 public enum LogicOperationCode{
 
 	GetSectorInfo,
+	SpawnMasterClientProcess
 		
 }
 

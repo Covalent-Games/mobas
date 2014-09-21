@@ -52,6 +52,7 @@ public class GUIHandler : MonoBehaviour {
 			PlayerObject character = player.GetComponent<PlayerObject>();
 			character.mouseLookEnabled = toggle;
 			character.movementEnabled = toggle;
+			character.primaryActionEnabled = toggle;
 		}
 	}
 	

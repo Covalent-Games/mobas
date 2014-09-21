@@ -1,56 +1,35 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerHandler : MonoBehaviour {
 
 
 	GameObject player;
 	Vector3 spawnPoint;
-	RoomOptions newRoomDetails;
-	Vector3 playerColor;
-	PhotonView photonView;
+	public float[] playerColor;
+
 	
-	void Start () {
+	void Start(){
 		
-		//TODO Needs to be in network
-		setRoomOptions();
-		JoinRoom();
+		print("Enabled!");
+		NetworkManager networkManager = 
+		    GameObject.FindGameObjectWithTag("Network").GetComponent<NetworkManager>();
+		if (!networkManager.isMaster){
+			networkManager.TryJoinRoom();
+		}
 	}
-	
-	//TODO Needs to be in network
-	void OnJoinedRoom(){
 
-		Debug.Log("Player joined room");
-		playerColor = new Vector3(
-				Random.Range(0.0f, 1.0f),
-				Random.Range(0.0f, 1.0f),
-				Random.Range(0.0f, 1.0f)); //color objects not serializable
-		SpawnPlayer();
-		EnableLocalControl();
-	}
-	
-	//TODO Needs to be in network
-	void setRoomOptions(){
-
-		newRoomDetails = new RoomOptions ();
-	}
-	
-	//TODO Needs to be in network
-	void JoinRoom(){
-
-		PhotonNetwork.JoinOrCreateRoom("Yeeha!",
-		                               newRoomDetails,
-		                               TypedLobby.Default);
-	}	
-	void SpawnPlayer(){
+	public void SpawnPlayer(){
 
 		spawnPoint = GameObject.Find("SpawnPoint").transform.position;
-		print(spawnPoint);
 		player = (GameObject)PhotonNetwork.Instantiate (
-			"Player",
+			"CharacterObject",
 			spawnPoint, 
 			Quaternion.identity,
 			0);
+		player.GetComponent<PlayerObject>().RPCSendInitial();
+		GameObject.FindObjectOfType<GUIHandler>().enabled = true;
 	}
 
 	public void SetCamera(){
@@ -60,34 +39,31 @@ public class PlayerHandler : MonoBehaviour {
 		camera.transform.parent = player.transform;
 		// Turn on the MouseLook component for this client (Don't change this)
 		camera.GetComponent<Mouselook>().enabled = true;
-		// Toggle MouseLook on (Use this to toggle during gameplay)
-		//TODO Character needs to be loaded dynamically.. ish
-		player.GetComponent<PlayerObject>().mouseLookEnabled = true;
-		player.GetComponent<PlayerObject>().movementEnabled= true;
 		// Set the player's camera as the Main Camera
 		Vector3 pos = new Vector3(1.0f, 1.2f, -3.0f);
 		camera.transform.position = player.transform.position + pos;
 		camera.transform.rotation = new Quaternion(0, 0, 0 ,0);
 	}
 
-	void EnableLocalControl(){
+	public void EnableLocalControl(){
 
-		photonView = player.GetComponent<PhotonView>();
+		PhotonView photonView = player.GetComponent<PhotonView>();
 		if (photonView.isMine){
 			// Enable local scripts
-			//player.GetComponent<AvatarMovement>().enabled = true;
-			player.GetComponent<AvatarAction>().enabled = true;
-			//player.GetComponent<AvatarAttributes>().enabled = true;
-			
-			//TODO Eventually we'll want to pass what/where to load based on character
-			string locationToPlaceGun = "ReadiedItem";
-			string gunToLoad = "demoGun_01";
-
 			SetCamera();
-			photonView.RPC("SetColor", PhotonTargets.AllBuffered, playerColor);
-			photonView.RPC("SetItemLocation", PhotonTargets.AllBuffered, gunToLoad, locationToPlaceGun);
-
+			// Toggle MouseLook on (Use this to toggle during gameplay)
+			//TODO Character needs to be loaded dynamically.. ish
+			
 			player.gameObject.tag = "Player";
+			
+			PlayerObject playerObject = player.GetComponent<PlayerObject>();
+			playerObject.enabled = true;
+			playerObject.mouseLookEnabled = true;
+			playerObject.movementEnabled = true;
+			playerObject.primaryActionEnabled = true;
+			playerObject.actionsEnabled = true;
 		}
 	}
+	
+	public void Update(){}
 }

@@ -27,6 +27,15 @@ namespace Logic.Operations
 		[DataMember(Code = LogicParameterCode.SectorInfoDict, IsOptional = true)]
 		public string SectorInfoDict { get; set; }
 	}
+	
+	public class SpawnMasterClientProccessOperation : Operation{
+		
+		public SpawnMasterClientProccessOperation (IRpcProtocol protocol, OperationRequest request) : 
+		base (protocol, request){}
+		
+		[DataMember(Code = LogicParameterCode.RoomID, IsOptional = false)]
+		public string RoomID { get; set; }
+	}
 
 }
 

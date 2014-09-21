@@ -14,6 +14,10 @@ public class LogicParameterCode{
 	#region GetSectorInfo
 	public const int SectorInfoDict = 1;
 	#endregion
+	
+	#region SpawnMasterClientProcess
+	public const int RoomID = 0;
+	#endregion
 
 
 }

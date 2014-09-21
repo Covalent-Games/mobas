@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: PhotonServerSettings
   m_EditorClassIdentifier: 
   HostType: 2
-  ServerAddress: 192.168.1.7
+  ServerAddress: 192.168.1.2
   ServerPort: 5055
   AppID: Master
   PingCloudServersOnAwake: 0
@@ -21,8 +21,12 @@ MonoBehaviour:
   - InstantiateRpc
   - OnAwakeRPC
   - DestroyRpc
-  - DealDamage
   - SetColor
+  - TakeDamage
   - SetItemLocation
+  - DealDamage
   - DealDamageToStructure
+  - DealDamageToMobile
+  - UpdateInfo
+  - SpawnNewCreep
   DisableAutoOpenWizard: 0

@@ -172,6 +172,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenuSkin: {fileID: 11400000, guid: 7ba55b9dbd022a7479255f424860f58b, type: 2}
+--- !u!1 &469239426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 469239428}
+  - 114: {fileID: 469239427}
+  m_Layer: 0
+  m_Name: GameMasterObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &469239427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 469239426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b31ae5f3fd22a742b8ce4bbdf09f2cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &469239428
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 469239426}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
 --- !u!1 &515955415
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,7 +220,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 515955417}
   - 82: {fileID: 515955416}
-  - 114: {fileID: 515955418}
   m_Layer: 0
   m_Name: MusicLoop
   m_TagString: Untagged
@@ -259,17 +297,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 20826284}
   m_RootOrder: 0
---- !u!114 &515955418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 515955415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: daa7f2e8cd7e1424581afa7c960a43c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &665013149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,6 +1389,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1198765539}
   - 114: {fileID: 1198765538}
+  - 114: {fileID: 1198765540}
   m_Layer: 0
   m_Name: NetworkObject
   m_TagString: Network
@@ -1380,7 +1408,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c5fd8bebca545e45906b18593cd4f5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IPAddress: 71.95.100.217
+  isMaster: 1
+  developer: 1
+  IPAddress: 76.88.173.105
   port: 5055
   AppID: cfdf390f-742d-4fe3-8ff5-fecff18f7607
   version: 1.0
@@ -1396,6 +1426,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &1198765540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1198765537}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d06466c03d263624786afa88b52928b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statsWindowOn: 0
+  statsOn: 0
+  healthStatsVisible: 1
+  trafficStatsOn: 1
+  buttonsOn: 1
+  statsRect:
+    serializedVersion: 2
+    x: 0
+    y: 100
+    width: 200
+    height: 50
+  WindowId: 100
 --- !u!1 &1363135192
 GameObject:
   m_ObjectHideFlags: 0

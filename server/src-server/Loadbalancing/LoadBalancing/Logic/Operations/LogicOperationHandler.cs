@@ -15,6 +15,7 @@ namespace Logic.Operations{
 	using Photon.LoadBalancing.Operations;
 	using Photon.SocketServer;
 	using ExitGames.Logging;
+	using System.Diagnostics;
 
 
 	/// <summary>
@@ -34,6 +35,9 @@ namespace Logic.Operations{
 			
 				case (LogicOperationCode.GetSectorInfo):
 					return HandleGetSectorInfo(operationRequest, peer);
+				
+				case (LogicOperationCode.SpawnMasterClientProcess):
+					return HandleSpawnMasterClientProcess(operationRequest, peer);
 			}
 		}
 		
@@ -62,6 +66,33 @@ namespace Logic.Operations{
 			operation.SectorInfoDict = "Fake sector info";
 			log.Debug("Received sector info request");
 			response = new OperationResponse((byte)LogicOperationCode.GetSectorInfo, operation);
+			return response;
+		}
+		
+		OperationResponse HandleSpawnMasterClientProcess(OperationRequest opRequest, MasterClientPeer peer){
+			
+			OperationResponse response;
+			// Create the specific operation object for this method
+			SpawnMasterClientProccessOperation operation = new SpawnMasterClientProccessOperation(peer.Protocol, opRequest);
+			
+			// This statement required in every operation handler method
+			if (operation.IsValid == false){
+				return InvalidOperation(LogicOperationCode.SpawnMasterClientProcess);
+			}
+			
+			//TODO: Get count of rooms that are running + 1
+			//int newRoomNumber = 0;
+			//operation.RoomID = operation.RoomID + newRoomNumber.ToString();
+			operation.RoomID = "room0";
+			log.Debug("Spawning new MasterClient process.");
+			
+			//TODO: This should be done in a new thread so it doesn't hold up the server.
+			//FIXME: This should also be spawned on the game server and NOT on master server.
+			Process process = new Process();
+			process.StartInfo.FileName = "C:\\Build\\testbuild.exe";
+			process.Start();
+
+			response = new OperationResponse((byte)LogicOperationCode.SpawnMasterClientProcess, operation);
 			return response;
 		}
 	}

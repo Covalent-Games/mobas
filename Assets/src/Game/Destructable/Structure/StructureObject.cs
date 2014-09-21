@@ -10,13 +10,8 @@ public class StructureObject : DestructableObject {
 		GetComponent<CapsuleCollider> ().radius = 15;
 	}
 
-	public void Start() {
+	protected void SetName() {
 
-		name = gameObject.GetInstanceID ().ToString();
+		name = name + gameObject.GetPhotonView().viewID.ToString();
 	}
-
-	public void Update() {
-
-	}
-
 }

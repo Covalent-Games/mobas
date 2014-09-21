@@ -7,6 +7,16 @@ public class MobileObject : DestructableObject {
 	[SerializeField]
 	protected CharacterController controller;
 	public bool movementEnabled = false;
+	public bool mouseLookEnabled = false;
+	public bool primaryActionEnabled = false;
+	public bool actionsEnabled = false;
+	
+	public float globalCooldown = 1f;
+	public float globalCooldownTimer = 0f;
+	
+	//TEST
+	public string CharacterName;
+	public IActions Actions;
 	
 	void Start () {
 	

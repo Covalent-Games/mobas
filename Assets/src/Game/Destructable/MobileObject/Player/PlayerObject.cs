@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -18,21 +18,24 @@ public class PlayerObject : MobileObject {
 	float lookx;
 	float momentumX = 0.0f;
 	float momentumY = 0.0f;
-	public bool mouseLookEnabled = false;
 	
 	void Start(){
-		
+
+		//HACK
+		#region Hero Test Stuff
+		CharacterName = "TestHero";
+		Actions = (IActions)gameObject.AddComponent(CharacterName + "Action");
+		Actions.RateOfFire = 8f;
+		#endregion
+
 		this.Health = this.maxHealth;
-			
-		name = gameObject.GetInstanceID().ToString();
-		if(PhotonNetwork.isMasterClient) {
-			gameObject.AddComponent("MasterRpcList");
-		}
 		
 		InvokeRepeating("RegenHealth", 1, 1.0f);
 	}
 	
 	void Move(){
+		
+		//TODO: This needs to send input information to the server as well
 	
 		float time = Time.deltaTime;
 		float moveX = momentumX;
@@ -59,6 +62,7 @@ public class PlayerObject : MobileObject {
 	public void Update(){
 
 		Move();
+		Actions.Update();
 	}
 	
 	protected override void CheckIfDestroyed(){
@@ -71,6 +75,7 @@ public class PlayerObject : MobileObject {
 	
 	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo messageInfo){
 		
+		//TODO: Add a hashtable with input state for authoritative movement/actions
 		if (stream.isWriting){
 			stream.SendNext(transform.position);
 			stream.SendNext(transform.rotation);
@@ -131,21 +136,18 @@ public class PlayerObject : MobileObject {
 		Ray mouseRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
 		RaycastHit targetInfo;
 		if (Physics.Raycast(mouseRay, out targetInfo)){
-			PlayerObject info = targetInfo.transform.GetComponent<PlayerObject>();
+			DestructableObject info = targetInfo.transform.GetComponent<DestructableObject>();
 			if (info != null){
 				string curHealth = string.Format("Health: {0}", info.Health);
 				GUI.Box(new Rect(Screen.width/2-50, 30, 100, 20), curHealth);
 				GUI.Box(new Rect(Screen.width/2-info.Health/2, 60, info.Health, 20), "");
-			} else if(targetInfo.transform.gameObject.tag == "Structure") {
-				TowerObject tower = targetInfo.transform.gameObject.GetComponent<TowerObject>();
-				string curHealth = string.Format("Health: {0}", tower.Health);
-				GUI.Box(new Rect(Screen.width/2-50, 30, 100, 20), curHealth);
-				GUI.Box(new Rect(Screen.width/2-tower.Health/2, 60, tower.Health, 20), "");
 			}
 		}
 	}
 	
 	void OnGUI(){
+
+		if(PhotonNetwork.isMasterClient) {return;}
 		string curHealth = string.Format("Health: {0}/{1}", this.Health, this.maxHealth);
 		GUI.Box(new Rect(Screen.width/2-50, Screen.height-50, 100, 20), curHealth);
 		GUI.Box(new Rect(Screen.width/2-this.Health/2, Screen.height-30, this.Health, 20), "");

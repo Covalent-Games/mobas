@@ -16,6 +16,7 @@ public static class User{
 	///<summary>
 	/// The name the player logged in with. It cannot be modified unless it is being set to "".
 	/// </summary>
+	//TODO Move this to server
 	public static string Username { 
 		get{
 			return username;

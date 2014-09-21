@@ -4,8 +4,14 @@
 TagManager:
   tags:
   - Gun
-  - 
+  - CreepSpawnPoint
   - Network
+  - Creep
+  - Structure
+  - CreepWaypoint
+  - TowerPlaceholder
+  - ServerOverviewCam
+  - SceneHandler
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
