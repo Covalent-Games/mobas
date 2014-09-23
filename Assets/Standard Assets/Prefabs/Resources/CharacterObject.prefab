@@ -90,7 +90,7 @@ GameObject:
   - 114: {fileID: 11400004}
   - 82: {fileID: 8200000}
   - 114: {fileID: 11400000}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: CharacterObject
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 500
-  faction: 0
+  faction: 1
   controller: {fileID: 14300000}
   movementEnabled: 0
   mouseLookEnabled: 0

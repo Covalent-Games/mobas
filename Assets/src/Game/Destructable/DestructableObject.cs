@@ -8,17 +8,19 @@ public class DestructableObject : MonoBehaviour, IDestructable {
 	public int maxHealth;
 	protected int health;
 	protected int healthRegen;
-	public int faction;
+	public Faction faction;
 	protected int damage = 1;
 
 	public int Health {
 		get{ return this.health; }
 		set{
-			if(value > this.maxHealth) {
+			if( value > this.maxHealth ) {
 				this.health = this.maxHealth;
 			} else {
 				this.health = value;
-				CheckIfDestroyed();
+				if ( this.health <= 0 && PhotonNetwork.isMasterClient ){
+					EndObject();
+				}
 			}
 		}
 	}
@@ -30,12 +32,7 @@ public class DestructableObject : MonoBehaviour, IDestructable {
 	
 	protected void RegenHealth(){
 		
-		if (this.Health < this.maxHealth){
-			this.Health += this.healthRegen;
-			if (this.Health > this.maxHealth){
-				this.Health = this.maxHealth;
-			}
-		}
+		this.Health += this.healthRegen;
 	}
 	
 	public void RPCSendInitial(){
@@ -54,10 +51,9 @@ public class DestructableObject : MonoBehaviour, IDestructable {
 	#endregion
 
 	#region Inheritable Methods
-	protected virtual void CheckIfDestroyed() {
-		if(this.health <= 0) {
-			PhotonNetwork.Destroy (gameObject);
-		}
+	protected virtual void EndObject() {
+
+		PhotonNetwork.Destroy (gameObject);
 	}
 	#endregion
 

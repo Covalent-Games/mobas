@@ -26,8 +26,23 @@ public class TestHeroAction : MonoBehaviour, IActions {
 
 		this.shotTimer = 0f;
 		gameObject.GetComponent<PlayerObject>().Damage = damage;
+		
+		//TODO: Move this to the proper script once items are coded in.
+		EquipWeapon();
 	}
-
+	
+	void EquipWeapon(){
+	
+		Transform newItem = 
+			(Transform)Instantiate((Transform)Resources.Load("Models/test_handgun", typeof(Transform)));
+		Transform slot = transform.FindChild("ReadiedItem");
+		if (slot != null){
+			newItem.parent = slot;
+			newItem.position = slot.position;
+		} else {
+			Debug.LogError("No slot found for item equipping");
+		}
+	}
 
 	public void PrimaryAction(){
 		

@@ -7,7 +7,7 @@ public class StructureObject : DestructableObject {
 
 	public void SetRadius(int radius) {
 		
-		GetComponent<CapsuleCollider> ().radius = 15;
+		//transform.Find("VisionCollider").GetComponent<CapsuleCollider>().radius = 15;
 	}
 
 	protected void SetName() {

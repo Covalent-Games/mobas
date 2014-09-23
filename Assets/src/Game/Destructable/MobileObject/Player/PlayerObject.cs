@@ -4,9 +4,6 @@ using System.Collections.Generic;
 
 public class PlayerObject : MobileObject {
 
-	//TODO Move this the heck out of here. Should be handled on the server.
-	public Dictionary<string, string> equipmentList = new Dictionary<string, string>();
-
 	public float movementSpeed = 10.0f;
 	public float lookSensitivity = 5.0f;
 	[SerializeField]
@@ -65,12 +62,10 @@ public class PlayerObject : MobileObject {
 		Actions.Update();
 	}
 	
-	protected override void CheckIfDestroyed(){
+	protected override void EndObject(){
 	
-		if (this.Health <= 0){
-			transform.position = GameObject.Find("SpawnPoint").transform.position;
-			this.Health = this.maxHealth;
-		}
+		transform.position = GameObject.Find("SpawnPoint").transform.position;
+		this.Health = this.maxHealth;
 	}
 	
 	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo messageInfo){
@@ -92,45 +87,7 @@ public class PlayerObject : MobileObject {
 	/// <param name="itemToLoad">Item to load.</param>
 	/// <param name="targetLocation">Target location.</param>
 	//HACK THIS DOESN"T GO HERE AT AAAAALLLL. Temporary!!!
-	[RPC]
-	void SetItemLocation(string itemToLoad, string targetLocation){
-		
-		// Get the avatar's photonview to perform the call on
-		PhotonView photonView = gameObject.GetComponent<PhotonView>();
-		// Get their equipment "list" -- this will want to be stored on the server eventually
-		Transform newItem;
-		
-		// If the location(value) is already occupied, remove the item(key) in it. 
-		// TODO make this able to move the item to an unoccupied slot if possible instead of destroying it
-		if (equipmentList.ContainsValue(targetLocation)){
-			foreach (string item in equipmentList.Keys){
-				if (equipmentList[item] == targetLocation){
-					Destroy(photonView.transform.FindChild(targetLocation).FindChild(
-						item+"(Clone)").gameObject);
-					equipmentList.Remove(item);
-					break;
-				}
-			}
-		}
-		// If we already have this item, reference the existing one instead of making another
-		if (equipmentList.ContainsKey(itemToLoad)){
-			newItem = photonView.transform.FindChild(equipmentList[itemToLoad]).FindChild(itemToLoad+"(Clone)");
-			// Since we're moving the item we'll remove the entry in the avatars equipment list
-			equipmentList.Remove(itemToLoad);
-			// The weapon doesn't already exist so we create it
-		}else{
-			// Note: the instantiated item will have the string "(Clone)" attached to its name
-			newItem = (Transform)Instantiate(
-				(Transform)Resources.Load("Models/"+itemToLoad, typeof(Transform)));
-		}
-		equipmentList.Add(itemToLoad, targetLocation);
-		// Get the weapon slot and parent the weapon to it and set its position and rotation to match
-		Transform weaponSlot = photonView.transform.Find(targetLocation).transform;
-		newItem.transform.parent = weaponSlot;
-		newItem.transform.position = weaponSlot.position;
-		newItem.transform.rotation = weaponSlot.rotation;		
-	}
-	
+
 	private void GetTargetInfo(){
 		
 		Ray mouseRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));

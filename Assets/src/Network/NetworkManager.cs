@@ -88,7 +88,7 @@ public class NetworkManager : MonoBehaviour {
 		
 		playerHander.playerColor = new float[] {Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f),	Random.Range(0.0f, 1.0f)};
 		playerHander.SpawnPlayer();
-		playerHander.EnableLocalControl();
+		playerHander.PlayerSetup();
 	}
 	
 	/*void OnLevelWasLoaded(){

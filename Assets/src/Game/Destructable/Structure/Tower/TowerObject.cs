@@ -6,7 +6,7 @@ public class TowerObject : StructureObject {
 
 	float counter = 0f;
 	float shotInterval = 2.0f;
-	List<GameObject> targeted = new List<GameObject>();
+	public List<GameObject> targeted = new List<GameObject>();
 
 
 	// Use this for initialization
@@ -54,12 +54,6 @@ public class TowerObject : StructureObject {
 		return getsShot;
 	}
 
-	void OnTriggerEnter(Collider collider) {
-
-		targeted.Add (collider.gameObject);
-		//Debug.Log ("--Added " + collider.gameObject.name);
-	}
-
 	void ShootSomething() {
 
 		GameObject target = AcquireTarget();
@@ -73,12 +67,6 @@ public class TowerObject : StructureObject {
 		Vector3 playerVector = target.transform.position;
 		Debug.DrawLine (towerVector, playerVector, Color.red, 0.25f);
 		Shoot (newHealth, PhotonView.Get(target));
-	}
-
-	void OnTriggerExit(Collider collider) {
-
-		targeted.Remove (collider.gameObject);
-		//Debug.Log ("--Removed " + collider.gameObject.name);
 	}
 
 

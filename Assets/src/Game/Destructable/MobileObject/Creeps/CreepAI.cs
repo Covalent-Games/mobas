@@ -69,7 +69,7 @@ public class CreepAI : MobileObject {
 		
 		previousDestination = transform.position;
 	}
-	
+
 	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo messageInfo){
 		
 		if (stream.isWriting){
@@ -81,10 +81,8 @@ public class CreepAI : MobileObject {
 		}
 	}
 	
-	protected override void CheckIfDestroyed (){
+	protected override void EndObject (){
 		
-		if (Health <= 0){
-			PhotonNetwork.Destroy(GetComponent<PhotonView>());
-		}
+		PhotonNetwork.Destroy(GetComponent<PhotonView>());
 	}
 }
