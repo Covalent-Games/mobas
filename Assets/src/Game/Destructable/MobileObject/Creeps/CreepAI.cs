@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class CreepAI : MobileObject {
 
@@ -7,6 +8,13 @@ public class CreepAI : MobileObject {
 	Vector3 previousDestination;
 	int waypointNumber = 1;
 	int radius = 100;
+	bool tracking = false;
+	public List<DestructableObject> targetList = new List<DestructableObject>();
+	public DestructableObject target;
+	CreepVision vision;
+	
+	float logicUpdateTimer = 0f;
+	public float logicUpdate;
 
 	// Use this for initialization
 	void Start () {
@@ -17,13 +25,41 @@ public class CreepAI : MobileObject {
 		if (PhotonNetwork.isMasterClient){
 			SetNewDestination();
 			RPCSendInitial();
+			vision = transform.Find("VisionCollider").GetComponent<CreepVision>();
+			vision.Setup();
 		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		
+		// Check if creep is in pursuit of a valid target
+		if (tracking && target != null){
+			if (logicUpdateTimer < logicUpdate){
+				logicUpdateTimer += Time.deltaTime;
+			} else {
+				//TODO: Maintain some distance
+					//TODO: Use cover and attempt to flank
+				SetNewDestination(target.transform.position);
+				logicUpdateTimer = 0f;
+			}
+		} else {
+			// Set tracking bool if there's a target to track.
+			tracking = FindNewTarget();
+		}
+	}
 	
-		//AI logic in here -- Make sure this script is disabled by default
+	bool FindNewTarget(){
+		
+		if (targetList.Count > 0){
+			//TODO: Use real logic here.
+			// Targets the first object it sees
+			target = targetList[0];
+			targetList.RemoveAt(0);
+			return true;
+		}
+		
+		return false;
 	}
 	
 	/// <summary>

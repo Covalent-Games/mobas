@@ -47,7 +47,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 10.1181126, y: 47.820076, z: 6.57756233}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -159,6 +159,9 @@ MonoBehaviour:
   globalCooldown: 1
   globalCooldownTimer: 0
   CharacterName: 
+  targetList: []
+  target: {fileID: 0}
+  logicUpdate: 1.5
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -185,11 +188,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 471476108cc1eee488ba68f81ab84e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canSee: 0
 --- !u!195 &19500000
 NavMeshAgent:
   m_ObjectHideFlags: 1

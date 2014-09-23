@@ -161,6 +161,10 @@ Prefab:
       propertyPath: m_TagString
       value: SceneHandler
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 58ffee5f8ea8c6a4e8394568cc6d19cd, type: 2}
+      propertyPath: minionsToSpawn
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 58ffee5f8ea8c6a4e8394568cc6d19cd, type: 2}
   m_RootGameObject: {fileID: 1573684302}
@@ -188,7 +192,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 315772740}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 250, y: 2.82399988, z: 250}
+  m_LocalPosition: {x: 278.600006, y: 2.82399988, z: 194.130005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -442,7 +446,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 927064214}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 331.350006, y: 2, z: 166.389999}
+  m_LocalPosition: {x: 321.959991, y: 2, z: 144.059998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -700,7 +704,7 @@ GameObject:
   - 65: {fileID: 1483167336}
   - 23: {fileID: 1483167335}
   - 114: {fileID: 1483167334}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CreepWaypoint
   m_TagString: CreepWaypoint
   m_Icon: {fileID: 0}
@@ -855,7 +859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59f26346ed64c654185a238372b13fd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minionsToSpawn: 3
+  minionsToSpawn: 1
 --- !u!4 &1573684304
 Transform:
   m_ObjectHideFlags: 0
@@ -880,7 +884,7 @@ GameObject:
   - 65: {fileID: 1608718126}
   - 23: {fileID: 1608718125}
   - 114: {fileID: 1608718124}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CreepWaypoint
   m_TagString: CreepWaypoint
   m_Icon: {fileID: 0}
@@ -1063,7 +1067,7 @@ GameObject:
   - 65: {fileID: 1692238311}
   - 23: {fileID: 1692238310}
   - 114: {fileID: 1692238309}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CreepWaypoint
   m_TagString: CreepWaypoint
   m_Icon: {fileID: 0}
@@ -1209,7 +1213,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1719799668}
   m_LocalRotation: {x: .686410666, y: 0, z: 0, w: .727214217}
-  m_LocalPosition: {x: 247.800003, y: 162.470001, z: 265.480011}
+  m_LocalPosition: {x: 283.700012, y: 166.360001, z: 191.919998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1366,7 +1370,7 @@ GameObject:
   - 65: {fileID: 2076221584}
   - 23: {fileID: 2076221583}
   - 114: {fileID: 2076221582}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CreepWaypoint
   m_TagString: CreepWaypoint
   m_Icon: {fileID: 0}

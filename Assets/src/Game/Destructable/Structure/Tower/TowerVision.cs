@@ -3,6 +3,7 @@ using System.Collections;
 
 public class TowerVision : MonoBehaviour {
 
+	TowerObject parent;
 
 	void OnTriggerEnter(Collider collider) {
 		
