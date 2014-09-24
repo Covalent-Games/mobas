@@ -125,7 +125,9 @@ public class CreepAI : MobileObject {
 			Debug.Log("Shooting");
 			Vector3 creepPosition = transform.position;
 			Vector3 targetPostion = target.transform.position;
-			Debug.DrawLine (creepPosition, targetPostion, Color.red, 0.25f);
+			//Debug.DrawLine (creepPosition, targetPostion, Color.red, 0.25f);
+			
+			PhotonView.Get(this).RPC ("CreepParticleShoot", PhotonTargets.All);
 			
 			target.Health -= this.damage;
 			int newHealth = target.Health;
@@ -144,6 +146,15 @@ public class CreepAI : MobileObject {
 			}
 		}
 		
+	}
+
+	[RPC]
+	public void CreepParticleShoot(PhotonMessageInfo info) {
+		
+		if (info.photonView == PhotonView.Get(this)) {
+			audio.Play();
+			this.gameObject.GetComponentInChildren<ParticleSystem>().Play();
+		}
 	}
 
 	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo messageInfo){

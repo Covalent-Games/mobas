@@ -20,6 +20,8 @@ public class TowerObject : StructureObject {
 	}
 
 	void Shoot(int newHealth, PhotonView targetPhotonView) {
+
+		PhotonView.Get(this).RPC ("TowerParticleShoot", PhotonTargets.All);
 		//Had to use target's photonview because it complained that it couldn't find DealDamage()
 		var info = new Dictionary<int, object>();
 		info.Add(GameEventParameter.Health, newHealth);
@@ -51,6 +53,10 @@ public class TowerObject : StructureObject {
 			}
 		}
 
+		if (getsShot != null) {
+			transform.Find("TurretAxel").LookAt(getsShot.transform);
+		}
+
 		return getsShot;
 	}
 
@@ -74,8 +80,12 @@ public class TowerObject : StructureObject {
 
 		counter += Time.deltaTime;
 		if(counter > this.shotInterval) {
-			ShootSomething();
-			counter = 0f;
+			//TODO: Put this somewhere more efficient
+			targeted.RemoveAll(item => item == null);
+			if(targeted.Count > 0) {
+				ShootSomething();
+				counter = 0f;
+			}
 		}
 	}
 
@@ -83,4 +93,23 @@ public class TowerObject : StructureObject {
 	void Update () {
 		UpdateShotCounter ();
 	}
+
+	[RPC]
+	public void TowerParticleShoot(PhotonMessageInfo info) {
+		
+		if (info.photonView == PhotonView.Get(this)) {
+			audio.Play();
+			this.gameObject.GetComponentInChildren<ParticleSystem>().Play();
+		}
+	}
+	
+	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo messageInfo){
+		
+		if (stream.isWriting){
+			stream.SendNext(transform.FindChild("TurretAxel").transform.rotation);
+		} else {
+			transform.FindChild("TurretAxel").transform.rotation = (Quaternion)stream.ReceiveNext();
+		}
+	}
+
 }

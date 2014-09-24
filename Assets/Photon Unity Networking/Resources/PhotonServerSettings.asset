@@ -29,4 +29,7 @@ MonoBehaviour:
   - DealDamageToMobile
   - UpdateInfo
   - SpawnNewCreep
+  - ShootParticle
+  - TowerParticleShoot
+  - CreepParticleShoot
   DisableAutoOpenWizard: 0

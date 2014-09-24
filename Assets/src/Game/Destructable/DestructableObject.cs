@@ -47,7 +47,8 @@ public class DestructableObject : MonoBehaviour, IDestructable {
 		
 		this.transform.renderer.material.color = new Color(color[0], color[1], color[2]);
 	}
-	
+
+
 	#endregion
 
 	#region Inheritable Methods
