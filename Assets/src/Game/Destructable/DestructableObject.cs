@@ -9,7 +9,7 @@ public class DestructableObject : MonoBehaviour, IDestructable {
 	protected int health;
 	protected int healthRegen;
 	public Faction faction;
-	protected int damage = 1;
+	protected int damage = 4;
 
 	public int Health {
 		get{ return this.health; }

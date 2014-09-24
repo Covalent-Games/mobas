@@ -15,6 +15,9 @@ public class CreepAI : MobileObject {
 	
 	float logicUpdateTimer = 0f;
 	public float logicUpdate;
+	
+	float primarActionCounter = 0f;
+	public float primaryActionTime;
 
 	// Use this for initialization
 	void Start () {
@@ -27,6 +30,7 @@ public class CreepAI : MobileObject {
 			RPCSendInitial();
 			vision = transform.Find("VisionCollider").GetComponent<CreepVision>();
 			vision.Setup();
+			primaryActionEnabled = true;
 		}
 	}
 	
@@ -39,10 +43,14 @@ public class CreepAI : MobileObject {
 				logicUpdateTimer += Time.deltaTime;
 			} else {
 				//TODO: Maintain some distance
-					//TODO: Use cover and attempt to flank
+				//TODO: Use cover and attempt to flank
+				//TODO: This might need to check some stuff to prevent it from triggering every time -- if the player is standing still, don't get a new path
 				SetNewDestination(target.transform.position);
 				logicUpdateTimer = 0f;
 			}
+			
+			PrimaryAction();
+
 		} else {
 			// Set tracking bool if there's a target to track.
 			tracking = FindNewTarget();
@@ -67,6 +75,7 @@ public class CreepAI : MobileObject {
 	/// </summary>
 	public void SetNewDestination(){
 		
+		//TODO: This should compute once at the beginning and not every time this is called.
 		GameObject[] waypoints = GameObject.FindGameObjectsWithTag("CreepWaypoint");
 
 		foreach (GameObject waypoint in waypoints){
@@ -104,6 +113,37 @@ public class CreepAI : MobileObject {
 		navMeshAgent.SetDestination(destination);
 		
 		previousDestination = transform.position;
+	}
+	
+	void PrimaryAction(){
+	
+		if (!primaryActionEnabled){ return;	}
+		
+		if (primarActionCounter < primaryActionTime){
+			primarActionCounter += Time.deltaTime;
+		} else {
+			Debug.Log("Shooting");
+			Vector3 creepPosition = transform.position;
+			Vector3 targetPostion = target.transform.position;
+			Debug.DrawLine (creepPosition, targetPostion, Color.red, 0.25f);
+			
+			target.Health -= this.damage;
+			int newHealth = target.Health;
+			PhotonView targetPhotonView = PhotonView.Get (target);
+			
+			var info = new Dictionary<int, object>();
+			info.Add(GameEventParameter.Health, newHealth);
+			targetPhotonView.RPC ("UpdateInfo", PhotonTargets.All, info);
+			
+			primarActionCounter = 0f;
+			
+			//FIXME: This feels weird...
+			if (newHealth <= 0){
+				SetNewDestination();
+				target = null;
+			}
+		}
+		
 	}
 
 	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo messageInfo){
