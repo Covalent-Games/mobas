@@ -3,14 +3,12 @@ using System.Collections;
 
 public class TowerVision : MonoBehaviour {
 
-	TowerObject parent;
-
 	void OnTriggerEnter(Collider collider) {
-		
+	
 		//HACK: This is just nasty
 		DestructableObject target = collider.GetComponent<DestructableObject>();
 		if (target != null){
-			if (target.faction == parent.faction){ return; }
+			if (target.faction == this.GetComponentInParent<DestructableObject>().faction){ return; }
 		}
 
 		transform.parent.GetComponent<TowerObject>().targeted.Add (collider.gameObject);
