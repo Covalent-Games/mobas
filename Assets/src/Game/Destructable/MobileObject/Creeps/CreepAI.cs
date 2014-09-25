@@ -7,8 +7,6 @@ public class CreepAI : MobileObject {
 	Vector3 destination;
 	Vector3 previousDestination;
 	int waypointNumber = 1;
-	int radius = 100;
-	bool tracking = false;
 	public List<DestructableObject> targetList = new List<DestructableObject>();
 	public DestructableObject target;
 	CreepVision vision;
@@ -18,6 +16,8 @@ public class CreepAI : MobileObject {
 	
 	float primarActionCounter = 0f;
 	public float primaryActionTime;
+	[SerializeField]
+	float preferedRange;
 
 	// Use this for initialization
 	void Start () {
@@ -38,36 +38,36 @@ public class CreepAI : MobileObject {
 	void Update () {
 		
 		// Check if creep is in pursuit of a valid target
-		if (tracking && target != null){
+		if (target == null){
+			// Check if creep is going nowhere.
+			if (!GetComponent<NavMeshAgent>().hasPath && !GetComponent<NavMeshAgent>().pathPending){
+				SetNewDestination();
+			}
+			FindNewTarget();
+		} else {
 			if (logicUpdateTimer < logicUpdate){
 				logicUpdateTimer += Time.deltaTime;
 			} else {
-				//TODO: Maintain some distance
 				//TODO: Use cover and attempt to flank
-				//TODO: This might need to check some stuff to prevent it from triggering every time -- if the player is standing still, don't get a new path
-				SetNewDestination(target.transform.position);
+				if (Vector3.Distance(transform.position, target.transform.position) > preferedRange){
+					SetNewDestination(target.transform.position);
+				}
 				logicUpdateTimer = 0f;
 			}
 			
 			PrimaryAction();
-
-		} else {
-			// Set tracking bool if there's a target to track.
-			tracking = FindNewTarget();
 		}
 	}
 	
-	bool FindNewTarget(){
+	//TODO: This might just need to return the target instead of a bool -- check if tracking implicitly.
+	void FindNewTarget(){
 		
 		if (targetList.Count > 0){
 			//TODO: Use real logic here.
 			// Targets the first object it sees
 			target = targetList[0];
 			targetList.RemoveAt(0);
-			return true;
 		}
-		
-		return false;
 	}
 	
 	/// <summary>
@@ -82,7 +82,8 @@ public class CreepAI : MobileObject {
 			// If waypointNumbers match, this is the next waypoint to move toward
 			//TODO This needs to include logic for teams. It might be something as simple
 			// as tagging the waypoints for each team instead of explicitly querying "CreepWaypoints".
-			if (waypoint.GetComponent<CreepWaypoint>().waypointNumber == waypointNumber){
+			CreepWaypoint creepWaypoint = waypoint.GetComponent<CreepWaypoint>();
+			if (creepWaypoint.waypointNumber == waypointNumber && creepWaypoint.faction == this.faction){
 				GetComponent<NavMeshAgent>().SetDestination(waypoint.transform.position);
 				if (waypointNumber == waypoints.Length){
 					// There are no more waypoints, so go back to the first one once
@@ -105,11 +106,6 @@ public class CreepAI : MobileObject {
 		
 		NavMeshAgent navMeshAgent = GetComponent<NavMeshAgent>();
 		
-		if (destination == null){
-			navMeshAgent.SetDestination(previousDestination);
-			Debug.LogWarning("Destination not provided... creep is going home");
-		}
-		
 		navMeshAgent.SetDestination(destination);
 		
 		previousDestination = transform.position;
@@ -122,20 +118,16 @@ public class CreepAI : MobileObject {
 		if (primarActionCounter < primaryActionTime){
 			primarActionCounter += Time.deltaTime;
 		} else {
-			Debug.Log("Shooting");
-			Vector3 creepPosition = transform.position;
-			Vector3 targetPostion = target.transform.position;
-			//Debug.DrawLine (creepPosition, targetPostion, Color.red, 0.25f);
-			
 			PhotonView.Get(this).RPC ("CreepParticleShoot", PhotonTargets.All);
+			Debug.DrawLine (transform.position, target.transform.position, Color.red, 0.25f);
 			
 			target.Health -= this.damage;
 			int newHealth = target.Health;
-			PhotonView targetPhotonView = PhotonView.Get (target);
 			
 			var info = new Dictionary<int, object>();
 			info.Add(GameEventParameter.Health, newHealth);
-			targetPhotonView.RPC ("UpdateInfo", PhotonTargets.All, info);
+
+			PhotonView.Get (target).RPC ("UpdateInfo", PhotonTargets.All, info);
 			
 			primarActionCounter = 0f;
 			

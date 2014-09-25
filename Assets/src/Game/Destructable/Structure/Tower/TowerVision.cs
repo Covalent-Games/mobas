@@ -7,6 +7,12 @@ public class TowerVision : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collider) {
 		
+		//HACK: This is just nasty
+		DestructableObject target = collider.GetComponent<DestructableObject>();
+		if (target != null){
+			if (target.faction == parent.faction){ return; }
+		}
+
 		transform.parent.GetComponent<TowerObject>().targeted.Add (collider.gameObject);
 		//Debug.Log ("--Added " + collider.gameObject.name);
 	}

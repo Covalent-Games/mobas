@@ -6,6 +6,7 @@ public class CreepWaypoint : MonoBehaviour {
 
 	public string colliderTag;
 	public int waypointNumber;
+	public Faction faction;
 
 	void OnTriggerEnter(Collider collider){
 		

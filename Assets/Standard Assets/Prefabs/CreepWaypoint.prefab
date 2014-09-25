@@ -83,6 +83,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colliderTag: Creep
   waypointNumber: 0
+  faction: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

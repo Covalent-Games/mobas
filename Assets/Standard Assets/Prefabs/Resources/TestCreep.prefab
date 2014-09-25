@@ -218,7 +218,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 200
   Pan2D: 0
-  rolloffMode: 1
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -227,8 +227,8 @@ AudioSource:
     m_Curve:
     - time: 0
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -2.08701873
+      outSlope: -2.08701873
       tangentMode: 0
     - time: 1
       value: 0
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  faction: 1
+  faction: 2
   controller: {fileID: 0}
   movementEnabled: 0
   mouseLookEnabled: 0
@@ -282,6 +282,7 @@ MonoBehaviour:
   target: {fileID: 0}
   logicUpdate: .5
   primaryActionTime: .400000006
+  preferedRange: 10
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -42,6 +42,7 @@ public class CreepVision : MonoBehaviour {
 			parent.targetList.RemoveAll(item => item == null);
 		}
 		
+		// Target moved out of line of sight -- Continue previous task.
 		if (target == parent.target){
 			parent.target = null;
 			parent.SetNewDestination();

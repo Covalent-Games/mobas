@@ -34,7 +34,9 @@ public class SceneHandler : MonoBehaviour  {
 					spawnPoint.transform.rotation,
 					// This needs to be something different, likely.
 					0);
-				creep.GetComponent<CreepAI>().enabled = true;
+				CreepAI creepAI = creep.GetComponent<CreepAI>();
+				creepAI.enabled = true;
+				creepAI.faction = spawnPoint.GetComponent<CreepSpawnData>().faction;
 			}
 		}
 	}
@@ -66,7 +68,9 @@ public class SceneHandler : MonoBehaviour  {
 				spawnPoint.transform.position,
 				spawnPoint.transform.rotation,
 				0);
-			tower.GetComponent<TowerObject>().enabled = true;
+			TowerObject towerObject = tower.GetComponent<TowerObject>();
+			towerObject.enabled = true;
+			towerObject.faction = spawnPoint.GetComponent<TowerPlaceholderData>().faction;
 		}
 	}
 	
