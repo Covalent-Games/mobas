@@ -29,7 +29,7 @@ public class PlayerObject : MobileObject {
 		this.Health = this.maxHealth;
 		
 		InvokeRepeating("RegenHealth", 1, 1.0f);
-		Debug.Log("---Damage at end of start: " + this.targetDamage);
+		Debug.Log("---Damage at end of start: " + this.Damage);
 	}
 	
 	void Move(){

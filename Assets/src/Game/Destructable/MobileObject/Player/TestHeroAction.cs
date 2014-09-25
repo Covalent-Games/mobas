@@ -35,7 +35,7 @@ public class TestHeroAction : MonoBehaviour, IActions {
 		PlayerObject player = gameObject.GetComponent<PlayerObject>();
 		player.Health = 500;
 		player.defence = 15;
-		player.targetDamage = 10;
+		player.Damage = 10;
 		player.areaDamage = 8;
 		player.healing = 20;
 	}
@@ -73,7 +73,7 @@ public class TestHeroAction : MonoBehaviour, IActions {
 					parameters.Add(GameEventParameter.TargetViewID, targetView.viewID);
 					parameters.Add(GameEventParameter.SenderViewID, PhotonView.Get(this).viewID);
 					
-					print ("local damage before event: " + this.GetComponent<DestructableObject>().targetDamage);
+					print ("local damage before event: " + this.GetComponent<DestructableObject>().Damage);
 				
 					if (!PhotonNetwork.networkingPeer.OpRaiseEvent((byte)GameEventCode.PrimaryAction, parameters, true, raiseEventOptions)){
 						Debug.LogWarning("PrimaryAction event was unable to send!");
