@@ -13,9 +13,6 @@ public class TestHeroAction : MonoBehaviour, IActions {
 	private float shotTimer;
 	
 	private Vector3 lastGunAimPos;
-
-	[SerializeField]
-	public int damage;
 		
 	public float RateOfFire{ 
 		get{return rateOfFire;}
@@ -25,10 +22,22 @@ public class TestHeroAction : MonoBehaviour, IActions {
 	void Start () {
 
 		this.shotTimer = 0f;
-		gameObject.GetComponent<PlayerObject>().Damage = damage;
+		
+		SetUpAttributes();
 		
 		//TODO: Move this to the proper script once items are coded in.
 		EquipWeapon();
+	}
+
+	void SetUpAttributes() {
+
+		Debug.Log("---SetUpAttributes");
+		PlayerObject player = gameObject.GetComponent<PlayerObject>();
+		player.Health = 500;
+		player.defence = 15;
+		player.targetDamage = 10;
+		player.areaDamage = 8;
+		player.healing = 20;
 	}
 	
 	void EquipWeapon(){

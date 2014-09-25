@@ -129,7 +129,7 @@ public class CreepAI : MobileObject {
 			
 			PhotonView.Get(this).RPC ("CreepParticleShoot", PhotonTargets.All);
 			
-			target.Health -= this.damage;
+			target.Health -= this.targetDamage;
 			int newHealth = target.Health;
 			PhotonView targetPhotonView = PhotonView.Get (target);
 			

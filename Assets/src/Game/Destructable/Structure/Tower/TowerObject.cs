@@ -13,27 +13,23 @@ public class TowerObject : StructureObject {
 	void Start () {
 		this.maxHealth = 200;
 		this.Health = 200;
-		this.Damage = 40;
+		this.targetDamage = 40;
+		this.defence = 25;
 		SetRadius(10);
 		SetName();
 		RPCSendInitial();
 	}
 
-	void Shoot(int newHealth, PhotonView targetPhotonView) {
+	void Shoot(GameObject target) {
 
 		PhotonView.Get(this).RPC ("TowerParticleShoot", PhotonTargets.All);
+		DestructableObject destructable = target.GetComponent<DestructableObject>();
+		int newHealth = CalculateDamage(destructable.Health, destructable.defence);
 		//Had to use target's photonview because it complained that it couldn't find DealDamage()
 		var info = new Dictionary<int, object>();
 		info.Add(GameEventParameter.Health, newHealth);
-		targetPhotonView.RPC ("UpdateInfo", PhotonTargets.All, info);
+		PhotonView.Get(target).RPC ("UpdateInfo", PhotonTargets.All, info);
 		print("Master shot");
-	}
-
-	int GetDamage(GameObject target) {
-
-		//TODO: Include other variables in damage calculation
-		int newHealth = target.GetComponent<DestructableObject>().Health - Damage;
-		return newHealth;
 	}
 
 	GameObject AcquireTarget() {
@@ -65,14 +61,12 @@ public class TowerObject : StructureObject {
 		GameObject target = AcquireTarget();
 		if(target == null) {
 			return;
-		}	
-		int newHealth = GetDamage(target);
-
+		}
 
 		Vector3 towerVector = transform.position;
 		Vector3 playerVector = target.transform.position;
 		Debug.DrawLine (towerVector, playerVector, Color.red, 0.25f);
-		Shoot (newHealth, PhotonView.Get(target));
+		Shoot (target);
 	}
 
 

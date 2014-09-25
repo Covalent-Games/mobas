@@ -2,14 +2,19 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class DestructableObject : MonoBehaviour, IDestructable {
+public class DestructableObject : MonoBehaviour {
 
 	#region Inheritable Members
 	public int maxHealth;
 	protected int health;
 	protected int healthRegen;
 	public Faction faction;
-	protected int damage = 4;
+
+	// Attributes
+	public int targetDamage = 0;
+	public int areaDamage = 0;
+	public int defence = 0;
+	public int healing = 0;
 
 	public int Health {
 		get{ return this.health; }
@@ -24,11 +29,6 @@ public class DestructableObject : MonoBehaviour, IDestructable {
 			}
 		}
 	}
-
-	public int Damage {
-		get{ return this.damage;}
-		set{ this.damage = value;}
-	}
 	
 	protected void RegenHealth(){
 		
@@ -40,6 +40,15 @@ public class DestructableObject : MonoBehaviour, IDestructable {
 		var info = new Dictionary<int, object>();
 		info.Add(GameEventParameter.Health, this.Health);
 		PhotonView.Get(this).RPC("UpdateInfo", PhotonTargets.AllBuffered, info);
+	}
+
+	public int CalculateDamage(int health, int defence) {
+		
+		int newHealth;
+		float finalDamage = this.targetDamage * ((100-defence) / 100.0f);
+		Debug.Log("Damage after defence: " + finalDamage);
+		newHealth = health - Mathf.RoundToInt(finalDamage);
+		return newHealth;
 	}
 	
 	[RPC]

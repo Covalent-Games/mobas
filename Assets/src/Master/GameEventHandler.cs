@@ -38,13 +38,16 @@ public class GameEventHandler : MonoBehaviour {
 			return;
 		}
 		
-		int damage = PhotonView.Find(senderViewID).GetComponent<DestructableObject>().Damage;
+		int damage = PhotonView.Find(senderViewID).GetComponent<DestructableObject>().targetDamage;
 		DestructableObject target = targetPhotonView.GetComponent<DestructableObject>();
 		
-		int newHealth = target.Health - damage;
+		Debug.Log("Damage before defence: " + damage);
+		float finalDamage = damage * ((100-target.defence) / 100.0f);
+		Debug.Log("Damage after defence: " + finalDamage);
+		int newHealth = target.Health - Mathf.RoundToInt(finalDamage);
 		
+
 		//TODO: Incorporate character attributes in damage calculation
-		newHealth -= damage;
 		Dictionary<int, object>parameters = new Dictionary<int, object>();
 		parameters.Add(GameEventParameter.Health, newHealth);
 		targetPhotonView.RPC ("UpdateInfo", PhotonTargets.All, parameters);
