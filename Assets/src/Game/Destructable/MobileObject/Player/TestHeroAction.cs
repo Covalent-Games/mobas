@@ -19,7 +19,7 @@ public class TestHeroAction : MonoBehaviour, IActions {
 		set{rateOfFire = value;}}
 
 	// Use this for initialization
-	void Start () {
+	public void Start () {
 
 		this.shotTimer = 0f;
 		
@@ -73,6 +73,8 @@ public class TestHeroAction : MonoBehaviour, IActions {
 					parameters.Add(GameEventParameter.TargetViewID, targetView.viewID);
 					parameters.Add(GameEventParameter.SenderViewID, PhotonView.Get(this).viewID);
 					
+					print ("local damage before event: " + this.GetComponent<DestructableObject>().targetDamage);
+				
 					if (!PhotonNetwork.networkingPeer.OpRaiseEvent((byte)GameEventCode.PrimaryAction, parameters, true, raiseEventOptions)){
 						Debug.LogWarning("PrimaryAction event was unable to send!");
 					}

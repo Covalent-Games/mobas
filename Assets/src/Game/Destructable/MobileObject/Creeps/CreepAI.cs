@@ -24,6 +24,7 @@ public class CreepAI : MobileObject {
 
 		this.maxHealth = 100;
 		this.Health = this.maxHealth;
+		this.targetDamage = 8;
 
 		if (PhotonNetwork.isMasterClient){
 			SetNewDestination();

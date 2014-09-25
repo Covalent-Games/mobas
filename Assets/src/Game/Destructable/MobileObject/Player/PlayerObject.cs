@@ -23,6 +23,7 @@ public class PlayerObject : MobileObject {
 		CharacterName = "TestHero";
 		Actions = (IActions)gameObject.AddComponent(CharacterName + "Action");
 		Actions.RateOfFire = 8f;
+		Actions.Start();
 		#endregion
 
 		this.Health = this.maxHealth;

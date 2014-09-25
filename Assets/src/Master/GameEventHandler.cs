@@ -37,8 +37,14 @@ public class GameEventHandler : MonoBehaviour {
 			Debug.LogWarning("DestructableObject/PhotonView not found during HandlePrimaryAction");
 			return;
 		}
-		
-		int damage = PhotonView.Find(senderViewID).GetComponent<DestructableObject>().targetDamage;
+
+		DestructableObject shooter = PhotonView.Find(senderViewID).GetComponent<DestructableObject>();
+		Debug.Log("----shooter: " + senderViewID);		
+		Debug.Log("----shooter stats: " + shooter.Health + ", " + shooter.targetDamage + ", " +
+					shooter.areaDamage + ", " + shooter.healing);
+
+		int damage = shooter.targetDamage;
+		//int damage = PhotonView.Find(senderViewID).GetComponent<DestructableObject>().targetDamage;
 		DestructableObject target = targetPhotonView.GetComponent<DestructableObject>();
 		
 		Debug.Log("Damage before defence: " + damage);

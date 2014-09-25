@@ -11,10 +11,10 @@ public class DestructableObject : MonoBehaviour {
 	public Faction faction;
 
 	// Attributes
-	public int targetDamage = 0;
-	public int areaDamage = 0;
-	public int defence = 0;
-	public int healing = 0;
+	public int targetDamage;
+	public int areaDamage;
+	public int defence;
+	public int healing;
 
 	public int Health {
 		get{ return this.health; }
