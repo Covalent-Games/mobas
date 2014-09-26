@@ -24,6 +24,7 @@ public class CreepAI : MobileObject {
 
 		this.maxHealth = 100;
 		this.Health = this.maxHealth;
+		this.targetDamage = 8;
 
 		if (PhotonNetwork.isMasterClient){
 			SetNewDestination();
@@ -121,7 +122,7 @@ public class CreepAI : MobileObject {
 			PhotonView.Get(this).RPC ("CreepParticleShoot", PhotonTargets.All);
 			Debug.DrawLine (transform.position, target.transform.position, Color.red, 0.25f);
 			
-			target.Health -= this.damage;
+			target.Health -= this.targetDamage;
 			int newHealth = target.Health;
 			
 			var info = new Dictionary<int, object>();

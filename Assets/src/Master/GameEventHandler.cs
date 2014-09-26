@@ -23,6 +23,9 @@ public class GameEventHandler : MonoBehaviour {
 			case GameEventCode.PrimaryAction:
 				HandlePrimaryAction(content);
 				break;
+			case GameEventCode.SpawnPlayer:
+				PlayerHandler.HandleSpawnPlayer(content, senderID);
+				break;
 		}
 	}
 	
@@ -37,14 +40,23 @@ public class GameEventHandler : MonoBehaviour {
 			Debug.LogWarning("DestructableObject/PhotonView not found during HandlePrimaryAction");
 			return;
 		}
-		
-		int damage = PhotonView.Find(senderViewID).GetComponent<DestructableObject>().Damage;
+
+		DestructableObject shooter = PhotonView.Find(senderViewID).GetComponent<DestructableObject>();
+		Debug.Log("----shooter: " + senderViewID);		
+		Debug.Log("----shooter stats: " + shooter.Health + ", " + shooter.targetDamage + ", " +
+					shooter.areaDamage + ", " + shooter.healing);
+
+		int damage = shooter.targetDamage;
+		//int damage = PhotonView.Find(senderViewID).GetComponent<DestructableObject>().targetDamage;
 		DestructableObject target = targetPhotonView.GetComponent<DestructableObject>();
 		
-		int newHealth = target.Health - damage;
+		Debug.Log("Damage before defence: " + damage);
+		float finalDamage = damage * ((100-target.defence) / 100.0f);
+		Debug.Log("Damage after defence: " + finalDamage);
+		int newHealth = target.Health - Mathf.RoundToInt(finalDamage);
 		
+
 		//TODO: Incorporate character attributes in damage calculation
-		newHealth -= damage;
 		Dictionary<int, object>parameters = new Dictionary<int, object>();
 		parameters.Add(GameEventParameter.Health, newHealth);
 		targetPhotonView.RPC ("UpdateInfo", PhotonTargets.All, parameters);

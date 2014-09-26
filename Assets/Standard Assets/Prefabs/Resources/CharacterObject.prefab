@@ -272,6 +272,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 500
   faction: 1
+  targetDamage: 0
+  areaDamage: 0
+  defence: 0
+  healing: 0
   controller: {fileID: 14300000}
   movementEnabled: 0
   mouseLookEnabled: 0

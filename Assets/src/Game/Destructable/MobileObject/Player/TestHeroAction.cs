@@ -13,22 +13,31 @@ public class TestHeroAction : MonoBehaviour, IActions {
 	private float shotTimer;
 	
 	private Vector3 lastGunAimPos;
-
-	[SerializeField]
-	public int damage;
 		
 	public float RateOfFire{ 
 		get{return rateOfFire;}
 		set{rateOfFire = value;}}
 
 	// Use this for initialization
-	void Start () {
+	public void Start () {
 
 		this.shotTimer = 0f;
-		gameObject.GetComponent<PlayerObject>().Damage = damage;
+		
+		SetUpAttributes();
 		
 		//TODO: Move this to the proper script once items are coded in.
 		EquipWeapon();
+	}
+
+	void SetUpAttributes() {
+
+		Debug.Log("---SetUpAttributes");
+		PlayerObject player = gameObject.GetComponent<PlayerObject>();
+		player.Health = 500;
+		player.defence = 15;
+		player.targetDamage = 10;
+		player.areaDamage = 8;
+		player.healing = 20;
 	}
 	
 	void EquipWeapon(){
@@ -64,6 +73,8 @@ public class TestHeroAction : MonoBehaviour, IActions {
 					parameters.Add(GameEventParameter.TargetViewID, targetView.viewID);
 					parameters.Add(GameEventParameter.SenderViewID, PhotonView.Get(this).viewID);
 					
+					print ("local damage before event: " + this.GetComponent<DestructableObject>().targetDamage);
+				
 					if (!PhotonNetwork.networkingPeer.OpRaiseEvent((byte)GameEventCode.PrimaryAction, parameters, true, raiseEventOptions)){
 						Debug.LogWarning("PrimaryAction event was unable to send!");
 					}
