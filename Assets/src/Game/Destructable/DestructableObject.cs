@@ -11,7 +11,7 @@ public class DestructableObject : MonoBehaviour {
 	public Faction faction;
 
 	// Attributes
-	protected int targetDamage;
+	public int targetDamage;
 	public int areaDamage;
 	public int defence;
 	public int healing;
@@ -28,11 +28,6 @@ public class DestructableObject : MonoBehaviour {
 				}
 			}
 		}
-	}
-
-	public int Damage {
-		get{ return this.targetDamage;}
-		set{ this.targetDamage = value;}
 	}
 	
 	protected void RegenHealth(){

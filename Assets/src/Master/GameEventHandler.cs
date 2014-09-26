@@ -40,10 +40,10 @@ public class GameEventHandler : MonoBehaviour {
 
 		DestructableObject shooter = PhotonView.Find(senderViewID).GetComponent<DestructableObject>();
 		Debug.Log("----shooter: " + senderViewID);		
-		Debug.Log("----shooter stats: " + shooter.Health + ", " + shooter.Damage + ", " +
+		Debug.Log("----shooter stats: " + shooter.Health + ", " + shooter.targetDamage + ", " +
 					shooter.areaDamage + ", " + shooter.healing);
 
-		int damage = shooter.Damage;
+		int damage = shooter.targetDamage;
 		//int damage = PhotonView.Find(senderViewID).GetComponent<DestructableObject>().targetDamage;
 		DestructableObject target = targetPhotonView.GetComponent<DestructableObject>();
 		

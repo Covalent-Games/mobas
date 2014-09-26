@@ -23,13 +23,12 @@ public class PlayerObject : MobileObject {
 		CharacterName = "TestHero";
 		Actions = (IActions)gameObject.AddComponent(CharacterName + "Action");
 		Actions.RateOfFire = 8f;
-		Actions.Start();
 		#endregion
 
 		this.Health = this.maxHealth;
 		
 		InvokeRepeating("RegenHealth", 1, 1.0f);
-		Debug.Log("---Damage at end of start: " + this.Damage);
+		Debug.Log("---Damage at end of start: " + this.targetDamage);
 	}
 	
 	void Move(){

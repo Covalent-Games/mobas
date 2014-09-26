@@ -30,7 +30,15 @@ public class PlayerHandler : MonoBehaviour {
 			spawnPoint, 
 			Quaternion.identity,
 			0);
-		player.GetComponent<PlayerObject>().RPCSendInitial();
+		PlayerObject playerObject = player.GetComponent<PlayerObject>();
+		playerObject.RPCSendInitial();
+		//HACK
+		#region Hero Test Stuff
+		string CharacterName = "TestHero";
+		playerObject.Actions = (IActions)gameObject.AddComponent(CharacterName + "Action");
+		playerObject.Actions.RateOfFire = 8f;
+		Debug.Log("---targetDamage in PlayerHandler: " + playerObject.targetDamage);
+		#endregion
 		GameObject.FindObjectOfType<GUIHandler>().enabled = true;
 	}
 	
