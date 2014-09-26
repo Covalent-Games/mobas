@@ -12,6 +12,8 @@ public class GameMaster : MonoBehaviour {
 	
 	public void OnLevelWasLoaded(){
 	
+	if (Application.loadedLevel == 0) { return; }
+
 		if (PhotonNetwork.isMasterClient){ 
 			LoadMasterScripts();
 		} else {

@@ -2,13 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 
+
 public class PlayerHandler : MonoBehaviour {
 	
 	public static Dictionary<int, List<GameObject>> inventories = new Dictionary<int, List<GameObject>>();
 	public static Dictionary<int, Dictionary<int, int>> attributes = new Dictionary<int, Dictionary<int, int>>();
 	
-	GameObject player;
-	Vector3 spawnPoint;
 	public float[] playerColor;
 
 	
@@ -22,59 +21,44 @@ public class PlayerHandler : MonoBehaviour {
 		}
 	}
 
-	public void SpawnPlayer(){
+	public static void HandleSpawnPlayer(object content, int senderID){
 
-		spawnPoint = GameObject.Find("SpawnPoint").transform.position;
-		player = (GameObject)PhotonNetwork.Instantiate (
+		Vector3 spawnPoint = GameObject.Find("SpawnPoint").transform.position;
+		GameObject player = (GameObject)PhotonNetwork.Instantiate (
 			"CharacterObject",
 			spawnPoint, 
 			Quaternion.identity,
 			0);
 		PlayerObject playerObject = player.GetComponent<PlayerObject>();
-		playerObject.RPCSendInitial();
-		//HACK
-		#region Hero Test Stuff
-		string CharacterName = "TestHero";
-		playerObject.Actions = (IActions)gameObject.AddComponent(CharacterName + "Action");
+		var info = (Dictionary<int, object>)content;
+
+		string CharacterName = (string)info[GameEventParameter.CharacterName];
+		playerObject.Actions = (IActions)player.gameObject.AddComponent(CharacterName);
 		playerObject.Actions.RateOfFire = 8f;
+		
 		Debug.Log("---targetDamage in PlayerHandler: " + playerObject.targetDamage);
-		#endregion
-		GameObject.FindObjectOfType<GUIHandler>().enabled = true;
-	}
-	
-	public void PlayerSetup(){
-	
-		EnableLocalControl();
-		EnableLocalComponents();
-		RegisterPlayerValues();
-		SetCamera();
+		
+		player.GetPhotonView().RPC("PlayerSetup", PhotonNetwork.networkingPeer.mActors[senderID], player.GetPhotonView().viewID);
 	}
 
-	void EnableLocalControl(){
+	public static void EnableLocalControl(GameObject player){
 
-		PhotonView photonView = player.GetComponent<PhotonView>();
-		if (photonView.isMine){
-			// Enable local scripts
-			// Toggle MouseLook on (Use this to toggle during gameplay)
-			//TODO Character needs to be loaded dynamically.. ish
-			
-			player.gameObject.tag = "Player";
-			
-			PlayerObject playerObject = player.GetComponent<PlayerObject>();
-			playerObject.enabled = true;
-			playerObject.mouseLookEnabled = true;
-			playerObject.movementEnabled = true;
-			playerObject.primaryActionEnabled = true;
-			playerObject.actionsEnabled = true;
-		}
+		// Enable local scripts
+		// Toggle MouseLook on (Use this to toggle during gameplay)
+		//TODO Character needs to be loaded dynamically.. ish
+		
+		PlayerObject playerObject = player.GetComponent<PlayerObject>();
+		
+		player.gameObject.tag = "Player";
+		
+		playerObject.enabled = true;
+		playerObject.mouseLookEnabled = true;
+		playerObject.movementEnabled = true;
+		playerObject.primaryActionEnabled = true;
+		playerObject.actionsEnabled = true;
 	}
 	
-	void EnableLocalComponents(){
-	
-		//I made this and now I don't remember why. I think this method will have a purpose. Maybe.
-	}
-	
-	void RegisterPlayerValues(){
+	public static void RegisterPlayerValues(GameObject player){
 	
 		int viewId = PhotonView.Get(player).viewID;
 		// Add new inventory list to the master inventory lists.
@@ -82,7 +66,7 @@ public class PlayerHandler : MonoBehaviour {
 		
 	}
 	
-	void SetCamera(){
+	public static void SetCamera(GameObject player){
 		
 		Camera camera = GameObject.Find("MainCamera").camera;
 		camera.tag = "MainCamera";

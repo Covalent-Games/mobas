@@ -32,4 +32,6 @@ MonoBehaviour:
   - ShootParticle
   - TowerParticleShoot
   - CreepParticleShoot
+  - EnableLocalControl
+  - PlayerSetup
   DisableAutoOpenWizard: 0

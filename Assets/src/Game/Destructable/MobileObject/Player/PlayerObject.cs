@@ -31,6 +31,23 @@ public class PlayerObject : MobileObject {
 		Debug.Log("---Damage at end of start: " + this.targetDamage);
 	}
 	
+	[RPC]
+	public void PlayerSetup(int viewID){
+		
+		PhotonView photonView = PhotonView.Find(viewID);
+		if (photonView == null){
+			Debug.LogError("No PhotonView found with ID: " + viewID);
+		}
+		
+		GameObject player = photonView.gameObject;
+		
+		PlayerHandler.EnableLocalControl(player);
+		PlayerHandler.RegisterPlayerValues(player);
+		PlayerHandler.SetCamera(player);
+		
+		GameObject.FindObjectOfType<GUIHandler>().enabled = true;
+	}
+	
 	void Move(){
 		
 		//TODO: This needs to send input information to the server as well

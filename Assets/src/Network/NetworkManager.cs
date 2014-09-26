@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using ExitGames.Client.Photon;
 
+using ExitGames.Client.Photon.Lite;
+
+
 //TODO: Player and Master connection logic HAVE to be separated... And the mystery of how anything works needs to be solved.
 public class NetworkManager : MonoBehaviour {
 
@@ -63,14 +66,14 @@ public class NetworkManager : MonoBehaviour {
 			}
 		}
 	}
-	
+
 	public void TryJoinRoom(){
 		
 		//TODO: Get name of room ... not like this. This is bad.
 		Debug.Log ("Joining room...");
 		PhotonNetwork.JoinRoom("room0");
 	}
-	
+
 	void OnJoinedRoom(){
 		
 		if (isMaster){
@@ -84,20 +87,20 @@ public class NetworkManager : MonoBehaviour {
 			Debug.Log("Player joined room");
 		}
 		
-		PlayerHandler playerHander = GameObject.Find("PlayerhandlerObject").GetComponent<PlayerHandler>();
+		var parameters =  new Dictionary<int, object>();
+		var raiseEventOptions = new RaiseEventOptions();
+		
+		parameters.Add(GameEventParameter.CharacterName, "TestHeroAction");
+		raiseEventOptions.Receivers = (ReceiverGroup)PhotonTargets.MasterClient;
+		
+		PhotonNetwork.networkingPeer.OpRaiseEvent((byte)GameEventCode.SpawnPlayer, parameters, true, raiseEventOptions);
+		
+		/*PlayerHandler playerHander = GameObject.Find("PlayerhandlerObject").GetComponent<PlayerHandler>();
 		
 		playerHander.playerColor = new float[] {Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f),	Random.Range(0.0f, 1.0f)};
 		playerHander.SpawnPlayer();
-		playerHander.PlayerSetup();
+		playerHander.PlayerSetup();*/
 	}
-	
-	/*void OnLevelWasLoaded(){
-	
-		if (Application.loadedLevel > 0){
-			GameObject.FindObjectOfType<SceneHandler>().enabled = true;
-			RegisterEvents();
-		}
-	}*/
 	
 	void RegisterEvents (){
 		

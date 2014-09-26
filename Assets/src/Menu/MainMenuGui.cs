@@ -13,7 +13,6 @@ public class MainMenuGui : MonoBehaviour {
 		
 		if (Input.GetKeyDown(KeyCode.Return)){
 			User.Authenticate();
-			Debug.Log("ENTER");
 		} else {
 			GUILayout.BeginArea(_buttonLayoutRect);
 			GUILayout.Label("Username", "label");
