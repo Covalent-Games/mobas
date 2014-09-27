@@ -20,25 +20,21 @@ public class PlayerHandler : MonoBehaviour {
 			networkManager.TryJoinRoom();
 		}
 	}
-
-	public static void HandleSpawnPlayer(object content, int senderID){
-
-		Vector3 spawnPoint = GameObject.Find("SpawnPoint").transform.position;
-		GameObject player = (GameObject)PhotonNetwork.Instantiate (
-			"CharacterObject",
-			spawnPoint, 
-			Quaternion.identity,
-			0);
-		PlayerObject playerObject = player.GetComponent<PlayerObject>();
-		var info = (Dictionary<int, object>)content;
-
-		string CharacterName = (string)info[GameEventParameter.CharacterName];
-		playerObject.Actions = (IActions)player.gameObject.AddComponent(CharacterName);
-		playerObject.Actions.RateOfFire = 8f;
+	
+	public static void PlayerSetup(int viewID){
 		
-		Debug.Log("---targetDamage in PlayerHandler: " + playerObject.targetDamage);
+		PhotonView photonView = PhotonView.Find(viewID);
+		if (photonView == null){
+			Debug.LogError("No PhotonView found with ID: " + viewID);
+		}
 		
-		player.GetPhotonView().RPC("PlayerSetup", PhotonNetwork.networkingPeer.mActors[senderID], player.GetPhotonView().viewID);
+		GameObject player = photonView.gameObject;
+		
+		PlayerHandler.EnableLocalControl(player);
+		PlayerHandler.RegisterPlayerValues(player);
+		PlayerHandler.SetCamera(player);
+		
+		GameObject.FindObjectOfType<GUIHandler>().enabled = true;
 	}
 
 	public static void EnableLocalControl(GameObject player){

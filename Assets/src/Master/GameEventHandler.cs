@@ -24,7 +24,7 @@ public class GameEventHandler : MonoBehaviour {
 				HandlePrimaryAction(content);
 				break;
 			case GameEventCode.SpawnPlayer:
-				PlayerHandler.HandleSpawnPlayer(content, senderID);
+				PlayerObject.SpawnPlayer(content);
 				break;
 		}
 	}

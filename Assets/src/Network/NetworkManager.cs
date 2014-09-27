@@ -90,6 +90,7 @@ public class NetworkManager : MonoBehaviour {
 		var parameters =  new Dictionary<int, object>();
 		var raiseEventOptions = new RaiseEventOptions();
 		
+		//TODO: Load hero name based on user choice.
 		parameters.Add(GameEventParameter.CharacterName, "TestHeroAction");
 		raiseEventOptions.Receivers = (ReceiverGroup)PhotonTargets.MasterClient;
 		

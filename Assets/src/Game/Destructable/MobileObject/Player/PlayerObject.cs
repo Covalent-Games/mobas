@@ -32,20 +32,23 @@ public class PlayerObject : MobileObject {
 	}
 	
 	[RPC]
-	public void PlayerSetup(int viewID){
+	public static void SpawnPlayer(object content){
 		
-		PhotonView photonView = PhotonView.Find(viewID);
-		if (photonView == null){
-			Debug.LogError("No PhotonView found with ID: " + viewID);
-		}
+		Vector3 spawnPoint = GameObject.Find("SpawnPoint").transform.position;
+		GameObject player = (GameObject)PhotonNetwork.Instantiate (
+			"CharacterObject",
+			spawnPoint, 
+			Quaternion.identity,
+			0);
+		PlayerObject playerObject = player.GetComponent<PlayerObject>();
+		var info = (Dictionary<int, object>)content;
 		
-		GameObject player = photonView.gameObject;
+		string CharacterName = (string)info[GameEventParameter.CharacterName];
+		playerObject.Actions = (IActions)player.gameObject.AddComponent(CharacterName);
+		playerObject.Actions.RateOfFire = 8f;
 		
-		PlayerHandler.EnableLocalControl(player);
-		PlayerHandler.RegisterPlayerValues(player);
-		PlayerHandler.SetCamera(player);
-		
-		GameObject.FindObjectOfType<GUIHandler>().enabled = true;
+		Debug.Log("---targetDamage in PlayerHandler: " + playerObject.targetDamage);
+		PlayerHandler.PlayerSetup(player.GetPhotonView().viewID);
 	}
 	
 	void Move(){
