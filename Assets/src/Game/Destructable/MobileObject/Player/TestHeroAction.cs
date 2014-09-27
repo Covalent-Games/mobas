@@ -31,7 +31,7 @@ public class TestHeroAction : MonoBehaviour, IActions {
 
 	void SetUpAttributes() {
 
-		Debug.Log("---SetUpAttributes");
+		Debug.Log("---SetUpAttributes for " + this.gameObject.GetPhotonView().viewID);
 		PlayerObject player = gameObject.GetComponent<PlayerObject>();
 		player.Health = 500;
 		player.defence = 15;

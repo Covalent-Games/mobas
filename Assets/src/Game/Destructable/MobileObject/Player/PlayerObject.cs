@@ -18,13 +18,6 @@ public class PlayerObject : MobileObject {
 	
 	void Start(){
 
-		//HACK
-		#region Hero Test Stuff
-		CharacterName = "TestHero";
-		Actions = (IActions)gameObject.AddComponent(CharacterName + "Action");
-		Actions.RateOfFire = 8f;
-		#endregion
-
 		this.Health = this.maxHealth;
 		
 		InvokeRepeating("RegenHealth", 1, 1.0f);
@@ -32,25 +25,24 @@ public class PlayerObject : MobileObject {
 	}
 	
 	[RPC]
-	public static void SpawnPlayer(object content){
+	public void PlayerSetup(int viewID, int senderID){
 		
-		Vector3 spawnPoint = GameObject.Find("SpawnPoint").transform.position;
-		GameObject player = (GameObject)PhotonNetwork.Instantiate (
-			"CharacterObject",
-			spawnPoint, 
-			Quaternion.identity,
-			0);
-		PlayerObject playerObject = player.GetComponent<PlayerObject>();
-		var info = (Dictionary<int, object>)content;
-		
-		string CharacterName = (string)info[GameEventParameter.CharacterName];
-		playerObject.Actions = (IActions)player.gameObject.AddComponent(CharacterName);
-		playerObject.Actions.RateOfFire = 8f;
-		
-		Debug.Log("---targetDamage in PlayerHandler: " + playerObject.targetDamage);
-		PlayerHandler.PlayerSetup(player.GetPhotonView().viewID);
+		if (senderID == PhotonNetwork.player.ID) {
+			PhotonView photonView = PhotonView.Find(viewID);
+			if (photonView == null){
+				Debug.LogError("No PhotonView found with ID: " + viewID);
+			}
+			
+			GameObject player = photonView.gameObject;
+			
+			PlayerHandler.EnableLocalControl(player);
+			PlayerHandler.RegisterPlayerValues(player);
+			PlayerHandler.SetCamera(player);
+			
+			GameObject.FindObjectOfType<GUIHandler>().enabled = true;
+		}
 	}
-	
+
 	void Move(){
 		
 		//TODO: This needs to send input information to the server as well

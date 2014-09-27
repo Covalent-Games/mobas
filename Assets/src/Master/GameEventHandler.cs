@@ -24,7 +24,7 @@ public class GameEventHandler : MonoBehaviour {
 				HandlePrimaryAction(content);
 				break;
 			case GameEventCode.SpawnPlayer:
-				PlayerObject.SpawnPlayer(content);
+				HandleSpawnPlayer(content, senderID);
 				break;
 		}
 	}
@@ -61,5 +61,10 @@ public class GameEventHandler : MonoBehaviour {
 		parameters.Add(GameEventParameter.Health, newHealth);
 		targetPhotonView.RPC ("UpdateInfo", PhotonTargets.All, parameters);
 		
+	}
+
+	void HandleSpawnPlayer(object content, int senderID) {
+
+		PlayerHandler.SpawnPlayer(content, senderID);
 	}
 }
