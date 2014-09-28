@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using ExitGames.Client.Photon.Lite; /*
-	ReceiverGroup
-*/
+using ExitGames.Client.Photon.Lite;
+
 
 public class TestHeroAction : MonoBehaviour, IActions {
 

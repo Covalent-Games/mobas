@@ -46,7 +46,6 @@ public class PlayerObject : MobileObject {
 		momentumX = moveX * inertia;
 		momentumY = moveY * inertia;
 		
-		Debug.Log("Ok, Y U NO MOOV!");
 		MoveObject(new Vector3(momentumX, gravity, momentumY));
 	}
 	
