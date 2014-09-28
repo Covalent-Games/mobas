@@ -26,6 +26,9 @@ public class GameEventHandler : MonoBehaviour {
 			case GameEventCode.SpawnPlayer:
 				HandleSpawnPlayer(content, senderID);
 				break;
+			case GameEventCode.MovePlayer:
+				HandleMovePlayer(content);
+				break;
 		}
 	}
 	
@@ -67,4 +70,22 @@ public class GameEventHandler : MonoBehaviour {
 
 		PlayerHandler.SpawnPlayer(content, senderID);
 	}
+	
+	void HandleMovePlayer(object content){
+	
+		var info = (Dictionary<int, object>)content;
+		int viewID = (int)info[GameEventParameter.SenderViewID];
+		
+		PhotonView photonView = PhotonView.Find(viewID);
+		
+		if (photonView == null) {
+			Debug.LogError("PhotonView: " + viewID + " Not found -- This shouldn't be happening ever!");
+		}
+		
+		PlayerObject player = photonView.gameObject.GetComponent<PlayerObject>();
+		
+		player.Move((float)info[GameEventParameter.Horizontal], (float)info[GameEventParameter.Vertical]);
+	}
 }
+
+

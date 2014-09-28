@@ -27,6 +27,10 @@ public class TestHeroAction : MonoBehaviour, IActions {
 		
 		//TODO: Move this to the proper script once items are coded in.
 		EquipWeapon();
+		
+		if (PhotonNetwork.isMasterClient){
+			this.enabled = false;
+		}
 	}
 
 	void SetUpAttributes() {

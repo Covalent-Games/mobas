@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using ExitGames.Client.Photon;
@@ -134,5 +135,19 @@ public class NetworkManager : MonoBehaviour {
 		User.currentState = User.State.Unidentified;
 		// This should hard disconnect from everything. If not LeaveRoom() can be called.
 		PhotonNetwork.networkingPeer.Disconnect();
+	}
+	
+	public static void RaiseEvent(GameEventCode code, bool reliable){
+		
+		var blank = new Dictionary<int, object>();
+		NetworkManager.RaiseEvent(code, blank, reliable);
+	}
+	
+	public static void RaiseEvent(GameEventCode code, Dictionary<int, object> parameters, bool reliable){
+		
+		RaiseEventOptions raiseEventOptions = new RaiseEventOptions();
+		raiseEventOptions.Receivers = (ReceiverGroup)PhotonTargets.MasterClient;
+		
+		PhotonNetwork.networkingPeer.OpRaiseEvent((byte)code, parameters, reliable, raiseEventOptions);
 	}
 }

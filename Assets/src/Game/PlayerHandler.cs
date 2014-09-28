@@ -32,12 +32,12 @@ public class PlayerHandler : MonoBehaviour {
 		PlayerObject playerObject = player.GetComponent<PlayerObject>();
 		var info = (Dictionary<int, object>)content;
 		
-		string CharacterName = (string)info[GameEventParameter.CharacterName];
+		/*string CharacterName = (string)info[GameEventParameter.CharacterName];
 		playerObject.Actions = (IActions)player.gameObject.AddComponent(CharacterName);
-		playerObject.Actions.RateOfFire = 8f;
-		
-		Debug.Log("---targetDamage in PlayerHandler: " + playerObject.targetDamage);
-		player.GetPhotonView().RPC ("PlayerSetup", PhotonTargets.All, player.GetPhotonView().viewID, senderID);
+		playerObject.Actions.RateOfFire = 8f;*/
+		player.GetPhotonView().RPC (RPCName.PlayerSetup, PhotonTargets.All, player.GetPhotonView().viewID, senderID);
+		EnableLocalControl(player);
+		RegisterPlayerValues(player);
 	}
 	
 	public static void EnableLocalControl(GameObject player){
@@ -47,8 +47,6 @@ public class PlayerHandler : MonoBehaviour {
 		//TODO Character needs to be loaded dynamically.. ish
 		
 		PlayerObject playerObject = player.GetComponent<PlayerObject>();
-		
-		player.gameObject.tag = "Player";
 		
 		playerObject.enabled = true;
 		playerObject.mouseLookEnabled = true;

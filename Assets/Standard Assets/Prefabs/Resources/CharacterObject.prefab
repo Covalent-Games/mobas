@@ -88,8 +88,9 @@ GameObject:
   - 23: {fileID: 2300000}
   - 143: {fileID: 14300000}
   - 114: {fileID: 11400004}
-  - 82: {fileID: 8200000}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
+  - 82: {fileID: 8200000}
   m_Layer: 12
   m_Name: CharacterObject
   m_TagString: Player
@@ -288,6 +289,18 @@ MonoBehaviour:
   lookSensitivity: 5
   diagonalResponsiveness: .0500000007
   inertia: .981000006
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6d9c3bcabf4344d9ceff60d9eb73e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rateOfFire: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1

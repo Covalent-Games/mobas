@@ -1,6 +1,8 @@
 using UnityEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 
 public class PlayerObject : MobileObject {
 
@@ -19,41 +21,19 @@ public class PlayerObject : MobileObject {
 	void Start(){
 
 		this.Health = this.maxHealth;
-		
-		InvokeRepeating("RegenHealth", 1, 1.0f);
-		Debug.Log("---Damage at end of start: " + this.targetDamage);
 	}
 	
-	[RPC]
-	public void PlayerSetup(int viewID, int senderID){
-		
-		if (senderID == PhotonNetwork.player.ID) {
-			PhotonView photonView = PhotonView.Find(viewID);
-			if (photonView == null){
-				Debug.LogError("No PhotonView found with ID: " + viewID);
-			}
-			
-			GameObject player = photonView.gameObject;
-			
-			PlayerHandler.EnableLocalControl(player);
-			PlayerHandler.RegisterPlayerValues(player);
-			PlayerHandler.SetCamera(player);
-			
-			GameObject.FindObjectOfType<GUIHandler>().enabled = true;
-		}
-	}
-
-	void Move(){
+	public void Move(float horizontal, float vertical){
 		
 		//TODO: This needs to send input information to the server as well
 	
-		float time = Time.deltaTime;
+		float time = Time.fixedDeltaTime;
 		float moveX = momentumX;
 		float moveY = momentumY;
-		if (this.controller.isGrounded && movementEnabled) {
+		if (this.controller.isGrounded) {
 			gravity = 0f;		
-			moveX = Input.GetAxis("Horizontal") * movementSpeed * time;
-			moveY = Input.GetAxis("Vertical") * movementSpeed * time;
+			moveX = horizontal * movementSpeed * time;
+			moveY = vertical * movementSpeed * time;
 			// Diagonal movement compensation
 			if (Mathf.Abs(moveX) > diagonalResponsiveness && Mathf.Abs(moveY) > diagonalResponsiveness){
 				float diagonal_move = Mathf.Sqrt(moveX * moveX + moveY * moveY);
@@ -66,13 +46,31 @@ public class PlayerObject : MobileObject {
 		momentumX = moveX * inertia;
 		momentumY = moveY * inertia;
 		
+		Debug.Log("Ok, Y U NO MOOV!");
 		MoveObject(new Vector3(momentumX, gravity, momentumY));
 	}
 	
-	public void Update(){
+	void RaiseMoveEvent(){
+	
+		if (!movementEnabled){ return; }
 
-		Move();
-		Actions.Update();
+		float horizontal = Input.GetAxis("Horizontal");
+		float vertical = Input.GetAxis("Vertical");
+		//Move (horizontal, vertical);
+		
+		var parameters = new Dictionary<int, object>();
+		parameters.Add(GameEventParameter.Horizontal, horizontal);		
+		parameters.Add(GameEventParameter.Vertical, vertical);
+		parameters.Add(GameEventParameter.SenderViewID, gameObject.GetPhotonView().viewID);
+		
+		if (horizontal != 0f | vertical != 0f){
+			NetworkManager.RaiseEvent(GameEventCode.MovePlayer, parameters, false);
+		}
+	}
+	
+	void FixedUpdate(){
+	
+		RaiseMoveEvent();	
 	}
 	
 	protected override void EndObject(){
@@ -92,14 +90,6 @@ public class PlayerObject : MobileObject {
 			transform.rotation = (Quaternion)stream.ReceiveNext();
 		}
 	}
-	
-	/// <summary>
-	/// Loads passed item to passed location, removes item in existing location 
-	/// if it exists or moves existing item to passed location.
-	/// </summary>
-	/// <param name="itemToLoad">Item to load.</param>
-	/// <param name="targetLocation">Target location.</param>
-	//HACK THIS DOESN"T GO HERE AT AAAAALLLL. Temporary!!!
 
 	private void GetTargetInfo(){
 		
@@ -123,4 +113,59 @@ public class PlayerObject : MobileObject {
 		GUI.Box(new Rect(Screen.width/2-this.Health/2, Screen.height-30, this.Health, 20), "");
 		GetTargetInfo();
 	}
+	
+	#region RPCs
+	
+	[RPC]
+	public void PlayerSetup(int viewID, int senderID){
+		
+		if (senderID == PhotonNetwork.player.ID) {
+			PhotonView photonView = PhotonView.Find(viewID);
+			if (photonView == null){
+				Debug.LogError("No PhotonView found with ID: " + viewID);
+			}
+			
+			GameObject player = photonView.gameObject;
+			
+			PlayerHandler.EnableLocalControl(player);
+			PlayerHandler.RegisterPlayerValues(player);
+			PlayerHandler.SetCamera(player);
+			
+			GameObject.FindObjectOfType<GUIHandler>().enabled = true;
+		}
+	}
+	
+	[RPC]
+	public void ToggleMovement(bool toggle, PhotonMessageInfo info){
+	
+		if (info.photonView.viewID == PhotonView.Get(this).viewID){
+			GetComponent<PlayerObject>().movementEnabled = toggle;
+		}
+	}
+	
+	[RPC]
+	public void ToggleLook(bool toggle, PhotonMessageInfo info){
+		
+		if (info.photonView.viewID == PhotonView.Get(this).viewID){
+			GetComponent<PlayerObject>().mouseLookEnabled = toggle;
+		}
+	}
+	
+	[RPC]
+	public void TogglePrimaryAction(bool toggle, PhotonMessageInfo info){
+		
+		if (info.photonView.viewID == PhotonView.Get(this).viewID){
+			GetComponent<PlayerObject>().primaryActionEnabled = toggle;
+		}
+	}
+	
+	[RPC]
+	public void ToggleActions(bool toggle, PhotonMessageInfo info){
+		
+		if (info.photonView.viewID == PhotonView.Get(this).viewID){
+			GetComponent<PlayerObject>().actionsEnabled = toggle;
+		}
+	}
+	
+	#endregion
 }
