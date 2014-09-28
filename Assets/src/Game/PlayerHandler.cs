@@ -36,7 +36,10 @@ public class PlayerHandler : MonoBehaviour {
 		playerObject.Actions = (IActions)player.gameObject.AddComponent(CharacterName);
 		playerObject.Actions.RateOfFire = 8f;*/
 		player.GetPhotonView().RPC (RPCName.PlayerSetup, PhotonTargets.All, player.GetPhotonView().viewID, senderID);
-		EnableLocalControl(player);
+		playerObject.mouseLookEnabled = true;
+		playerObject.movementEnabled = true;
+		playerObject.primaryActionEnabled = true;
+		playerObject.actionsEnabled = true;
 		RegisterPlayerValues(player);
 	}
 	
