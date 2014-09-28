@@ -72,7 +72,7 @@ public class PlayerHandler : MonoBehaviour {
 		camera.tag = "MainCamera";
 		camera.transform.parent = player.transform;
 		// Turn on the MouseLook component for this client (Don't change this)
-		camera.GetComponent<Mouselook>().enabled = true;
+		//camera.GetComponent<Mouselook>().enabled = true;
 		// Set the player's camera as the Main Camera
 		Vector3 pos = new Vector3(1.0f, 1.2f, -3.0f);
 		camera.transform.position = player.transform.position + pos;

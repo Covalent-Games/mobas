@@ -48,6 +48,48 @@ public class PlayerObject : MobileObject {
 		
 		MoveObject(new Vector3(momentumX, gravity, momentumY));
 	}
+
+	public void MouseLook(float horizontal, float vertical) {
+
+		Transform camera = transform.FindChild("MainCamera");
+
+		if (camera == null) {
+			Debug.LogError("NO CAMERA!");
+		}
+
+		float mouseLookX = horizontal * lookSensitivity;
+		float mouseLookY = vertical * -lookSensitivity;
+		//TODO: Make rotation happen on Master without a camera
+		//camera.RotateAround(transform.localPosition, transform.right, mouseLookY);
+		transform.Rotate(new Vector3(mouseLookY, mouseLookX, 0.0f));
+
+		Debug.Log("Rotation on the server");
+	}
+
+	void RaiseMouseLookEvent() {
+
+		if(!mouseLookEnabled) {return;}
+
+		Transform camera = transform.FindChild("MainCamera");
+
+		if (camera == null) {
+			Debug.LogError("NO CAMERA!");
+		}
+
+		float mouseY = Input.GetAxis("Mouse Y");
+		float mouseX = Input.GetAxis("Mouse X");
+
+		var parameters = new Dictionary<int, object>();
+		parameters.Add(GameEventParameter.Horizontal, mouseX);
+		parameters.Add(GameEventParameter.Vertical, mouseY);
+		parameters.Add(GameEventParameter.SenderViewID, gameObject.GetPhotonView().viewID);
+
+		if(mouseX != 0f | mouseY != 0f) {
+
+			//MouseLook(mouseX, mouseY);
+			NetworkManager.RaiseEvent(GameEventCode.RotatePlayer, parameters, false);
+		}
+	}
 	
 	void RaiseMoveEvent(){
 	
@@ -70,6 +112,7 @@ public class PlayerObject : MobileObject {
 	void FixedUpdate(){
 	
 		RaiseMoveEvent();	
+		RaiseMouseLookEvent();
 	}
 	
 	protected override void EndObject(){

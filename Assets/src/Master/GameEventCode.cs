@@ -7,6 +7,7 @@ public enum GameEventCode{
 	PrimaryAction = 1,
 	SpawnPlayer,
 	MovePlayer,
+	RotatePlayer,
 }
 
 //TODO: Urgent. Change these to Bytes. They do not have to be unique, and therefore can have more than 255. bytes = 2 bytes, int = 5 bytes.
