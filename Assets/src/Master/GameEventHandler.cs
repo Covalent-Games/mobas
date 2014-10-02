@@ -102,6 +102,7 @@ public class GameEventHandler : MonoBehaviour {
 		}
 		
 		PlayerObject player = photonView.gameObject.GetComponent<PlayerObject>();
+
 		player.MouseLook((float)info[GameEventParameter.Horizontal], (float)info[GameEventParameter.Vertical]);
 	}
 }

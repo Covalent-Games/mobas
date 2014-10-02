@@ -60,7 +60,6 @@ public class CreepAI : MobileObject {
 		}
 	}
 	
-	//TODO: This might just need to return the target instead of a bool -- check if tracking implicitly.
 	void FindNewTarget(){
 		
 		if (targetList.Count > 0){
@@ -70,10 +69,7 @@ public class CreepAI : MobileObject {
 			targetList.RemoveAt(0);
 		}
 	}
-	
-	/// <summary>
-	/// Sets the new destination.
-	/// </summary>
+
 	public void SetNewDestination(){
 		
 		//TODO: This should compute once at the beginning and not every time this is called.
@@ -98,11 +94,7 @@ public class CreepAI : MobileObject {
 			}
 		}
 	}
-	
-	/// <summary>
-	/// Sets the new destination.
-	/// </summary>
-	/// <param name="destination">New Vector3 destination.</param>
+
 	public void SetNewDestination(Vector3 destination){
 		
 		NavMeshAgent navMeshAgent = GetComponent<NavMeshAgent>();
@@ -138,7 +130,6 @@ public class CreepAI : MobileObject {
 				target = null;
 			}
 		}
-		
 	}
 
 	[RPC]

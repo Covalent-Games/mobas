@@ -38,4 +38,6 @@ MonoBehaviour:
   - ToggleLook
   - TogglePrimaryAction
   - ToggleActions
+  - NetworkMoveObject
+  - NetworkRotateObject
   DisableAutoOpenWizard: 0

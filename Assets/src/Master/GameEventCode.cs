@@ -36,4 +36,6 @@ public class RPCName {
 	public const string TogglePrimaryAction = "TogglePrimaryAction";
 	public const string ToggleActions = "ToggleActions";
 	public const string PlayerSetup = "PlayerSetup";
+	public const string NetworkMoveObject = "NetworkMoveObject";
+	public const string NetworkRotateObject = "NetworkRotateObject";
 }

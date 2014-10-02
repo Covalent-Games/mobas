@@ -18,6 +18,8 @@ public class PlayerObject : MobileObject {
 	float momentumX = 0.0f;
 	float momentumY = 0.0f;
 	
+	int localViewID = -1;
+	
 	void Start(){
 
 		this.Health = this.maxHealth;
@@ -49,18 +51,20 @@ public class PlayerObject : MobileObject {
 		MoveObject(new Vector3(momentumX, gravity, momentumY));
 	}
 
+	//FIXME: This whole thing is pretty gnarly and bad.
 	public void MouseLook(float horizontal, float vertical) {
-
-		Transform camera = transform.FindChild("MainCamera");
-
-		if (camera == null) {
-			Debug.LogError("NO CAMERA!");
-		}
 
 		float mouseLookX = horizontal * lookSensitivity;
 		float mouseLookY = vertical * -lookSensitivity;
-		//TODO: Make rotation happen on Master without a camera
-		//camera.RotateAround(transform.localPosition, transform.right, mouseLookY);
+
+		if (!PhotonNetwork.isMasterClient){
+			Transform camera = transform.FindChild("MainCamera");
+			
+			if (camera == null) {
+				Debug.LogError("NO CAMERA!");
+			}			
+			camera.RotateAround(transform.localPosition, transform.right, mouseLookY);
+		}
 		transform.Rotate(new Vector3(mouseLookY, mouseLookX, 0.0f));
 
 		Debug.Log("Rotation on the server");
@@ -97,7 +101,7 @@ public class PlayerObject : MobileObject {
 
 		float horizontal = Input.GetAxis("Horizontal");
 		float vertical = Input.GetAxis("Vertical");
-		//Move (horizontal, vertical);
+		Move (horizontal, vertical);
 		
 		var parameters = new Dictionary<int, object>();
 		parameters.Add(GameEventParameter.Horizontal, horizontal);		
@@ -128,8 +132,10 @@ public class PlayerObject : MobileObject {
 			stream.SendNext(transform.position);
 			stream.SendNext(transform.rotation);
 		} else {
-			transform.position = (Vector3)stream.ReceiveNext();
-			transform.rotation = (Quaternion)stream.ReceiveNext();
+			if (localViewID != messageInfo.photonView.viewID){
+				transform.position = (Vector3)stream.ReceiveNext();
+				transform.rotation = (Quaternion)stream.ReceiveNext();
+			}
 		}
 	}
 
@@ -168,6 +174,8 @@ public class PlayerObject : MobileObject {
 			}
 			
 			GameObject player = photonView.gameObject;
+			
+			localViewID = viewID;
 			
 			PlayerHandler.EnableLocalControl(player);
 			PlayerHandler.RegisterPlayerValues(player);

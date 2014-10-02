@@ -42,4 +42,20 @@ public class MobileObject : DestructableObject {
 		Vector3 correctedDirection = transform.TransformDirection(direction);
 		controller.Move(correctedDirection);
 	}
+	
+	[RPC]
+	public void NetworkMoveObject(Vector3 newLocation, PhotonMessageInfo info){
+	
+		if (info.photonView.viewID == PhotonView.Get(this).viewID){
+			this.transform.position = newLocation;
+		}
+	}
+	
+	[RPC]
+	public void NetworkRotateObject(Quaternion newRotation, PhotonMessageInfo info){
+		
+		if (info.photonView.viewID == PhotonView.Get(this).viewID){
+			this.transform.rotation = newRotation;
+		}
+	}
 }
