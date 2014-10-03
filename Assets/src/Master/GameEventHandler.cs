@@ -27,10 +27,8 @@ public class GameEventHandler : MonoBehaviour {
 				HandleSpawnPlayer(content, senderID);
 				break;
 			case GameEventCode.MovePlayer:
-				HandleMovePlayer(content);
-				break;
 			case GameEventCode.RotatePlayer:
-				HandleRotatePlayer(content);
+				HandleMovePlayer(eventCode, content);
 				break;
 		}
 	}
@@ -74,7 +72,7 @@ public class GameEventHandler : MonoBehaviour {
 		PlayerHandler.SpawnPlayer(content, senderID);
 	}
 	
-	void HandleMovePlayer(object content){
+	void HandleMovePlayer(byte eventCode, object content){
 	
 		var info = (Dictionary<int, object>)content;
 		int viewID = (int)info[GameEventParameter.SenderViewID];
@@ -87,23 +85,13 @@ public class GameEventHandler : MonoBehaviour {
 		
 		PlayerObject player = photonView.gameObject.GetComponent<PlayerObject>();
 		
-		player.Move((float)info[GameEventParameter.Horizontal], (float)info[GameEventParameter.Vertical]);
-	}
-
-	void HandleRotatePlayer(object content) {
-
-		var info = (Dictionary<int, object>)content;
-		int viewID = (int)info[GameEventParameter.SenderViewID];
-		
-		PhotonView photonView = PhotonView.Find(viewID);
-		
-		if (photonView == null) {
-			Debug.LogError("PhotonView: " + viewID + " Not found -- This shouldn't be happening ever!");
+		if(eventCode == (byte)GameEventCode.MovePlayer) {
+			player.transform.position = (Vector3)info[GameEventParameter.Position];
+			//player.MoveObject((Vector3)info[GameEventParameter.Position]);
 		}
-		
-		PlayerObject player = photonView.gameObject.GetComponent<PlayerObject>();
-
-		player.MouseLook((float)info[GameEventParameter.Horizontal], (float)info[GameEventParameter.Vertical]);
+		else {
+			player.MouseLook((float)info[GameEventParameter.Horizontal], (float)info[GameEventParameter.Vertical]);
+		}
 	}
 }
 

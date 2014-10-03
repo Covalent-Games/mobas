@@ -37,7 +37,7 @@ public class MobileObject : DestructableObject {
 	/// Moves the object in a specified direction.
 	/// </summary>
 	/// <param name="direction">Direction to move player. Being a Vector3 this includes velocity.</param>
-	protected void MoveObject(Vector3 direction){
+	public void MoveObject(Vector3 direction){
 		
 		Vector3 correctedDirection = transform.TransformDirection(direction);
 		controller.Move(correctedDirection);

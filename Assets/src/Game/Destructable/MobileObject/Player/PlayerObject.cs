@@ -28,7 +28,16 @@ public class PlayerObject : MobileObject {
 	public void Move(float horizontal, float vertical){
 		
 		//TODO: This needs to send input information to the server as well
-	
+		if(horizontal > 0f) {
+			horizontal = 1.0f;
+		} else if (horizontal < 0f) {
+			horizontal = -1.0f;
+		}
+		if (vertical > 0f) {
+			vertical = 1.0f;
+		} else if(vertical < 0) {
+			vertical = -1.0f;
+		}
 		float time = Time.fixedDeltaTime;
 		float moveX = momentumX;
 		float moveY = momentumY;
@@ -47,6 +56,14 @@ public class PlayerObject : MobileObject {
 		}
 		momentumX = moveX * inertia;
 		momentumY = moveY * inertia;
+
+		Dictionary<int, object> parameters = new Dictionary<int, object>();
+		parameters.Add(GameEventParameter.Position, transform.position);
+		parameters.Add(GameEventParameter.MomentumX, momentumX);
+		parameters.Add(GameEventParameter.MomentumY, momentumY);
+		parameters.Add(GameEventParameter.SenderViewID, PhotonView.Get(this).viewID);
+
+		NetworkManager.RaiseEvent(GameEventCode.MovePlayer, parameters, false);
 		
 		MoveObject(new Vector3(momentumX, gravity, momentumY));
 	}
@@ -82,10 +99,12 @@ public class PlayerObject : MobileObject {
 
 		float mouseY = Input.GetAxis("Mouse Y");
 		float mouseX = Input.GetAxis("Mouse X");
+		MouseLook(mouseX, mouseY);
 
 		var parameters = new Dictionary<int, object>();
 		parameters.Add(GameEventParameter.Horizontal, mouseX);
 		parameters.Add(GameEventParameter.Vertical, mouseY);
+		parameters.Add(GameEventParameter.Rotation, transform.rotation);
 		parameters.Add(GameEventParameter.SenderViewID, gameObject.GetPhotonView().viewID);
 
 		if(mouseX != 0f | mouseY != 0f) {
@@ -106,10 +125,11 @@ public class PlayerObject : MobileObject {
 		var parameters = new Dictionary<int, object>();
 		parameters.Add(GameEventParameter.Horizontal, horizontal);		
 		parameters.Add(GameEventParameter.Vertical, vertical);
+		parameters.Add(GameEventParameter.Position, transform.position);
 		parameters.Add(GameEventParameter.SenderViewID, gameObject.GetPhotonView().viewID);
 		
 		if (horizontal != 0f | vertical != 0f){
-			NetworkManager.RaiseEvent(GameEventCode.MovePlayer, parameters, false);
+			//NetworkManager.RaiseEvent(GameEventCode.MovePlayer, parameters, false);
 		}
 	}
 	

@@ -26,6 +26,11 @@ public class GameEventParameter{
 	#region MovePlayer
 	public const int Horizontal = 0;
 	public const int Vertical = 1;
+	public const int Position = 2;
+	public const int Rotation = 3;
+	public const int MomentumX = 4;
+	public const int MomentumY = 5;
+	public const int Gravity = 6;
 	#endregion
 }
 
